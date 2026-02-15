@@ -1,0 +1,239 @@
+{
+  "metadata": {
+    "season": "2025 Season 1",
+    "seasonNumber": 1,
+    "seasonYear": 2025,
+    "lastUpdated": "2025-02-15T00:00:00Z",
+    "weeks": 12
+  },
+  "series": [
+    {
+      "id": "vrs-gt-endurance-series",
+      "name": "VRS GT Endurance Series",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Daytona International Speedway - Road Course", "trackId": "daytona-road", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Nürburgring Combined - Gesamtstrecke Long", "trackId": "nurburgring-combined", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Circuit de Barcelona-Catalunya - Grand Prix", "trackId": "barcelona-gp", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Mount Panorama Circuit", "trackId": "bathurst", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Silverstone Circuit - Grand Prix", "trackId": "silverstone-gp", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Autodromo Nazionale Monza - Grand Prix", "trackId": "monza-gp", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Road America", "trackId": "road-america", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Circuit de la Sarthe - 24 Heures du Mans", "trackId": "le-mans", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Sebring International Raceway - International", "trackId": "sebring", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "imsa-michelin-pilot-challenge",
+      "name": "IMSA Michelin Pilot Challenge",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Daytona International Speedway - Road Course", "trackId": "daytona-road", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Sebring International Raceway - International", "trackId": "sebring", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Mid-Ohio Sports Car Course - Full Course", "trackId": "mid-ohio", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Lime Rock Park - Grand Prix", "trackId": "lime-rock-gp", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Canadian Tire Motorsport Park", "trackId": "ctmp", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Virginia International Raceway - Full Course", "trackId": "vir", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Road America", "trackId": "road-america", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Indianapolis Motor Speedway - Road Course", "trackId": "indy-road", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "WeatherTech Raceway at Laguna Seca", "trackId": "laguna-seca", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Michelin Raceway Road Atlanta - Full Course", "trackId": "road-atlanta", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Daytona International Speedway - Road Course", "trackId": "daytona-road-2", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "gt3-fanatec-challenge-fixed",
+      "name": "GT3 Fanatec Challenge - Fixed",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Okayama International Circuit - Full Course", "trackId": "okayama", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix", "trackId": "imola", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Brands Hatch Circuit - Grand Prix", "trackId": "brands-hatch-gp", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Circuit Zandvoort - Grand Prix", "trackId": "zandvoort", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Circuit de Barcelona-Catalunya - Grand Prix", "trackId": "barcelona-gp", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Silverstone Circuit - Grand Prix", "trackId": "silverstone-gp", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Autodromo Nazionale Monza - Grand Prix", "trackId": "monza-gp", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Nürburgring Combined - Gesamtstrecke 24H", "trackId": "nurburgring-24h", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Mount Panorama Circuit", "trackId": "bathurst", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "ferrari-gt3-challenge-fixed",
+      "name": "Ferrari GT3 Challenge - Fixed",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Tsukuba Circuit - 2000 Full Course", "trackId": "tsukuba-2000", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Oulton Park Circuit - International", "trackId": "oulton-park", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Autodromo Nazionale Monza - Grand Prix", "trackId": "monza-gp", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Road America", "trackId": "road-america", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Circuit de Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Silverstone Circuit - Grand Prix", "trackId": "silverstone-gp", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Hungaroring", "trackId": "hungaroring", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Circuit de Barcelona-Catalunya - Grand Prix", "trackId": "barcelona-gp", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Nürburgring Grand Prix - Grand Prix", "trackId": "nurburgring-gp", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Daytona International Speedway - Road Course", "trackId": "daytona-road", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "nascar-class-a-fixed",
+      "name": "NASCAR Class A - Fixed",
+      "category": "Oval",
+      "schedule": [
+        { "week": 1, "track": "Daytona International Speedway - Oval", "trackId": "daytona-oval", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Atlanta Motor Speedway - Oval", "trackId": "atlanta-oval", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Las Vegas Motor Speedway - Oval", "trackId": "las-vegas-oval", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Phoenix Raceway - Oval", "trackId": "phoenix-oval", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Bristol Motor Speedway", "trackId": "bristol", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Martinsville Speedway", "trackId": "martinsville", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Texas Motor Speedway - Oval", "trackId": "texas-oval", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Talladega Superspeedway", "trackId": "talladega", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Dover Motor Speedway", "trackId": "dover", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Kansas Speedway", "trackId": "kansas", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Charlotte Motor Speedway - Oval", "trackId": "charlotte-oval", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Michigan International Speedway", "trackId": "michigan", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "nascar-class-b-fixed",
+      "name": "NASCAR Class B - Fixed",
+      "category": "Oval",
+      "schedule": [
+        { "week": 1, "track": "Phoenix Raceway - Oval", "trackId": "phoenix-oval", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Daytona International Speedway - Oval", "trackId": "daytona-oval", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Richmond Raceway", "trackId": "richmond", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Homestead-Miami Speedway - Oval", "trackId": "homestead-oval", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Martinsville Speedway", "trackId": "martinsville", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Iowa Speedway - Oval", "trackId": "iowa-oval", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "New Hampshire Motor Speedway - Oval", "trackId": "new-hampshire", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Charlotte Motor Speedway - Oval", "trackId": "charlotte-oval", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Nashville Superspeedway", "trackId": "nashville", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Darlington Raceway", "trackId": "darlington", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Pocono Raceway", "trackId": "pocono", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Indianapolis Motor Speedway - Oval", "trackId": "indy-oval", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "indycar-series-fixed",
+      "name": "IndyCar Series - Fixed",
+      "category": "Oval",
+      "schedule": [
+        { "week": 1, "track": "Indianapolis Motor Speedway - Oval", "trackId": "indy-oval", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Texas Motor Speedway - Oval", "trackId": "texas-oval", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Iowa Speedway - Oval", "trackId": "iowa-oval", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Circuit of the Americas - Grand Prix", "trackId": "cota-gp", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "WeatherTech Raceway at Laguna Seca", "trackId": "laguna-seca", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Mid-Ohio Sports Car Course - Full Course", "trackId": "mid-ohio", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Road America", "trackId": "road-america", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Gateway Motorsports Park", "trackId": "gateway", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Barber Motorsports Park - Full Course", "trackId": "barber", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Toronto Motorsports Park - Road Course", "trackId": "toronto", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Nashville Street Circuit", "trackId": "nashville-street", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Indianapolis Motor Speedway - Oval", "trackId": "indy-oval-finale", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "dirt-sprint-car-world-championship",
+      "name": "World of Outlaws Sprint Car Series",
+      "category": "Dirt",
+      "schedule": [
+        { "week": 1, "track": "Volusia Speedway Park", "trackId": "volusia", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Knoxville Raceway", "trackId": "knoxville", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Williams Grove Speedway", "trackId": "williams-grove", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Eldora Speedway", "trackId": "eldora", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Limaland Motorsports Park", "trackId": "limaland", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Cedar Lake Speedway", "trackId": "cedar-lake", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Weedsport Speedway", "trackId": "weedsport", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "The Dirt Track at Charlotte", "trackId": "charlotte-dirt", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Fairbury Speedway", "trackId": "fairbury", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Lanier National Speedway", "trackId": "lanier", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Knoxville Raceway", "trackId": "knoxville-2", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Eldora Speedway", "trackId": "eldora-2", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "dirt-late-model-series",
+      "name": "World of Outlaws Late Model Series",
+      "category": "Dirt",
+      "schedule": [
+        { "week": 1, "track": "Volusia Speedway Park", "trackId": "volusia", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Eldora Speedway", "trackId": "eldora", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Limaland Motorsports Park", "trackId": "limaland", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Knoxville Raceway", "trackId": "knoxville", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Cedar Lake Speedway", "trackId": "cedar-lake", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Williams Grove Speedway", "trackId": "williams-grove", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Fairbury Speedway", "trackId": "fairbury", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "The Dirt Track at Charlotte", "trackId": "charlotte-dirt", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Weedsport Speedway", "trackId": "weedsport", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Lanier National Speedway", "trackId": "lanier", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Volusia Speedway Park", "trackId": "volusia-2", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Eldora Speedway", "trackId": "eldora-2", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "porsche-cup-by-coach-dave",
+      "name": "Porsche Cup by Coach Dave Delta",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix", "trackId": "imola", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Circuit de Barcelona-Catalunya - Grand Prix", "trackId": "barcelona-gp", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Silverstone Circuit - Grand Prix", "trackId": "silverstone-gp", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Nürburgring Grand Prix - Grand Prix", "trackId": "nurburgring-gp", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Autodromo Nazionale Monza - Grand Prix", "trackId": "monza-gp", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Hungaroring", "trackId": "hungaroring", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Road America", "trackId": "road-america", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Mount Panorama Circuit", "trackId": "bathurst", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Circuit de la Sarthe - 24 Heures du Mans", "trackId": "le-mans", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "formula-renault-20",
+      "name": "Formula Renault 2.0",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Brands Hatch Circuit - Indy", "trackId": "brands-hatch-indy", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Oulton Park Circuit - International", "trackId": "oulton-park", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Okayama International Circuit - Full Course", "trackId": "okayama", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Autodromo Nazionale Monza - Grand Prix", "trackId": "monza-gp", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Silverstone Circuit - International", "trackId": "silverstone-intl", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Circuit Zandvoort - Grand Prix", "trackId": "zandvoort", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Hungaroring", "trackId": "hungaroring", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Nürburgring Grand Prix - Grand Prix", "trackId": "nurburgring-gp", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Watkins Glen International - Boot", "trackId": "watkins-glen-boot", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Circuit de Barcelona-Catalunya - Grand Prix", "trackId": "barcelona-gp", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    },
+    {
+      "id": "fia-f4-championship",
+      "name": "FIA F4 Championship",
+      "category": "Road",
+      "schedule": [
+        { "week": 1, "track": "Tsukuba Circuit - 2000 Full Course", "trackId": "tsukuba-2000", "startDate": "2025-02-18T00:00:00Z", "endDate": "2025-02-25T00:00:00Z" },
+        { "week": 2, "track": "Brands Hatch Circuit - Indy", "trackId": "brands-hatch-indy", "startDate": "2025-02-25T00:00:00Z", "endDate": "2025-03-04T00:00:00Z" },
+        { "week": 3, "track": "Oulton Park Circuit - International", "trackId": "oulton-park", "startDate": "2025-03-04T00:00:00Z", "endDate": "2025-03-11T00:00:00Z" },
+        { "week": 4, "track": "Okayama International Circuit - Full Course", "trackId": "okayama", "startDate": "2025-03-11T00:00:00Z", "endDate": "2025-03-18T00:00:00Z" },
+        { "week": 5, "track": "Lime Rock Park - Grand Prix", "trackId": "lime-rock-gp", "startDate": "2025-03-18T00:00:00Z", "endDate": "2025-03-25T00:00:00Z" },
+        { "week": 6, "track": "Circuit Zandvoort - Grand Prix", "trackId": "zandvoort", "startDate": "2025-03-25T00:00:00Z", "endDate": "2025-04-01T00:00:00Z" },
+        { "week": 7, "track": "Autodromo Nazionale Monza - Junior", "trackId": "monza-junior", "startDate": "2025-04-01T00:00:00Z", "endDate": "2025-04-08T00:00:00Z" },
+        { "week": 8, "track": "Silverstone Circuit - National", "trackId": "silverstone-natl", "startDate": "2025-04-08T00:00:00Z", "endDate": "2025-04-15T00:00:00Z" },
+        { "week": 9, "track": "Hungaroring", "trackId": "hungaroring", "startDate": "2025-04-15T00:00:00Z", "endDate": "2025-04-22T00:00:00Z" },
+        { "week": 10, "track": "Watkins Glen International - Classic Boot", "trackId": "watkins-glen-classic", "startDate": "2025-04-22T00:00:00Z", "endDate": "2025-04-29T00:00:00Z" },
+        { "week": 11, "track": "Spa-Francorchamps - Grand Prix", "trackId": "spa-gp", "startDate": "2025-04-29T00:00:00Z", "endDate": "2025-05-06T00:00:00Z" },
+        { "week": 12, "track": "Suzuka International Racing Course - Grand Prix", "trackId": "suzuka-gp", "startDate": "2025-05-06T00:00:00Z", "endDate": "2025-05-13T00:00:00Z" }
+      ]
+    }
+  ]
+}
