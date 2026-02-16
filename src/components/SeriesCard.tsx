@@ -48,9 +48,9 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
               {series.category}
             </span>
           </div>
-          <div className="flex items-center gap-3 text-xs text-gray-500">
+          <div className="flex items-center gap-3 text-xs text-gray-400">
             {series.car && <span>{series.car}</span>}
-            {series.car && <span className="text-gray-700">|</span>}
+            {series.car && <span className="text-gray-600">|</span>}
             <span>
               {currentWeek
                 ? `Week ${currentWeek} — ${series.schedule[currentWeek - 1]?.track}`
@@ -134,8 +134,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         </div>
         <div className="flex items-center gap-2 shrink-0">
           {currentWeek && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
-              <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/25 px-2.5 py-1 text-[11px] font-semibold text-red-400 border-2 border-red-500/50 shadow-lg shadow-red-500/20">
+              <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse shadow-sm shadow-red-500" />
               Week {currentWeek}
             </span>
           )}
@@ -171,9 +171,9 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
       </h3>
 
       {/* Car & Region */}
-      <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+      <div className="flex items-center gap-2 text-xs text-gray-400 mb-3">
         {series.car && <span>{series.car}</span>}
-        {series.car && series.region && <span className="text-gray-700">·</span>}
+        {series.car && series.region && <span className="text-gray-600">·</span>}
         {series.region && <span>{series.region}</span>}
       </div>
 
@@ -187,10 +187,10 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
       {/* Week progress */}
       <div className="mt-auto pt-4 border-t border-white/5">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[10px] text-gray-500 uppercase tracking-wider">
+          <span className="text-[10px] text-gray-400 uppercase tracking-wider">
             Season Progress
           </span>
-          <span className="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-400">
             {totalWeeks} weeks
           </span>
         </div>
@@ -242,14 +242,14 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           ) : availability.percentage > 0 ? (
             <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between text-xs">
-                <span className="text-gray-500">
+                <span className="text-gray-400">
                   Eligible for {availability.availableWeeks} of {totalWeeks} weeks
                 </span>
                 <span className="text-emerald-400 font-medium">
                   {Math.round(availability.percentage)}%
                 </span>
               </div>
-              <p className="text-[11px] text-gray-600">
+              <p className="text-[11px] text-gray-500">
                 Missing tracks for {totalWeeks - availability.availableWeeks} weeks
               </p>
             </div>

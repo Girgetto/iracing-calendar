@@ -87,7 +87,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
         {/* Extra metadata */}
         {(series.licenseRange || series.raceFrequency) && (
-          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-500">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-400">
             {series.licenseRange && <span>{series.licenseRange}</span>}
             {series.raceFrequency && <span>{series.raceFrequency}</span>}
           </div>
@@ -96,7 +96,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
       {/* Timeline */}
       <div className="mb-8">
-        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-4">
+        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-4">
           Season Timeline
         </h2>
         <div className="flex gap-1">
@@ -117,7 +117,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
             );
           })}
         </div>
-        <div className="flex justify-between mt-1.5 text-[10px] text-gray-600">
+        <div className="flex justify-between mt-1.5 text-[10px] text-gray-500">
           <span>Week 1</span>
           <span>Week {series.schedule.length}</span>
         </div>
@@ -125,7 +125,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
       {/* Schedule */}
       <div className="space-y-2">
-        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-500 mb-4">
+        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-400 mb-4">
           Full Schedule
         </h2>
 
@@ -174,11 +174,11 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     {week.track}
                   </p>
                   <div className="flex items-center gap-3 mt-0.5">
-                    <span className="text-xs text-gray-500">
+                    <span className="text-xs text-gray-400">
                       {formatDateShort(week.startDate)} — {formatDateShort(week.endDate)}
                     </span>
                     {(week.durationMins || week.durationLaps) && (
-                      <span className="text-xs text-gray-600">
+                      <span className="text-xs text-gray-500">
                         {week.durationMins
                           ? `${week.durationMins} min`
                           : `${week.durationLaps} laps`}
@@ -195,7 +195,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   </span>
                 )}
                 {isPast && (
-                  <span className="hidden sm:inline-flex text-[10px] text-gray-600 shrink-0">
+                  <span className="hidden sm:inline-flex text-[10px] text-gray-500 shrink-0">
                     Completed
                   </span>
                 )}
@@ -208,7 +208,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   </span>
                 )}
                 {!isCurrent && !isPast && joinable === false && (
-                  <span className="hidden sm:inline-flex text-[10px] text-gray-600 shrink-0">
+                  <span className="hidden sm:inline-flex text-[10px] text-gray-500 shrink-0">
                     Track required
                   </span>
                 )}
@@ -216,7 +216,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
               {/* Conditions */}
               {week.conditions && (
-                <p className="text-[11px] text-gray-600 mt-2 ml-14">
+                <p className="text-[11px] text-gray-500 mt-2 ml-14">
                   {week.conditions}
                 </p>
               )}

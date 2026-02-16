@@ -106,7 +106,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 text-white">
+    <div className="flex min-h-screen flex-col bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white">
       <Header metadata={seasonData.metadata} />
 
       <main className="flex-1">

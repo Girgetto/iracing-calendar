@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 :root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+.dark {
   --background: #030712;
   --foreground: #f9fafb;
 }
@@ -28,10 +33,18 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
 
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
