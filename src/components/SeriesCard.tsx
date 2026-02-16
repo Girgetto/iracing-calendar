@@ -33,11 +33,11 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
     return (
       <Link
         href={`/series/${series.id}`}
-        className="group flex items-center gap-4 rounded-lg border border-white/5 bg-gray-900/30 p-4 transition-all hover:bg-gray-900/60 hover:border-white/10"
+        className="group flex items-center gap-4 rounded-lg border border-white/5 light-theme:border-gray-200 bg-gray-900/30 light-theme:bg-gray-50 p-4 transition-all duration-300 hover:bg-gray-900/60 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
       >
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
-            <h3 className="text-sm font-medium text-white truncate group-hover:text-red-400 transition-colors">
+            <h3 className="text-sm font-medium text-white light-theme:text-gray-900 truncate group-hover:text-red-400 light-theme:group-hover:text-red-600 transition-colors duration-300">
               {series.name}
             </h3>
             <span
@@ -48,9 +48,9 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
               {series.category}
             </span>
           </div>
-          <div className="flex items-center gap-3 text-xs text-gray-500">
+          <div className="flex items-center gap-3 text-xs text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
             {series.car && <span>{series.car}</span>}
-            {series.car && <span className="text-gray-700">|</span>}
+            {series.car && <span className="text-gray-700 light-theme:text-gray-400">|</span>}
             <span>
               {currentWeek
                 ? `Week ${currentWeek} — ${series.schedule[currentWeek - 1]?.track}`
@@ -82,7 +82,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         </div>
 
         <svg
-          className="h-4 w-4 text-gray-600 group-hover:text-gray-400 transition-colors shrink-0"
+          className="h-4 w-4 text-gray-600 light-theme:text-gray-400 group-hover:text-gray-400 light-theme:group-hover:text-gray-600 transition-colors duration-300 shrink-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -101,12 +101,12 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   return (
     <Link
       href={`/series/${series.id}`}
-      className={`group flex flex-col rounded-xl border p-5 transition-all hover:shadow-lg hover:shadow-black/20 ${
+      className={`group flex flex-col rounded-xl border p-5 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 light-theme:hover:shadow-gray-300/50 ${
         hasPreferences && availability.hasRequiredCar && availability.percentage === 100
-          ? "border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 hover:border-emerald-500/40 ring-1 ring-emerald-500/20"
+          ? "border-emerald-500/30 light-theme:border-emerald-400 bg-emerald-500/5 light-theme:bg-emerald-50 hover:bg-emerald-500/10 light-theme:hover:bg-emerald-100 hover:border-emerald-500/40 light-theme:hover:border-emerald-500 ring-1 ring-emerald-500/20 light-theme:ring-emerald-400"
           : hasPreferences && availability.hasRequiredCar && availability.percentage >= 50
-          ? "border-emerald-500/15 bg-gray-900/30 hover:bg-gray-900/60 hover:border-emerald-500/25"
-          : "border-white/5 bg-gray-900/30 hover:bg-gray-900/60 hover:border-white/10"
+          ? "border-emerald-500/15 light-theme:border-emerald-300 bg-gray-900/30 light-theme:bg-gray-50 hover:bg-gray-900/60 light-theme:hover:bg-gray-100 hover:border-emerald-500/25 light-theme:hover:border-emerald-400"
+          : "border-white/5 light-theme:border-gray-200 bg-gray-900/30 light-theme:bg-gray-50 hover:bg-gray-900/60 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
       }`}
     >
       {/* Header */}
@@ -141,10 +141,10 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           )}
           <button
             onClick={handleToggleFavorite}
-            className={`p-1.5 rounded-lg transition-all shrink-0 ${
+            className={`p-1.5 rounded-lg transition-all duration-300 shrink-0 ${
               isFavorited
-                ? "bg-red-500/20 text-red-400 border border-red-500/30"
-                : "bg-gray-950/40 text-gray-600 border border-white/5 hover:text-gray-400 hover:bg-gray-900/50"
+                ? "bg-red-500/20 light-theme:bg-red-100 text-red-400 light-theme:text-red-600 border border-red-500/30 light-theme:border-red-300"
+                : "bg-gray-950/40 light-theme:bg-gray-100 text-gray-600 light-theme:text-gray-500 border border-white/5 light-theme:border-gray-300 hover:text-gray-400 light-theme:hover:text-gray-700 hover:bg-gray-900/50 light-theme:hover:bg-gray-200"
             }`}
             title={isFavorited ? "Remove from favorites" : "Add to favorites"}
           >
@@ -166,31 +166,31 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
       </div>
 
       {/* Name */}
-      <h3 className="text-base font-semibold text-white mb-1 group-hover:text-red-400 transition-colors leading-tight">
+      <h3 className="text-base font-semibold text-white light-theme:text-gray-900 mb-1 group-hover:text-red-400 light-theme:group-hover:text-red-600 transition-colors duration-300 leading-tight">
         {series.name}
       </h3>
 
       {/* Car & Region */}
-      <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+      <div className="flex items-center gap-2 text-xs text-gray-500 light-theme:text-gray-600 mb-3 transition-colors duration-300">
         {series.car && <span>{series.car}</span>}
-        {series.car && series.region && <span className="text-gray-700">·</span>}
+        {series.car && series.region && <span className="text-gray-700 light-theme:text-gray-400">·</span>}
         {series.region && <span>{series.region}</span>}
       </div>
 
       {/* Current Track */}
       {currentWeek && series.schedule[currentWeek - 1] && (
-        <p className="text-xs text-gray-400 mb-4 line-clamp-1">
+        <p className="text-xs text-gray-400 light-theme:text-gray-600 mb-4 line-clamp-1 transition-colors duration-300">
           {series.schedule[currentWeek - 1].track}
         </p>
       )}
 
       {/* Week progress */}
-      <div className="mt-auto pt-4 border-t border-white/5">
+      <div className="mt-auto pt-4 border-t border-white/5 light-theme:border-gray-200 transition-colors duration-300">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-[10px] text-gray-500 uppercase tracking-wider">
+          <span className="text-[10px] text-gray-500 light-theme:text-gray-600 uppercase tracking-wider transition-colors duration-300">
             Season Progress
           </span>
-          <span className="text-[10px] text-gray-500">
+          <span className="text-[10px] text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
             {totalWeeks} weeks
           </span>
         </div>
@@ -224,7 +224,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
 
       {/* Availability Indicator */}
       {hasPreferences && (
-        <div className="mt-3 pt-3 border-t border-white/5">
+        <div className="mt-3 pt-3 border-t border-white/5 light-theme:border-gray-200 transition-colors duration-300">
           {!availability.hasRequiredCar ? (
             <div className="flex items-center gap-1.5 text-xs text-amber-500/80">
               <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -242,19 +242,19 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           ) : availability.percentage > 0 ? (
             <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between text-xs">
-                <span className="text-gray-500">
+                <span className="text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
                   Eligible for {availability.availableWeeks} of {totalWeeks} weeks
                 </span>
-                <span className="text-emerald-400 font-medium">
+                <span className="text-emerald-400 light-theme:text-emerald-600 font-medium transition-colors duration-300">
                   {Math.round(availability.percentage)}%
                 </span>
               </div>
-              <p className="text-[11px] text-gray-600">
+              <p className="text-[11px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
                 Missing tracks for {totalWeeks - availability.availableWeeks} weeks
               </p>
             </div>
           ) : (
-            <div className="flex items-center gap-1.5 text-xs text-gray-600">
+            <div className="flex items-center gap-1.5 text-xs text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
               <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
               </svg>
