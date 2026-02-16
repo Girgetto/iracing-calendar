@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Register custom theme variants for Tailwind v4 */
+@custom-variant light-theme (&:where(.light-theme, .light-theme *));
+@custom-variant dark-theme (&:where(.dark-theme, .dark-theme *));
+
 /* Default (Dark Theme) */
 :root {
   --background: #121212;

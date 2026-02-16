@@ -73,8 +73,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                   isCurrent
                     ? "bg-red-500 ring-2 ring-red-500/30"
                     : isPast
-                    ? "bg-white/20"
-                    : "bg-white/8"
+                    ? "bg-gray-500/40 light-theme:bg-gray-300"
+                    : "bg-white/10 light-theme:bg-gray-200"
                 }`}
               />
             );
@@ -211,10 +211,10 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                   isCurrent
                     ? "bg-red-500"
                     : isPast
-                    ? "bg-white/20"
+                    ? "bg-gray-500/40 light-theme:bg-gray-300"
                     : isEligible
-                    ? "bg-emerald-500/80"
-                    : "bg-white/5"
+                    ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : "bg-white/10 light-theme:bg-gray-200"
                 }`}
               />
             );

@@ -109,8 +109,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   status === "current"
                     ? "bg-red-500"
                     : status === "past"
-                    ? "bg-white/20 light-theme:bg-blue-400"
-                    : "bg-white/5 light-theme:bg-gray-300"
+                    ? "bg-gray-500/40 light-theme:bg-blue-300"
+                    : "bg-white/10 light-theme:bg-gray-200"
                 }`}
                 title={`Week ${week.week}: ${week.track}`}
               />
@@ -168,7 +168,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                 <div className="flex-1 min-w-0">
                   <p
                     className={`text-sm font-medium truncate transition-colors duration-300 ${
-                      isCurrent ? "text-white light-theme:text-gray-900" : isPast ? "text-gray-500 light-theme:text-gray-600" : "text-gray-200 light-theme:text-gray-800"
+                      isCurrent ? "text-white light-theme:text-gray-900" : isPast ? "text-gray-400 light-theme:text-gray-600" : "text-gray-200 light-theme:text-gray-800"
                     }`}
                   >
                     {week.track}
@@ -196,7 +196,10 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     </span>
                   )}
                   {isPast && (
-                    <span className="inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+                    <span className="inline-flex items-center gap-1 text-[10px] text-gray-400 light-theme:text-gray-500 font-medium transition-colors duration-300">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
                       Completed
                     </span>
                   )}
@@ -206,6 +209,11 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                       Joinable
+                    </span>
+                  )}
+                  {isCurrent && joinable === false && hasPreferences && (
+                    <span className="inline-flex text-[10px] text-amber-400 light-theme:text-amber-600 font-medium transition-colors duration-300">
+                      Track required
                     </span>
                   )}
                   {!isCurrent && !isPast && joinable === false && (
