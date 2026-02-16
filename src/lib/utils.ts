@@ -18,9 +18,11 @@ export function getWeekStatus(
   const now = new Date();
   const start = new Date(week.startDate);
   const end = new Date(week.endDate);
+  // Add one day to end date so the entire end day is considered "current"
+  end.setDate(end.getDate() + 1);
 
-  if (now > end) return "past";
-  if (now >= start && now <= end) return "current";
+  if (now >= end) return "past";
+  if (now >= start) return "current";
   return "upcoming";
 }
 

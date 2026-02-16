@@ -1,17 +1,33 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import type { Series, ViewMode } from "@/lib/types";
+import type { UserPreferences } from "@/lib/preferences";
 import { getCurrentWeek, getCategoryColor } from "@/lib/utils";
+import { getSeriesAvailability, isFavoriteSeries, toggleFavoriteSeries, ownsSeriesCar, ownsTrack } from "@/lib/preferences";
 
 interface SeriesCardProps {
   series: Series;
   viewMode: ViewMode;
+  preferences: UserPreferences;
+  onPreferencesChange?: (prefs: UserPreferences) => void;
 }
 
-export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
+export default function SeriesCard({ series, viewMode, preferences, onPreferencesChange }: SeriesCardProps) {
+  const [isHovering, setIsHovering] = useState(false);
+  const isFavorited = isFavoriteSeries(series.id, preferences);
   const currentWeek = getCurrentWeek(series.schedule);
   const totalWeeks = series.schedule.length;
+  const availability = getSeriesAvailability(series, preferences);
+  const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
+
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const updated = toggleFavoriteSeries(series.id, preferences);
+    onPreferencesChange?.(updated);
+  };
 
   if (viewMode === "list") {
     return (
@@ -47,7 +63,9 @@ export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
         <div className="hidden sm:flex items-center gap-0.5 shrink-0">
           {series.schedule.map((week) => {
             const isCurrent = week.week === currentWeek;
-            const isPast = new Date(week.endDate) < new Date();
+            const endDate = new Date(week.endDate);
+            endDate.setDate(endDate.getDate() + 1);
+            const isPast = endDate <= new Date();
             return (
               <div
                 key={week.week}
@@ -83,23 +101,68 @@ export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
   return (
     <Link
       href={`/series/${series.id}`}
-      className="group flex flex-col rounded-xl border border-white/5 bg-gray-900/30 p-5 transition-all hover:bg-gray-900/60 hover:border-white/10 hover:shadow-lg hover:shadow-black/20"
+      className={`group flex flex-col rounded-xl border p-5 transition-all hover:shadow-lg hover:shadow-black/20 ${
+        hasPreferences && availability.hasRequiredCar && availability.percentage === 100
+          ? "border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 hover:border-emerald-500/40 ring-1 ring-emerald-500/20"
+          : hasPreferences && availability.hasRequiredCar && availability.percentage >= 50
+          ? "border-emerald-500/15 bg-gray-900/30 hover:bg-gray-900/60 hover:border-emerald-500/25"
+          : "border-white/5 bg-gray-900/30 hover:bg-gray-900/60 hover:border-white/10"
+      }`}
     >
       {/* Header */}
-      <div className="flex items-start justify-between gap-2 mb-3">
-        <span
-          className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getCategoryColor(
-            series.category
-          )}`}
-        >
-          {series.category}
-        </span>
-        {currentWeek && (
-          <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
-            <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
-            Week {currentWeek}
+      <div
+        className="flex items-start justify-between gap-2 mb-3"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
+        <div className="flex items-center gap-2">
+          <span
+            className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getCategoryColor(
+              series.category
+            )}`}
+          >
+            {series.category}
           </span>
-        )}
+          {hasPreferences && availability.hasRequiredCar && availability.percentage === 100 && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-medium text-emerald-400 border border-emerald-500/30">
+              <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              Ready
+            </span>
+          )}
+        </div>
+        <div className="flex items-center gap-2 shrink-0">
+          {currentWeek && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
+              <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+              Week {currentWeek}
+            </span>
+          )}
+          <button
+            onClick={handleToggleFavorite}
+            className={`p-1.5 rounded-lg transition-all shrink-0 ${
+              isFavorited
+                ? "bg-red-500/20 text-red-400 border border-red-500/30"
+                : "bg-gray-950/40 text-gray-600 border border-white/5 hover:text-gray-400 hover:bg-gray-900/50"
+            }`}
+            title={isFavorited ? "Remove from favorites" : "Add to favorites"}
+          >
+            <svg
+              className="h-4 w-4"
+              fill={isFavorited ? "currentColor" : "none"}
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Name */}
@@ -134,7 +197,13 @@ export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
         <div className="flex gap-1">
           {series.schedule.map((week) => {
             const isCurrent = week.week === currentWeek;
-            const isPast = new Date(week.endDate) < new Date();
+            const endDate = new Date(week.endDate);
+            endDate.setDate(endDate.getDate() + 1);
+            const isPast = endDate <= new Date();
+            const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
+            const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
+            const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+
             return (
               <div
                 key={week.week}
@@ -143,6 +212,8 @@ export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
                     ? "bg-red-500"
                     : isPast
                     ? "bg-white/20"
+                    : isEligible
+                    ? "bg-emerald-500/80"
                     : "bg-white/5"
                 }`}
               />
@@ -150,6 +221,48 @@ export default function SeriesCard({ series, viewMode }: SeriesCardProps) {
           })}
         </div>
       </div>
+
+      {/* Availability Indicator */}
+      {hasPreferences && (
+        <div className="mt-3 pt-3 border-t border-white/5">
+          {!availability.hasRequiredCar ? (
+            <div className="flex items-center gap-1.5 text-xs text-amber-500/80">
+              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <span>Car required</span>
+            </div>
+          ) : availability.percentage === 100 ? (
+            <div className="flex items-center gap-1.5 text-xs text-emerald-400">
+              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>All tracks owned ({availability.availableWeeks}/{totalWeeks} weeks)</span>
+            </div>
+          ) : availability.percentage > 0 ? (
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-gray-500">
+                  Eligible for {availability.availableWeeks} of {totalWeeks} weeks
+                </span>
+                <span className="text-emerald-400 font-medium">
+                  {Math.round(availability.percentage)}%
+                </span>
+              </div>
+              <p className="text-[11px] text-gray-600">
+                Missing tracks for {totalWeeks - availability.availableWeeks} weeks
+              </p>
+            </div>
+          ) : (
+            <div className="flex items-center gap-1.5 text-xs text-gray-600">
+              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+              <span>No owned tracks</span>
+            </div>
+          )}
+        </div>
+      )}
     </Link>
   );
 }

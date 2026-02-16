@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getSeriesById, getAllSeries, getSeasonData } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import SeriesDetail from "@/components/SeriesDetail";
+import SeriesDetailPage from "@/components/SeriesDetailPage";
 
 export function generateStaticParams() {
   return getAllSeries().map((series) => ({
@@ -43,7 +43,7 @@ export default async function SeriesPage({
 
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
-          <SeriesDetail series={series} />
+          <SeriesDetailPage series={series} />
         </div>
       </main>
 
