@@ -1,0 +1,132 @@
+"use client";
+
+import type { Series, WeekSchedule } from "./types";
+
+export interface UserPreferences {
+  ownedCars: string[];
+  ownedTracks: string[];
+}
+
+const STORAGE_KEY = "iracing-calendar-preferences";
+
+export function loadPreferences(): UserPreferences {
+  if (typeof window === "undefined") {
+    return { ownedCars: [], ownedTracks: [] };
+  }
+
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      return JSON.parse(stored);
+    }
+  } catch (e) {
+    console.error("Failed to load preferences:", e);
+  }
+
+  return { ownedCars: [], ownedTracks: [] };
+}
+
+export function savePreferences(prefs: UserPreferences): void {
+  if (typeof window === "undefined") return;
+
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(prefs));
+  } catch (e) {
+    console.error("Failed to save preferences:", e);
+  }
+}
+
+export function getUniqueCars(series: Array<{ car?: string }>): string[] {
+  const cars = new Set<string>();
+  for (const s of series) {
+    if (s.car && s.car !== "See race week for cars in use that week.") {
+      // Split multi-car entries by comma
+      s.car.split(",").forEach((car) => {
+        const trimmed = car.trim();
+        if (trimmed) cars.add(trimmed);
+      });
+    }
+  }
+  return Array.from(cars).sort();
+}
+
+export function getUniqueTracks(
+  series: Array<{ schedule: Array<{ track: string }> }>
+): string[] {
+  const tracks = new Set<string>();
+  for (const s of series) {
+    s.schedule.forEach((w) => {
+      if (w.track) tracks.add(w.track);
+    });
+  }
+  return Array.from(tracks).sort();
+}
+
+/**
+ * Check if the user owns the car required for a series.
+ * Returns true if:
+ * - Series has no car requirement
+ * - Series car is "See race week..." (variable cars)
+ * - User owns at least one of the cars listed
+ */
+export function ownsSeriesCar(
+  series: Series,
+  ownedCars: string[]
+): boolean {
+  if (!series.car || series.car === "See race week for cars in use that week.") {
+    return true; // No specific car requirement or variable
+  }
+
+  // Check if user owns any of the cars (for multi-car series)
+  const seriesCars = series.car.split(",").map((c) => c.trim());
+  return seriesCars.some((car) => ownedCars.includes(car));
+}
+
+/**
+ * Check if the user owns a specific track.
+ */
+export function ownsTrack(track: string, ownedTracks: string[]): boolean {
+  return ownedTracks.includes(track);
+}
+
+/**
+ * Calculate how many weeks of a series the user can join.
+ * Returns an object with counts and percentages.
+ */
+export function getSeriesAvailability(
+  series: Series,
+  preferences: UserPreferences
+): {
+  totalWeeks: number;
+  availableWeeks: number;
+  percentage: number;
+  hasRequiredCar: boolean;
+} {
+  const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
+  const totalWeeks = series.schedule.length;
+
+  if (!hasRequiredCar) {
+    return { totalWeeks, availableWeeks: 0, percentage: 0, hasRequiredCar: false };
+  }
+
+  const availableWeeks = series.schedule.filter((week) =>
+    ownsTrack(week.track, preferences.ownedTracks)
+  ).length;
+
+  const percentage = totalWeeks > 0 ? (availableWeeks / totalWeeks) * 100 : 0;
+
+  return { totalWeeks, availableWeeks, percentage, hasRequiredCar: true };
+}
+
+/**
+ * Check if a week is joinable by the user.
+ */
+export function isWeekJoinable(
+  week: WeekSchedule,
+  series: Series,
+  preferences: UserPreferences
+): boolean {
+  const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
+  const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
+  return hasRequiredCar && hasRequiredTrack;
+}

@@ -2,19 +2,24 @@
 
 import Link from "next/link";
 import type { Series } from "@/lib/types";
+import type { UserPreferences } from "@/lib/preferences";
 import {
   getCurrentWeek,
   getWeekStatus,
   formatDateShort,
   getCategoryColor,
 } from "@/lib/utils";
+import { isWeekJoinable, getSeriesAvailability } from "@/lib/preferences";
 
 interface SeriesDetailProps {
   series: Series;
+  preferences: UserPreferences;
 }
 
-export default function SeriesDetail({ series }: SeriesDetailProps) {
+export default function SeriesDetail({ series, preferences }: SeriesDetailProps) {
   const currentWeek = getCurrentWeek(series.schedule);
+  const availability = getSeriesAvailability(series, preferences);
+  const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
 
   return (
     <div>
@@ -128,6 +133,7 @@ export default function SeriesDetail({ series }: SeriesDetailProps) {
           const status = getWeekStatus(week);
           const isCurrent = status === "current";
           const isPast = status === "past";
+          const joinable = hasPreferences ? isWeekJoinable(week, series, preferences) : null;
 
           return (
             <div
@@ -137,6 +143,10 @@ export default function SeriesDetail({ series }: SeriesDetailProps) {
                   ? "border-red-500/30 bg-red-500/5 ring-1 ring-red-500/20"
                   : isPast
                   ? "border-white/5 bg-gray-900/20 opacity-60"
+                  : joinable === true
+                  ? "border-emerald-500/20 bg-emerald-500/5"
+                  : joinable === false
+                  ? "border-white/5 bg-gray-900/30 opacity-50"
                   : "border-white/5 bg-gray-900/30"
               }`}
             >
@@ -187,6 +197,19 @@ export default function SeriesDetail({ series }: SeriesDetailProps) {
                 {isPast && (
                   <span className="hidden sm:inline-flex text-[10px] text-gray-600 shrink-0">
                     Completed
+                  </span>
+                )}
+                {!isCurrent && !isPast && joinable === true && (
+                  <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-emerald-500/15 px-2.5 py-1 text-[10px] font-medium text-emerald-400 border border-emerald-500/30 shrink-0">
+                    <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    Joinable
+                  </span>
+                )}
+                {!isCurrent && !isPast && joinable === false && (
+                  <span className="hidden sm:inline-flex text-[10px] text-gray-600 shrink-0">
+                    Track required
                   </span>
                 )}
               </div>
