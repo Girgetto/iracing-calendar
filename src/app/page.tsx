@@ -11,6 +11,7 @@ import {
   getUniqueTracks,
   getSeriesAvailability,
   ensureFreeContent,
+  isFavoriteSeries,
   type UserPreferences,
 } from "@/lib/preferences";
 import Header from "@/components/Header";
@@ -26,6 +27,7 @@ export default function HomePage() {
   const [preferences, setPreferences] = useState<UserPreferences>({
     ownedCars: [],
     ownedTracks: [],
+    favoriteSeries: [],
   });
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
 
@@ -42,7 +44,8 @@ export default function HomePage() {
       loaded.ownedCars,
       loaded.ownedTracks,
       availableCars,
-      availableTracks
+      availableTracks,
+      loaded.favoriteSeries
     );
     setPreferences(withFreeContent);
   }, [availableCars, availableTracks]);
@@ -52,15 +55,23 @@ export default function HomePage() {
     [allSeries, activeCategory, searchQuery]
   );
 
-  // Sort series by availability when user has preferences
+  // Sort series by favorites first, then by availability
   const sortedSeries = useMemo(() => {
     const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
 
-    if (!hasPreferences) {
-      return filteredSeries;
-    }
-
     return [...filteredSeries].sort((a, b) => {
+      // Favorites always come first
+      const aIsFavorite = isFavoriteSeries(a.id, preferences);
+      const bIsFavorite = isFavoriteSeries(b.id, preferences);
+
+      if (aIsFavorite && !bIsFavorite) return -1;
+      if (!aIsFavorite && bIsFavorite) return 1;
+
+      // Then sort by availability (only if user has preferences)
+      if (!hasPreferences) {
+        return 0;
+      }
+
       const availA = getSeriesAvailability(a, preferences);
       const availB = getSeriesAvailability(b, preferences);
 
@@ -85,6 +96,11 @@ export default function HomePage() {
   const categories = getCategories().filter((c) => c !== "All");
 
   const handleSavePreferences = (prefs: UserPreferences) => {
+    savePreferences(prefs);
+    setPreferences(prefs);
+  };
+
+  const handlePreferencesChange = (prefs: UserPreferences) => {
     savePreferences(prefs);
     setPreferences(prefs);
   };
@@ -151,7 +167,7 @@ export default function HomePage() {
           </div>
 
           {/* Series Grid/List */}
-          <SeriesList series={sortedSeries} viewMode={viewMode} preferences={preferences} />
+          <SeriesList series={sortedSeries} viewMode={viewMode} preferences={preferences} onPreferencesChange={handlePreferencesChange} />
         </div>
       </main>
 

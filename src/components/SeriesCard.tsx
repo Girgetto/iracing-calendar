@@ -1,22 +1,33 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import type { Series, ViewMode } from "@/lib/types";
 import type { UserPreferences } from "@/lib/preferences";
 import { getCurrentWeek, getCategoryColor } from "@/lib/utils";
-import { getSeriesAvailability } from "@/lib/preferences";
+import { getSeriesAvailability, isFavoriteSeries, toggleFavoriteSeries, ownsSeriesCar, ownsTrack } from "@/lib/preferences";
 
 interface SeriesCardProps {
   series: Series;
   viewMode: ViewMode;
   preferences: UserPreferences;
+  onPreferencesChange?: (prefs: UserPreferences) => void;
 }
 
-export default function SeriesCard({ series, viewMode, preferences }: SeriesCardProps) {
+export default function SeriesCard({ series, viewMode, preferences, onPreferencesChange }: SeriesCardProps) {
+  const [isHovering, setIsHovering] = useState(false);
+  const isFavorited = isFavoriteSeries(series.id, preferences);
   const currentWeek = getCurrentWeek(series.schedule);
   const totalWeeks = series.schedule.length;
   const availability = getSeriesAvailability(series, preferences);
   const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
+
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const updated = toggleFavoriteSeries(series.id, preferences);
+    onPreferencesChange?.(updated);
+  };
 
   if (viewMode === "list") {
     return (
@@ -97,7 +108,11 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
       }`}
     >
       {/* Header */}
-      <div className="flex items-start justify-between gap-2 mb-3">
+      <div
+        className="flex items-start justify-between gap-2 mb-3"
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+      >
         <div className="flex items-center gap-2">
           <span
             className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getCategoryColor(
@@ -115,12 +130,37 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
             </span>
           )}
         </div>
-        {currentWeek && (
-          <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
-            <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
-            Week {currentWeek}
-          </span>
-        )}
+        <div className="flex items-center gap-2 shrink-0">
+          {currentWeek && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
+              <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+              Week {currentWeek}
+            </span>
+          )}
+          <button
+            onClick={handleToggleFavorite}
+            className={`p-1.5 rounded-lg transition-all shrink-0 ${
+              isFavorited
+                ? "bg-red-500/20 text-red-400 border border-red-500/30"
+                : "bg-gray-950/40 text-gray-600 border border-white/5 hover:text-gray-400 hover:bg-gray-900/50"
+            }`}
+            title={isFavorited ? "Remove from favorites" : "Add to favorites"}
+          >
+            <svg
+              className="h-4 w-4"
+              fill={isFavorited ? "currentColor" : "none"}
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Name */}
@@ -156,6 +196,10 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
           {series.schedule.map((week) => {
             const isCurrent = week.week === currentWeek;
             const isPast = new Date(week.endDate) < new Date();
+            const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
+            const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
+            const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+
             return (
               <div
                 key={week.week}
@@ -164,6 +208,8 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
                     ? "bg-red-500"
                     : isPast
                     ? "bg-white/20"
+                    : isEligible
+                    ? "bg-emerald-500/80"
                     : "bg-white/5"
                 }`}
               />
@@ -187,16 +233,21 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
               <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>All tracks owned</span>
+              <span>All tracks owned ({availability.availableWeeks}/{totalWeeks} weeks)</span>
             </div>
           ) : availability.percentage > 0 ? (
-            <div className="flex items-center justify-between text-xs">
-              <span className="text-gray-500">
-                {availability.availableWeeks}/{totalWeeks} weeks
-              </span>
-              <span className="text-emerald-400 font-medium">
-                {Math.round(availability.percentage)}%
-              </span>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-gray-500">
+                  Eligible for {availability.availableWeeks} of {totalWeeks} weeks
+                </span>
+                <span className="text-emerald-400 font-medium">
+                  {Math.round(availability.percentage)}%
+                </span>
+              </div>
+              <p className="text-[11px] text-gray-600">
+                Missing tracks for {totalWeeks - availability.availableWeeks} weeks
+              </p>
             </div>
           ) : (
             <div className="flex items-center gap-1.5 text-xs text-gray-600">

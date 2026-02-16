@@ -6,6 +6,7 @@ import { getFreeCarsFromList, getFreeTracksFromList } from "./freeContent";
 export interface UserPreferences {
   ownedCars: string[];
   ownedTracks: string[];
+  favoriteSeries: string[];
 }
 
 const STORAGE_KEY = "iracing-calendar-preferences";
@@ -16,19 +17,25 @@ const STORAGE_KEY = "iracing-calendar-preferences";
  */
 export function loadPreferences(): UserPreferences {
   if (typeof window === "undefined") {
-    return { ownedCars: [], ownedTracks: [] };
+    return { ownedCars: [], ownedTracks: [], favoriteSeries: [] };
   }
 
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      return JSON.parse(stored);
+      const prefs = JSON.parse(stored);
+      // Ensure favoriteSeries exists for backwards compatibility
+      return {
+        ownedCars: prefs.ownedCars || [],
+        ownedTracks: prefs.ownedTracks || [],
+        favoriteSeries: prefs.favoriteSeries || [],
+      };
     }
   } catch (e) {
     console.error("Failed to load preferences:", e);
   }
 
-  return { ownedCars: [], ownedTracks: [] };
+  return { ownedCars: [], ownedTracks: [], favoriteSeries: [] };
 }
 
 /**
@@ -39,7 +46,8 @@ export function ensureFreeContent(
   ownedCars: string[],
   ownedTracks: string[],
   availableCars: string[],
-  availableTracks: string[]
+  availableTracks: string[],
+  favoriteSeries?: string[]
 ): UserPreferences {
   const freeCars = getFreeCarsFromList(availableCars);
   const freeTracks = getFreeTracksFromList(availableTracks);
@@ -47,6 +55,7 @@ export function ensureFreeContent(
   return {
     ownedCars: Array.from(new Set([...ownedCars, ...freeCars])),
     ownedTracks: Array.from(new Set([...ownedTracks, ...freeTracks])),
+    favoriteSeries: favoriteSeries || [],
   };
 }
 
@@ -153,4 +162,30 @@ export function isWeekJoinable(
   const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
   const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
   return hasRequiredCar && hasRequiredTrack;
+}
+
+/**
+ * Check if a series is favorited.
+ */
+export function isFavoriteSeries(
+  seriesId: string,
+  preferences: UserPreferences
+): boolean {
+  return preferences.favoriteSeries.includes(seriesId);
+}
+
+/**
+ * Toggle favorite status for a series.
+ */
+export function toggleFavoriteSeries(
+  seriesId: string,
+  preferences: UserPreferences
+): UserPreferences {
+  const isFavorited = preferences.favoriteSeries.includes(seriesId);
+  return {
+    ...preferences,
+    favoriteSeries: isFavorited
+      ? preferences.favoriteSeries.filter((id) => id !== seriesId)
+      : [...preferences.favoriteSeries, seriesId],
+  };
 }

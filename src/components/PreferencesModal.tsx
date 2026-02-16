@@ -44,7 +44,7 @@ export default function PreferencesModal({
   if (!isOpen) return null;
 
   const handleSave = () => {
-    onSave({ ownedCars, ownedTracks });
+    onSave({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries });
     onClose();
   };
 

@@ -20,6 +20,7 @@ export default function SeriesDetailPage({ series }: SeriesDetailPageProps) {
   const [preferences, setPreferences] = useState<UserPreferences>({
     ownedCars: [],
     ownedTracks: [],
+    favoriteSeries: [],
   });
 
   const allSeries = getAllSeries();
@@ -32,7 +33,8 @@ export default function SeriesDetailPage({ series }: SeriesDetailPageProps) {
       loaded.ownedCars,
       loaded.ownedTracks,
       availableCars,
-      availableTracks
+      availableTracks,
+      loaded.favoriteSeries
     );
     setPreferences(withFreeContent);
   }, [availableCars, availableTracks]);
