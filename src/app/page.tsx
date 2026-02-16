@@ -106,7 +106,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 text-white">
+    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <Header metadata={seasonData.metadata} />
 
       <main className="flex-1">
@@ -115,10 +115,10 @@ export default function HomePage() {
           <div className="mb-8">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2">
+                <h1 className="text-3xl sm:text-4xl font-bold text-white light-theme:text-gray-900 mb-2 transition-colors duration-300">
                   {seasonData.metadata.season}
                 </h1>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
                   Browse {allSeries.length} series across{" "}
                   {categories.map((cat, i) => (
                     <span key={cat}>
@@ -133,7 +133,7 @@ export default function HomePage() {
               </div>
               <button
                 onClick={() => setIsPreferencesOpen(true)}
-                className="shrink-0 flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 border border-white/10 rounded-lg text-sm text-gray-300 hover:text-white transition-colors"
+                className="shrink-0 flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 rounded-lg text-sm text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors duration-300"
               >
                 <svg
                   className="h-4 w-4"

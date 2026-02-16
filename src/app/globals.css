@@ -1,8 +1,49 @@
 @import "tailwindcss";
 
+/* Register custom theme variants for Tailwind v4 */
+@custom-variant light-theme (&:where(.light-theme, .light-theme *));
+@custom-variant dark-theme (&:where(.dark-theme, .dark-theme *));
+
+/* Default (Dark Theme) */
 :root {
-  --background: #030712;
-  --foreground: #f9fafb;
+  --background: #121212;
+  --foreground: #FFFFFF;
+  --foreground-secondary: #AAAAAA;
+  --surface: #1E1E1E;
+  --surface-hover: #2A2A2A;
+  --border: rgba(255, 255, 255, 0.1);
+  --link: #66B3FF;
+  --link-hover: #4DA6FF;
+  --primary: #dc2626;
+  --primary-hover: #b91c1c;
+}
+
+/* Light Theme */
+.light-theme {
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  --foreground-secondary: #555555;
+  --surface: #F8F8F8;
+  --surface-hover: #EEEEEE;
+  --border: rgba(0, 0, 0, 0.1);
+  --link: #0066CC;
+  --link-hover: #0052A3;
+  --primary: #dc2626;
+  --primary-hover: #b91c1c;
+}
+
+/* Dark Theme (explicit) */
+.dark-theme {
+  --background: #121212;
+  --foreground: #FFFFFF;
+  --foreground-secondary: #AAAAAA;
+  --surface: #1E1E1E;
+  --surface-hover: #2A2A2A;
+  --border: rgba(255, 255, 255, 0.1);
+  --link: #66B3FF;
+  --link-hover: #4DA6FF;
+  --primary: #dc2626;
+  --primary-hover: #b91c1c;
 }
 
 body {
@@ -11,6 +52,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
 /* Smooth scrolling */
@@ -18,7 +60,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Subtle scrollbar styling */
+/* Subtle scrollbar styling - theme aware */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -30,8 +72,24 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Theme transition */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
