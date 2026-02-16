@@ -63,7 +63,9 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         <div className="hidden sm:flex items-center gap-0.5 shrink-0">
           {series.schedule.map((week) => {
             const isCurrent = week.week === currentWeek;
-            const isPast = new Date(week.endDate) < new Date();
+            const endDate = new Date(week.endDate);
+            endDate.setDate(endDate.getDate() + 1);
+            const isPast = endDate <= new Date();
             return (
               <div
                 key={week.week}
@@ -195,7 +197,9 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         <div className="flex gap-1">
           {series.schedule.map((week) => {
             const isCurrent = week.week === currentWeek;
-            const isPast = new Date(week.endDate) < new Date();
+            const endDate = new Date(week.endDate);
+            endDate.setDate(endDate.getDate() + 1);
+            const isPast = endDate <= new Date();
             const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
             const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
