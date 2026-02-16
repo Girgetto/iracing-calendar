@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 import type { UserPreferences } from "@/lib/preferences";
+import { ensureFreeContent } from "@/lib/preferences";
+import { isFreeCar, isFreeTrack } from "@/lib/freeContent";
 
 interface PreferencesModalProps {
   isOpen: boolean;
@@ -28,9 +30,16 @@ export default function PreferencesModal({
   );
 
   useEffect(() => {
-    setOwnedCars(preferences.ownedCars);
-    setOwnedTracks(preferences.ownedTracks);
-  }, [preferences]);
+    // Ensure free content is always included when preferences are updated
+    const withFreeContent = ensureFreeContent(
+      preferences.ownedCars,
+      preferences.ownedTracks,
+      availableCars,
+      availableTracks
+    );
+    setOwnedCars(withFreeContent.ownedCars);
+    setOwnedTracks(withFreeContent.ownedTracks);
+  }, [preferences, availableCars, availableTracks]);
 
   if (!isOpen) return null;
 
@@ -45,12 +54,18 @@ export default function PreferencesModal({
   };
 
   const toggleCar = (car: string) => {
+    // Prevent unchecking free content
+    if (isFreeCar(car)) return;
+
     setOwnedCars((prev) =>
       prev.includes(car) ? prev.filter((c) => c !== car) : [...prev, car]
     );
   };
 
   const toggleTrack = (track: string) => {
+    // Prevent unchecking free content
+    if (isFreeTrack(track)) return;
+
     setOwnedTracks((prev) =>
       prev.includes(track) ? prev.filter((t) => t !== track) : [...prev, track]
     );
@@ -142,24 +157,30 @@ export default function PreferencesModal({
             ) : (
               currentList.map((item) => {
                 const isOwned = currentOwned.includes(item);
+                const isFree = activeTab === "cars" ? isFreeCar(item) : isFreeTrack(item);
                 return (
                   <button
                     key={item}
                     onClick={() => toggleItem(item)}
+                    disabled={isFree}
                     className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-left transition-colors ${
-                      isOwned
+                      isFree
+                        ? "bg-emerald-500/10 border border-emerald-500/30 text-white cursor-not-allowed opacity-90"
+                        : isOwned
                         ? "bg-red-500/10 border border-red-500/30 text-white"
                         : "bg-gray-950/50 border border-white/5 text-gray-300 hover:bg-gray-950 hover:border-white/10"
                     }`}
                   >
                     <div
                       className={`h-5 w-5 rounded border-2 flex items-center justify-center shrink-0 ${
-                        isOwned
+                        isFree
+                          ? "bg-emerald-500 border-emerald-500"
+                          : isOwned
                           ? "bg-red-500 border-red-500"
                           : "border-gray-600"
                       }`}
                     >
-                      {isOwned && (
+                      {(isOwned || isFree) && (
                         <svg
                           className="h-3 w-3 text-white"
                           fill="none"
@@ -175,7 +196,12 @@ export default function PreferencesModal({
                         </svg>
                       )}
                     </div>
-                    <span className="text-sm">{item}</span>
+                    <span className="flex-1 text-sm">{item}</span>
+                    {isFree && (
+                      <span className="text-[10px] text-emerald-400 font-medium px-2 py-0.5 bg-emerald-500/20 rounded-full">
+                        FREE
+                      </span>
+                    )}
                   </button>
                 );
               })

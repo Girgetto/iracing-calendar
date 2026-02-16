@@ -1,6 +1,7 @@
 "use client";
 
 import type { Series, WeekSchedule } from "./types";
+import { getFreeCarsFromList, getFreeTracksFromList } from "./freeContent";
 
 export interface UserPreferences {
   ownedCars: string[];
@@ -9,6 +10,10 @@ export interface UserPreferences {
 
 const STORAGE_KEY = "iracing-calendar-preferences";
 
+/**
+ * Load preferences from localStorage and ensure free content is included.
+ * Free content is always included and cannot be removed.
+ */
 export function loadPreferences(): UserPreferences {
   if (typeof window === "undefined") {
     return { ownedCars: [], ownedTracks: [] };
@@ -24,6 +29,25 @@ export function loadPreferences(): UserPreferences {
   }
 
   return { ownedCars: [], ownedTracks: [] };
+}
+
+/**
+ * Ensure free content is included in the given lists.
+ * This should be called when displaying preferences to the user.
+ */
+export function ensureFreeContent(
+  ownedCars: string[],
+  ownedTracks: string[],
+  availableCars: string[],
+  availableTracks: string[]
+): UserPreferences {
+  const freeCars = getFreeCarsFromList(availableCars);
+  const freeTracks = getFreeTracksFromList(availableTracks);
+
+  return {
+    ownedCars: Array.from(new Set([...ownedCars, ...freeCars])),
+    ownedTracks: Array.from(new Set([...ownedTracks, ...freeTracks])),
+  };
 }
 
 export function savePreferences(prefs: UserPreferences): void {

@@ -1,8 +1,15 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import type { Series } from "@/lib/types";
-import { loadPreferences, type UserPreferences } from "@/lib/preferences";
+import {
+  loadPreferences,
+  ensureFreeContent,
+  getUniqueCars,
+  getUniqueTracks,
+  type UserPreferences,
+} from "@/lib/preferences";
+import { getAllSeries } from "@/lib/data";
 import SeriesDetail from "./SeriesDetail";
 
 interface SeriesDetailPageProps {
@@ -15,9 +22,20 @@ export default function SeriesDetailPage({ series }: SeriesDetailPageProps) {
     ownedTracks: [],
   });
 
+  const allSeries = getAllSeries();
+  const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
+  const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
+
   useEffect(() => {
-    setPreferences(loadPreferences());
-  }, []);
+    const loaded = loadPreferences();
+    const withFreeContent = ensureFreeContent(
+      loaded.ownedCars,
+      loaded.ownedTracks,
+      availableCars,
+      availableTracks
+    );
+    setPreferences(withFreeContent);
+  }, [availableCars, availableTracks]);
 
   return <SeriesDetail series={series} preferences={preferences} />;
 }

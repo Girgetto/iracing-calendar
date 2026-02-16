@@ -88,17 +88,33 @@ export default function SeriesCard({ series, viewMode, preferences }: SeriesCard
   return (
     <Link
       href={`/series/${series.id}`}
-      className="group flex flex-col rounded-xl border border-white/5 bg-gray-900/30 p-5 transition-all hover:bg-gray-900/60 hover:border-white/10 hover:shadow-lg hover:shadow-black/20"
+      className={`group flex flex-col rounded-xl border p-5 transition-all hover:shadow-lg hover:shadow-black/20 ${
+        hasPreferences && availability.hasRequiredCar && availability.percentage === 100
+          ? "border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 hover:border-emerald-500/40 ring-1 ring-emerald-500/20"
+          : hasPreferences && availability.hasRequiredCar && availability.percentage >= 50
+          ? "border-emerald-500/15 bg-gray-900/30 hover:bg-gray-900/60 hover:border-emerald-500/25"
+          : "border-white/5 bg-gray-900/30 hover:bg-gray-900/60 hover:border-white/10"
+      }`}
     >
       {/* Header */}
       <div className="flex items-start justify-between gap-2 mb-3">
-        <span
-          className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getCategoryColor(
-            series.category
-          )}`}
-        >
-          {series.category}
-        </span>
+        <div className="flex items-center gap-2">
+          <span
+            className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getCategoryColor(
+              series.category
+            )}`}
+          >
+            {series.category}
+          </span>
+          {hasPreferences && availability.hasRequiredCar && availability.percentage === 100 && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-medium text-emerald-400 border border-emerald-500/30">
+              <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              Ready
+            </span>
+          )}
+        </div>
         {currentWeek && (
           <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
             <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />

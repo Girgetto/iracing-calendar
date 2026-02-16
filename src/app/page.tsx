@@ -9,6 +9,8 @@ import {
   savePreferences,
   getUniqueCars,
   getUniqueTracks,
+  getSeriesAvailability,
+  ensureFreeContent,
   type UserPreferences,
 } from "@/lib/preferences";
 import Header from "@/components/Header";
@@ -27,18 +29,49 @@ export default function HomePage() {
   });
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
 
-  // Load preferences on mount
-  useEffect(() => {
-    setPreferences(loadPreferences());
-  }, []);
-
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
+
+  const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
+  const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
+
+  // Load preferences on mount and ensure free content is included
+  useEffect(() => {
+    const loaded = loadPreferences();
+    const withFreeContent = ensureFreeContent(
+      loaded.ownedCars,
+      loaded.ownedTracks,
+      availableCars,
+      availableTracks
+    );
+    setPreferences(withFreeContent);
+  }, [availableCars, availableTracks]);
 
   const filteredSeries = useMemo(
     () => filterSeries(allSeries, activeCategory, searchQuery),
     [allSeries, activeCategory, searchQuery]
   );
+
+  // Sort series by availability when user has preferences
+  const sortedSeries = useMemo(() => {
+    const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
+
+    if (!hasPreferences) {
+      return filteredSeries;
+    }
+
+    return [...filteredSeries].sort((a, b) => {
+      const availA = getSeriesAvailability(a, preferences);
+      const availB = getSeriesAvailability(b, preferences);
+
+      // Series without required car go to bottom
+      if (!availA.hasRequiredCar && availB.hasRequiredCar) return 1;
+      if (availA.hasRequiredCar && !availB.hasRequiredCar) return -1;
+
+      // Sort by percentage (highest first)
+      return availB.percentage - availA.percentage;
+    });
+  }, [filteredSeries, preferences]);
 
   // Category counts
   const categoryCounts = useMemo(() => {
@@ -50,9 +83,6 @@ export default function HomePage() {
   }, [allSeries]);
 
   const categories = getCategories().filter((c) => c !== "All");
-
-  const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
-  const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
 
   const handleSavePreferences = (prefs: UserPreferences) => {
     savePreferences(prefs);
@@ -116,12 +146,12 @@ export default function HomePage() {
               onCategoryChange={setActiveCategory}
               viewMode={viewMode}
               onViewModeChange={setViewMode}
-              resultCount={filteredSeries.length}
+              resultCount={sortedSeries.length}
             />
           </div>
 
           {/* Series Grid/List */}
-          <SeriesList series={filteredSeries} viewMode={viewMode} preferences={preferences} />
+          <SeriesList series={sortedSeries} viewMode={viewMode} preferences={preferences} />
         </div>
       </main>
 
