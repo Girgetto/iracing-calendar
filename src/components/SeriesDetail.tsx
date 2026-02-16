@@ -189,8 +189,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
                 {/* Status Badge */}
                 {isCurrent && (
-                  <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2.5 py-1 text-[10px] font-medium text-red-400 border border-red-500/30 shrink-0">
-                    <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+                  <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-2.5 py-1 text-[10px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 shrink-0 transition-colors duration-300">
+                    <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse transition-colors duration-300" />
                     LIVE
                   </span>
                 )}

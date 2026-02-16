@@ -124,7 +124,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             {series.category}
           </span>
           {hasPreferences && availability.hasRequiredCar && availability.percentage === 100 && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-medium text-emerald-400 border border-emerald-500/30">
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 light-theme:bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-400 light-theme:text-emerald-700 border border-emerald-500/30 light-theme:border-emerald-300 transition-colors duration-300">
               <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
@@ -134,8 +134,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         </div>
         <div className="flex items-center gap-2 shrink-0">
           {currentWeek && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 px-2 py-0.5 text-[10px] font-medium text-red-400 border border-red-500/30">
-              <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-2 py-0.5 text-[10px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 transition-colors duration-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse transition-colors duration-300" />
               Week {currentWeek}
             </span>
           )}

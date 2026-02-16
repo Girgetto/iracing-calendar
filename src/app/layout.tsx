@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "@/lib/theme";
+import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "iRacing Season Calendar",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark-theme">
       <body className="antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
