@@ -109,8 +109,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   status === "current"
                     ? "bg-red-500"
                     : status === "past"
-                    ? "bg-white/20"
-                    : "bg-white/5"
+                    ? "bg-white/20 light-theme:bg-blue-400"
+                    : "bg-white/5 light-theme:bg-gray-300"
                 }`}
                 title={`Week ${week.week}: ${week.track}`}
               />
@@ -142,7 +142,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                 isCurrent
                   ? "border-red-500/30 light-theme:border-red-300 bg-red-500/5 light-theme:bg-red-50 ring-1 ring-red-500/20 light-theme:ring-red-300"
                   : isPast
-                  ? "border-white/5 light-theme:border-gray-200 bg-gray-900/20 light-theme:bg-gray-100 opacity-60"
+                  ? "border-white/5 light-theme:border-blue-200 bg-gray-900/20 light-theme:bg-blue-50 opacity-60 light-theme:opacity-80"
                   : joinable === true
                   ? "border-emerald-500/20 light-theme:border-emerald-300 bg-emerald-500/5 light-theme:bg-emerald-50"
                   : joinable === false
@@ -187,31 +187,33 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   </div>
                 </div>
 
-                {/* Status Badge */}
-                {isCurrent && (
-                  <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-2.5 py-1 text-[10px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 shrink-0 transition-colors duration-300">
-                    <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse transition-colors duration-300" />
-                    LIVE
-                  </span>
-                )}
-                {isPast && (
-                  <span className="hidden sm:inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 shrink-0 transition-colors duration-300">
-                    Completed
-                  </span>
-                )}
-                {!isCurrent && !isPast && joinable === true && (
-                  <span className="hidden sm:inline-flex items-center gap-1 rounded-full bg-emerald-500/15 light-theme:bg-emerald-100 px-2.5 py-1 text-[10px] font-medium text-emerald-400 light-theme:text-emerald-700 border border-emerald-500/30 light-theme:border-emerald-300 shrink-0 transition-colors duration-300">
-                    <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    Joinable
-                  </span>
-                )}
-                {!isCurrent && !isPast && joinable === false && (
-                  <span className="hidden sm:inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 shrink-0 transition-colors duration-300">
-                    Track required
-                  </span>
-                )}
+                {/* Status Badges */}
+                <div className="hidden sm:flex items-center gap-2 shrink-0">
+                  {isCurrent && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-2.5 py-1 text-[10px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 transition-colors duration-300">
+                      <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse transition-colors duration-300" />
+                      LIVE
+                    </span>
+                  )}
+                  {isPast && (
+                    <span className="inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+                      Completed
+                    </span>
+                  )}
+                  {!isPast && joinable === true && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 light-theme:bg-emerald-100 px-2.5 py-1 text-[10px] font-medium text-emerald-400 light-theme:text-emerald-700 border border-emerald-500/30 light-theme:border-emerald-300 transition-colors duration-300">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Joinable
+                    </span>
+                  )}
+                  {!isCurrent && !isPast && joinable === false && (
+                    <span className="inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+                      Track required
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* Conditions */}
