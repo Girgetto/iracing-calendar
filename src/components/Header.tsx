@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import type { SeasonMetadata } from "@/lib/types";
 import ThemeToggle from "./ThemeToggle";
 

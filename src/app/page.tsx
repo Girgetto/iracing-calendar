@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import type { ViewMode } from "@/lib/types";
+import type { ViewMode, LicenseClass } from "@/lib/types";
 import { getAllSeries, getSeasonData, getCategories, filterSeries } from "@/lib/data";
 import { getCategoryTextColor } from "@/lib/utils";
 import {
@@ -23,6 +23,7 @@ import PreferencesModal from "@/components/PreferencesModal";
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
+  const [activeLicense, setActiveLicense] = useState<LicenseClass>("All");
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [preferences, setPreferences] = useState<UserPreferences>({
     ownedCars: [],
@@ -51,8 +52,8 @@ export default function HomePage() {
   }, [availableCars, availableTracks]);
 
   const filteredSeries = useMemo(
-    () => filterSeries(allSeries, activeCategory, searchQuery),
-    [allSeries, activeCategory, searchQuery]
+    () => filterSeries(allSeries, activeCategory, searchQuery, activeLicense),
+    [allSeries, activeCategory, searchQuery, activeLicense]
   );
 
   // Sort series by favorites first, then by availability
@@ -188,6 +189,8 @@ export default function HomePage() {
               onSearchChange={setSearchQuery}
               activeCategory={activeCategory}
               onCategoryChange={setActiveCategory}
+              activeLicense={activeLicense}
+              onLicenseChange={setActiveLicense}
               viewMode={viewMode}
               onViewModeChange={setViewMode}
               resultCount={sortedSeries.length}

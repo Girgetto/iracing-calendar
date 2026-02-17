@@ -1,14 +1,25 @@
 "use client";
 
-import type { ViewMode } from "@/lib/types";
+import type { ViewMode, LicenseClass } from "@/lib/types";
 import { getCategories } from "@/lib/data";
 import { getCategoryDotColor } from "@/lib/utils";
+
+const LICENSE_CLASSES: { label: string; value: LicenseClass; color: string }[] = [
+  { label: "All", value: "All", color: "" },
+  { label: "Rookie", value: "Rookie", color: "bg-[#E8391A]" },
+  { label: "D", value: "D", color: "bg-[#F8821A]" },
+  { label: "C", value: "C", color: "bg-[#FFC800]" },
+  { label: "B", value: "B", color: "bg-[#39B549]" },
+  { label: "A", value: "A", color: "bg-[#0092D0]" },
+];
 
 interface SearchBarProps {
   searchQuery: string;
   onSearchChange: (query: string) => void;
   activeCategory: string;
   onCategoryChange: (category: string) => void;
+  activeLicense: LicenseClass;
+  onLicenseChange: (license: LicenseClass) => void;
   viewMode: ViewMode;
   onViewModeChange: (mode: ViewMode) => void;
   resultCount: number;
@@ -19,6 +30,8 @@ export default function SearchBar({
   onSearchChange,
   activeCategory,
   onCategoryChange,
+  activeLicense,
+  onLicenseChange,
   viewMode,
   onViewModeChange,
   resultCount,
@@ -116,6 +129,25 @@ export default function SearchBar({
         <span className="text-xs text-gray-500 light-theme:text-gray-600 transition-colors duration-300 hidden sm:inline">
           {resultCount} series
         </span>
+      </div>
+
+      {/* License Class Filters */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-xs text-gray-500 light-theme:text-gray-600 shrink-0">License:</span>
+        {LICENSE_CLASSES.map(({ label, value, color }) => (
+          <button
+            key={value}
+            onClick={() => onLicenseChange(value)}
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
+              activeLicense === value
+                ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+            }`}
+          >
+            {value !== "All" && <span className={`h-2 w-2 rounded-full ${color}`} />}
+            {label}
+          </button>
+        ))}
       </div>
     </div>
   );
