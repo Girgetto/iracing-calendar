@@ -16,6 +16,7 @@ import {
   ownsTrack,
   type UserPreferences,
 } from "@/lib/preferences";
+import { ALL_IRACING_CARS, ALL_IRACING_TRACKS } from "@/lib/freeContent";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SearchBar from "@/components/SearchBar";
@@ -38,8 +39,17 @@ export default function HomePage() {
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
 
-  const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
-  const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
+  const availableCars = useMemo(() => {
+    const seasonCars = getUniqueCars(allSeries);
+    const merged = Array.from(new Set([...ALL_IRACING_CARS, ...seasonCars]));
+    return merged.sort((a, b) => a.localeCompare(b));
+  }, [allSeries]);
+
+  const availableTracks = useMemo(() => {
+    const seasonTracks = getUniqueTracks(allSeries);
+    const merged = Array.from(new Set([...ALL_IRACING_TRACKS, ...seasonTracks]));
+    return merged.sort((a, b) => a.localeCompare(b));
+  }, [allSeries]);
 
   // Load preferences on mount and ensure included content is pre-selected
   useEffect(() => {
