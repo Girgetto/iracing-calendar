@@ -91,7 +91,7 @@ export default function HomePage() {
       // Sort by percentage (highest first)
       return availB.percentage - availA.percentage;
     });
-  }, [filteredSeries, preferences]);
+  }, [filteredSeries, preferences, canRaceOnly]);
 
   // Category counts
   const categoryCounts = useMemo(() => {
