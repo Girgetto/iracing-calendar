@@ -12,8 +12,8 @@ export interface UserPreferences {
 const STORAGE_KEY = "iracing-calendar-preferences";
 
 /**
- * Load preferences from localStorage and ensure free content is included.
- * Free content is always included and cannot be removed.
+ * Load preferences from localStorage and ensure included content is pre-selected.
+ * Content included with membership is always pre-selected and cannot be removed.
  */
 export function loadPreferences(): UserPreferences {
   if (typeof window === "undefined") {
@@ -39,7 +39,7 @@ export function loadPreferences(): UserPreferences {
 }
 
 /**
- * Ensure free content is included in the given lists.
+ * Ensure content included with membership is pre-selected in the given lists.
  * This should be called when displaying preferences to the user.
  */
 export function ensureFreeContent(

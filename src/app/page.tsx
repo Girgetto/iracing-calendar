@@ -38,7 +38,7 @@ export default function HomePage() {
   const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
   const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
 
-  // Load preferences on mount and ensure free content is included
+  // Load preferences on mount and ensure included content is pre-selected
   useEffect(() => {
     const loaded = loadPreferences();
     const withFreeContent = ensureFreeContent(
