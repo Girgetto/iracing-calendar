@@ -111,7 +111,7 @@ export default function HomePage() {
     name: "iRacing Calendar",
     description:
       "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.vercel.app",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it",
     applicationCategory: "SportsApplication",
     operatingSystem: "Any",
     offers: {

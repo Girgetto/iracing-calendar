@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
