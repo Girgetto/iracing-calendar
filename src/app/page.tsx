@@ -12,6 +12,8 @@ import {
   getSeriesAvailability,
   ensureFreeContent,
   isFavoriteSeries,
+  ownsSeriesCar,
+  ownsTrack,
   type UserPreferences,
 } from "@/lib/preferences";
 import Header from "@/components/Header";
@@ -61,10 +63,18 @@ export default function HomePage() {
   const sortedSeries = useMemo(() => {
     const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
 
+    const now = new Date();
     const seriesPool = canRaceOnly && hasPreferences
       ? filteredSeries.filter((s) => {
-          const avail = getSeriesAvailability(s, preferences);
-          return avail.hasRequiredCar && avail.availableWeeks > 0;
+          // Exclude series with variable/unknown car requirements
+          if (!s.car || s.car === "See race week for cars in use that week.") return false;
+          if (!ownsSeriesCar(s, preferences.ownedCars)) return false;
+          // Only show if there is at least one remaining (not yet ended) week with an owned track
+          return s.schedule.some(
+            (week) =>
+              new Date(week.endDate) >= now &&
+              ownsTrack(week.track, preferences.ownedTracks)
+          );
         })
       : filteredSeries;
 
