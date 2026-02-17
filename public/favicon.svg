@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#0f172a" rx="8"/>
+
+  <!-- Calendar grid -->
+  <g stroke="#fff" stroke-width="1.5" fill="none">
+    <!-- Vertical lines -->
+    <line x1="13" y1="18" x2="13" y2="56"/>
+    <line x1="26" y1="18" x2="26" y2="56"/>
+    <line x1="39" y1="18" x2="39" y2="56"/>
+    <line x1="52" y1="18" x2="52" y2="56"/>
+
+    <!-- Horizontal lines -->
+    <line x1="8" y1="31" x2="56" y2="31"/>
+    <line x1="8" y1="44" x2="56" y2="44"/>
+  </g>
+
+  <!-- Calendar header -->
+  <rect x="8" y="8" width="48" height="10" fill="none" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- Calendar pins (small circles at top) -->
+  <circle cx="14" cy="12" r="1.5" fill="#ef4444"/>
+  <circle cx="50" cy="12" r="1.5" fill="#ef4444"/>
+
+  <!-- Racing stripes (checkered flag pattern) in a cell -->
+  <g fill="#ef4444" opacity="0.8">
+    <rect x="27" y="32" width="5" height="5"/>
+    <rect x="32" y="37" width="5" height="5"/>
+    <rect x="27" y="42" width="5" height="5"/>
+    <rect x="32" y="47" width="5" height="5"/>
+  </g>
+
+  <!-- Checkered flag accent -->
+  <g fill="#10b981" opacity="0.7">
+    <rect x="32" y="32" width="5" height="5"/>
+    <rect x="27" y="37" width="5" height="5"/>
+    <rect x="32" y="42" width="5" height="5"/>
+    <rect x="27" y="47" width="5" height="5"/>
+  </g>
+</svg>
