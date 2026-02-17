@@ -12,6 +12,13 @@ export default function Footer() {
           </div>
           <div className="flex items-center gap-3">
             <a
+              href="/privacy"
+              className="text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
+            >
+              Privacy Policy
+            </a>
+            <span className="text-gray-700 light-theme:text-gray-300">·</span>
+            <a
               href="https://github.com/Girgetto/iracing-calendar"
               target="_blank"
               rel="noopener noreferrer"
