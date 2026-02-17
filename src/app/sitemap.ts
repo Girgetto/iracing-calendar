@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { getAllSeries } from "@/lib/data";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.vercel.app";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const series = getAllSeries();
