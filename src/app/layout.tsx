@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   },
   description:
     "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season. Add your content to see how many tracks are eligible in one season tournament.",
+  icons: {
+    icon: "/favicon.png",
+  },
   keywords: [
     "iRacing",
     "iRacing calendar",
