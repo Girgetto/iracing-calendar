@@ -1,4 +1,5 @@
 import type { SeasonData, Series, LicenseClass } from "./types";
+import { LICENSE_LEVELS } from "./utils";
 import seasonDataJson from "../../data/iracing-season-data.json";
 
 let cachedData: SeasonData | null = null;
@@ -53,9 +54,15 @@ export function filterSeries(
       (s.car && s.car.toLowerCase().includes(q)) ||
       (s.region && s.region.toLowerCase().includes(q)) ||
       s.schedule.some((w) => w.track.toLowerCase().includes(q));
-    const matchesLicense =
-      licenseClass === "All" ||
-      (s.licenseRange != null && getLicenseClassFromRange(s.licenseRange) === licenseClass);
+    const matchesLicense = (() => {
+      if (licenseClass === "All") return true;
+      if (!s.licenseRange) return false;
+      const minClass = getLicenseClassFromRange(s.licenseRange);
+      if (!minClass) return false;
+      // Show series where the series minimum license <= the selected license level
+      // e.g. a "C"-licensed pilot (level 3) can join Rookie (1), D (2), C (3) series
+      return (LICENSE_LEVELS[minClass] ?? 0) <= (LICENSE_LEVELS[licenseClass] ?? 0);
+    })();
     return matchesCategory && matchesSearch && matchesLicense;
   });
 }
