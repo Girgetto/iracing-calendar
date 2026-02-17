@@ -5,49 +5,69 @@
  */
 
 export const FREE_CARS = [
-  // Oval
-  "Street Stock",
-  "Legends Ford '34 Coupe",
-  "Late Model Stock",
+  // Oval — all variants matched via partial name
+  "Street Stock",       // Street Stock – Panther
+  "Mini Stock",         // Mini Stock (oval) and Mini Stock – Dirt
+  "Legends Ford '34 Coupe", // INEX Legends Ford '34 Coupe
+  "NASCAR Truck Chevrolet Silverado", // 2008 variant
+  // Sports Car / Road — all variants matched via partial name
+  "BMW M2 CS Racing",
+  "Toyota GR86",
+  "Cadillac CTS-V",
+  "Kia Optima",
+  "Volkswagen Jetta TDi",
+  "Pontiac Solstice",   // Club Sport and Club Sport – Rookie
+  "Mazda MX-5",         // MX-5 Cup – 2010 and MX-5 Roadster – 2010
+  "Global Mazda MX-5 Cup",
+  // Prototype
+  "Radical SR8",
+  "SCCA Spec Racer Ford",
+  // Formula
+  "Ray FF1600",
+  "Formula Vee",
   // Dirt Oval
   "Dirt Street Stock",
   "Dirt Legends Ford '34 Coupe",
   "UMP Modified",
-  "Dirt Micro Sprint Car",
-  // Road
-  "Pontiac Solstice",
-  "MX-5 Cup",
-  "Mazda MX-5 Cup",
-  "Global Mazda MX-5 Cup",
-  "Skip Barber Formula 2000",
-  "Ray FF1600",
-  "SCCA Spec Racer Ford",
-  // Formula
-  "Formula Vee",
-  "Dallara F3",
-  "Indy Pro 2000",
+  "Dirt Micro Sprint",
   // Rallycross
-  "Volkswagen Beetle",
-  "Volkswagen Beetle Lite",
   "FIA Cross Car",
+  "VW Beetle",          // VW Beetle and VW Beetle Lite
+  // Off-Road
+  "Lucas Oil Off-Road Pro 2 Lite",
 ];
 
 export const FREE_TRACKS = [
-  // Ovals
-  "Charlotte Motor Speedway - Legends Oval",
-  "Oxford Plains Speedway",
+  // Road Courses — base name matches all configurations/variants
+  "Circuito de Navarra",
+  "Circuit de Ledenon",
+  "VIRginia International Raceway",
+  "Motorsport Arena Oschersleben",
+  "Rudskogen Motorsenter",
+  "Winton Motor Raceway",
+  "Lime Rock Park",
+  "Wild West Motorsports Park",
+  "Tsukuba Circuit",
+  "Snetterton",
+  "Okayama International Circuit",
+  "Oulton Park",
+  "Summit Point Motorsports Park",
+  "Oran Park Raceway",
+  "Centripetal Circuit",
+  // Ovals — base name matches all configurations/variants
+  "Charlotte Motor Speedway",
+  "Southern National Motorsports Park",
+  "Limaland Motorsports Park",
+  "Lanier National Speedway",  // paved and dirt variants both included
   "South Boston Speedway",
   "Thompson Speedway Motorsports Park",
-  "USA International Speedway",
-  // Road Courses
-  "WeatherTech Raceway at Laguna Seca",
-  "Laguna Seca",
-  "Lime Rock Park",
-  "Okayama International Circuit",
-  "Oulton Park Circuit",
-  "Tsukuba Circuit",
-  // Dirt
-  "Oran Park Raceway",
+  "Concord Speedway",
+  "Oxford Plains Speedway",
+  "USA International Speedway", // paved and dirt variants both included
+  "Langley Speedway",
+  "Phoenix Raceway - 2008",     // only the 2008 configuration is included
+  // Rallycross / Special
+  "Daytona International Speedway - Rallycross", // only rallycross config included
 ];
 
 /**
