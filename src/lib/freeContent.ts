@@ -37,6 +37,22 @@ export const FREE_CARS = [
   "Lucas Oil Off-Road Pro 2 Lite",
 ];
 
+/**
+ * GT3 cars owned by the user (eligible for GT3 tournaments)
+ */
+export const MY_GT3_CARS = [
+  "Acura NSX GT3 EVO 22",
+  "Audi R8 LMS GT3 EVO 2",
+  "BMW M4 GT3",
+  "Chevrolet Corvette Z06 GT3.R",
+  "Ferrari 296 GT3",
+  "Ford Mustang GT3",
+  "Lamborghini Huracán GT3",
+  "McLaren 720S GT3 EVO",
+  "Mercedes-AMG GT3 2020",
+  "Porsche 992 GT3 R",
+];
+
 export const FREE_TRACKS = [
   // Road Courses — base name matches all configurations/variants
   "Circuito de Navarra",
