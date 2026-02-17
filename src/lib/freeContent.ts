@@ -1,37 +1,57 @@
 /**
- * Free iRacing content included with base membership
+ * iRacing content included with base membership
  * These items should be pre-selected and cannot be unchecked
+ * Source: https://www.iracing.com/cars/ and https://www.iracing.com/tracks/
  */
 
 export const FREE_CARS = [
+  // Oval
   "Street Stock",
   "Legends Ford '34 Coupe",
+  "Late Model Stock",
+  // Dirt Oval
+  "Dirt Street Stock",
+  "Dirt Legends Ford '34 Coupe",
+  "UMP Modified",
+  "Dirt Micro Sprint Car",
+  // Road
   "Pontiac Solstice",
   "MX-5 Cup",
   "Mazda MX-5 Cup",
-  "Formula Vee",
-  "Cadillac CTS-V",
-  "Late Model Stock",
-  "Indy Pro 2000",
-  "Dallara F3",
   "Global Mazda MX-5 Cup",
+  "Skip Barber Formula 2000",
+  "Ray FF1600",
+  "SCCA Spec Racer Ford",
+  // Formula
+  "Formula Vee",
+  "Dallara F3",
+  "Indy Pro 2000",
+  // Rallycross
+  "Volkswagen Beetle",
+  "Volkswagen Beetle Lite",
+  "FIA Cross Car",
 ];
 
 export const FREE_TRACKS = [
+  // Ovals
   "Charlotte Motor Speedway - Legends Oval",
+  "Oxford Plains Speedway",
+  "South Boston Speedway",
+  "Thompson Speedway Motorsports Park",
+  "USA International Speedway",
+  // Road Courses
   "WeatherTech Raceway at Laguna Seca",
   "Laguna Seca",
   "Lime Rock Park",
   "Okayama International Circuit",
+  "Oulton Park Circuit",
+  "Tsukuba Circuit",
+  // Dirt
   "Oran Park Raceway",
-  "Oxford Plains Speedway",
-  "South Boston Speedway",
-  "Thompson Speedway",
-  "USA International Speedway",
 ];
 
 /**
- * Check if a car is free content (case-insensitive partial match)
+ * Check if a car is included with base membership (case-insensitive partial match)
  */
 export function isFreeCar(carName: string): boolean {
   const normalizedCar = carName.toLowerCase();
@@ -42,7 +62,7 @@ export function isFreeCar(carName: string): boolean {
 }
 
 /**
- * Check if a track is free content (case-insensitive partial match)
+ * Check if a track is included with base membership (case-insensitive partial match)
  */
 export function isFreeTrack(trackName: string): boolean {
   const normalizedTrack = trackName.toLowerCase();
@@ -53,14 +73,14 @@ export function isFreeTrack(trackName: string): boolean {
 }
 
 /**
- * Get all free cars from a list of cars
+ * Get all included cars from a list of cars
  */
 export function getFreeCarsFromList(cars: string[]): string[] {
   return cars.filter(isFreeCar);
 }
 
 /**
- * Get all free tracks from a list of tracks
+ * Get all included tracks from a list of tracks
  */
 export function getFreeTracksFromList(tracks: string[]): string[] {
   return tracks.filter(isFreeTrack);

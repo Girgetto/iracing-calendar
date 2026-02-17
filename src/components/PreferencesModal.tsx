@@ -30,7 +30,7 @@ export default function PreferencesModal({
   );
 
   useEffect(() => {
-    // Ensure free content is always included when preferences are updated
+    // Ensure included content is always pre-selected when preferences are updated
     const withFreeContent = ensureFreeContent(
       preferences.ownedCars,
       preferences.ownedTracks,
@@ -80,7 +80,7 @@ export default function PreferencesModal({
   };
 
   const toggleCar = (car: string) => {
-    // Prevent unchecking free content
+    // Prevent unchecking content included with membership
     if (isFreeCar(car)) return;
 
     setOwnedCars((prev) =>
@@ -93,7 +93,7 @@ export default function PreferencesModal({
     // We need to toggle all its variants
     const variants = groupTracksByBase(availableTracks).get(baseTrackOrVariant) || [baseTrackOrVariant];
 
-    // Check if any variant is free
+    // Check if any variant is included with membership
     const hasAnyFreeVariant = variants.some((v) => isFreeTrack(v));
     if (hasAnyFreeVariant) return;
 
@@ -223,7 +223,7 @@ export default function PreferencesModal({
                   // Check if all variants are owned
                   isOwned = areAllVariantsOwned(variants, ownedTracks);
 
-                  // Check if any variant is free
+                  // Check if any variant is included with membership
                   isFree = variants.some((v) => isFreeTrack(v));
                 }
 
@@ -275,7 +275,7 @@ export default function PreferencesModal({
                     </span>
                     {isFree && (
                       <span className="text-[10px] text-emerald-400 light-theme:text-emerald-700 font-medium px-2 py-0.5 bg-emerald-500/20 light-theme:bg-emerald-100 rounded-full transition-colors duration-300">
-                        FREE
+                        INCLUDED
                       </span>
                     )}
                   </button>
