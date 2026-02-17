@@ -23,6 +23,9 @@ interface SearchBarProps {
   viewMode: ViewMode;
   onViewModeChange: (mode: ViewMode) => void;
   resultCount: number;
+  canRaceOnly: boolean;
+  onCanRaceOnlyChange: (value: boolean) => void;
+  hasPreferences: boolean;
 }
 
 export default function SearchBar({
@@ -35,6 +38,9 @@ export default function SearchBar({
   viewMode,
   onViewModeChange,
   resultCount,
+  canRaceOnly,
+  onCanRaceOnlyChange,
+  hasPreferences,
 }: SearchBarProps) {
   const categories = getCategories();
 
@@ -148,6 +154,25 @@ export default function SearchBar({
             {label}
           </button>
         ))}
+
+        {/* Can Race Toggle */}
+        <button
+          onClick={() => hasPreferences && onCanRaceOnlyChange(!canRaceOnly)}
+          disabled={!hasPreferences}
+          title={!hasPreferences ? "Set your cars and tracks in My Content first" : undefined}
+          className={`ml-auto inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
+            !hasPreferences
+              ? "opacity-40 cursor-not-allowed text-gray-500 light-theme:text-gray-400"
+              : canRaceOnly
+              ? "bg-green-500/20 text-green-400 light-theme:bg-green-100 light-theme:text-green-700 ring-1 ring-green-500/40 light-theme:ring-green-300"
+              : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+          }`}
+        >
+          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Can Race
+        </button>
       </div>
     </div>
   );

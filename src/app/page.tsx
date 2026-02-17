@@ -31,6 +31,7 @@ export default function HomePage() {
     favoriteSeries: [],
   });
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
+  const [canRaceOnly, setCanRaceOnly] = useState(false);
 
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
@@ -60,7 +61,14 @@ export default function HomePage() {
   const sortedSeries = useMemo(() => {
     const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
 
-    return [...filteredSeries].sort((a, b) => {
+    const seriesPool = canRaceOnly && hasPreferences
+      ? filteredSeries.filter((s) => {
+          const avail = getSeriesAvailability(s, preferences);
+          return avail.hasRequiredCar && avail.availableWeeks > 0;
+        })
+      : filteredSeries;
+
+    return [...seriesPool].sort((a, b) => {
       // Favorites always come first
       const aIsFavorite = isFavoriteSeries(a.id, preferences);
       const bIsFavorite = isFavoriteSeries(b.id, preferences);
@@ -194,6 +202,9 @@ export default function HomePage() {
               viewMode={viewMode}
               onViewModeChange={setViewMode}
               resultCount={sortedSeries.length}
+              canRaceOnly={canRaceOnly}
+              onCanRaceOnlyChange={setCanRaceOnly}
+              hasPreferences={preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0}
             />
           </div>
 
