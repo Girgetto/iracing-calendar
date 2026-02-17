@@ -12,6 +12,8 @@ import {
   getSeriesAvailability,
   ensureFreeContent,
   isFavoriteSeries,
+  ownsSeriesCar,
+  ownsTrack,
   type UserPreferences,
 } from "@/lib/preferences";
 import Header from "@/components/Header";
@@ -31,6 +33,7 @@ export default function HomePage() {
     favoriteSeries: [],
   });
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
+  const [canRaceOnly, setCanRaceOnly] = useState(false);
 
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
@@ -60,7 +63,22 @@ export default function HomePage() {
   const sortedSeries = useMemo(() => {
     const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
 
-    return [...filteredSeries].sort((a, b) => {
+    const now = new Date();
+    const seriesPool = canRaceOnly && hasPreferences
+      ? filteredSeries.filter((s) => {
+          // Exclude series with variable/unknown car requirements
+          if (!s.car || s.car === "See race week for cars in use that week.") return false;
+          if (!ownsSeriesCar(s, preferences.ownedCars)) return false;
+          // Only show if there is at least one remaining (not yet ended) week with an owned track
+          return s.schedule.some(
+            (week) =>
+              new Date(week.endDate) >= now &&
+              ownsTrack(week.track, preferences.ownedTracks)
+          );
+        })
+      : filteredSeries;
+
+    return [...seriesPool].sort((a, b) => {
       // Favorites always come first
       const aIsFavorite = isFavoriteSeries(a.id, preferences);
       const bIsFavorite = isFavoriteSeries(b.id, preferences);
@@ -83,7 +101,7 @@ export default function HomePage() {
       // Sort by percentage (highest first)
       return availB.percentage - availA.percentage;
     });
-  }, [filteredSeries, preferences]);
+  }, [filteredSeries, preferences, canRaceOnly]);
 
   // Category counts
   const categoryCounts = useMemo(() => {
@@ -194,6 +212,9 @@ export default function HomePage() {
               viewMode={viewMode}
               onViewModeChange={setViewMode}
               resultCount={sortedSeries.length}
+              canRaceOnly={canRaceOnly}
+              onCanRaceOnlyChange={setCanRaceOnly}
+              hasPreferences={preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0}
             />
           </div>
 
