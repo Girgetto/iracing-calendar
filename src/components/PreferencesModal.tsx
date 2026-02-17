@@ -71,6 +71,27 @@ export default function PreferencesModal({
       grouped.get(baseName)!.push(track);
     });
 
+    // Merge sub-groups into parent groups.
+    // e.g. "Kokomo Speedway - Tires out Dirt Outlaw Micro Sprint Car" should
+    // merge into "Kokomo Speedway" because that group already exists.
+    const baseNames = Array.from(grouped.keys());
+    for (const baseName of baseNames) {
+      if (!grouped.has(baseName)) continue; // Already merged
+      for (const potentialParent of baseNames) {
+        if (
+          potentialParent !== baseName &&
+          grouped.has(potentialParent) &&
+          baseName.startsWith(potentialParent + " - ")
+        ) {
+          const subVariants = grouped.get(baseName)!;
+          const parentVariants = grouped.get(potentialParent)!;
+          grouped.set(potentialParent, [...parentVariants, ...subVariants]);
+          grouped.delete(baseName);
+          break;
+        }
+      }
+    }
+
     return grouped;
   };
 
