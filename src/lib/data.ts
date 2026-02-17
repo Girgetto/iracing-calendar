@@ -1,4 +1,4 @@
-import type { SeasonData, Series } from "./types";
+import type { SeasonData, Series, LicenseClass } from "./types";
 import seasonDataJson from "../../data/iracing-season-data.json";
 
 let cachedData: SeasonData | null = null;
@@ -29,10 +29,20 @@ export function getCategories(): string[] {
   return ["All", ...Array.from(cats).sort()];
 }
 
+export function getLicenseClassFromRange(licenseRange: string): LicenseClass | null {
+  if (licenseRange.startsWith("Rookie")) return "Rookie";
+  if (licenseRange.startsWith("Class D")) return "D";
+  if (licenseRange.startsWith("Class C")) return "C";
+  if (licenseRange.startsWith("Class B")) return "B";
+  if (licenseRange.startsWith("Class A")) return "A";
+  return null;
+}
+
 export function filterSeries(
   series: Series[],
   category: string,
-  searchQuery: string
+  searchQuery: string,
+  licenseClass: LicenseClass = "All"
 ): Series[] {
   return series.filter((s) => {
     const matchesCategory = category === "All" || s.category === category;
@@ -43,6 +53,9 @@ export function filterSeries(
       (s.car && s.car.toLowerCase().includes(q)) ||
       (s.region && s.region.toLowerCase().includes(q)) ||
       s.schedule.some((w) => w.track.toLowerCase().includes(q));
-    return matchesCategory && matchesSearch;
+    const matchesLicense =
+      licenseClass === "All" ||
+      (s.licenseRange != null && getLicenseClassFromRange(s.licenseRange) === licenseClass);
+    return matchesCategory && matchesSearch && matchesLicense;
   });
 }
