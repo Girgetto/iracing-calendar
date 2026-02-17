@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import type { Series, ViewMode } from "@/lib/types";
 import type { UserPreferences } from "@/lib/preferences";
-import { getCurrentWeek, getCategoryColor } from "@/lib/utils";
+import { getCurrentWeek, getCategoryColor, getLicenseBadgeColor } from "@/lib/utils";
+import { getLicenseClassFromRange } from "@/lib/data";
 import { getSeriesAvailability, isFavoriteSeries, toggleFavoriteSeries, ownsSeriesCar, ownsTrack } from "@/lib/preferences";
 
 interface SeriesCardProps {
@@ -21,6 +22,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   const totalWeeks = series.schedule.length;
   const availability = getSeriesAvailability(series, preferences);
   const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
+  const licenseClass = series.licenseRange ? getLicenseClassFromRange(series.licenseRange) : null;
 
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -47,6 +49,13 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             >
               {series.category}
             </span>
+            {licenseClass && (
+              <span
+                className={`shrink-0 inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${getLicenseBadgeColor(licenseClass)}`}
+              >
+                {licenseClass === "Rookie" ? "Rookie" : `Class ${licenseClass}`}
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-3 text-xs text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
             {series.car && <span>{series.car}</span>}
@@ -123,6 +132,13 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           >
             {series.category}
           </span>
+          {licenseClass && (
+            <span
+              className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-medium ${getLicenseBadgeColor(licenseClass)}`}
+            >
+              {licenseClass === "Rookie" ? "Rookie" : `Class ${licenseClass}`}
+            </span>
+          )}
           {hasPreferences && availability.hasRequiredCar && availability.percentage === 100 && (
             <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 light-theme:bg-emerald-100 px-2 py-0.5 text-[10px] font-medium text-emerald-400 light-theme:text-emerald-700 border border-emerald-500/30 light-theme:border-emerald-300 transition-colors duration-300">
               <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

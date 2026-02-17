@@ -1,4 +1,25 @@
-import type { WeekSchedule } from "./types";
+import type { WeekSchedule, LicenseClass } from "./types";
+
+// iRacing license hierarchy: higher number = higher license level
+export const LICENSE_LEVELS: Record<string, number> = {
+  Rookie: 1,
+  D: 2,
+  C: 3,
+  B: 4,
+  A: 5,
+};
+
+const LICENSE_BADGE_COLORS: Record<string, string> = {
+  Rookie: "bg-red-500/15 text-red-400 border-red-500/30 light-theme:bg-red-50 light-theme:text-red-700 light-theme:border-red-300",
+  D: "bg-orange-500/15 text-orange-400 border-orange-500/30 light-theme:bg-orange-50 light-theme:text-orange-700 light-theme:border-orange-300",
+  C: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30 light-theme:bg-yellow-50 light-theme:text-yellow-700 light-theme:border-yellow-300",
+  B: "bg-green-500/15 text-green-400 border-green-500/30 light-theme:bg-green-50 light-theme:text-green-700 light-theme:border-green-300",
+  A: "bg-sky-500/15 text-sky-400 border-sky-500/30 light-theme:bg-sky-50 light-theme:text-sky-700 light-theme:border-sky-300",
+};
+
+export function getLicenseBadgeColor(licenseClass: LicenseClass | string): string {
+  return LICENSE_BADGE_COLORS[licenseClass] ?? "bg-gray-500/15 text-gray-400 border-gray-500/30";
+}
 
 export function getCurrentWeek(schedule: WeekSchedule[]): number | null {
   const now = new Date();
