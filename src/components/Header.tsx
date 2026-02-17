@@ -15,13 +15,9 @@ export default function Header({ metadata }: HeaderProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <Image
-              src="/logo.png"
-              alt="iRacing Calendar"
-              width={36}
-              height={36}
-              className="rounded-lg transition-transform group-hover:scale-105"
-            />
+            <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-red-600 font-bold text-white text-sm transition-transform group-hover:scale-105">
+              iR
+            </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-white light-theme:text-gray-900 leading-tight transition-colors duration-300">
                 iRacing Calendar
