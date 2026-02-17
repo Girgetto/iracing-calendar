@@ -1,7 +1,7 @@
 "use client";
 
 import type { Series, WeekSchedule } from "./types";
-import { getFreeCarsFromList, getFreeTracksFromList, MY_GT3_CARS } from "./freeContent";
+import { getFreeCarsFromList, getFreeTracksFromList } from "./freeContent";
 
 export interface UserPreferences {
   ownedCars: string[];
@@ -51,10 +51,9 @@ export function ensureFreeContent(
 ): UserPreferences {
   const freeCars = getFreeCarsFromList(availableCars);
   const freeTracks = getFreeTracksFromList(availableTracks);
-  const gt3Cars = MY_GT3_CARS.filter((car) => availableCars.includes(car));
 
   return {
-    ownedCars: Array.from(new Set([...ownedCars, ...freeCars, ...gt3Cars])),
+    ownedCars: Array.from(new Set([...ownedCars, ...freeCars])),
     ownedTracks: Array.from(new Set([...ownedTracks, ...freeTracks])),
     favoriteSeries: favoriteSeries || [],
   };
