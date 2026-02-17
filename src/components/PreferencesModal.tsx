@@ -53,6 +53,32 @@ export default function PreferencesModal({
     setOwnedTracks([]);
   };
 
+  // Helper function to extract base track name (everything before last " - ")
+  const getBaseTrackName = (track: string): string => {
+    const lastDashIndex = track.lastIndexOf(" - ");
+    return lastDashIndex > 0 ? track.substring(0, lastDashIndex) : track;
+  };
+
+  // Group tracks by their base name
+  const groupTracksByBase = (tracks: string[]): Map<string, string[]> => {
+    const grouped = new Map<string, string[]>();
+
+    tracks.forEach((track) => {
+      const baseName = getBaseTrackName(track);
+      if (!grouped.has(baseName)) {
+        grouped.set(baseName, []);
+      }
+      grouped.get(baseName)!.push(track);
+    });
+
+    return grouped;
+  };
+
+  // Check if all variants of a base track are owned
+  const areAllVariantsOwned = (variants: string[], owned: string[]): boolean => {
+    return variants.every((variant) => owned.includes(variant));
+  };
+
   const toggleCar = (car: string) => {
     // Prevent unchecking free content
     if (isFreeCar(car)) return;
@@ -62,13 +88,33 @@ export default function PreferencesModal({
     );
   };
 
-  const toggleTrack = (track: string) => {
-    // Prevent unchecking free content
-    if (isFreeTrack(track)) return;
+  const toggleTrack = (baseTrackOrVariant: string) => {
+    // When in tracks tab, baseTrackOrVariant is a base track name
+    // We need to toggle all its variants
+    const variants = groupTracksByBase(availableTracks).get(baseTrackOrVariant) || [baseTrackOrVariant];
 
-    setOwnedTracks((prev) =>
-      prev.includes(track) ? prev.filter((t) => t !== track) : [...prev, track]
-    );
+    // Check if any variant is free
+    const hasAnyFreeVariant = variants.some((v) => isFreeTrack(v));
+    if (hasAnyFreeVariant) return;
+
+    // Check if all variants are currently owned
+    const allOwned = areAllVariantsOwned(variants, ownedTracks);
+
+    setOwnedTracks((prev) => {
+      if (allOwned) {
+        // Remove all variants
+        return prev.filter((t) => !variants.includes(t));
+      } else {
+        // Add all variants that aren't already owned
+        const newTracks = [...prev];
+        variants.forEach((variant) => {
+          if (!newTracks.includes(variant)) {
+            newTracks.push(variant);
+          }
+        });
+        return newTracks;
+      }
+    });
   };
 
   const filteredCars = availableCars.filter((car) =>
@@ -79,7 +125,11 @@ export default function PreferencesModal({
     track.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const currentList = activeTab === "cars" ? filteredCars : filteredTracks;
+  // For tracks, group them by base name
+  const groupedTracks = groupTracksByBase(filteredTracks);
+  const baseTrackNames = Array.from(groupedTracks.keys()).sort();
+
+  const currentList = activeTab === "cars" ? filteredCars : baseTrackNames;
   const currentOwned = activeTab === "cars" ? ownedCars : ownedTracks;
   const toggleItem = activeTab === "cars" ? toggleCar : toggleTrack;
 
@@ -156,8 +206,27 @@ export default function PreferencesModal({
               <p className="text-center text-gray-500 light-theme:text-gray-600 py-8 transition-colors duration-300">No items found</p>
             ) : (
               currentList.map((item) => {
-                const isOwned = currentOwned.includes(item);
-                const isFree = activeTab === "cars" ? isFreeCar(item) : isFreeTrack(item);
+                let isOwned: boolean;
+                let isFree: boolean;
+                let displayName: string = item;
+                let variantCount: number | null = null;
+
+                if (activeTab === "cars") {
+                  isOwned = currentOwned.includes(item);
+                  isFree = isFreeCar(item);
+                } else {
+                  // For tracks, item is a base track name
+                  const variants = groupedTracks.get(item) || [item];
+                  variantCount = variants.length;
+                  displayName = item;
+
+                  // Check if all variants are owned
+                  isOwned = areAllVariantsOwned(variants, ownedTracks);
+
+                  // Check if any variant is free
+                  isFree = variants.some((v) => isFreeTrack(v));
+                }
+
                 return (
                   <button
                     key={item}
@@ -196,7 +265,14 @@ export default function PreferencesModal({
                         </svg>
                       )}
                     </div>
-                    <span className="flex-1 text-sm">{item}</span>
+                    <span className="flex-1 text-sm">
+                      {displayName}
+                      {variantCount !== null && variantCount > 1 && (
+                        <span className="text-xs text-gray-400 light-theme:text-gray-500 ml-1">
+                          ({variantCount} variants)
+                        </span>
+                      )}
+                    </span>
                     {isFree && (
                       <span className="text-[10px] text-emerald-400 light-theme:text-emerald-700 font-medium px-2 py-0.5 bg-emerald-500/20 light-theme:bg-emerald-100 rounded-full transition-colors duration-300">
                         FREE
