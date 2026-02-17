@@ -105,8 +105,36 @@ export default function HomePage() {
     setPreferences(prefs);
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "iRacing Calendar",
+    description:
+      "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.vercel.app",
+    applicationCategory: "SportsApplication",
+    operatingSystem: "Any",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    author: {
+      "@type": "Person",
+      name: "Girgetto",
+      url: "https://github.com/Girgetto",
+    },
+    codeRepository: "https://github.com/Girgetto/iracing-calendar",
+    keywords:
+      "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
+  };
+
   return (
     <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header metadata={seasonData.metadata} />
 
       <main className="flex-1">
