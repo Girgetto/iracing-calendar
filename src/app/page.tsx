@@ -80,10 +80,21 @@ export default function HomePage() {
           // Exclude series with variable/unknown car requirements
           if (!s.car || s.car === "See race week for cars in use that week.") return false;
           if (!ownsSeriesCar(s, preferences.ownedCars)) return false;
-          // Only show if there is at least one remaining (not yet ended) week with an owned track
+          // Check if there is a currently active race week
+          const currentWeek = s.schedule.find((week) => {
+            const start = new Date(week.startDate);
+            const end = new Date(week.endDate);
+            end.setDate(end.getDate() + 1); // consistent with getWeekStatus
+            return now >= start && now < end;
+          });
+          if (currentWeek) {
+            // An active week exists — only show if the user owns that week's track
+            return ownsTrack(currentWeek.track, preferences.ownedTracks);
+          }
+          // No active week — show if any upcoming week has an owned track
           return s.schedule.some(
             (week) =>
-              new Date(week.endDate) >= now &&
+              new Date(week.startDate) > now &&
               ownsTrack(week.track, preferences.ownedTracks)
           );
         })
