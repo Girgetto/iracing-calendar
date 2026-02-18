@@ -54,7 +54,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
               series.category
             )}`}
           >
-            Cat {series.category}
+            {series.category}
           </span>
         </div>
 

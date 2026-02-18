@@ -47,7 +47,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 series.category
               )}`}
             >
-              Cat {series.category}
+              {series.category}
             </span>
             {licenseClass && (
               <span
@@ -128,7 +128,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
     >
       {/* Header */}
       <div
-        className="flex items-start justify-between gap-2 mb-3"
+        className="flex justify-between gap-2 mb-3 items-center"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
@@ -138,7 +138,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
               series.category
             )}`}
           >
-            Cat {series.category}
+            {series.category}
           </span>
           {licenseClass && (
             <span
@@ -228,7 +228,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 title={`Week ${week.week}: ${week.track}`}
                 className={`h-2 flex-1 rounded-full transition-all ${
                   isCurrent && isEligible
-                    ? "bg-emerald-500 ring-[1.5px] ring-red-500 ring-offset-[1.5px] ring-offset-gray-950 light-theme:ring-offset-white"
+                    ? "bg-emerald-500 ring-[1px] ring-red-500 ring-offset-[1.5px] ring-offset-gray-950 light-theme:ring-offset-white"
                     : isCurrent
                     ? "bg-red-500"
                     : isPast

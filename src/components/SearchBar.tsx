@@ -114,7 +114,8 @@ export default function SearchBar({
 
       {/* Category Filters */}
       <div className="flex items-center justify-between">
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 flex-wrap items-center">
+        <span className="text-xs text-gray-500 light-theme:text-gray-600 shrink-0">Category:</span>
           {categories.map((cat) => (
             <button
               key={cat}
