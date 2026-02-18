@@ -7,9 +7,10 @@ import ThemeToggle from "./ThemeToggle";
 
 interface HeaderProps {
   metadata: SeasonMetadata;
+  currentWeek?: number | null;
 }
 
-export default function Header({ metadata }: HeaderProps) {
+export default function Header({ metadata, currentWeek }: HeaderProps) {
   return (
     <header className="border-b border-white/10 light-theme:border-gray-200 bg-gray-950/80 light-theme:bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -22,9 +23,17 @@ export default function Header({ metadata }: HeaderProps) {
               <span className="text-sm font-semibold text-white light-theme:text-gray-900 leading-tight transition-colors duration-300">
                 iRacing Calendar
               </span>
-              <span className="text-xs text-gray-400 light-theme:text-gray-600 leading-tight transition-colors duration-300">
-                {metadata.season}
-              </span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs text-gray-400 light-theme:text-gray-600 leading-tight transition-colors duration-300">
+                  {metadata.season}
+                </span>
+                {currentWeek && (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-1.5 py-0.5 text-[9px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 transition-colors duration-300">
+                    <span className="h-1 w-1 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse" />
+                    W{currentWeek}
+                  </span>
+                )}
+              </div>
             </div>
           </Link>
 

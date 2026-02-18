@@ -75,15 +75,23 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const endDate = new Date(week.endDate);
             endDate.setDate(endDate.getDate() + 1);
             const isPast = endDate <= new Date();
+            const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
+            const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
+            const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
             return (
               <div
                 key={week.week}
+                title={`Week ${week.week}: ${week.track}`}
                 className={`h-2 w-2 rounded-full transition-colors ${
-                  isCurrent
+                  isCurrent && isEligible
+                    ? "bg-emerald-500 ring-2 ring-red-500/70 ring-offset-1 ring-offset-gray-950 light-theme:ring-offset-white"
+                    : isCurrent
                     ? "bg-red-500 ring-2 ring-red-500/30"
                     : isPast
-                    ? "bg-gray-500/40 light-theme:bg-gray-300"
-                    : "bg-white/10 light-theme:bg-gray-200"
+                    ? "bg-gray-500/50 light-theme:bg-gray-400"
+                    : isEligible
+                    ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : "bg-white/10 border border-white/20 light-theme:bg-transparent light-theme:border-gray-300"
                 }`}
               />
             );
@@ -120,7 +128,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
     >
       {/* Header */}
       <div
-        className="flex items-start justify-between gap-2 mb-3"
+        className="flex justify-between gap-2 mb-3 items-center"
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
       >
@@ -149,12 +157,6 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           )}
         </div>
         <div className="flex items-center gap-2 shrink-0">
-          {currentWeek && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-2 py-0.5 text-[10px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 transition-colors duration-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse transition-colors duration-300" />
-              Week {currentWeek}
-            </span>
-          )}
           <button
             onClick={handleToggleFavorite}
             className={`p-1.5 rounded-lg transition-all duration-300 shrink-0 ${
@@ -223,14 +225,17 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             return (
               <div
                 key={week.week}
-                className={`h-1.5 flex-1 rounded-full transition-colors ${
-                  isCurrent
+                title={`Week ${week.week}: ${week.track}`}
+                className={`h-2 flex-1 rounded-full transition-all ${
+                  isCurrent && isEligible
+                    ? "bg-emerald-500 ring-[1px] ring-red-500 ring-offset-[1.5px] ring-offset-gray-950 light-theme:ring-offset-white"
+                    : isCurrent
                     ? "bg-red-500"
                     : isPast
-                    ? "bg-gray-500/40 light-theme:bg-gray-300"
+                    ? "bg-gray-500/50 light-theme:bg-gray-400/70"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
-                    : "bg-white/10 light-theme:bg-gray-200"
+                    : "bg-white/8 border border-white/15 light-theme:bg-transparent light-theme:border-gray-300"
                 }`}
               />
             );

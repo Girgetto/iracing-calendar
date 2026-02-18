@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect } from "react";
 import type { ViewMode, LicenseClass } from "@/lib/types";
 import { getAllSeries, getSeasonData, getCategories, filterSeries } from "@/lib/data";
-import { getCategoryTextColor } from "@/lib/utils";
+import { getCategoryTextColor, getCurrentWeek } from "@/lib/utils";
 import {
   loadPreferences,
   savePreferences,
@@ -38,6 +38,7 @@ export default function HomePage() {
 
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
+  const globalCurrentWeek = allSeries.length > 0 ? getCurrentWeek(allSeries[0].schedule) : null;
 
   const availableCars = useMemo(() => {
     const seasonCars = getUniqueCars(allSeries);
@@ -164,7 +165,7 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Header metadata={seasonData.metadata} />
+      <Header metadata={seasonData.metadata} currentWeek={globalCurrentWeek} />
 
       <main className="flex-1">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
@@ -172,9 +173,17 @@ export default function HomePage() {
           <div className="mb-8">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <h1 className="text-3xl sm:text-4xl font-bold text-white light-theme:text-gray-900 mb-2 transition-colors duration-300">
-                  {seasonData.metadata.season}
-                </h1>
+                <div className="flex items-center gap-3 mb-2">
+                  <h1 className="text-3xl sm:text-4xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">
+                    {seasonData.metadata.season}
+                  </h1>
+                  {globalCurrentWeek && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-red-500/15 light-theme:bg-red-100 px-3 py-1 text-xs font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 self-center transition-colors duration-300">
+                      <span className="h-1.5 w-1.5 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse" />
+                      Week {globalCurrentWeek}
+                    </span>
+                  )}
+                </div>
                 <p className="text-sm text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
                   Browse {allSeries.length} series across{" "}
                   {categories.map((cat, i) => (
