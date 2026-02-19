@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import type { SeasonMetadata } from "@/lib/types";
 import ThemeToggle from "./ThemeToggle";
 
@@ -11,6 +11,9 @@ interface HeaderProps {
 }
 
 export default function Header({ metadata, currentWeek }: HeaderProps) {
+  const pathname = usePathname();
+  const isCalendar = pathname === "/calendar";
+
   return (
     <header className="border-b border-white/10 light-theme:border-gray-200 bg-gray-950/80 light-theme:bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -37,13 +40,36 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
             </div>
           </Link>
 
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-4 text-xs text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
-              <span className="hidden sm:inline">
-                {metadata.weeks} weeks
-              </span>
-              <span className="hidden sm:inline text-gray-600 light-theme:text-gray-400">|</span>
-              <span className="hidden sm:inline">
+          <div className="flex items-center gap-3">
+            {/* My Calendar nav link */}
+            <Link
+              href="/calendar"
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors duration-200 ${
+                isCalendar
+                  ? "bg-red-600 text-white hover:bg-red-700"
+                  : "bg-gray-900/60 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900"
+              }`}
+            >
+              <svg
+                className="h-3.5 w-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              <span className="hidden sm:inline">My Calendar</span>
+            </Link>
+
+            <div className="hidden sm:flex items-center gap-4 text-xs text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
+              <span>{metadata.weeks} weeks</span>
+              <span className="text-gray-600 light-theme:text-gray-400">|</span>
+              <span>
                 Updated {new Date(metadata.lastUpdated).toLocaleDateString()}
               </span>
             </div>
