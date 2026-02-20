@@ -7506,7 +7506,8 @@
           "conditions": "65°F/18°C, Rain chance 100%, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
-      ]
+      ],
+      "raceFrequency": "Races every hour at :15 past"
     },
     {
       "id": "spec-racer-ford-challenge",
@@ -10480,7 +10481,8 @@
           "conditions": "67°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ]
+      ],
+      "raceFrequency": "Races every hour at :45 past"
     },
     {
       "id": "iracing-gt3-regional-tour-asia-pacific",
@@ -10609,7 +10611,8 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ]
+      ],
+      "raceFrequency": "Races every hour at :45 past"
     },
     {
       "id": "iracing-gt3-regional-tour-europe",
@@ -10738,7 +10741,8 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ]
+      ],
+      "raceFrequency": "Races every hour at :45 past"
     },
     {
       "id": "lmp2-challenge-2026-season-1-fixed",
