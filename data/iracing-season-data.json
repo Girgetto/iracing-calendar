@@ -3,7 +3,7 @@
     "season": "2026 Season 1",
     "seasonNumber": 1,
     "seasonYear": 2026,
-    "lastUpdated": "2026-02-15T21:27:01.110Z",
+    "lastUpdated": "2026-02-20T14:52:19.817Z",
     "weeks": 39
   },
   "series": [
@@ -273,7 +273,10 @@
       "id": "rookie-street-stock-series-by-fanatec-2026-season-1-fixed",
       "name": "Rookie Street Stock Series by Fanatec - 2026 Season 1 Fixed",
       "category": "Oval",
-      "car": "Street Stock - Eagle T3, Street Stock - Panther C1, Street Stock - Casino",
+      "car": "Street Stock - Eagle T3, Street Stock - Panther C1, Street Stock - Casino M2",
+      "licenseRange": "Rookie 1.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 30 minutes",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -2372,7 +2375,10 @@
       "id": "nascar-iracing-series-2026-season-fixed",
       "name": "NASCAR iRacing Series - 2026 Season Fixed",
       "category": "Oval",
-      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup",
+      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup Series Next Gen Ford Mustang, NASCAR Cup Series Next Gen Toyota Camry",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "5 Timeslots Per Week",
+      "drops": 6,
       "schedule": [
         {
           "week": 1,
@@ -2740,7 +2746,10 @@
       "id": "nascar-iracing-series-2026-season-open",
       "name": "NASCAR iRacing Series - 2026 Season Open",
       "category": "Oval",
-      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup",
+      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup Series Next Gen Ford Mustang, NASCAR Cup Series Next Gen Toyota Camry",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "4 Timeslots Per Week",
+      "drops": 6,
       "schedule": [
         {
           "week": 1,
@@ -3641,7 +3650,10 @@
       "id": "street-stock-series-by-next-level-racing",
       "name": "Street Stock Series by Next Level Racing",
       "category": "Oval",
-      "car": "Street Stock - Eagle T3, Street Stock - Panther C1, Street Stock - Casino",
+      "car": "Street Stock - Eagle T3, Street Stock - Panther C1, Street Stock - Casino M2",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on the hour every hour",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -4312,7 +4324,8 @@
       "id": "winter-iracing-nascar-series-2025-season",
       "name": "Winter iRacing NASCAR Series - 2025 Season",
       "category": "Oval",
-      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford",
+      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford Thunderbird - 1987, NASCAR Legends Pontiac Grand Prix - 1987, NASCAR Legends Buick LeSabre - 1987",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
       "schedule": [
         {
           "week": 1,
@@ -4450,7 +4463,8 @@
       "id": "winter-iracing-nascar-series-fixed-2025-season",
       "name": "Winter iRacing NASCAR Series - Fixed - 2025 Season",
       "category": "Oval",
-      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford",
+      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford Thunderbird - 1987, NASCAR Legends Pontiac Grand Prix - 1987, NASCAR Legends Buick LeSabre - 1987",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
       "schedule": [
         {
           "week": 1,
@@ -4719,7 +4733,10 @@
       "id": "nascar-1987-legends-cup-2026-season-1-fixed",
       "name": "NASCAR 1987 Legends Cup - 2026 Season 1 Fixed",
       "category": "Oval",
-      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford",
+      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford Thunderbird - 1987, NASCAR Legends Pontiac Grand Prix - 1987, NASCAR Legends Buick LeSabre - 1987",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at the :30",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -5760,7 +5777,10 @@
       "id": "nascar-class-a-series",
       "name": "NASCAR Class A Series",
       "category": "Oval",
-      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup",
+      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup Series Next Gen Ford Mustang, NASCAR Cup Series Next Gen Toyota Camry",
+      "licenseRange": "Class B 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every even 2 hours at :30 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -5888,7 +5908,10 @@
       "id": "nascar-class-a-series-fixed-2026-season-1-fixed",
       "name": "NASCAR Class A Series - Fixed - 2026 Season 1 Fixed",
       "category": "Oval",
-      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup",
+      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup Series Next Gen Ford Mustang, NASCAR Cup Series Next Gen Toyota Camry",
+      "licenseRange": "Class B 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every even 2 hours on the hour",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -6614,7 +6637,10 @@
       "id": "gt4-falken-tyre-challenge",
       "name": "GT4 Falken Tyre Challenge",
       "category": "Sports Car",
-      "car": "Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston",
+      "car": "Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston Martin Vantage GT4, Porsche 718 Cayman GT4 Clubsport MR, McLaren 570S GT4",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :30 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -7384,7 +7410,10 @@
       "id": "rain-master",
       "name": "Rain Master",
       "category": "Sports Car",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :15",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -7506,8 +7535,7 @@
           "conditions": "65°F/18°C, Rain chance 100%, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
-      ],
-      "raceFrequency": "Races every hour at :15 past"
+      ]
     },
     {
       "id": "spec-racer-ford-challenge",
@@ -8299,7 +8327,10 @@
       "id": "gt-endurance-series-by-simucube",
       "name": "GT Endurance Series by Simucube",
       "category": "Sports Car",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0, Team racing",
+      "raceFrequency": "Races Saturdays 9 and 19 GMT and Sundays 17 GMT",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -8415,7 +8446,10 @@
       "id": "imsa-michelin-pilot-challenge",
       "name": "IMSA Michelin Pilot Challenge",
       "category": "Sports Car",
-      "car": "Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston",
+      "car": "Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston Martin Vantage GT4, Porsche 718 Cayman GT4 Clubsport MR, McLaren 570S GT4, Audi RS 3 LMS TCR, Hyundai Elantra N TCR, Honda Civic Type R TCR, Hyundai Veloster N TCR",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every other Saturday at 4 & 15 GMT and Sunday at 0 GMT, 20 GMT",
+      "drops": 2,
       "schedule": [
         {
           "week": 1,
@@ -8477,7 +8511,10 @@
       "id": "imsa-sportscar-endurance-challenge",
       "name": "IMSA Sportscar Endurance Challenge",
       "category": "Sports Car",
-      "car": "Ligier JS P320, Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4",
+      "car": "Ligier JS P320, Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston Martin Vantage GT4, Porsche 718 Cayman GT4 Clubsport MR, McLaren 570S GT4",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every other Saturday at 4 & 15 GMT and Sunday at 0 GMT, 20 GMT",
+      "drops": 2,
       "schedule": [
         {
           "week": 1,
@@ -9325,7 +9362,10 @@
       "id": "sports-car-challenge-by-falken-tyre",
       "name": "Sports Car Challenge by Falken Tyre",
       "category": "Sports Car",
-      "car": "Ligier JS P320, Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4",
+      "car": "Ligier JS P320, Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston Martin Vantage GT4, Porsche 718 Cayman GT4 Clubsport MR, McLaren 570S GT4",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :30 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -9847,7 +9887,10 @@
       "id": "global-endurance-tour",
       "name": "Global Endurance Tour",
       "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0, Team racing",
+      "raceFrequency": "Races every other Saturday at 7, 18 GMT and Sunday at 14 GMT",
+      "drops": 2,
       "schedule": [
         {
           "week": 1,
@@ -9909,7 +9952,10 @@
       "id": "gt-sprint-series-by-simucube",
       "name": "GT Sprint Series by Simucube",
       "category": "Sports Car",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours on the hour",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -10037,7 +10083,10 @@
       "id": "gt3-challenge-fixed-by-fanatec",
       "name": "GT3 Challenge Fixed by Fanatec",
       "category": "Sports Car",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :15 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -10296,7 +10345,10 @@
       "id": "imsa-endurance-series",
       "name": "IMSA Endurance Series",
       "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0, Team racing",
+      "raceFrequency": "Races every other Saturday at 2, 7, 18 GMT and Sunday at 14 GMT",
+      "drops": 2,
       "schedule": [
         {
           "week": 1,
@@ -10359,7 +10411,10 @@
       "name": "iRacing GT3 Regional Tour - Americas",
       "category": "Sports Car",
       "region": "Americas",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -10481,15 +10536,17 @@
           "conditions": "67°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ],
-      "raceFrequency": "Races every hour at :45 past"
+      ]
     },
     {
       "id": "iracing-gt3-regional-tour-asia-pacific",
       "name": "iRacing GT3 Regional Tour - Asia Pacific",
       "category": "Sports Car",
       "region": "Asia Pacific",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -10611,15 +10668,17 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ],
-      "raceFrequency": "Races every hour at :45 past"
+      ]
     },
     {
       "id": "iracing-gt3-regional-tour-europe",
       "name": "iRacing GT3 Regional Tour - Europe",
       "category": "Sports Car",
       "region": "Europe",
-      "car": "Acura NSX GT3 EVO 22, Audi R8 LMS GT3 EVO 2, BMW M4 GT3, Chevrolet Corvette Z06 GT3.R, Ferrari 296 GT3, Ford Mustang GT3, Lamborghini Huracán GT3, McLaren 720S GT3 EVO, Mercedes-AMG GT3 2020, Porsche 992 GT3 R",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -10741,8 +10800,7 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         }
-      ],
-      "raceFrequency": "Races every hour at :45 past"
+      ]
     },
     {
       "id": "lmp2-challenge-2026-season-1-fixed",
@@ -11010,7 +11068,10 @@
       "id": "prototype-challenge-2026-season-1-fixed",
       "name": "Prototype Challenge - 2026 Season 1 - Fixed",
       "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R GTP, Acura ARX-06 GTP",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :00",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -11138,7 +11199,10 @@
       "id": "imsa-iracing-series",
       "name": "IMSA iRacing Series",
       "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class B 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :45 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -11266,7 +11330,10 @@
       "id": "imsa-iracing-series-fixed",
       "name": "IMSA iRacing Series - Fixed",
       "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8, Ferrari 499P, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class B 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every 2 hours at :45 past",
+      "drops": 4,
       "schedule": [
         {
           "week": 1,
@@ -19656,7 +19723,10 @@
       "id": "nascar-carburetor-cup",
       "name": "NASCAR Carburetor Cup",
       "category": "Unranked",
-      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup",
+      "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1, NASCAR Cup Series Next Gen Ford Mustang, NASCAR Cup Series Next Gen Toyota Camry",
+      "licenseRange": "Rookie 1.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 0,
       "schedule": [
         {
           "week": 1,
