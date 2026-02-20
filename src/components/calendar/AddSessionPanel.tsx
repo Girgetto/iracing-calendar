@@ -60,6 +60,7 @@ export default function AddSessionPanel({
   const [nameFilter, setNameFilter] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
   const [licenseFilter, setLicenseFilter] = useState<LicenseClass>("All");
+  const [minuteFilter, setMinuteFilter] = useState<number | "All">("All");
 
   // Close on Escape
   useEffect(() => {
@@ -76,6 +77,7 @@ export default function AddSessionPanel({
       setNameFilter("");
       setCategoryFilter("All");
       setLicenseFilter("All");
+      setMinuteFilter("All");
     }
   }, [isOpen]);
 
@@ -83,6 +85,14 @@ export default function AddSessionPanel({
   const categories = useMemo(() => {
     const cats = Array.from(new Set(slotSeries.map((r) => r.series.category)));
     return ["All", ...cats.sort()];
+  }, [slotSeries]);
+
+  // Derive unique minute offsets present in this slot (e.g. [0, 15, 30, 45])
+  const availableMinutes = useMemo(() => {
+    const mins = Array.from(
+      new Set(slotSeries.map((r) => parseInt(r.sessionTime.split(":")[1], 10)))
+    ).sort((a, b) => a - b);
+    return mins;
   }, [slotSeries]);
 
   // Apply filters
@@ -101,9 +111,13 @@ export default function AddSessionPanel({
         const cls = extractLicenseClass(result.series.licenseRange);
         if (cls !== licenseFilter) return false;
       }
+      if (minuteFilter !== "All") {
+        const sessionMinute = parseInt(result.sessionTime.split(":")[1], 10);
+        if (sessionMinute !== minuteFilter) return false;
+      }
       return true;
     });
-  }, [slotSeries, nameFilter, categoryFilter, licenseFilter]);
+  }, [slotSeries, nameFilter, categoryFilter, licenseFilter, minuteFilter]);
 
   if (!isOpen || calendarDate === null || hour === null || dayOfWeek === null) {
     return null;
@@ -157,7 +171,7 @@ export default function AddSessionPanel({
       : utcTime;
 
   const hasActiveFilters =
-    nameFilter !== "" || categoryFilter !== "All" || licenseFilter !== "All";
+    nameFilter !== "" || categoryFilter !== "All" || licenseFilter !== "All" || minuteFilter !== "All";
 
   return (
     <>
@@ -286,6 +300,38 @@ export default function AddSessionPanel({
               </button>
             ))}
           </div>
+
+          {/* Minute filter — only show when multiple minute offsets are present */}
+          {availableMinutes.length > 1 && (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+                At:
+              </span>
+              <button
+                onClick={() => setMinuteFilter("All")}
+                className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
+                  minuteFilter === "All"
+                    ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                    : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                }`}
+              >
+                All
+              </button>
+              {availableMinutes.map((min) => (
+                <button
+                  key={min}
+                  onClick={() => setMinuteFilter(min)}
+                  className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
+                    minuteFilter === min
+                      ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                      : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                  }`}
+                >
+                  :{String(min).padStart(2, "0")}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Content */}
@@ -308,6 +354,7 @@ export default function AddSessionPanel({
                     setNameFilter("");
                     setCategoryFilter("All");
                     setLicenseFilter("All");
+                    setMinuteFilter("All");
                   }}
                   className="mt-2 text-xs text-red-400 hover:text-red-300 transition-colors"
                 >
