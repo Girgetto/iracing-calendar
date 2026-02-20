@@ -371,18 +371,25 @@ function extractSeries(lines) {
       ) {
         let carParts = [carLine];
         i++;
-        // Collect continuation lines (lines ending with comma suggest more car names)
+        // Collect continuation lines until we hit metadata (license, frequency, etc.)
+        // A car list can wrap across lines mid-word, so we continue as long as the
+        // next line doesn't look like a metadata field.
         while (
           i < lines.length &&
-          carParts[carParts.length - 1].endsWith(",") &&
           lines[i].trim() &&
           !parseSeasonFromHeader(lines[i]) &&
           !/^Week\s+\d+/i.test(lines[i]) &&
           !/-->/i.test(lines[i]) &&
           !/->/.test(lines[i]) &&
+          !/\u2192/.test(lines[i]) &&
           !/^Races?\s+every/i.test(lines[i].trim()) &&
+          !/^Race every/i.test(lines[i].trim()) &&
           !/^\d+\s+Timeslots/i.test(lines[i].trim()) &&
-          !/Min entries/i.test(lines[i])
+          !/Min entries/i.test(lines[i]) &&
+          !/^Penalty/i.test(lines[i].trim()) &&
+          !/^No incident/i.test(lines[i].trim()) &&
+          !isTocLine(lines[i]) &&
+          !extractCategoryFromLine(lines[i].trim())
         ) {
           carParts.push(lines[i].trim());
           i++;
