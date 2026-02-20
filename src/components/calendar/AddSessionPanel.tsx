@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState, useMemo } from "react";
 import type { SlotSeriesResult } from "@/lib/calendarUtils";
 import { utcTimeToLocal, getCategoryCardColor } from "@/lib/calendarUtils";
-import { getLicenseBadgeColor } from "@/lib/utils";
+import { getLicenseBadgeColor, getCategoryDotColor } from "@/lib/utils";
 import type { CalendarSession } from "@/lib/calendarStorage";
+import type { LicenseClass } from "@/lib/types";
 
 const DAY_NAMES = [
   "Monday",
@@ -15,6 +16,23 @@ const DAY_NAMES = [
   "Saturday",
   "Sunday",
 ];
+
+const LICENSE_CLASSES: { label: string; value: LicenseClass; color: string }[] = [
+  { label: "All", value: "All", color: "" },
+  { label: "Rookie", value: "Rookie", color: "bg-[#E8391A]" },
+  { label: "D", value: "D", color: "bg-[#F8821A]" },
+  { label: "C", value: "C", color: "bg-[#FFC800]" },
+  { label: "B", value: "B", color: "bg-[#39B549]" },
+  { label: "A", value: "A", color: "bg-[#0092D0]" },
+];
+
+function extractLicenseClass(licenseRange: string | undefined): string {
+  if (!licenseRange) return "";
+  const match = licenseRange.match(/Rookie|Class\s+([A-Z])/);
+  if (!match) return "";
+  if (match[0].startsWith("Rookie")) return "Rookie";
+  return match[1];
+}
 
 interface AddSessionPanelProps {
   isOpen: boolean;
@@ -39,6 +57,10 @@ export default function AddSessionPanel({
   onAdd,
   onClose,
 }: AddSessionPanelProps) {
+  const [nameFilter, setNameFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("All");
+  const [licenseFilter, setLicenseFilter] = useState<LicenseClass>("All");
+
   // Close on Escape
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -48,12 +70,46 @@ export default function AddSessionPanel({
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
+  // Reset filters when panel opens
+  useEffect(() => {
+    if (isOpen) {
+      setNameFilter("");
+      setCategoryFilter("All");
+      setLicenseFilter("All");
+    }
+  }, [isOpen]);
+
+  // Derive unique categories present in this slot
+  const categories = useMemo(() => {
+    const cats = Array.from(new Set(slotSeries.map((r) => r.series.category)));
+    return ["All", ...cats.sort()];
+  }, [slotSeries]);
+
+  // Apply filters
+  const filteredSeries = useMemo(() => {
+    return slotSeries.filter((result) => {
+      if (
+        nameFilter &&
+        !result.series.name.toLowerCase().includes(nameFilter.toLowerCase())
+      ) {
+        return false;
+      }
+      if (categoryFilter !== "All" && result.series.category !== categoryFilter) {
+        return false;
+      }
+      if (licenseFilter !== "All") {
+        const cls = extractLicenseClass(result.series.licenseRange);
+        if (cls !== licenseFilter) return false;
+      }
+      return true;
+    });
+  }, [slotSeries, nameFilter, categoryFilter, licenseFilter]);
+
   if (!isOpen || calendarDate === null || hour === null || dayOfWeek === null) {
     return null;
   }
 
   const hourLabel = `${String(hour).padStart(2, "0")}:00`;
-  const dayLabel = DAY_NAMES[dayOfWeek];
   const dateLabel = calendarDate.toLocaleDateString(undefined, {
     weekday: "long",
     month: "short",
@@ -100,6 +156,9 @@ export default function AddSessionPanel({
       ? utcTimeToLocal(utcTime, calendarDate)
       : utcTime;
 
+  const hasActiveFilters =
+    nameFilter !== "" || categoryFilter !== "All" || licenseFilter !== "All";
+
   return (
     <>
       {/* Backdrop */}
@@ -142,6 +201,93 @@ export default function AddSessionPanel({
           </button>
         </div>
 
+        {/* Filters */}
+        <div className="px-3 py-2.5 border-b border-white/10 light-theme:border-gray-200 space-y-2">
+          {/* Name search */}
+          <div className="relative">
+            <svg
+              className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-500"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Filter by name..."
+              value={nameFilter}
+              onChange={(e) => setNameFilter(e.target.value)}
+              className="w-full rounded-md border border-white/10 light-theme:border-gray-300 bg-gray-900/50 light-theme:bg-gray-50 py-1.5 pl-8 pr-7 text-xs text-white light-theme:text-gray-900 placeholder-gray-500 outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/25"
+            />
+            {nameFilter && (
+              <button
+                onClick={() => setNameFilter("")}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 light-theme:hover:text-gray-700 transition-colors"
+              >
+                <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+
+          {/* Category filter — only show when more than one category is present */}
+          {categories.length > 2 && (
+            <div className="flex items-center gap-1.5 flex-wrap">
+              <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+                Category:
+              </span>
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setCategoryFilter(cat)}
+                  className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
+                    categoryFilter === cat
+                      ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                      : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                  }`}
+                >
+                  {cat !== "All" && (
+                    <span
+                      className={`h-1.5 w-1.5 rounded-full ${getCategoryDotColor(cat)}`}
+                    />
+                  )}
+                  {cat}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {/* License class filter */}
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+              Class:
+            </span>
+            {LICENSE_CLASSES.map(({ label, value, color }) => (
+              <button
+                key={value}
+                onClick={() => setLicenseFilter(value)}
+                className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
+                  licenseFilter === value
+                    ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                    : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                }`}
+              >
+                {value !== "All" && (
+                  <span className={`h-1.5 w-1.5 rounded-full ${color}`} />
+                )}
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Content */}
         <div className="flex-1 overflow-y-auto px-2 py-2">
           {slotSeries.length === 0 ? (
@@ -151,9 +297,27 @@ export default function AddSessionPanel({
                 No series have a race session starting in this hour slot.
               </p>
             </div>
+          ) : filteredSeries.length === 0 ? (
+            <div className="flex flex-col items-center justify-center h-40 text-center px-4">
+              <p className="text-sm text-gray-400 light-theme:text-gray-500">
+                No series match the current filters.
+              </p>
+              {hasActiveFilters && (
+                <button
+                  onClick={() => {
+                    setNameFilter("");
+                    setCategoryFilter("All");
+                    setLicenseFilter("All");
+                  }}
+                  className="mt-2 text-xs text-red-400 hover:text-red-300 transition-colors"
+                >
+                  Clear filters
+                </button>
+              )}
+            </div>
           ) : (
             <ul className="space-y-1.5">
-              {slotSeries.map((result, idx) => {
+              {filteredSeries.map((result, idx) => {
                 const added = isAlreadyAdded(result);
                 const color = getCategoryCardColor(result.series.category);
                 return (
@@ -281,9 +445,16 @@ export default function AddSessionPanel({
 
         {/* Footer */}
         <div className="px-4 py-3 border-t border-white/10 light-theme:border-gray-200">
-          <p className="text-[10px] text-gray-500 light-theme:text-gray-400">
-            Only series with a race starting in this time slot are shown.
-          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-[10px] text-gray-500 light-theme:text-gray-400">
+              Only series with a race starting in this time slot are shown.
+            </p>
+            {slotSeries.length > 0 && (
+              <span className="text-[10px] text-gray-500 light-theme:text-gray-400 shrink-0 ml-2">
+                {filteredSeries.length}/{slotSeries.length}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </>
