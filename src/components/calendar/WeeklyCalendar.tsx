@@ -20,6 +20,7 @@ import {
 } from "@/lib/calendarStorage";
 import SessionCard from "./SessionCard";
 import AddSessionPanel from "./AddSessionPanel";
+import SessionDetailPanel from "./SessionDetailPanel";
 
 const HOUR_PX = 60; // pixels per hour row
 const HOURS = Array.from({ length: 24 }, (_, i) => i); // 0-23
@@ -70,6 +71,11 @@ export default function WeeklyCalendar({
   const [panelDayOfWeek, setPanelDayOfWeek] = useState<number | null>(null);
   const [panelSlotSeries, setPanelSlotSeries] = useState<SlotSeriesResult[]>([]);
   const [overlapWarning, setOverlapWarning] = useState<string | null>(null);
+
+  // Session detail panel state
+  const [detailPanelOpen, setDetailPanelOpen] = useState(false);
+  const [detailSession, setDetailSession] = useState<CalendarSession | null>(null);
+  const [detailReferenceDate, setDetailReferenceDate] = useState<Date | null>(null);
 
   // Scroll ref to auto-scroll to current hour on mount
   const bodyRef = useRef<HTMLDivElement>(null);
@@ -176,6 +182,20 @@ export default function WeeklyCalendar({
   const closePanel = useCallback(() => {
     setPanelOpen(false);
     setOverlapWarning(null);
+  }, []);
+
+  const handleCardClick = useCallback(
+    (session: CalendarSession, dayIndex: number) => {
+      setDetailSession(session);
+      setDetailReferenceDate(weekDates[dayIndex]);
+      setDetailPanelOpen(true);
+    },
+    [weekDates]
+  );
+
+  const closeDetailPanel = useCallback(() => {
+    setDetailPanelOpen(false);
+    setDetailSession(null);
   }, []);
 
   // Get sessions for a specific day column
@@ -294,6 +314,7 @@ export default function WeeklyCalendar({
               referenceDate={calDate}
               isFavorited={favoriteSeries.includes(session.seriesId)}
               onRemove={handleRemoveSession}
+              onClick={(s) => handleCardClick(s, dayIndex)}
             />
           );
         })}
@@ -550,6 +571,16 @@ export default function WeeklyCalendar({
         existingSessions={sessions}
         onAdd={handleAddSession}
         onClose={closePanel}
+      />
+
+      {/* Session Detail Panel */}
+      <SessionDetailPanel
+        isOpen={detailPanelOpen}
+        session={detailSession}
+        showLocalTime={showLocalTime}
+        referenceDate={detailReferenceDate}
+        onRemove={handleRemoveSession}
+        onClose={closeDetailPanel}
       />
     </div>
   );

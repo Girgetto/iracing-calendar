@@ -11,6 +11,7 @@ interface SessionCardProps {
   referenceDate: Date;
   isFavorited: boolean;
   onRemove: (id: string) => void;
+  onClick: (session: CalendarSession) => void;
 }
 
 const HOUR_PX = 60;
@@ -24,6 +25,7 @@ export default function SessionCard({
   referenceDate,
   isFavorited,
   onRemove,
+  onClick,
 }: SessionCardProps) {
   const displayTime = showLocalTime
     ? utcTimeToLocal(session.startTimeUTC, referenceDate)
@@ -33,7 +35,7 @@ export default function SessionCard({
 
   return (
     <div
-      className="absolute left-0.5 right-0.5 rounded overflow-hidden select-none group z-10"
+      className="absolute left-0.5 right-0.5 rounded overflow-hidden select-none group z-10 cursor-pointer"
       style={{
         top: topPx,
         height: Math.max(heightPx, MIN_VISIBLE_HEIGHT),
@@ -41,6 +43,10 @@ export default function SessionCard({
         opacity: 0.92,
       }}
       title={`${session.seriesName} — ${session.trackName} — ${displayTime} (${session.durationMinutes}min)`}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick(session);
+      }}
     >
       {/* Remove button */}
       <button
@@ -77,7 +83,7 @@ export default function SessionCard({
             </svg>
           )}
           <span className="text-white font-semibold leading-tight text-[10px] truncate">
-            {isShort ? displayTime : session.seriesName}
+            {session.seriesName}
           </span>
         </div>
 
