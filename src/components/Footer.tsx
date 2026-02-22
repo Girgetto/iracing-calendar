@@ -48,6 +48,15 @@ export default function Footer() {
             </a>
             <span className="text-gray-700 light-theme:text-gray-300">·</span>
             <span>Open Source</span>
+            <span className="text-gray-700 light-theme:text-gray-300">·</span>
+            <a
+              href="https://girgetto.github.io/iracing-pitwall-tui/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
+            >
+              iRacing Pitwall TUI
+            </a>
           </div>
         </div>
       </div>
