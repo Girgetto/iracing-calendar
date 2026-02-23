@@ -11,28 +11,19 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+function getInitialTheme(): Theme {
+  if (typeof window === "undefined") return "dark";
+  const stored = localStorage.getItem("theme") as Theme | null;
+  if (stored === "light" || stored === "dark") return stored;
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-
-    // Check localStorage first
-    const storedTheme = localStorage.getItem("theme") as Theme | null;
-
-    if (storedTheme) {
-      setTheme(storedTheme);
-      document.documentElement.classList.remove("light-theme", "dark-theme");
-      document.documentElement.classList.add(`${storedTheme}-theme`);
-    } else {
-      // Check system preference
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const systemTheme = prefersDark ? "dark" : "light";
-      setTheme(systemTheme);
-      document.documentElement.classList.remove("light-theme", "dark-theme");
-      document.documentElement.classList.add(`${systemTheme}-theme`);
-    }
   }, []);
 
   useEffect(() => {
