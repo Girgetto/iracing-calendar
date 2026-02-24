@@ -6,16 +6,16 @@
 
 /* Default (Dark Theme) */
 :root {
-  --background: #121212;
-  --foreground: #FFFFFF;
-  --foreground-secondary: #AAAAAA;
-  --surface: #1E1E1E;
-  --surface-hover: #2A2A2A;
-  --border: rgba(255, 255, 255, 0.1);
-  --link: #66B3FF;
-  --link-hover: #4DA6FF;
-  --primary: #dc2626;
-  --primary-hover: #b91c1c;
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --foreground-secondary: #94A3B8;
+  --surface: #1E293B;
+  --surface-hover: #334155;
+  --border: rgba(148, 163, 184, 0.12);
+  --link: #38BDF8;
+  --link-hover: #7DD3FC;
+  --primary: #EF4444;
+  --primary-hover: #DC2626;
 }
 
 /* Light Theme */
@@ -34,16 +34,16 @@
 
 /* Dark Theme (explicit) */
 .dark-theme {
-  --background: #121212;
-  --foreground: #FFFFFF;
-  --foreground-secondary: #AAAAAA;
-  --surface: #1E1E1E;
-  --surface-hover: #2A2A2A;
-  --border: rgba(255, 255, 255, 0.1);
-  --link: #66B3FF;
-  --link-hover: #4DA6FF;
-  --primary: #dc2626;
-  --primary-hover: #b91c1c;
+  --background: #0F172A;
+  --foreground: #F1F5F9;
+  --foreground-secondary: #94A3B8;
+  --surface: #1E293B;
+  --surface-hover: #334155;
+  --border: rgba(148, 163, 184, 0.12);
+  --link: #38BDF8;
+  --link-hover: #7DD3FC;
+  --primary: #EF4444;
+  --primary-hover: #DC2626;
 }
 
 body {
@@ -70,7 +70,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(148, 163, 184, 0.2);
   border-radius: 3px;
   transition: background-color 300ms ease-in-out;
 }
@@ -80,7 +80,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(148, 163, 184, 0.35);
 }
 
 .light-theme ::-webkit-scrollbar-thumb:hover {
