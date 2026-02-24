@@ -67,7 +67,7 @@ export default async function SeriesPage({
   }
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+    <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <Header metadata={seasonData.metadata} />
 
       <main className="flex-1">
