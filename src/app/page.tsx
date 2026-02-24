@@ -171,7 +171,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+    <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -195,7 +195,7 @@ export default function HomePage() {
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
+                <p className="text-sm text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
                   Browse {allSeries.length} series across{" "}
                   {categories.map((cat, i) => (
                     <span key={cat}>
@@ -210,7 +210,7 @@ export default function HomePage() {
               </div>
               <button
                 onClick={() => setIsPreferencesOpen(true)}
-                className="shrink-0 flex items-center gap-2 px-4 py-2 bg-gray-900 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 rounded-lg text-sm text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors duration-300"
+                className="shrink-0 flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 rounded-lg text-sm text-slate-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors duration-300"
               >
                 <svg
                   className="h-4 w-4"

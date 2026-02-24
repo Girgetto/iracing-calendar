@@ -32,7 +32,7 @@ export default function CalendarPage() {
   );
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+    <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <Header metadata={seasonData.metadata} currentWeek={currentWeek} />
 
       <main className="flex-1">
@@ -48,7 +48,7 @@ export default function CalendarPage() {
                 Beta
               </span>
             </div>
-            <p className="text-sm text-gray-400 light-theme:text-gray-600">
+            <p className="text-sm text-slate-400 light-theme:text-gray-600">
               Plan your race week — click any time slot to see which series are
               racing and add them to your calendar.
             </p>

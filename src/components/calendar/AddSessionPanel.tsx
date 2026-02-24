@@ -178,20 +178,20 @@ export default function AddSessionPanel({
       />
 
       {/* Panel */}
-      <div className="fixed right-0 top-0 h-full w-full max-w-sm bg-gray-950 light-theme:bg-white border-l border-white/10 light-theme:border-gray-200 z-50 flex flex-col shadow-2xl">
+      <div className="fixed right-0 top-0 h-full w-full max-w-sm bg-slate-900 light-theme:bg-white border-l border-white/10 light-theme:border-gray-200 z-50 flex flex-col shadow-2xl">
         {/* Header */}
         <div className="flex items-center justify-between px-4 py-4 border-b border-white/10 light-theme:border-gray-200">
           <div>
             <h2 className="text-base font-semibold text-white light-theme:text-gray-900">
               Add a Session
             </h2>
-            <p className="text-xs text-gray-400 light-theme:text-gray-500 mt-0.5">
+            <p className="text-xs text-slate-400 light-theme:text-gray-500 mt-0.5">
               {dateLabel} · {hourLabel} UTC
             </p>
           </div>
           <button
             onClick={onClose}
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 hover:text-white light-theme:hover:text-gray-900 hover:bg-white/10 light-theme:hover:bg-gray-100 transition-colors"
+            className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:text-white light-theme:hover:text-gray-900 hover:bg-white/10 light-theme:hover:bg-gray-100 transition-colors"
             aria-label="Close panel"
           >
             <svg
@@ -215,7 +215,7 @@ export default function AddSessionPanel({
           {/* Name search */}
           <div className="relative">
             <svg
-              className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-gray-500"
+              className="absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-slate-500"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -232,12 +232,12 @@ export default function AddSessionPanel({
               placeholder="Filter by name..."
               value={nameFilter}
               onChange={(e) => setNameFilter(e.target.value)}
-              className="w-full rounded-md border border-white/10 light-theme:border-gray-300 bg-gray-900/50 light-theme:bg-gray-50 py-1.5 pl-8 pr-7 text-xs text-white light-theme:text-gray-900 placeholder-gray-500 outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/25"
+              className="w-full rounded-md border border-white/10 light-theme:border-gray-300 bg-slate-800/50 light-theme:bg-gray-50 py-1.5 pl-8 pr-7 text-xs text-white light-theme:text-gray-900 placeholder-slate-500 outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/25"
             />
             {nameFilter && (
               <button
                 onClick={() => setNameFilter("")}
-                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 light-theme:hover:text-gray-700 transition-colors"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 light-theme:hover:text-gray-700 transition-colors"
               >
                 <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -249,7 +249,7 @@ export default function AddSessionPanel({
           {/* Category filter — only show when more than one category is present */}
           {categories.length > 2 && (
             <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+              <span className="text-[10px] text-slate-500 light-theme:text-gray-600 shrink-0">
                 Category:
               </span>
               {categories.map((cat) => (
@@ -259,7 +259,7 @@ export default function AddSessionPanel({
                   className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
                     categoryFilter === cat
                       ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
-                      : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                      : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
                   }`}
                 >
                   {cat !== "All" && (
@@ -275,7 +275,7 @@ export default function AddSessionPanel({
 
           {/* License class filter */}
           <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+            <span className="text-[10px] text-slate-500 light-theme:text-gray-600 shrink-0">
               Class:
             </span>
             {LICENSE_CLASSES.map(({ label, value, color }) => (
@@ -285,7 +285,7 @@ export default function AddSessionPanel({
                 className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
                   licenseFilter === value
                     ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
-                    : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                    : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
                 }`}
               >
                 {value !== "All" && (
@@ -299,7 +299,7 @@ export default function AddSessionPanel({
           {/* Minute filter — only show when multiple minute offsets are present */}
           {availableMinutes.length > 1 && (
             <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="text-[10px] text-gray-500 light-theme:text-gray-600 shrink-0">
+              <span className="text-[10px] text-slate-500 light-theme:text-gray-600 shrink-0">
                 At:
               </span>
               <button
@@ -307,7 +307,7 @@ export default function AddSessionPanel({
                 className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
                   minuteFilter === "All"
                     ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
-                    : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                    : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
                 }`}
               >
                 All
@@ -319,7 +319,7 @@ export default function AddSessionPanel({
                   className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-medium transition-colors ${
                     minuteFilter === min
                       ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
-                      : "text-gray-400 light-theme:text-gray-600 hover:text-gray-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+                      : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
                   }`}
                 >
                   :{String(min).padStart(2, "0")}
@@ -334,13 +334,13 @@ export default function AddSessionPanel({
           {slotSeries.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-40 text-center px-4">
               <div className="text-3xl mb-2">🏁</div>
-              <p className="text-sm text-gray-400 light-theme:text-gray-500">
+              <p className="text-sm text-slate-400 light-theme:text-gray-500">
                 No series have a race session starting in this hour slot.
               </p>
             </div>
           ) : filteredSeries.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-40 text-center px-4">
-              <p className="text-sm text-gray-400 light-theme:text-gray-500">
+              <p className="text-sm text-slate-400 light-theme:text-gray-500">
                 No series match the current filters.
               </p>
               {hasActiveFilters && (
@@ -370,7 +370,7 @@ export default function AddSessionPanel({
                       className={`w-full text-left rounded-lg border px-3 py-2.5 transition-colors ${
                         added
                           ? "opacity-50 cursor-not-allowed border-white/5 light-theme:border-gray-100 bg-white/5 light-theme:bg-gray-50"
-                          : "border-white/10 light-theme:border-gray-200 bg-gray-900/60 light-theme:bg-gray-50 hover:bg-gray-800 light-theme:hover:bg-gray-100 cursor-pointer"
+                          : "border-white/10 light-theme:border-gray-200 bg-slate-800/60 light-theme:bg-gray-50 hover:bg-slate-700 light-theme:hover:bg-gray-100 cursor-pointer"
                       }`}
                     >
                       <div className="flex items-start gap-2">
@@ -406,13 +406,13 @@ export default function AddSessionPanel({
                               })()
                             }
                             {/* Category */}
-                            <span className="text-[10px] text-gray-400 light-theme:text-gray-500">
+                            <span className="text-[10px] text-slate-400 light-theme:text-gray-500">
                               {result.series.category}
                             </span>
                           </div>
 
                           <div className="mt-1 space-y-0.5">
-                            <div className="flex items-center gap-1 text-[10px] text-gray-400 light-theme:text-gray-500">
+                            <div className="flex items-center gap-1 text-[10px] text-slate-400 light-theme:text-gray-500">
                               <svg
                                 className="h-2.5 w-2.5 shrink-0"
                                 fill="none"
@@ -436,7 +436,7 @@ export default function AddSessionPanel({
                             </div>
 
                             {result.series.car && (
-                              <div className="flex items-center gap-1 text-[10px] text-gray-400 light-theme:text-gray-500">
+                              <div className="flex items-center gap-1 text-[10px] text-slate-400 light-theme:text-gray-500">
                                 <svg
                                   className="h-2.5 w-2.5 shrink-0"
                                   fill="none"
@@ -454,7 +454,7 @@ export default function AddSessionPanel({
                               </div>
                             )}
 
-                            <div className="flex items-center gap-1 text-[10px] font-medium text-gray-300 light-theme:text-gray-700">
+                            <div className="flex items-center gap-1 text-[10px] font-medium text-slate-300 light-theme:text-gray-700">
                               <svg
                                 className="h-2.5 w-2.5 shrink-0"
                                 fill="none"
@@ -487,11 +487,11 @@ export default function AddSessionPanel({
         {/* Footer */}
         <div className="px-4 py-3 border-t border-white/10 light-theme:border-gray-200">
           <div className="flex items-center justify-between">
-            <p className="text-[10px] text-gray-500 light-theme:text-gray-400">
+            <p className="text-[10px] text-slate-500 light-theme:text-gray-400">
               Only series with a race starting in this time slot are shown.
             </p>
             {slotSeries.length > 0 && (
-              <span className="text-[10px] text-gray-500 light-theme:text-gray-400 shrink-0 ml-2">
+              <span className="text-[10px] text-slate-500 light-theme:text-gray-400 shrink-0 ml-2">
                 {filteredSeries.length}/{slotSeries.length}
               </span>
             )}

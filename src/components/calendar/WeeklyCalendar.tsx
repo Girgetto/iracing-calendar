@@ -330,7 +330,7 @@ export default function WeeklyCalendar({
         <div className="flex items-center gap-2">
           <button
             onClick={() => navigateWeek(-1)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-900 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-sm text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-sm text-slate-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -347,7 +347,7 @@ export default function WeeklyCalendar({
               {[...new Set(iracingWeekLabels.filter(Boolean))].map((wn) => (
                 <span
                   key={wn}
-                  className="text-xs text-gray-400 light-theme:text-gray-500"
+                  className="text-xs text-slate-400 light-theme:text-gray-500"
                 >
                   iRacing Week {wn}
                 </span>
@@ -357,7 +357,7 @@ export default function WeeklyCalendar({
 
           <button
             onClick={() => navigateWeek(1)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-900 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-sm text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-sm text-slate-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors"
           >
             <span className="hidden sm:inline">Next week</span>
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -369,8 +369,8 @@ export default function WeeklyCalendar({
         {/* Right controls */}
         <div className="flex items-center gap-3">
           {/* UTC Clock */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gray-900/60 light-theme:bg-gray-100 border border-white/10 light-theme:border-gray-200 text-sm">
-            <svg className="h-3.5 w-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/60 light-theme:bg-gray-100 border border-white/10 light-theme:border-gray-200 text-sm">
+            <svg className="h-3.5 w-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span className="font-mono text-xs text-white light-theme:text-gray-900">
@@ -387,10 +387,10 @@ export default function WeeklyCalendar({
                 checked={showLocalTime}
                 onChange={(e) => setShowLocalTime(e.target.checked)}
               />
-              <div className="w-8 h-4 bg-gray-700 light-theme:bg-gray-300 peer-checked:bg-red-600 rounded-full transition-colors" />
+              <div className="w-8 h-4 bg-slate-600 light-theme:bg-gray-300 peer-checked:bg-red-600 rounded-full transition-colors" />
               <div className="absolute top-0.5 left-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-4" />
             </div>
-            <span className="text-xs text-gray-400 light-theme:text-gray-600 whitespace-nowrap">
+            <span className="text-xs text-slate-400 light-theme:text-gray-600 whitespace-nowrap">
               {showLocalTime ? localTzLabel : "UTC"}
             </span>
           </label>
@@ -419,7 +419,7 @@ export default function WeeklyCalendar({
         <button
           onClick={() => setMobileDay((d) => Math.max(0, d - 1))}
           disabled={mobileDay === 0}
-          className="p-1.5 rounded-lg border border-white/10 light-theme:border-gray-200 text-gray-400 disabled:opacity-30 hover:text-white hover:bg-white/5 transition-colors"
+          className="p-1.5 rounded-lg border border-white/10 light-theme:border-gray-200 text-slate-400 disabled:opacity-30 hover:text-white hover:bg-white/5 transition-colors"
         >
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -429,7 +429,7 @@ export default function WeeklyCalendar({
           <p className="text-sm font-semibold text-white light-theme:text-gray-900">
             {DAY_NAMES_LONG[mobileDay]}
           </p>
-          <p className="text-xs text-gray-400 light-theme:text-gray-500">
+          <p className="text-xs text-slate-400 light-theme:text-gray-500">
             {weekDates[mobileDay].toLocaleDateString("en-US", {
               month: "short",
               day: "numeric",
@@ -440,7 +440,7 @@ export default function WeeklyCalendar({
         <button
           onClick={() => setMobileDay((d) => Math.min(6, d + 1))}
           disabled={mobileDay === 6}
-          className="p-1.5 rounded-lg border border-white/10 light-theme:border-gray-200 text-gray-400 disabled:opacity-30 hover:text-white hover:bg-white/5 transition-colors"
+          className="p-1.5 rounded-lg border border-white/10 light-theme:border-gray-200 text-slate-400 disabled:opacity-30 hover:text-white hover:bg-white/5 transition-colors"
         >
           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -449,9 +449,9 @@ export default function WeeklyCalendar({
       </div>
 
       {/* === Calendar grid === */}
-      <div className="rounded-xl border border-white/10 light-theme:border-gray-200 overflow-hidden bg-gray-950/40 light-theme:bg-white">
+      <div className="rounded-xl border border-white/10 light-theme:border-gray-200 overflow-hidden bg-slate-900/40 light-theme:bg-white">
         {/* Sticky day-header row */}
-        <div className="sticky top-0 z-30 flex border-b border-white/10 light-theme:border-gray-200 bg-gray-950/95 light-theme:bg-white/95 backdrop-blur-sm">
+        <div className="sticky top-0 z-30 flex border-b border-white/10 light-theme:border-gray-200 bg-slate-900/95 light-theme:bg-white/95 backdrop-blur-sm">
           {/* Time column spacer */}
           <div className="w-12 shrink-0 border-r border-white/5 light-theme:border-gray-200" />
 
@@ -473,7 +473,7 @@ export default function WeeklyCalendar({
                   className={`text-[10px] font-semibold uppercase tracking-wider ${
                     today
                       ? "text-red-400"
-                      : "text-gray-400 light-theme:text-gray-500"
+                      : "text-slate-400 light-theme:text-gray-500"
                   }`}
                 >
                   {name}
@@ -482,7 +482,7 @@ export default function WeeklyCalendar({
                   className={`text-xs mt-0.5 ${
                     today
                       ? "font-bold text-white light-theme:text-gray-900"
-                      : "text-gray-500 light-theme:text-gray-400"
+                      : "text-slate-500 light-theme:text-gray-400"
                   }`}
                 >
                   {date}
@@ -510,7 +510,7 @@ export default function WeeklyCalendar({
                   className="absolute right-0 pr-1.5 flex items-start justify-end"
                   style={{ top: hour * HOUR_PX, height: HOUR_PX }}
                 >
-                  <span className="text-[9px] text-gray-600 light-theme:text-gray-400 font-mono leading-none mt-1">
+                  <span className="text-[9px] text-slate-600 light-theme:text-gray-400 font-mono leading-none mt-1">
                     {formatHourLabel(hour)}
                   </span>
                 </div>
@@ -529,7 +529,7 @@ export default function WeeklyCalendar({
       </div>
 
       {/* Legend */}
-      <div className="flex flex-wrap gap-3 text-[10px] text-gray-400 light-theme:text-gray-500">
+      <div className="flex flex-wrap gap-3 text-[10px] text-slate-400 light-theme:text-gray-500">
         <span className="flex items-center gap-1">
           <span className="inline-block h-2 w-2 rounded-full bg-red-500" />
           Current time
