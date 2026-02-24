@@ -67,7 +67,7 @@ export default function SessionDetailPanel({
       />
 
       {/* Panel */}
-      <div className="fixed right-0 top-0 h-full w-full max-w-sm bg-gray-950 light-theme:bg-white border-l border-white/10 light-theme:border-gray-200 z-50 flex flex-col shadow-2xl">
+      <div className="fixed right-0 top-0 h-full w-full max-w-sm bg-slate-900 light-theme:bg-white border-l border-white/10 light-theme:border-gray-200 z-50 flex flex-col shadow-2xl">
         {/* Header */}
         <div
           className="flex items-center gap-3 px-4 py-4 border-b border-white/10 light-theme:border-gray-200"
@@ -77,13 +77,13 @@ export default function SessionDetailPanel({
             <h2 className="text-base font-semibold text-white light-theme:text-gray-900 truncate">
               {session.seriesName}
             </h2>
-            <p className="text-xs text-gray-400 light-theme:text-gray-500 mt-0.5">
+            <p className="text-xs text-slate-400 light-theme:text-gray-500 mt-0.5">
               {dayLabel} · iRacing Week {session.weekNumber}
             </p>
           </div>
           <button
             onClick={onClose}
-            className="flex h-8 w-8 items-center justify-center rounded-lg text-gray-400 hover:text-white light-theme:hover:text-gray-900 hover:bg-white/10 light-theme:hover:bg-gray-100 transition-colors shrink-0"
+            className="flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:text-white light-theme:hover:text-gray-900 hover:bg-white/10 light-theme:hover:bg-gray-100 transition-colors shrink-0"
             aria-label="Close panel"
           >
             <svg
@@ -110,7 +110,7 @@ export default function SessionDetailPanel({
               <span
                 className={`h-2 w-2 rounded-full ${getCategoryDotColor(session.category)}`}
               />
-              <span className="text-xs text-gray-400 light-theme:text-gray-600">
+              <span className="text-xs text-slate-400 light-theme:text-gray-600">
                 {session.category}
               </span>
             </div>
@@ -128,7 +128,7 @@ export default function SessionDetailPanel({
             {/* Track */}
             <div className="flex items-start gap-2.5">
               <svg
-                className="h-4 w-4 text-gray-500 shrink-0 mt-0.5"
+                className="h-4 w-4 text-slate-500 shrink-0 mt-0.5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -147,7 +147,7 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-gray-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
                   Track
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">
@@ -160,7 +160,7 @@ export default function SessionDetailPanel({
             {session.carNames && (
               <div className="flex items-start gap-2.5">
                 <svg
-                  className="h-4 w-4 text-gray-500 shrink-0 mt-0.5"
+                  className="h-4 w-4 text-slate-500 shrink-0 mt-0.5"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -173,7 +173,7 @@ export default function SessionDetailPanel({
                   />
                 </svg>
                 <div>
-                  <p className="text-[10px] text-gray-500 light-theme:text-gray-400 uppercase tracking-wide">
+                  <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
                     Car
                   </p>
                   <p className="text-sm text-white light-theme:text-gray-900">
@@ -186,7 +186,7 @@ export default function SessionDetailPanel({
             {/* Time & Duration */}
             <div className="flex items-start gap-2.5">
               <svg
-                className="h-4 w-4 text-gray-500 shrink-0 mt-0.5"
+                className="h-4 w-4 text-slate-500 shrink-0 mt-0.5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -199,17 +199,17 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-gray-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
                   Start time
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">
                   {displayTime}{" "}
-                  <span className="text-xs text-gray-400">
+                  <span className="text-xs text-slate-400">
                     {showLocalTime ? "(local)" : "UTC"}
                   </span>
                 </p>
                 {showLocalTime && (
-                  <p className="text-xs text-gray-500">
+                  <p className="text-xs text-slate-500">
                     {session.startTimeUTC} UTC
                   </p>
                 )}
@@ -219,7 +219,7 @@ export default function SessionDetailPanel({
             {/* Duration */}
             <div className="flex items-start gap-2.5">
               <svg
-                className="h-4 w-4 text-gray-500 shrink-0 mt-0.5"
+                className="h-4 w-4 text-slate-500 shrink-0 mt-0.5"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -232,7 +232,7 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-gray-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
                   Duration
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">

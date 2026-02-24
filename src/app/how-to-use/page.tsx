@@ -98,7 +98,7 @@ export default function HowToUsePage() {
   const seasonData = getSeasonData();
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+    <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -112,13 +112,13 @@ export default function HowToUsePage() {
           <h1 className="text-3xl font-bold mb-2 text-white light-theme:text-gray-900">
             How to Use iRacing Calendar
           </h1>
-          <p className="text-sm text-gray-400 light-theme:text-gray-600 mb-10 leading-relaxed">
+          <p className="text-sm text-slate-400 light-theme:text-gray-600 mb-10 leading-relaxed">
             iRacing Calendar is a free tool that helps you browse and plan the
             current iRacing season. Here is everything you need to know to get
             the most out of it.
           </p>
 
-          <div className="space-y-10 text-sm text-gray-300 light-theme:text-gray-700 leading-relaxed">
+          <div className="space-y-10 text-sm text-slate-300 light-theme:text-gray-700 leading-relaxed">
 
             {/* Step 1 */}
             <section>

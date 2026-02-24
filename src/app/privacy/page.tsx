@@ -18,7 +18,7 @@ export default function PrivacyPage() {
   const seasonData = getSeasonData();
 
   return (
-    <div className="flex min-h-screen flex-col bg-gray-950 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
+    <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <Header metadata={seasonData.metadata} />
 
       <main className="flex-1">
@@ -26,11 +26,11 @@ export default function PrivacyPage() {
           <h1 className="text-3xl font-bold mb-2 text-white light-theme:text-gray-900">
             Privacy Policy
           </h1>
-          <p className="text-xs text-gray-500 light-theme:text-gray-500 mb-10">
+          <p className="text-xs text-slate-500 light-theme:text-gray-500 mb-10">
             Last updated: February 2026
           </p>
 
-          <div className="space-y-8 text-sm text-gray-300 light-theme:text-gray-700 leading-relaxed">
+          <div className="space-y-8 text-sm text-slate-300 light-theme:text-gray-700 leading-relaxed">
             <section>
               <h2 className="text-lg font-semibold text-white light-theme:text-gray-900 mb-3">
                 Overview

@@ -15,7 +15,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
   const isCalendar = pathname === "/calendar";
 
   return (
-    <header className="border-b border-white/10 light-theme:border-gray-200 bg-gray-950/80 light-theme:bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
+    <header className="border-b border-white/10 light-theme:border-gray-200 bg-slate-900/80 light-theme:bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
@@ -27,7 +27,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
                 iRacing Calendar
               </span>
               <div className="flex items-center gap-1.5">
-                <span className="text-xs text-gray-400 light-theme:text-gray-600 leading-tight transition-colors duration-300">
+                <span className="text-xs text-slate-400 light-theme:text-gray-600 leading-tight transition-colors duration-300">
                   {metadata.season}
                 </span>
                 {currentWeek && (
@@ -47,7 +47,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors duration-200 ${
                 isCalendar
                   ? "bg-red-600 text-white hover:bg-red-700"
-                  : "bg-gray-900/60 hover:bg-gray-800 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-gray-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900"
+                  : "bg-slate-800/60 hover:bg-slate-700 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 text-slate-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900"
               }`}
             >
               <svg
@@ -66,9 +66,9 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
               <span className="hidden sm:inline">My Calendar</span>
             </Link>
 
-            <div className="hidden sm:flex items-center gap-4 text-xs text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
+            <div className="hidden sm:flex items-center gap-4 text-xs text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
               <span>{metadata.weeks} weeks</span>
-              <span className="text-gray-600 light-theme:text-gray-400">|</span>
+              <span className="text-slate-600 light-theme:text-gray-400">|</span>
               <span>
                 Updated {new Date(metadata.lastUpdated).toLocaleDateString()}
               </span>
@@ -78,7 +78,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View source on GitHub"
-              className="hidden sm:flex items-center gap-1.5 text-xs text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
+              className="hidden sm:flex items-center gap-1.5 text-xs text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
             >
               <svg
                 height="16"

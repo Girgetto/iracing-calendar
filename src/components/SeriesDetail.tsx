@@ -27,7 +27,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
       <div className="mb-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-1.5 text-sm text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300 mb-4"
+          className="inline-flex items-center gap-1.5 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300 mb-4"
         >
           <svg
             className="h-4 w-4"
@@ -59,7 +59,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
         </div>
 
         {/* Series Info */}
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-sm text-gray-400 light-theme:text-gray-600 transition-colors duration-300">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-4 text-sm text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
           <div>
             <span className="text-white light-theme:text-gray-900 font-medium transition-colors duration-300">{series.schedule.length}</span>{" "}
             weeks
@@ -87,7 +87,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
         {/* Extra metadata */}
         {(series.licenseRange || series.raceFrequency) && (
-          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3 text-xs text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
             {series.licenseRange && <span>{series.licenseRange}</span>}
             {series.raceFrequency && <span>{series.raceFrequency}</span>}
           </div>
@@ -96,7 +96,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
       {/* Timeline */}
       <div className="mb-8">
-        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-500 light-theme:text-gray-600 mb-4 transition-colors duration-300">
+        <h2 className="text-xs font-medium uppercase tracking-wider text-slate-500 light-theme:text-gray-600 mb-4 transition-colors duration-300">
           Season Timeline
         </h2>
         <div className="flex gap-1">
@@ -117,7 +117,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
             );
           })}
         </div>
-        <div className="flex justify-between mt-1.5 text-[10px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+        <div className="flex justify-between mt-1.5 text-[10px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
           <span>Week 1</span>
           <span>Week {series.schedule.length}</span>
         </div>
@@ -125,7 +125,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
       {/* Schedule */}
       <div className="space-y-2">
-        <h2 className="text-xs font-medium uppercase tracking-wider text-gray-500 light-theme:text-gray-600 mb-4 transition-colors duration-300">
+        <h2 className="text-xs font-medium uppercase tracking-wider text-slate-500 light-theme:text-gray-600 mb-4 transition-colors duration-300">
           Full Schedule
         </h2>
 
@@ -142,12 +142,12 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                 isCurrent
                   ? "border-red-500/30 light-theme:border-red-300 bg-red-500/5 light-theme:bg-red-50 ring-1 ring-red-500/20 light-theme:ring-red-300"
                   : isPast
-                  ? "border-white/5 light-theme:border-blue-200 bg-gray-900/20 light-theme:bg-blue-50 opacity-60 light-theme:opacity-80"
+                  ? "border-white/5 light-theme:border-blue-200 bg-slate-800/20 light-theme:bg-blue-50 opacity-60 light-theme:opacity-80"
                   : joinable === true
                   ? "border-emerald-500/20 light-theme:border-emerald-300 bg-emerald-500/5 light-theme:bg-emerald-50"
                   : joinable === false
-                  ? "border-white/5 light-theme:border-gray-200 bg-gray-900/30 light-theme:bg-gray-100 opacity-50"
-                  : "border-white/5 light-theme:border-gray-200 bg-gray-900/30 light-theme:bg-gray-50"
+                  ? "border-white/5 light-theme:border-gray-200 bg-slate-800/30 light-theme:bg-gray-100 opacity-50"
+                  : "border-white/5 light-theme:border-gray-200 bg-slate-800/30 light-theme:bg-gray-50"
               }`}
             >
               <div className="flex items-center gap-4">
@@ -157,8 +157,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     isCurrent
                       ? "bg-red-500 light-theme:bg-red-600 text-white"
                       : isPast
-                      ? "bg-white/5 light-theme:bg-gray-200 text-gray-500 light-theme:text-gray-600"
-                      : "bg-white/5 light-theme:bg-gray-200 text-gray-300 light-theme:text-gray-700"
+                      ? "bg-white/5 light-theme:bg-gray-200 text-slate-500 light-theme:text-gray-600"
+                      : "bg-white/5 light-theme:bg-gray-200 text-slate-300 light-theme:text-gray-700"
                   }`}
                 >
                   {week.week}
@@ -168,17 +168,17 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                 <div className="flex-1 min-w-0">
                   <p
                     className={`text-sm font-medium truncate transition-colors duration-300 ${
-                      isCurrent ? "text-white light-theme:text-gray-900" : isPast ? "text-gray-400 light-theme:text-gray-600" : "text-gray-200 light-theme:text-gray-800"
+                      isCurrent ? "text-white light-theme:text-gray-900" : isPast ? "text-slate-400 light-theme:text-gray-600" : "text-slate-200 light-theme:text-gray-800"
                     }`}
                   >
                     {week.track}
                   </p>
                   <div className="flex items-center gap-3 mt-0.5">
-                    <span className="text-xs text-gray-500 light-theme:text-gray-600 transition-colors duration-300">
+                    <span className="text-xs text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
                       {formatDateShort(week.startDate)} — {formatDateShort(week.endDate)}
                     </span>
                     {(week.durationMins || week.durationLaps) && (
-                      <span className="text-xs text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+                      <span className="text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
                         {week.durationMins
                           ? `${week.durationMins} min`
                           : `${week.durationLaps} laps`}
@@ -196,7 +196,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     </span>
                   )}
                   {isPast && (
-                    <span className="inline-flex items-center gap-1 text-[10px] text-gray-400 light-theme:text-gray-500 font-medium transition-colors duration-300">
+                    <span className="inline-flex items-center gap-1 text-[10px] text-slate-400 light-theme:text-gray-500 font-medium transition-colors duration-300">
                       <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
@@ -217,7 +217,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     </span>
                   )}
                   {!isCurrent && !isPast && joinable === false && (
-                    <span className="inline-flex text-[10px] text-gray-600 light-theme:text-gray-500 transition-colors duration-300">
+                    <span className="inline-flex text-[10px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
                       Track required
                     </span>
                   )}
@@ -226,7 +226,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
               {/* Conditions */}
               {week.conditions && (
-                <p className="text-[11px] text-gray-600 light-theme:text-gray-500 mt-2 ml-14 transition-colors duration-300">
+                <p className="text-[11px] text-slate-600 light-theme:text-gray-500 mt-2 ml-14 transition-colors duration-300">
                   {week.conditions}
                 </p>
               )}

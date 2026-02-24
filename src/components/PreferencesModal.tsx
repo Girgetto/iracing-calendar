@@ -156,18 +156,18 @@ export default function PreferencesModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 light-theme:bg-black/30 backdrop-blur-sm">
-      <div className="bg-gray-900 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col transition-colors duration-300">
+      <div className="bg-slate-800 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col transition-colors duration-300">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <div>
             <h2 className="text-xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">Content Ownership</h2>
-            <p className="text-sm text-gray-400 light-theme:text-gray-600 mt-1 transition-colors duration-300">
+            <p className="text-sm text-slate-400 light-theme:text-gray-600 mt-1 transition-colors duration-300">
               Select the cars and tracks you own to highlight available series
             </p>
           </div>
           <button
             onClick={onClose}
-            className="text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+            className="text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
           >
             <svg
               className="h-6 w-6"
@@ -192,7 +192,7 @@ export default function PreferencesModal({
             className={`flex-1 px-6 py-3 text-sm font-medium transition-colors duration-300 ${
               activeTab === "cars"
                 ? "text-white light-theme:text-gray-900 border-b-2 border-red-500 light-theme:border-red-600"
-                : "text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900"
+                : "text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900"
             }`}
           >
             Cars ({ownedCars.length}/{availableCars.length})
@@ -202,7 +202,7 @@ export default function PreferencesModal({
             className={`flex-1 px-6 py-3 text-sm font-medium transition-colors duration-300 ${
               activeTab === "tracks"
                 ? "text-white light-theme:text-gray-900 border-b-2 border-red-500 light-theme:border-red-600"
-                : "text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900"
+                : "text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900"
             }`}
           >
             Tracks ({ownedTracks.length}/{availableTracks.length})
@@ -216,7 +216,7 @@ export default function PreferencesModal({
             placeholder={`Search ${activeTab}...`}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2 bg-gray-950 light-theme:bg-gray-50 border border-white/10 light-theme:border-gray-300 rounded-lg text-white light-theme:text-gray-900 placeholder-gray-500 light-theme:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 transition-colors duration-300"
+            className="w-full px-4 py-2 bg-slate-900 light-theme:bg-gray-50 border border-white/10 light-theme:border-gray-300 rounded-lg text-white light-theme:text-gray-900 placeholder-slate-500 light-theme:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 transition-colors duration-300"
           />
         </div>
 
@@ -224,7 +224,7 @@ export default function PreferencesModal({
         <div className="flex-1 overflow-y-auto p-4">
           <div className="space-y-1">
             {currentList.length === 0 ? (
-              <p className="text-center text-gray-500 light-theme:text-gray-600 py-8 transition-colors duration-300">No items found</p>
+              <p className="text-center text-slate-500 light-theme:text-gray-600 py-8 transition-colors duration-300">No items found</p>
             ) : (
               currentList.map((item) => {
                 let isOwned: boolean;
@@ -258,7 +258,7 @@ export default function PreferencesModal({
                         ? "bg-emerald-500/10 light-theme:bg-emerald-50 border border-emerald-500/30 light-theme:border-emerald-300 text-white light-theme:text-gray-900 cursor-not-allowed opacity-90"
                         : isOwned
                         ? "bg-red-500/10 light-theme:bg-red-50 border border-red-500/30 light-theme:border-red-300 text-white light-theme:text-gray-900"
-                        : "bg-gray-950/50 light-theme:bg-gray-50 border border-white/5 light-theme:border-gray-200 text-gray-300 light-theme:text-gray-700 hover:bg-gray-950 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
+                        : "bg-slate-900/50 light-theme:bg-gray-50 border border-white/5 light-theme:border-gray-200 text-slate-300 light-theme:text-gray-700 hover:bg-slate-900 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
                     }`}
                   >
                     <div
@@ -267,7 +267,7 @@ export default function PreferencesModal({
                           ? "bg-emerald-500 border-emerald-500 light-theme:bg-emerald-600 light-theme:border-emerald-600"
                           : isOwned
                           ? "bg-red-500 border-red-500 light-theme:bg-red-600 light-theme:border-red-600"
-                          : "border-gray-600 light-theme:border-gray-400"
+                          : "border-slate-600 light-theme:border-gray-400"
                       }`}
                     >
                       {(isOwned || isFree) && (
@@ -289,7 +289,7 @@ export default function PreferencesModal({
                     <span className="flex-1 text-sm">
                       {displayName}
                       {variantCount !== null && variantCount > 1 && (
-                        <span className="text-xs text-gray-400 light-theme:text-gray-500 ml-1">
+                        <span className="text-xs text-slate-400 light-theme:text-gray-500 ml-1">
                           ({variantCount} variants)
                         </span>
                       )}
@@ -310,14 +310,14 @@ export default function PreferencesModal({
         <div className="flex items-center justify-between gap-3 p-6 border-t border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <button
             onClick={handleReset}
-            className="px-4 py-2 text-sm text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+            className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
           >
             Clear All
           </button>
           <div className="flex gap-3">
             <button
               onClick={onClose}
-              className="px-4 py-2 text-sm text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+              className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
             >
               Cancel
             </button>
