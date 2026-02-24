@@ -1,17 +1,31 @@
 "use client";
 
-import type { ViewMode } from "@/lib/types";
+import type { ViewMode, LicenseClass } from "@/lib/types";
 import { getCategories } from "@/lib/data";
 import { getCategoryDotColor } from "@/lib/utils";
+
+const LICENSE_CLASSES: { label: string; value: LicenseClass; color: string }[] = [
+  { label: "All", value: "All", color: "" },
+  { label: "Rookie", value: "Rookie", color: "bg-[#E8391A]" },
+  { label: "D", value: "D", color: "bg-[#F8821A]" },
+  { label: "C", value: "C", color: "bg-[#FFC800]" },
+  { label: "B", value: "B", color: "bg-[#39B549]" },
+  { label: "A", value: "A", color: "bg-[#0092D0]" },
+];
 
 interface SearchBarProps {
   searchQuery: string;
   onSearchChange: (query: string) => void;
   activeCategory: string;
   onCategoryChange: (category: string) => void;
+  activeLicense: LicenseClass;
+  onLicenseChange: (license: LicenseClass) => void;
   viewMode: ViewMode;
   onViewModeChange: (mode: ViewMode) => void;
   resultCount: number;
+  canRaceOnly: boolean;
+  onCanRaceOnlyChange: (value: boolean) => void;
+  hasPreferences: boolean;
 }
 
 export default function SearchBar({
@@ -19,9 +33,14 @@ export default function SearchBar({
   onSearchChange,
   activeCategory,
   onCategoryChange,
+  activeLicense,
+  onLicenseChange,
   viewMode,
   onViewModeChange,
   resultCount,
+  canRaceOnly,
+  onCanRaceOnlyChange,
+  hasPreferences,
 }: SearchBarProps) {
   const categories = getCategories();
 
@@ -31,7 +50,7 @@ export default function SearchBar({
         {/* Search Input */}
         <div className="relative flex-1">
           <svg
-            className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500"
+            className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-500 light-theme:text-gray-600 transition-colors duration-300"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -48,12 +67,12 @@ export default function SearchBar({
             placeholder="Search series or tracks..."
             value={searchQuery}
             onChange={(e) => onSearchChange(e.target.value)}
-            className="w-full rounded-lg border border-white/10 bg-gray-900/50 py-2.5 pl-10 pr-4 text-sm text-white placeholder-gray-500 outline-none transition-colors focus:border-red-500/50 focus:ring-1 focus:ring-red-500/25"
+            className="w-full rounded-lg border border-white/10 light-theme:border-gray-300 bg-slate-800/50 light-theme:bg-white py-2.5 pl-10 pr-4 text-sm text-white light-theme:text-gray-900 placeholder-slate-500 light-theme:placeholder-gray-400 outline-none transition-colors duration-300 focus:border-red-500/50 focus:ring-1 focus:ring-red-500/25"
           />
           {searchQuery && (
             <button
               onClick={() => onSearchChange("")}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 transition-colors"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 light-theme:text-gray-600 light-theme:hover:text-gray-800 transition-colors duration-300"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -63,13 +82,13 @@ export default function SearchBar({
         </div>
 
         {/* View Mode Toggle */}
-        <div className="flex rounded-lg border border-white/10 overflow-hidden shrink-0">
+        <div className="flex rounded-lg border border-white/10 light-theme:border-gray-300 overflow-hidden shrink-0">
           <button
             onClick={() => onViewModeChange("grid")}
-            className={`px-3 py-2.5 text-sm transition-colors ${
+            className={`px-3 py-2.5 text-sm transition-colors duration-300 ${
               viewMode === "grid"
-                ? "bg-white/10 text-white"
-                : "text-gray-500 hover:text-gray-300"
+                ? "bg-white/10 light-theme:bg-gray-200 text-white light-theme:text-gray-900"
+                : "text-slate-500 hover:text-slate-300 light-theme:text-gray-600 light-theme:hover:text-gray-900"
             }`}
             aria-label="Grid view"
           >
@@ -79,10 +98,10 @@ export default function SearchBar({
           </button>
           <button
             onClick={() => onViewModeChange("list")}
-            className={`px-3 py-2.5 text-sm transition-colors ${
+            className={`px-3 py-2.5 text-sm transition-colors duration-300 ${
               viewMode === "list"
-                ? "bg-white/10 text-white"
-                : "text-gray-500 hover:text-gray-300"
+                ? "bg-white/10 light-theme:bg-gray-200 text-white light-theme:text-gray-900"
+                : "text-slate-500 hover:text-slate-300 light-theme:text-gray-600 light-theme:hover:text-gray-900"
             }`}
             aria-label="List view"
           >
@@ -95,15 +114,16 @@ export default function SearchBar({
 
       {/* Category Filters */}
       <div className="flex items-center justify-between">
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-2 flex-wrap items-center">
+        <span className="text-xs text-slate-500 light-theme:text-gray-600 shrink-0">Category:</span>
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => onCategoryChange(cat)}
-              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all ${
+              className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
                 activeCategory === cat
-                  ? "bg-white/15 text-white ring-1 ring-white/20"
-                  : "text-gray-400 hover:text-gray-200 hover:bg-white/5"
+                  ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                  : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
               }`}
             >
               {cat !== "All" && (
@@ -113,9 +133,47 @@ export default function SearchBar({
             </button>
           ))}
         </div>
-        <span className="text-xs text-gray-500 hidden sm:inline">
+        <span className="text-xs text-slate-500 light-theme:text-gray-600 transition-colors duration-300 hidden sm:inline">
           {resultCount} series
         </span>
+      </div>
+
+      {/* License Class Filters */}
+      <div className="flex items-center gap-2 flex-wrap">
+        <span className="text-xs text-slate-500 light-theme:text-gray-600 shrink-0">License:</span>
+        {LICENSE_CLASSES.map(({ label, value, color }) => (
+          <button
+            key={value}
+            onClick={() => onLicenseChange(value)}
+            className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
+              activeLicense === value
+                ? "bg-white/15 light-theme:bg-gray-200 text-white light-theme:text-gray-900 ring-1 ring-white/20 light-theme:ring-gray-300"
+                : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+            }`}
+          >
+            {value !== "All" && <span className={`h-2 w-2 rounded-full ${color}`} />}
+            {label}
+          </button>
+        ))}
+
+        {/* Can Race Toggle */}
+        <button
+          onClick={() => hasPreferences && onCanRaceOnlyChange(!canRaceOnly)}
+          disabled={!hasPreferences}
+          title={!hasPreferences ? "Set your cars and tracks in My Content first" : undefined}
+          className={`ml-auto inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
+            !hasPreferences
+              ? "opacity-40 cursor-not-allowed text-slate-500 light-theme:text-gray-400"
+              : canRaceOnly
+              ? "bg-green-500/20 text-green-400 light-theme:bg-green-100 light-theme:text-green-700 ring-1 ring-green-500/40 light-theme:ring-green-300"
+              : "text-slate-400 light-theme:text-gray-600 hover:text-slate-200 light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-100"
+          }`}
+        >
+          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Can Race
+        </button>
       </div>
     </div>
   );

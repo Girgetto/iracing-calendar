@@ -38,3 +38,5 @@ export interface SeasonData {
 export type CategoryFilter = string;
 
 export type ViewMode = "grid" | "list";
+
+export type LicenseClass = "All" | "Rookie" | "D" | "C" | "B" | "A";
