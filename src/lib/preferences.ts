@@ -215,6 +215,49 @@ export function getUnownedTrackFrequency(
 }
 
 /**
+ * Get track frequency data for all tracks (owned and unowned).
+ * Returns a sorted list of tracks with how many times they appear, in which series,
+ * and whether the user owns the track.
+ */
+export function getAllTrackFrequency(
+  allSeries: Series[],
+  ownedTracks: string[]
+): Array<{
+  track: string;
+  count: number;
+  owned: boolean;
+  series: Array<{ name: string; weeks: number[] }>;
+}> {
+  const trackMap = new Map<string, { count: number; seriesMap: Map<string, number[]> }>();
+
+  for (const s of allSeries) {
+    for (const week of s.schedule) {
+      if (!week.track) continue;
+
+      if (!trackMap.has(week.track)) {
+        trackMap.set(week.track, { count: 0, seriesMap: new Map() });
+      }
+      const entry = trackMap.get(week.track)!;
+      entry.count += 1;
+
+      if (!entry.seriesMap.has(s.name)) {
+        entry.seriesMap.set(s.name, []);
+      }
+      entry.seriesMap.get(s.name)!.push(week.week);
+    }
+  }
+
+  return Array.from(trackMap.entries())
+    .map(([track, { count, seriesMap }]) => ({
+      track,
+      count,
+      owned: ownedTracks.includes(track),
+      series: Array.from(seriesMap.entries()).map(([name, weeks]) => ({ name, weeks })),
+    }))
+    .sort((a, b) => b.count - a.count);
+}
+
+/**
  * Toggle favorite status for a series.
  */
 export function toggleFavoriteSeries(
