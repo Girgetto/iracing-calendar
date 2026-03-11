@@ -59,6 +59,69 @@ function isTocLine(line) {
 }
 
 /**
+ * iRacing license hierarchy in order from lowest to highest.
+ */
+const LICENSE_ORDER = ["R", "D", "C", "B", "A", "Pro", "Pro/WC"];
+
+const LICENSE_LABEL_MAP = {
+  rookie: "R",
+  "class d": "D",
+  "class c": "C",
+  "class b": "B",
+  "class a": "A",
+  "pro/wc": "Pro/WC",
+  pro: "Pro",
+};
+
+/**
+ * Parse a license class string like "Rookie (1.0)" or "Class D (4.0)" into a short key.
+ */
+function parseLicenseClass(str) {
+  const normalized = str
+    .trim()
+    .toLowerCase()
+    .replace(/\s*\(\d+\.\d+\)\s*$/, "")
+    .trim();
+  return LICENSE_LABEL_MAP[normalized] || null;
+}
+
+/**
+ * Parse a licenseRange string into structured license data.
+ * Example: "Class D (4.0) --> Pro/WC (4.0), Heat racing"
+ * Returns: { minLicense: "D", maxLicense: "Pro/WC", licenses: ["D","C","B","A","Pro","Pro/WC"] }
+ */
+function parseLicenseRange(licenseRange) {
+  if (!licenseRange) return null;
+
+  const arrowIdx = licenseRange.indexOf("-->");
+  if (arrowIdx === -1) return null;
+
+  const leftSide = licenseRange.substring(0, arrowIdx).trim();
+  let rightSide = licenseRange.substring(arrowIdx + 3).trim();
+
+  // Strip trailing flags like ", Heat racing" or ", Team racing"
+  // Right side format: "Pro/WC (4.0)" or "Pro/WC (4.0), Heat racing"
+  const flagsMatch = rightSide.match(/^(.+?\(\d+\.\d+\))\s*,\s*(.+)$/);
+  if (flagsMatch) {
+    rightSide = flagsMatch[1].trim();
+  }
+
+  const minLicense = parseLicenseClass(leftSide);
+  const maxLicense = parseLicenseClass(rightSide);
+
+  if (!minLicense || !maxLicense) return null;
+
+  const minIdx = LICENSE_ORDER.indexOf(minLicense);
+  const maxIdx = LICENSE_ORDER.indexOf(maxLicense);
+
+  if (minIdx === -1 || maxIdx === -1) return null;
+
+  const licenses = LICENSE_ORDER.slice(minIdx, maxIdx + 1);
+
+  return { minLicense, maxLicense, licenses };
+}
+
+/**
  * Map PDF category names to display names.
  */
 function mapCategory(raw) {
@@ -535,6 +598,8 @@ function extractSeries(lines) {
 
     if (schedule.length === 0) continue;
 
+    const parsedLicense = parseLicenseRange(licenseRange);
+
     series.push({
       id: generateId(nameWithoutSeason),
       name: nameWithoutSeason,
@@ -542,6 +607,11 @@ function extractSeries(lines) {
       ...(region && { region }),
       ...(car && { car }),
       ...(licenseRange && { licenseRange }),
+      ...(parsedLicense && {
+        minLicense: parsedLicense.minLicense,
+        maxLicense: parsedLicense.maxLicense,
+        licenses: parsedLicense.licenses,
+      }),
       ...(raceFrequency && { raceFrequency }),
       ...(drops != null && { drops }),
       schedule,
