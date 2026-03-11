@@ -67,8 +67,7 @@ export function filterSeries(
       (s.region && s.region.toLowerCase().includes(q)) ||
       s.schedule.some((w) => w.track.toLowerCase().includes(q));
     const matchesLicense =
-      licenseClass === "All" ||
-      (s.licenses != null && s.licenses.includes(licenseClass));
+      licenseClass === "All" || s.minLicense === licenseClass;
     return matchesCategory && matchesSearch && matchesLicense;
   });
 }

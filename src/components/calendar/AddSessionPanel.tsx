@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import type { SlotSeriesResult } from "@/lib/calendarUtils";
 import { utcTimeToLocal, getCategoryCardColor } from "@/lib/calendarUtils";
 import { getLicenseBadgeColor, getCategoryDotColor } from "@/lib/utils";
-import { getLicenseClassFromRange } from "@/lib/data";
+
 import type { CalendarSession } from "@/lib/calendarStorage";
 import type { LicenseClass } from "@/lib/types";
 
@@ -102,7 +102,7 @@ export default function AddSessionPanel({
         return false;
       }
       if (licenseFilter !== "All") {
-        if (!result.series.licenses?.includes(licenseFilter)) return false;
+        if (result.series.minLicense !== licenseFilter) return false;
       }
       if (minuteFilter !== "All") {
         const sessionMinute = parseInt(result.sessionTime.split(":")[1], 10);
@@ -135,9 +135,7 @@ export default function AddSessionPanel({
 
   const handleAdd = (result: SlotSeriesResult) => {
     const color = getCategoryCardColor(result.series.category);
-    const licenseClass = result.series.licenseRange
-      ? (getLicenseClassFromRange(result.series.licenseRange) ?? "")
-      : "";
+    const licenseClass = result.series.minLicense ?? "";
 
     const data: Omit<CalendarSession, "id"> = {
       seriesId: result.series.id,

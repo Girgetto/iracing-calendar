@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { Series, ViewMode } from "@/lib/types";
 import type { UserPreferences } from "@/lib/preferences";
 import { getCurrentWeek, getCategoryColor, getLicenseBadgeColor } from "@/lib/utils";
-import { getLicenseClassFromRange } from "@/lib/data";
+
 import { getSeriesAvailability, isFavoriteSeries, toggleFavoriteSeries, ownsSeriesCar, ownsTrack } from "@/lib/preferences";
 
 interface SeriesCardProps {
@@ -22,7 +22,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   const totalWeeks = series.schedule.length;
   const availability = getSeriesAvailability(series, preferences);
   const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
-  const licenseClass = series.licenseRange ? getLicenseClassFromRange(series.licenseRange) : null;
+  const licenseClass = series.minLicense ?? null;
 
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
