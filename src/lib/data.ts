@@ -68,7 +68,7 @@ export function filterSeries(
       s.schedule.some((w) => w.track.toLowerCase().includes(q));
     const matchesLicense =
       licenseClass === "All" ||
-      (s.licenseRange != null && getLicenseClassFromRange(s.licenseRange) === licenseClass);
+      (s.licenses != null && s.licenses.includes(licenseClass));
     return matchesCategory && matchesSearch && matchesLicense;
   });
 }

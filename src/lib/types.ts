@@ -17,6 +17,9 @@ export interface Series {
   region?: string;
   car?: string;
   licenseRange?: string;
+  minLicense?: string;
+  maxLicense?: string;
+  licenses?: string[];
   raceFrequency?: string;
   drops?: number;
   schedule: WeekSchedule[];
