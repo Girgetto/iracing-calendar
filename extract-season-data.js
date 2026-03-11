@@ -86,9 +86,24 @@ function parseLicenseClass(str) {
 }
 
 /**
+ * iRacing license promotion: at 4.0 SR you are promoted to the next class,
+ * so a series requiring e.g. "Rookie (4.0)" is effectively a D-class series.
+ */
+const CLASS_PROMOTION = {
+  Rookie: "D",
+  D: "C",
+  C: "B",
+  B: "A",
+  A: "A",
+};
+
+/**
  * Parse a licenseRange string into structured license data.
  * Example: "Class D (4.0) --> Pro/WC (4.0), Heat racing"
- * Returns: { minLicense: "D", maxLicense: "Pro/WC", licenses: ["D","C","B","A","Pro","Pro/WC"] }
+ * Returns: { minLicense: "C", maxLicense: "Pro/WC", licenses: ["C","B","A","Pro","Pro/WC"] }
+ *
+ * The promotion rule: if the minimum SR is 4.0, the effective minimum license
+ * is the NEXT class (e.g. "Rookie (4.0)" → requires D, "Class D (4.0)" → requires C).
  */
 function parseLicenseRange(licenseRange) {
   if (!licenseRange) return null;
@@ -100,16 +115,23 @@ function parseLicenseRange(licenseRange) {
   let rightSide = licenseRange.substring(arrowIdx + 3).trim();
 
   // Strip trailing flags like ", Heat racing" or ", Team racing"
-  // Right side format: "Pro/WC (4.0)" or "Pro/WC (4.0), Heat racing"
   const flagsMatch = rightSide.match(/^(.+?\(\d+\.\d+\))\s*,\s*(.+)$/);
   if (flagsMatch) {
     rightSide = flagsMatch[1].trim();
   }
 
-  const minLicense = parseLicenseClass(leftSide);
+  const rawMinLicense = parseLicenseClass(leftSide);
   const maxLicense = parseLicenseClass(rightSide);
 
-  if (!minLicense || !maxLicense) return null;
+  if (!rawMinLicense || !maxLicense) return null;
+
+  // Apply the 4.0 SR promotion rule to the minimum license
+  const srMatch = leftSide.match(/\((\d+(?:\.\d+)?)\)/);
+  const minSR = srMatch ? parseFloat(srMatch[1]) : 0;
+  const minLicense =
+    minSR >= 4.0 && CLASS_PROMOTION[rawMinLicense]
+      ? CLASS_PROMOTION[rawMinLicense]
+      : rawMinLicense;
 
   const minIdx = LICENSE_ORDER.indexOf(minLicense);
   const maxIdx = LICENSE_ORDER.indexOf(maxLicense);

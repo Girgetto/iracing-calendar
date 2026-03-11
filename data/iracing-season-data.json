@@ -563,10 +563,9 @@
           "durationLaps": 20
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -705,10 +704,9 @@
           "durationLaps": 60
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -847,10 +845,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -989,10 +986,9 @@
           "durationLaps": 40
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -1131,10 +1127,9 @@
           "durationLaps": 40
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -1271,10 +1266,9 @@
           "durationLaps": 60
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -1413,10 +1407,9 @@
           "durationLaps": 125
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -1554,10 +1547,9 @@
           "durationLaps": 45
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -1695,10 +1687,9 @@
           "durationLaps": 35
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -1836,10 +1827,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -1977,10 +1967,9 @@
           "durationLaps": 38
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -2388,10 +2377,9 @@
           "durationLaps": 80
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -2769,10 +2757,9 @@
           "durationLaps": 267
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3150,10 +3137,9 @@
           "durationLaps": 267
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3431,10 +3417,9 @@
           "durationLaps": 200
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3572,10 +3557,9 @@
           "durationLaps": 80
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3713,10 +3697,9 @@
           "durationLaps": 80
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3854,10 +3837,9 @@
           "durationLaps": 50
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -3995,10 +3977,9 @@
           "durationLaps": 75
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -4136,10 +4117,9 @@
           "durationLaps": 50
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -4427,10 +4407,9 @@
           "durationLaps": 300
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -4568,10 +4547,9 @@
           "durationLaps": 60
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -4708,10 +4686,9 @@
           "durationLaps": 90
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -5118,10 +5095,9 @@
           "durationLaps": 90
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -5258,10 +5234,9 @@
           "durationLaps": 65
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -5398,10 +5373,9 @@
           "durationLaps": 64
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -5538,10 +5512,9 @@
           "durationLaps": 25
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -5803,10 +5776,9 @@
           "durationLaps": 70
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -5911,10 +5883,9 @@
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Strict. NGC: 3 tire sets NGF: 3 tire sets NGT: 3 tire sets 60 laps SPORTS CAR"
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -6334,10 +6305,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -6476,10 +6446,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -6618,10 +6587,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -6760,10 +6728,9 @@
           "durationMins": 25
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -6902,10 +6869,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7044,10 +7010,9 @@
           "durationLaps": 5
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7186,10 +7151,9 @@
           "durationMins": 25
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7316,10 +7280,9 @@
           "conditions": "66°F/19°C, Rain chance 32%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% BMWM2: fuel: 75% mins"
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7458,10 +7421,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7600,10 +7562,9 @@
           "durationLaps": 27
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7742,10 +7703,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -7884,10 +7844,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -8026,10 +7985,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -8168,10 +8126,9 @@
           "durationMins": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8309,10 +8266,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8438,10 +8394,9 @@
           "conditions": "84°F/29°C, Rain chance 26%, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Moderate. mins"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8579,10 +8534,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8654,10 +8608,9 @@
           "conditions": "69°F/21°C, Rain chance 35%, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. HECN7: fuel: 80% HCTR: fuel: 80% HVTC: fuel: 80% ARS3G2: fuel: 80% P718: fuel: 80% M570S: fuel: 80% AMV4: fuel: 80% MGT4: fuel: 80% BMWGT4: fuel: 80% FMGT4: fuel: 80% mins"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8729,10 +8682,9 @@
           "conditions": "68°F/20°C, Rain chance 31%, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. P718: fuel: 80% M570S: fuel: 80% AMV4: fuel: 80% MGT4: fuel: 80% BMWGT4: fuel: 80% FMGT4: fuel: 80% mins"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -8870,10 +8822,9 @@
           "durationMins": 40
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9011,10 +8962,9 @@
           "durationLaps": 19
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9152,10 +9102,9 @@
           "durationLaps": 19
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9293,10 +9242,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9434,10 +9382,9 @@
           "durationLaps": 19
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9575,10 +9522,9 @@
           "durationLaps": 3
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9716,10 +9662,9 @@
           "durationMins": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9857,10 +9802,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -9998,10 +9942,9 @@
           "durationLaps": 47
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -10140,10 +10083,9 @@
           "durationLaps": 47
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -10215,10 +10157,9 @@
           "conditions": "67°F/19°C, Rain chance 33%, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10355,10 +10296,9 @@
           "durationMins": 40
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10495,10 +10435,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10635,10 +10574,9 @@
           "durationMins": 45
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10709,10 +10647,9 @@
           "conditions": "79°F/26°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10850,10 +10787,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -10991,10 +10927,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -11132,10 +11067,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -11272,10 +11206,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -11412,10 +11345,9 @@
           "durationMins": 30
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -11552,10 +11484,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -11692,10 +11623,9 @@
           "durationMins": 45
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -11820,10 +11750,9 @@
           "conditions": "70°F/21°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50% P217: fuel: 68% BMWGTP: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% PGTP: fuel: 50% F499P: fuel: 50% 35 mins FORMULA CAR"
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -12244,10 +12173,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -12387,10 +12315,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -12530,10 +12457,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -12672,10 +12598,9 @@
           "durationMins": 15
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -12814,10 +12739,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -12956,10 +12880,9 @@
           "durationLaps": 13
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -13098,10 +13021,9 @@
           "durationLaps": 14
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -13240,10 +13162,9 @@
           "durationMins": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -13501,10 +13422,9 @@
           "durationLaps": 67
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -13642,10 +13562,9 @@
           "durationMins": 25
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -13783,10 +13702,9 @@
           "durationMins": 25
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -13924,10 +13842,9 @@
           "durationMins": 20
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14065,10 +13982,9 @@
           "durationMins": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14244,10 +14160,9 @@
           "durationLaps": 35
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14385,10 +14300,9 @@
           "durationLaps": 17
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14574,10 +14488,9 @@
           "durationLaps": 95
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14835,10 +14748,9 @@
           "durationLaps": 67
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -14976,10 +14888,9 @@
           "durationLaps": 28
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -15117,10 +15028,9 @@
           "durationLaps": 14
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -15258,10 +15168,9 @@
           "durationLaps": 16
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -15398,10 +15307,9 @@
           "durationLaps": 28
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -15538,10 +15446,9 @@
           "durationLaps": 140
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -15678,10 +15585,9 @@
           "durationLaps": 35
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -15817,10 +15723,9 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict. MW13: fuel: 55% 42 laps DIRT OVAL"
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -15956,10 +15861,9 @@
           "durationLaps": 21
         }
       ],
-      "minLicense": "B",
+      "minLicense": "A",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "B",
         "A",
         "Pro",
         "Pro/WC"
@@ -16663,10 +16567,9 @@
           "durationLaps": 25
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -16805,10 +16708,9 @@
           "durationLaps": 25
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -16947,10 +16849,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -17089,10 +16990,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -17219,10 +17119,9 @@
           "conditions": "78°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -17360,10 +17259,9 @@
           "durationLaps": 50
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -17712,10 +17610,9 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -17841,10 +17738,9 @@
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -17982,10 +17878,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -18352,10 +18247,9 @@
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -18481,10 +18375,9 @@
           "conditions": "83°F/28°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -18622,10 +18515,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -18751,10 +18643,9 @@
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -18880,10 +18771,9 @@
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -19021,10 +18911,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -19162,10 +19051,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -19303,10 +19191,9 @@
           "durationLaps": 50
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -19432,10 +19319,9 @@
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -19561,10 +19447,9 @@
           "conditions": "74°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -19689,10 +19574,9 @@
           "conditions": "67°F/20°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -19829,10 +19713,9 @@
           "durationLaps": 40
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -19957,10 +19840,9 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L DIRT ROAD"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -20097,10 +19979,9 @@
           "durationLaps": 30
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
@@ -20663,10 +20544,9 @@
           "durationLaps": 10
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -20805,10 +20685,9 @@
           "durationLaps": 8
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -20947,10 +20826,9 @@
           "durationLaps": 12
         }
       ],
-      "minLicense": "Rookie",
+      "minLicense": "D",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "Rookie",
         "D",
         "C",
         "B",
@@ -21089,10 +20967,9 @@
           "durationLaps": 12
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -21230,10 +21107,9 @@
           "durationLaps": 8
         }
       ],
-      "minLicense": "D",
+      "minLicense": "C",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "D",
         "C",
         "B",
         "A",
@@ -21359,10 +21235,9 @@
           "conditions": "85°F/30°C, Rain chance None, Standing start, Local enforced cautions. H:5L C:6L F:10L UNRANKED"
         }
       ],
-      "minLicense": "C",
+      "minLicense": "B",
       "maxLicense": "Pro/WC",
       "licenses": [
-        "C",
         "B",
         "A",
         "Pro",
