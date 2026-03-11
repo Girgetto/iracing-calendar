@@ -59,6 +59,91 @@ function isTocLine(line) {
 }
 
 /**
+ * iRacing license hierarchy in order from lowest to highest.
+ */
+const LICENSE_ORDER = ["Rookie", "D", "C", "B", "A", "Pro", "Pro/WC"];
+
+const LICENSE_LABEL_MAP = {
+  rookie: "Rookie",
+  "class d": "D",
+  "class c": "C",
+  "class b": "B",
+  "class a": "A",
+  "pro/wc": "Pro/WC",
+  pro: "Pro",
+};
+
+/**
+ * Parse a license class string like "Rookie (1.0)" or "Class D (4.0)" into a short key.
+ */
+function parseLicenseClass(str) {
+  const normalized = str
+    .trim()
+    .toLowerCase()
+    .replace(/\s*\(\d+\.\d+\)\s*$/, "")
+    .trim();
+  return LICENSE_LABEL_MAP[normalized] || null;
+}
+
+/**
+ * iRacing license promotion: at 4.0 SR you are promoted to the next class,
+ * so a series requiring e.g. "Rookie (4.0)" is effectively a D-class series.
+ */
+const CLASS_PROMOTION = {
+  Rookie: "D",
+  D: "C",
+  C: "B",
+  B: "A",
+  A: "A",
+};
+
+/**
+ * Parse a licenseRange string into structured license data.
+ * Example: "Class D (4.0) --> Pro/WC (4.0), Heat racing"
+ * Returns: { minLicense: "C", maxLicense: "Pro/WC", licenses: ["C","B","A","Pro","Pro/WC"] }
+ *
+ * The promotion rule: if the minimum SR is 4.0, the effective minimum license
+ * is the NEXT class (e.g. "Rookie (4.0)" → requires D, "Class D (4.0)" → requires C).
+ */
+function parseLicenseRange(licenseRange) {
+  if (!licenseRange) return null;
+
+  const arrowIdx = licenseRange.indexOf("-->");
+  if (arrowIdx === -1) return null;
+
+  const leftSide = licenseRange.substring(0, arrowIdx).trim();
+  let rightSide = licenseRange.substring(arrowIdx + 3).trim();
+
+  // Strip trailing flags like ", Heat racing" or ", Team racing"
+  const flagsMatch = rightSide.match(/^(.+?\(\d+\.\d+\))\s*,\s*(.+)$/);
+  if (flagsMatch) {
+    rightSide = flagsMatch[1].trim();
+  }
+
+  const rawMinLicense = parseLicenseClass(leftSide);
+  const maxLicense = parseLicenseClass(rightSide);
+
+  if (!rawMinLicense || !maxLicense) return null;
+
+  // Apply the 4.0 SR promotion rule to the minimum license
+  const srMatch = leftSide.match(/\((\d+(?:\.\d+)?)\)/);
+  const minSR = srMatch ? parseFloat(srMatch[1]) : 0;
+  const minLicense =
+    minSR >= 4.0 && CLASS_PROMOTION[rawMinLicense]
+      ? CLASS_PROMOTION[rawMinLicense]
+      : rawMinLicense;
+
+  const minIdx = LICENSE_ORDER.indexOf(minLicense);
+  const maxIdx = LICENSE_ORDER.indexOf(maxLicense);
+
+  if (minIdx === -1 || maxIdx === -1) return null;
+
+  const licenses = LICENSE_ORDER.slice(minIdx, maxIdx + 1);
+
+  return { minLicense, maxLicense, licenses };
+}
+
+/**
  * Map PDF category names to display names.
  */
 function mapCategory(raw) {
@@ -535,6 +620,8 @@ function extractSeries(lines) {
 
     if (schedule.length === 0) continue;
 
+    const parsedLicense = parseLicenseRange(licenseRange);
+
     series.push({
       id: generateId(nameWithoutSeason),
       name: nameWithoutSeason,
@@ -542,6 +629,11 @@ function extractSeries(lines) {
       ...(region && { region }),
       ...(car && { car }),
       ...(licenseRange && { licenseRange }),
+      ...(parsedLicense && {
+        minLicense: parsedLicense.minLicense,
+        maxLicense: parsedLicense.maxLicense,
+        licenses: parsedLicense.licenses,
+      }),
       ...(raceFrequency && { raceFrequency }),
       ...(drops != null && { drops }),
       schedule,

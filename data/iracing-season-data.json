@@ -136,6 +136,17 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Permissive",
           "durationLaps": 35
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -267,6 +278,17 @@
           "conditions": "77°F/25°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Permissive",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -398,6 +420,17 @@
           "conditions": "78°F/25°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Permissive",
           "durationLaps": 40
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -529,6 +562,16 @@
           "conditions": "82°F/28°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient. ACSS25: 1 tire sets ARCAFM: 1 tire sets ARCATC: 1 tire sets",
           "durationLaps": 20
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -660,6 +703,16 @@
           "conditions": "85°F/29°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient",
           "durationLaps": 60
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -791,6 +844,16 @@
           "conditions": "77°F/25°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient. PM18: 1 tire sets",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -922,6 +985,16 @@
           "conditions": "69°F/20°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient",
           "durationLaps": 40
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1053,6 +1126,16 @@
           "conditions": "67°F/19°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient",
           "durationLaps": 40
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1182,6 +1265,16 @@
           "conditions": "77°F/25°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Lenient",
           "durationLaps": 60
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1313,6 +1406,15 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, Double-file Back, Qual scrutiny - Moderate. LM23: 1 tire sets",
           "durationLaps": 125
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1444,6 +1546,15 @@
           "conditions": "83°F/29°C, Rain chance None, Rolling start, Full course cautions, Single-file Maintain, Qual scrutiny - Lenient. DIL15: 1 tire sets",
           "durationLaps": 45
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1575,6 +1686,15 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, 1-G/W/C, Double- file Back, Qual scrutiny - Moderate. LEG: 1 tire sets",
           "durationLaps": 35
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1706,6 +1826,15 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Moderate. CS2019: 3 tire sets F150: 3 tire sets TTP: 3 tire sets RAM26: 3 tire sets",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -1837,6 +1966,15 @@
           "conditions": "70°F/21°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. G4CMC: 3 tire sets G4FT: 3 tire sets",
           "durationLaps": 38
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -2238,6 +2376,15 @@
           "conditions": "82°F/28°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. CS2019: 4 tire sets F150: 4 tire sets TTP: 4 tire sets",
           "durationLaps": 80
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -2609,6 +2756,15 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NGC: 12 tire sets NGF: 12 tire sets NGT: 12 tire sets",
           "durationLaps": 267
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -2980,6 +3136,15 @@
           "conditions": "78°F/26°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NGC: 12 tire sets NGF: 12 tire sets NGT: 12 tire sets",
           "durationLaps": 267
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3251,6 +3416,15 @@
           "conditions": "69°F/20°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. TMOD: 2 tire sets",
           "durationLaps": 200
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3382,6 +3556,15 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. TMOD: 2 tire sets",
           "durationLaps": 80
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3513,6 +3696,15 @@
           "conditions": "76°F/25°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. TMOD: 2 tire sets",
           "durationLaps": 80
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3644,6 +3836,15 @@
           "conditions": "77°F/25°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Moderate. SS: 1 tire sets SSC: 1 tire sets SSE: 1 tire sets",
           "durationLaps": 50
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3775,6 +3976,15 @@
           "conditions": "88°F/31°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, Double-file Back, Qual scrutiny - Moderate. SLM: 1 tire sets",
           "durationLaps": 75
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -3906,6 +4116,15 @@
           "conditions": "87°F/30°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, Double-file Back, Qual scrutiny - Moderate. SLM: 1 tire sets",
           "durationLaps": 50
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -4187,6 +4406,15 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. SLM: 3 tire sets",
           "durationLaps": 300
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -4318,6 +4546,14 @@
           "conditions": "Constant weather, Dynamic sky, Rolling start, Full course cautions, Single-file Maintain, Qual scrutiny - Moderate. IR18: 3 tire sets",
           "durationLaps": 60
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -4449,6 +4685,14 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, Double-file Inside, Qual scrutiny - Moderate. C87: 3 tire sets F87: 3 tire sets B87: 3 tire sets P87: 3 tire sets",
           "durationLaps": 90
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -4850,6 +5094,14 @@
           "conditions": "78°F/25°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
           "durationLaps": 90
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -4981,6 +5233,14 @@
           "conditions": "85°F/30°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
           "durationLaps": 65
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5112,6 +5372,14 @@
           "conditions": "72°F/22°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, 1-G/W/C, Single-file Back, Qual scrutiny - Strict. SC: 1 tire sets",
           "durationLaps": 64
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5243,6 +5511,14 @@
           "conditions": "71°F/22°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, 1-G/W/C, Single-file Back, Qual scrutiny - Strict. SPRT: 1 tire sets",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5362,6 +5638,12 @@
           "conditions": "80°F/27°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NGC: 3 tire sets NGF: 3 tire sets NGT: 3 tire sets",
           "durationLaps": 100
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro",
+      "licenses": [
+        "A",
+        "Pro"
       ]
     },
     {
@@ -5493,6 +5775,13 @@
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Strict. NGC: 4 tire sets NGF: 4 tire sets NGT: 4 tire sets",
           "durationLaps": 70
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5593,6 +5882,13 @@
           "raceDateTime": "2026-05-16T14:55:00Z",
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 1-G/W/C, Double-file Back, Qual scrutiny - Strict. NGC: 3 tire sets NGF: 3 tire sets NGT: 3 tire sets 60 laps SPORTS CAR"
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5724,6 +6020,17 @@
           "conditions": "66°F/19°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Permissive",
           "durationMins": 12
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5855,6 +6162,17 @@
           "conditions": "67°F/19°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 12
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -5986,6 +6304,16 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6117,6 +6445,16 @@
           "conditions": "70°F/21°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6248,6 +6586,16 @@
           "conditions": "78°F/26°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6379,6 +6727,16 @@
           "conditions": "68°F/20°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 25
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6510,6 +6868,16 @@
           "conditions": "76°F/25°C, Rain chance None, Rolling start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6641,6 +7009,16 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
           "durationLaps": 5
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6772,6 +7150,16 @@
           "conditions": "68°F/20°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 25
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -6891,6 +7279,16 @@
           "raceDateTime": "2026-06-06T19:50:00Z",
           "conditions": "66°F/19°C, Rain chance 32%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% BMWM2: fuel: 75% mins"
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7022,6 +7420,16 @@
           "conditions": "65°F/19°C, Rain chance 100%, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7153,6 +7561,16 @@
           "conditions": "74°F/23°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationLaps": 27
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7284,6 +7702,16 @@
           "conditions": "76°F/25°C, Rain chance None, Standing start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7415,6 +7843,16 @@
           "conditions": "84°F/29°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 20
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7546,6 +7984,16 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7677,6 +8125,15 @@
           "conditions": "68°F/20°C, Rain chance 31%, Standing start, Local enforced cautions, Qual scrutiny - Moderate. MX16: fuel: 65%",
           "durationMins": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7808,6 +8265,15 @@
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -7927,6 +8393,15 @@
           "raceDateTime": "2026-06-06T12:00:00Z",
           "conditions": "84°F/29°C, Rain chance 26%, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Moderate. mins"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8058,6 +8533,15 @@
           "conditions": "71°F/22°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 20
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8123,6 +8607,15 @@
           "raceDateTime": "2026-06-06T12:00:00Z",
           "conditions": "69°F/21°C, Rain chance 35%, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. HECN7: fuel: 80% HCTR: fuel: 80% HVTC: fuel: 80% ARS3G2: fuel: 80% P718: fuel: 80% M570S: fuel: 80% AMV4: fuel: 80% MGT4: fuel: 80% BMWGT4: fuel: 80% FMGT4: fuel: 80% mins"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8188,6 +8681,15 @@
           "raceDateTime": "2026-05-30T16:25:00Z",
           "conditions": "68°F/20°C, Rain chance 31%, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. P718: fuel: 80% M570S: fuel: 80% AMV4: fuel: 80% MGT4: fuel: 80% BMWGT4: fuel: 80% FMGT4: fuel: 80% mins"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8319,6 +8821,15 @@
           "conditions": "73°F/23°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. A90: fuel: 85%",
           "durationMins": 40
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8450,6 +8961,15 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 19
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8581,6 +9101,15 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 19
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8712,6 +9241,15 @@
           "conditions": "74°F/24°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8843,6 +9381,15 @@
           "conditions": "68°F/20°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SR10: fuel: 66%",
           "durationLaps": 19
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -8974,6 +9521,15 @@
           "conditions": "73°F/23°C, Rain chance None, Detached qual, Rolling start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 3
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9105,6 +9661,15 @@
           "conditions": "70°F/21°C, Rain chance None, Grid by class, Rolling start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationMins": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9236,6 +9801,15 @@
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9367,6 +9941,15 @@
           "conditions": "73°F/23°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
           "durationLaps": 47
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9499,6 +10082,15 @@
           "conditions": "74°F/24°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
           "durationLaps": 47
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9564,6 +10156,14 @@
           "raceDateTime": "2026-06-06T18:50:00Z",
           "conditions": "67°F/19°C, Rain chance 33%, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9695,6 +10295,14 @@
           "conditions": "84°F/29°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50%",
           "durationMins": 40
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9826,6 +10434,14 @@
           "conditions": "80°F/27°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50%",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -9957,6 +10573,14 @@
           "conditions": "67°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. FGT7: fuel: 50% 488E: fuel: 50% RSR: fuel: 50% BMWM8: fuel: 50% C8R: fuel: 50%",
           "durationMins": 45
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10022,6 +10646,14 @@
           "raceDateTime": "2026-05-30T15:25:00Z",
           "conditions": "79°F/26°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10154,6 +10786,14 @@
           "conditions": "78°F/26°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50%",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10286,6 +10926,14 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50%",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10418,6 +11066,14 @@
           "conditions": "71°F/22°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Strict. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50%",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10549,6 +11205,14 @@
           "conditions": "70°F/21°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10680,6 +11344,14 @@
           "conditions": "76°F/25°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. FGT: fuel: 78% C6R GT1: fuel: 84% AM1: fuel: 84% ARX: fuel: 75%",
           "durationMins": 30
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10811,6 +11483,14 @@
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -10942,6 +11622,13 @@
           "conditions": "67°F/19°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. P217: fuel: 80% M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50% BMWGTP: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% PGTP: fuel: 65% F499P: fuel: 65%",
           "durationMins": 45
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11062,6 +11749,13 @@
           "raceDateTime": "2026-05-30T15:25:00Z",
           "conditions": "70°F/21°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. M4GT3: fuel: 50% LGT3: fuel: 50% MGT3E: fuel: 50% 992R: fuel: 50% F296: fuel: 50% CZ06: fuel: 50% FMGT3: fuel: 50% 720GT3: fuel: 50% NSXE22: fuel: 50% AMGT3: fuel: 50% P217: fuel: 68% BMWGTP: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% PGTP: fuel: 50% F499P: fuel: 50% 35 mins FORMULA CAR"
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11193,6 +11887,17 @@
           "conditions": "68°F/20°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 12
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11324,6 +12029,17 @@
           "conditions": "66°F/19°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 12
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11456,6 +12172,16 @@
           "conditions": "67°F/19°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11588,6 +12314,16 @@
           "conditions": "70°F/21°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11720,6 +12456,16 @@
           "conditions": "66°F/19°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11851,6 +12597,16 @@
           "conditions": "67°F/19°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -11982,6 +12738,16 @@
           "conditions": "80°F/27°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 20
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12113,6 +12879,16 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationLaps": 13
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12244,6 +13020,16 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local advisory cautions, Qual scrutiny - Lenient",
           "durationLaps": 14
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12375,6 +13161,15 @@
           "conditions": "70°F/21°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationMins": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12626,6 +13421,15 @@
           "conditions": "66°F/19°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 67
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12757,6 +13561,15 @@
           "conditions": "70°F/21°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 25
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -12888,6 +13701,15 @@
           "conditions": "69°F/21°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 25
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13019,6 +13841,15 @@
           "conditions": "74°F/24°C, Rain chance 29%, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13150,6 +13981,15 @@
           "conditions": "73°F/23°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13319,6 +14159,15 @@
           "conditions": "69°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationLaps": 35
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13450,6 +14299,15 @@
           "conditions": "67°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationLaps": 17
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13629,6 +14487,15 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationLaps": 95
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -13880,6 +14747,15 @@
           "conditions": "66°F/19°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 67
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14011,6 +14887,15 @@
           "conditions": "68°F/20°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationLaps": 28
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14142,6 +15027,15 @@
           "conditions": "80°F/27°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationLaps": 14
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14273,6 +15167,14 @@
           "conditions": "70°F/21°C, Rain chance None, Standing start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 16
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14404,6 +15306,14 @@
           "conditions": "76°F/24°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 28
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14535,6 +15445,14 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Single-file Maintain, Qual scrutiny - Strict",
           "durationLaps": 140
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14666,6 +15584,14 @@
           "conditions": "68°F/20°C, Rain chance None, Rolling start, Full course cautions, Single-file Maintain, Qual scrutiny - Moderate. IR18: 3 tire sets",
           "durationLaps": 35
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14796,6 +15722,13 @@
           "raceDateTime": "2026-06-06T12:00:00Z",
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict. MW13: fuel: 55% 42 laps DIRT OVAL"
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -14927,6 +15860,13 @@
           "conditions": "71°F/22°C, Rain chance None, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 21
         }
+      ],
+      "minLicense": "A",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15058,6 +15998,17 @@
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 20
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15189,6 +16140,17 @@
           "conditions": "72°F/22°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 20
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15320,6 +16282,17 @@
           "conditions": "80°F/27°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15451,6 +16424,17 @@
           "conditions": "75°F/24°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15582,6 +16566,16 @@
           "conditions": "85°F/29°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15713,6 +16707,16 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15844,6 +16848,16 @@
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -15975,6 +16989,16 @@
           "conditions": "82°F/28°C, Rain chance None, Rolling start, Cautions disabled. DLM350: 1 tire sets",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -16094,6 +17118,15 @@
           "raceDateTime": "2026-06-06T21:20:00Z",
           "conditions": "78°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -16225,6 +17258,15 @@
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets",
           "durationLaps": 50
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -16567,6 +17609,15 @@
           "raceDateTime": "2026-11-07T17:20:00Z",
           "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -16686,6 +17737,15 @@
           "raceDateTime": "2026-06-06T22:20:00Z",
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -16817,6 +17877,15 @@
           "conditions": "71°F/22°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17177,6 +18246,15 @@
           "raceDateTime": "2026-10-17T18:45:00Z",
           "conditions": "69°F/21°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17296,6 +18374,15 @@
           "raceDateTime": "2026-06-06T15:10:00Z",
           "conditions": "83°F/28°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17427,6 +18514,15 @@
           "conditions": "80°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17546,6 +18642,15 @@
           "raceDateTime": "2026-06-06T20:45:00Z",
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17665,6 +18770,15 @@
           "raceDateTime": "2026-06-06T18:50:00Z",
           "conditions": "76°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17796,6 +18910,15 @@
           "conditions": "74°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -17927,6 +19050,15 @@
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18058,6 +19190,15 @@
           "conditions": "70°F/21°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
           "durationLaps": 50
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18177,6 +19318,15 @@
           "raceDateTime": "2026-06-06T20:20:00Z",
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18296,6 +19446,14 @@
           "raceDateTime": "2026-06-06T15:00:00Z",
           "conditions": "74°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18415,6 +19573,14 @@
           "raceDateTime": "2026-06-06T15:45:00Z",
           "conditions": "67°F/20°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18546,6 +19712,14 @@
           "conditions": "82°F/28°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 40
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18665,6 +19839,14 @@
           "raceDateTime": "2026-06-06T19:10:00Z",
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L DIRT ROAD"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18796,6 +19978,14 @@
           "conditions": "85°F/30°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
           "durationLaps": 30
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -18927,6 +20117,17 @@
           "conditions": "84°F/29°C, Rain chance None, Standing start, Cautions disabled",
           "durationLaps": 6
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19058,6 +20259,17 @@
           "conditions": "76°F/25°C, Rain chance None, Standing start, Local enforced cautions",
           "durationLaps": 6
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19189,6 +20401,17 @@
           "conditions": "82°F/28°C, Rain chance None, Standing start, Local enforced cautions",
           "durationLaps": 6
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19320,6 +20543,16 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 10
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19451,6 +20684,16 @@
           "conditions": "83°F/28°C, Rain chance None, Standing start, Local enforced cautions",
           "durationLaps": 8
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19582,6 +20825,16 @@
           "conditions": "85°F/29°C, Rain chance None, Rolling start, Local enforced cautions",
           "durationLaps": 12
         }
+      ],
+      "minLicense": "D",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19713,6 +20966,15 @@
           "conditions": "74°F/24°C, Rain chance None, Rolling start, Local enforced cautions",
           "durationLaps": 12
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19844,6 +21106,15 @@
           "conditions": "69°F/21°C, Rain chance None, Standing start, Local enforced cautions",
           "durationLaps": 8
         }
+      ],
+      "minLicense": "C",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -19963,6 +21234,14 @@
           "raceDateTime": "2026-06-06T15:15:00Z",
           "conditions": "85°F/30°C, Rain chance None, Standing start, Local enforced cautions. H:5L C:6L F:10L UNRANKED"
         }
+      ],
+      "minLicense": "B",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -20104,6 +21383,17 @@
           "conditions": "81°F/27°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 25
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -20245,6 +21535,17 @@
           "conditions": "76°F/25°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 15
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     },
     {
@@ -20386,6 +21687,17 @@
           "conditions": "73°F/23°C, Rain chance None, Rolling start, Cautions disabled",
           "durationLaps": 10
         }
+      ],
+      "minLicense": "Rookie",
+      "maxLicense": "Pro/WC",
+      "licenses": [
+        "Rookie",
+        "D",
+        "C",
+        "B",
+        "A",
+        "Pro",
+        "Pro/WC"
       ]
     }
   ]

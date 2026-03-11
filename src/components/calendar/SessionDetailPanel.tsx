@@ -118,7 +118,7 @@ export default function SessionDetailPanel({
               <span
                 className={`inline-flex items-center rounded border px-1.5 py-0.5 text-[10px] font-semibold ${getLicenseBadgeColor(session.licenseClass)}`}
               >
-                Class {session.licenseClass}
+                {session.licenseClass === "Rookie" ? "Rookie" : `Class ${session.licenseClass}`}
               </span>
             )}
           </div>

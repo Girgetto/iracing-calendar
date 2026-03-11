@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import type { SlotSeriesResult } from "@/lib/calendarUtils";
 import { utcTimeToLocal, getCategoryCardColor } from "@/lib/calendarUtils";
 import { getLicenseBadgeColor, getCategoryDotColor } from "@/lib/utils";
-import { getLicenseClassFromRange } from "@/lib/data";
+
 import type { CalendarSession } from "@/lib/calendarStorage";
 import type { LicenseClass } from "@/lib/types";
 
@@ -102,10 +102,7 @@ export default function AddSessionPanel({
         return false;
       }
       if (licenseFilter !== "All") {
-        const cls = result.series.licenseRange
-          ? getLicenseClassFromRange(result.series.licenseRange)
-          : null;
-        if (cls !== licenseFilter) return false;
+        if (result.series.minLicense !== licenseFilter) return false;
       }
       if (minuteFilter !== "All") {
         const sessionMinute = parseInt(result.sessionTime.split(":")[1], 10);
@@ -138,9 +135,7 @@ export default function AddSessionPanel({
 
   const handleAdd = (result: SlotSeriesResult) => {
     const color = getCategoryCardColor(result.series.category);
-    const licenseClass = result.series.licenseRange
-      ? (getLicenseClassFromRange(result.series.licenseRange) ?? "")
-      : "";
+    const licenseClass = result.series.minLicense ?? "";
 
     const data: Omit<CalendarSession, "id"> = {
       seriesId: result.series.id,
@@ -392,19 +387,26 @@ export default function AddSessionPanel({
                           </div>
 
                           <div className="mt-0.5 flex items-center gap-1.5 flex-wrap">
-                            {/* License badge */}
-                            {result.series.licenseRange &&
-                              (() => {
-                                const cls = getLicenseClassFromRange(result.series.licenseRange);
-                                return cls ? (
-                                  <span
-                                    className={`inline-flex items-center rounded border px-1 py-0.5 text-[9px] font-semibold ${getLicenseBadgeColor(cls)}`}
-                                  >
-                                    {cls === "Rookie" ? "Rookie" : `Class ${cls}`}
-                                  </span>
-                                ) : null;
-                              })()
-                            }
+                            {/* License range badges */}
+                            {result.series.licenses && result.series.licenses.length > 0 && (() => {
+                              const filtered = result.series.licenses.filter(
+                                (l) => l !== "Pro" && l !== "Pro/WC"
+                              );
+                              if (filtered.length === 0) return null;
+                              const first = filtered[0];
+                              const last = filtered[filtered.length - 1];
+                              const label =
+                                first === last
+                                  ? (first === "Rookie" ? "Rookie" : `Class ${first}`)
+                                  : `${first === "Rookie" ? "Rookie" : first} → ${last}`;
+                              return (
+                                <span
+                                  className={`inline-flex items-center rounded border px-1 py-0.5 text-[9px] font-semibold ${getLicenseBadgeColor(first)}`}
+                                >
+                                  {label}
+                                </span>
+                              );
+                            })()}
                             {/* Category */}
                             <span className="text-[10px] text-slate-400 light-theme:text-gray-500">
                               {result.series.category}
