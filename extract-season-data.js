@@ -61,10 +61,10 @@ function isTocLine(line) {
 /**
  * iRacing license hierarchy in order from lowest to highest.
  */
-const LICENSE_ORDER = ["R", "D", "C", "B", "A", "Pro", "Pro/WC"];
+const LICENSE_ORDER = ["Rookie", "D", "C", "B", "A", "Pro", "Pro/WC"];
 
 const LICENSE_LABEL_MAP = {
-  rookie: "R",
+  rookie: "Rookie",
   "class d": "D",
   "class c": "C",
   "class b": "B",
