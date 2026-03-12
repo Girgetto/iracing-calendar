@@ -20,15 +20,38 @@ export default function TrackRecommendationsModal({
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedTrack, setExpandedTrack] = useState<string | null>(null);
   const [showOwned, setShowOwned] = useState(false);
+  const [selectedSeries, setSelectedSeries] = useState<Set<string>>(new Set());
+  const [showSeriesFilter, setShowSeriesFilter] = useState(false);
 
   const allTrackFrequency = useMemo(
     () => getAllTrackFrequency(allSeries, ownedTracks),
     [allSeries, ownedTracks]
   );
 
+  // All unique series names across all tracks
+  const allSeriesNames = useMemo(() => {
+    const names = new Set<string>();
+    allTrackFrequency.forEach((t) => t.series.forEach((s) => names.add(s.name)));
+    return Array.from(names).sort();
+  }, [allTrackFrequency]);
+
+  // Filter tracks by selected series (if any), recalculating counts
+  const filteredBySeries = useMemo(() => {
+    if (selectedSeries.size === 0) return allTrackFrequency;
+    return allTrackFrequency
+      .map((item) => {
+        const matchingSeries = item.series.filter((s) => selectedSeries.has(s.name));
+        if (matchingSeries.length === 0) return null;
+        const count = matchingSeries.reduce((sum, s) => sum + s.weeks.length, 0);
+        return { ...item, series: matchingSeries, count };
+      })
+      .filter((item): item is NonNullable<typeof item> => item !== null)
+      .sort((a, b) => b.count - a.count);
+  }, [allTrackFrequency, selectedSeries]);
+
   const trackFrequency = useMemo(
-    () => showOwned ? allTrackFrequency : allTrackFrequency.filter((t) => !t.owned),
-    [allTrackFrequency, showOwned]
+    () => showOwned ? filteredBySeries : filteredBySeries.filter((t) => !t.owned),
+    [filteredBySeries, showOwned]
   );
 
   const filtered = useMemo(
@@ -38,6 +61,20 @@ export default function TrackRecommendationsModal({
       ),
     [trackFrequency, searchQuery]
   );
+
+  const toggleSeries = (name: string) => {
+    setSelectedSeries((prev) => {
+      const next = new Set(prev);
+      if (next.has(name)) {
+        next.delete(name);
+      } else {
+        next.add(name);
+      }
+      return next;
+    });
+  };
+
+  const clearSeriesFilter = () => setSelectedSeries(new Set());
 
   if (!isOpen) return null;
 
@@ -95,10 +132,76 @@ export default function TrackRecommendationsModal({
           />
         </div>
 
+        {/* Series Filter */}
+        <div className="border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
+          <button
+            onClick={() => setShowSeriesFilter((v) => !v)}
+            className="w-full flex items-center justify-between px-4 py-2.5 text-sm text-gray-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 hover:bg-white/5 light-theme:hover:bg-gray-50 transition-colors duration-200"
+          >
+            <span className="flex items-center gap-2">
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-.293.707L13 13.414V19a1 1 0 01-.553.894l-4 2A1 1 0 017 21v-7.586L3.293 6.707A1 1 0 013 6V4z" />
+              </svg>
+              Filter by series
+              {selectedSeries.size > 0 && (
+                <span className="bg-red-500/20 border border-red-500/40 text-red-400 light-theme:bg-red-100 light-theme:border-red-400 light-theme:text-red-700 text-xs font-medium px-1.5 py-0.5 rounded-full">
+                  {selectedSeries.size}
+                </span>
+              )}
+            </span>
+            <svg
+              className={`h-4 w-4 transition-transform duration-200 ${showSeriesFilter ? "rotate-180" : ""}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          {showSeriesFilter && (
+            <div className="px-4 pb-3">
+              {selectedSeries.size > 0 && (
+                <div className="flex justify-end mb-2">
+                  <button
+                    onClick={clearSeriesFilter}
+                    className="text-xs text-gray-500 light-theme:text-gray-500 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
+                  >
+                    Clear all
+                  </button>
+                </div>
+              )}
+              <div className="max-h-40 overflow-y-auto flex flex-wrap gap-1.5">
+                {allSeriesNames.map((name) => {
+                  const active = selectedSeries.has(name);
+                  return (
+                    <button
+                      key={name}
+                      onClick={() => toggleSeries(name)}
+                      className={`px-2.5 py-1 rounded-full text-xs font-medium border transition-colors duration-200 ${
+                        active
+                          ? "bg-red-500/20 border-red-500/40 text-red-400 light-theme:bg-red-100 light-theme:border-red-400 light-theme:text-red-700"
+                          : "bg-white/5 border-white/10 text-gray-400 light-theme:bg-gray-100 light-theme:border-gray-300 light-theme:text-gray-600 hover:bg-white/10 light-theme:hover:bg-gray-200"
+                      }`}
+                    >
+                      {name}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Summary */}
         {filtered.length > 0 && (
           <div className="px-6 py-2 text-xs text-gray-500 light-theme:text-gray-600 border-b border-white/5 light-theme:border-gray-100 transition-colors duration-300">
             {filtered.length} {showOwned ? "" : "unowned "}track{filtered.length !== 1 ? "s" : ""} found
+            {selectedSeries.size > 0 && (
+              <span className="ml-1">
+                across {selectedSeries.size} selected series
+              </span>
+            )}
           </div>
         )}
 
@@ -108,6 +211,8 @@ export default function TrackRecommendationsModal({
             <p className="text-center text-gray-500 light-theme:text-gray-600 py-12 transition-colors duration-300">
               {ownedTracks.length === 0
                 ? "Set your owned tracks in My Content to see recommendations"
+                : selectedSeries.size > 0
+                ? "No tracks found for the selected series"
                 : "No tracks found"}
             </p>
           ) : (
