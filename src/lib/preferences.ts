@@ -258,6 +258,40 @@ export function getAllTrackFrequency(
 }
 
 /**
+ * Export preferences as a downloadable JSON file.
+ */
+export function exportPreferences(prefs: UserPreferences): void {
+  const data = JSON.stringify(prefs, null, 2);
+  const blob = new Blob([data], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "iracing-preferences.json";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Parse and validate imported preferences JSON.
+ * Returns the parsed preferences or throws an error if invalid.
+ */
+export function parseImportedPreferences(json: string): UserPreferences {
+  const parsed = JSON.parse(json);
+  if (
+    !Array.isArray(parsed.ownedCars) ||
+    !Array.isArray(parsed.ownedTracks) ||
+    !Array.isArray(parsed.favoriteSeries)
+  ) {
+    throw new Error("Invalid preferences format");
+  }
+  return {
+    ownedCars: parsed.ownedCars.filter((v: unknown) => typeof v === "string"),
+    ownedTracks: parsed.ownedTracks.filter((v: unknown) => typeof v === "string"),
+    favoriteSeries: parsed.favoriteSeries.filter((v: unknown) => typeof v === "string"),
+  };
+}
+
+/**
  * Toggle favorite status for a series.
  */
 export function toggleFavoriteSeries(

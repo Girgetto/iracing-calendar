@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { UserPreferences } from "@/lib/preferences";
-import { ensureFreeContent } from "@/lib/preferences";
+import { ensureFreeContent, exportPreferences, parseImportedPreferences } from "@/lib/preferences";
 import { isFreeCar, isFreeTrack } from "@/lib/freeContent";
 
 interface PreferencesModalProps {
@@ -28,6 +28,8 @@ export default function PreferencesModal({
   const [ownedTracks, setOwnedTracks] = useState<string[]>(
     preferences.ownedTracks
   );
+  const [importError, setImportError] = useState<string | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     // Ensure included content is always pre-selected when preferences are updated
@@ -51,6 +53,36 @@ export default function PreferencesModal({
   const handleReset = () => {
     setOwnedCars([]);
     setOwnedTracks([]);
+  };
+
+  const handleExport = () => {
+    exportPreferences({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries });
+  };
+
+  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setImportError(null);
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const imported = parseImportedPreferences(event.target?.result as string);
+        const withFree = ensureFreeContent(
+          imported.ownedCars,
+          imported.ownedTracks,
+          availableCars,
+          availableTracks,
+          imported.favoriteSeries
+        );
+        setOwnedCars(withFree.ownedCars);
+        setOwnedTracks(withFree.ownedTracks);
+      } catch {
+        setImportError("Invalid file. Please upload a valid preferences JSON.");
+      }
+    };
+    reader.readAsText(file);
+    // Reset input so the same file can be re-imported
+    e.target.value = "";
   };
 
   // Helper function to extract base track name (everything before last " - ")
@@ -307,26 +339,52 @@ export default function PreferencesModal({
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between gap-3 p-6 border-t border-white/10 light-theme:border-gray-200 transition-colors duration-300">
-          <button
-            onClick={handleReset}
-            className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
-          >
-            Clear All
-          </button>
-          <div className="flex gap-3">
-            <button
-              onClick={onClose}
-              className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
-            >
-              Cancel
-            </button>
-            <button
-              onClick={handleSave}
-              className="px-6 py-2 bg-red-500 hover:bg-red-600 light-theme:bg-red-600 light-theme:hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors duration-300"
-            >
-              Save Changes
-            </button>
+        <div className="flex flex-col gap-2 p-6 border-t border-white/10 light-theme:border-gray-200 transition-colors duration-300">
+          {importError && (
+            <p className="text-xs text-red-400 light-theme:text-red-600">{importError}</p>
+          )}
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleReset}
+                className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+              >
+                Clear All
+              </button>
+              <button
+                onClick={handleExport}
+                className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+              >
+                Export
+              </button>
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+              >
+                Import
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="application/json,.json"
+                className="hidden"
+                onChange={handleImport}
+              />
+            </div>
+            <div className="flex gap-3">
+              <button
+                onClick={onClose}
+                className="px-4 py-2 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSave}
+                className="px-6 py-2 bg-red-500 hover:bg-red-600 light-theme:bg-red-600 light-theme:hover:bg-red-700 text-white text-sm font-medium rounded-lg transition-colors duration-300"
+              >
+                Save Changes
+              </button>
+            </div>
           </div>
         </div>
       </div>
