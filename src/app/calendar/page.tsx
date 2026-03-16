@@ -18,6 +18,8 @@ export default function CalendarPage() {
     ownedCars: [],
     ownedTracks: [],
     favoriteSeries: [],
+    wantToBuyCars: [],
+    wantToBuyTracks: [],
   });
 
   // Load preferences to get favorite series

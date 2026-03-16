@@ -7,6 +7,8 @@ export interface UserPreferences {
   ownedCars: string[];
   ownedTracks: string[];
   favoriteSeries: string[];
+  wantToBuyCars: string[];
+  wantToBuyTracks: string[];
 }
 
 const STORAGE_KEY = "iracing-calendar-preferences";
@@ -17,7 +19,7 @@ const STORAGE_KEY = "iracing-calendar-preferences";
  */
 export function loadPreferences(): UserPreferences {
   if (typeof window === "undefined") {
-    return { ownedCars: [], ownedTracks: [], favoriteSeries: [] };
+    return { ownedCars: [], ownedTracks: [], favoriteSeries: [], wantToBuyCars: [], wantToBuyTracks: [] };
   }
 
   try {
@@ -29,13 +31,15 @@ export function loadPreferences(): UserPreferences {
         ownedCars: prefs.ownedCars || [],
         ownedTracks: prefs.ownedTracks || [],
         favoriteSeries: prefs.favoriteSeries || [],
+        wantToBuyCars: prefs.wantToBuyCars || [],
+        wantToBuyTracks: prefs.wantToBuyTracks || [],
       };
     }
   } catch (e) {
     console.error("Failed to load preferences:", e);
   }
 
-  return { ownedCars: [], ownedTracks: [], favoriteSeries: [] };
+  return { ownedCars: [], ownedTracks: [], favoriteSeries: [], wantToBuyCars: [], wantToBuyTracks: [] };
 }
 
 /**
@@ -47,7 +51,9 @@ export function ensureFreeContent(
   ownedTracks: string[],
   availableCars: string[],
   availableTracks: string[],
-  favoriteSeries?: string[]
+  favoriteSeries?: string[],
+  wantToBuyCars?: string[],
+  wantToBuyTracks?: string[]
 ): UserPreferences {
   const freeCars = getFreeCarsFromList(availableCars);
   const freeTracks = getFreeTracksFromList(availableTracks);
@@ -56,6 +62,8 @@ export function ensureFreeContent(
     ownedCars: Array.from(new Set([...ownedCars, ...freeCars])),
     ownedTracks: Array.from(new Set([...ownedTracks, ...freeTracks])),
     favoriteSeries: favoriteSeries || [],
+    wantToBuyCars: wantToBuyCars || [],
+    wantToBuyTracks: wantToBuyTracks || [],
   };
 }
 
@@ -288,6 +296,8 @@ export function parseImportedPreferences(json: string): UserPreferences {
     ownedCars: parsed.ownedCars.filter((v: unknown) => typeof v === "string"),
     ownedTracks: parsed.ownedTracks.filter((v: unknown) => typeof v === "string"),
     favoriteSeries: parsed.favoriteSeries.filter((v: unknown) => typeof v === "string"),
+    wantToBuyCars: (parsed.wantToBuyCars || []).filter((v: unknown) => typeof v === "string"),
+    wantToBuyTracks: (parsed.wantToBuyTracks || []).filter((v: unknown) => typeof v === "string"),
   };
 }
 

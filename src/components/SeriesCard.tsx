@@ -24,6 +24,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
   const licenseClass = series.minLicense ?? null;
 
+  // Want to buy calculations
+  const wantedTracksCount = series.schedule.filter(
+    (week) => preferences.wantToBuyTracks.includes(week.track) && !ownsTrack(week.track, preferences.ownedTracks)
+  ).length;
+  const seriesCars = series.car && series.car !== "See race week for cars in use that week."
+    ? series.car.split(",").map((c) => c.trim())
+    : [];
+  const wantsSeriesCar = !availability.hasRequiredCar && seriesCars.some((car) => preferences.wantToBuyCars.includes(car));
+  const hasWantToBuy = wantedTracksCount > 0 || wantsSeriesCar;
+
   const handleToggleFavorite = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -54,6 +64,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 className={`shrink-0 inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium ${getLicenseBadgeColor(licenseClass)}`}
               >
                 {licenseClass === "Rookie" ? "Rookie" : `Class ${licenseClass}`}
+              </span>
+            )}
+            {hasWantToBuy && (
+              <span className="shrink-0 inline-flex items-center gap-1 rounded-full bg-amber-500/20 light-theme:bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-400 light-theme:text-amber-700 border border-amber-500/30 light-theme:border-amber-300 transition-colors duration-300">
+                <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                {wantsSeriesCar && wantedTracksCount === 0 && "Car wanted"}
+                {!wantsSeriesCar && wantedTracksCount > 0 && `${wantedTracksCount} track${wantedTracksCount > 1 ? "s" : ""} wanted`}
+                {wantsSeriesCar && wantedTracksCount > 0 && `Car + ${wantedTracksCount} wanted`}
               </span>
             )}
           </div>
@@ -153,6 +173,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               Ready
+            </span>
+          )}
+          {hasWantToBuy && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/20 light-theme:bg-amber-100 px-2 py-0.5 text-[10px] font-medium text-amber-400 light-theme:text-amber-700 border border-amber-500/30 light-theme:border-amber-300 transition-colors duration-300">
+              <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              {wantsSeriesCar && wantedTracksCount === 0 && "Car wanted"}
+              {!wantsSeriesCar && wantedTracksCount > 0 && `${wantedTracksCount} track${wantedTracksCount > 1 ? "s" : ""} wanted`}
+              {wantsSeriesCar && wantedTracksCount > 0 && `Car + ${wantedTracksCount} track${wantedTracksCount > 1 ? "s" : ""} wanted`}
             </span>
           )}
         </div>

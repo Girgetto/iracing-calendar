@@ -23,6 +23,7 @@ import SearchBar from "@/components/SearchBar";
 import SeriesList from "@/components/SeriesList";
 import PreferencesModal from "@/components/PreferencesModal";
 import TrackRecommendationsModal from "@/components/TrackRecommendationsModal";
+import WantToBuyModal from "@/components/WantToBuyModal";
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -33,8 +34,11 @@ export default function HomePage() {
     ownedCars: [],
     ownedTracks: [],
     favoriteSeries: [],
+    wantToBuyCars: [],
+    wantToBuyTracks: [],
   });
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
+  const [isWantToBuyOpen, setIsWantToBuyOpen] = useState(false);
   const [isTrackRecommendationsOpen, setIsTrackRecommendationsOpen] = useState(false);
   const [canRaceOnly, setCanRaceOnly] = useState(false);
 
@@ -62,7 +66,9 @@ export default function HomePage() {
       loaded.ownedTracks,
       availableCars,
       availableTracks,
-      loaded.favoriteSeries
+      loaded.favoriteSeries,
+      loaded.wantToBuyCars,
+      loaded.wantToBuyTracks
     );
     setPreferences(withFreeContent);
   }, [availableCars, availableTracks]);
@@ -239,6 +245,25 @@ export default function HomePage() {
                   </svg>
                   My Content
                 </button>
+                <button
+                  onClick={() => setIsWantToBuyOpen(true)}
+                  className="shrink-0 flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 light-theme:bg-gray-100 light-theme:hover:bg-gray-200 border border-white/10 light-theme:border-gray-300 rounded-lg text-sm text-slate-300 hover:text-white light-theme:text-gray-700 light-theme:hover:text-gray-900 transition-colors duration-300"
+                >
+                  <svg
+                    className="h-4 w-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  Want to Buy
+                </button>
               </div>
             </div>
           </div>
@@ -280,6 +305,16 @@ export default function HomePage() {
       <PreferencesModal
         isOpen={isPreferencesOpen}
         onClose={() => setIsPreferencesOpen(false)}
+        preferences={preferences}
+        onSave={handleSavePreferences}
+        availableCars={availableCars}
+        availableTracks={availableTracks}
+      />
+
+      {/* Want to Buy Modal */}
+      <WantToBuyModal
+        isOpen={isWantToBuyOpen}
+        onClose={() => setIsWantToBuyOpen(false)}
         preferences={preferences}
         onSave={handleSavePreferences}
         availableCars={availableCars}

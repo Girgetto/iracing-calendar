@@ -9,7 +9,7 @@ import {
   formatDateShort,
   getCategoryColor,
 } from "@/lib/utils";
-import { isWeekJoinable, getSeriesAvailability } from "@/lib/preferences";
+import { isWeekJoinable, getSeriesAvailability, ownsTrack } from "@/lib/preferences";
 
 interface SeriesDetailProps {
   series: Series;
@@ -134,6 +134,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
           const isCurrent = status === "current";
           const isPast = status === "past";
           const joinable = hasPreferences ? isWeekJoinable(week, series, preferences) : null;
+          const trackOwned = hasPreferences && ownsTrack(week.track, preferences.ownedTracks);
+          const trackWanted = hasPreferences && !trackOwned && preferences.wantToBuyTracks.includes(week.track);
 
           return (
             <div
@@ -219,6 +221,22 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                   {!isCurrent && !isPast && joinable === false && (
                     <span className="inline-flex text-[10px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
                       Track required
+                    </span>
+                  )}
+                  {trackOwned && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-emerald-500/15 light-theme:bg-emerald-100 px-2.5 py-1 text-[10px] font-medium text-emerald-400 light-theme:text-emerald-700 border border-emerald-500/30 light-theme:border-emerald-300 transition-colors duration-300">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      Owned
+                    </span>
+                  )}
+                  {trackWanted && (
+                    <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/15 light-theme:bg-amber-100 px-2.5 py-1 text-[10px] font-medium text-amber-400 light-theme:text-amber-700 border border-amber-500/30 light-theme:border-amber-300 transition-colors duration-300">
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                      Wanted
                     </span>
                   )}
                 </div>
