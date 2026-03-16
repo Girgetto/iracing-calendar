@@ -21,6 +21,8 @@ export default function SeriesDetailPage({ series }: SeriesDetailPageProps) {
     ownedCars: [],
     ownedTracks: [],
     favoriteSeries: [],
+    wantToBuyCars: [],
+    wantToBuyTracks: [],
   });
 
   const allSeries = getAllSeries();
@@ -34,7 +36,9 @@ export default function SeriesDetailPage({ series }: SeriesDetailPageProps) {
       loaded.ownedTracks,
       availableCars,
       availableTracks,
-      loaded.favoriteSeries
+      loaded.favoriteSeries,
+      loaded.wantToBuyCars,
+      loaded.wantToBuyTracks
     );
     setPreferences(withFreeContent);
   }, [availableCars, availableTracks]);
