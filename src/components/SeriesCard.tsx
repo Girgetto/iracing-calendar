@@ -98,6 +98,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
             const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+            const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
             return (
               <div
                 key={week.week}
@@ -111,6 +112,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                     ? "bg-gray-500/50 light-theme:bg-gray-400"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : isTrackWanted
+                    ? "bg-yellow-400/70 light-theme:bg-yellow-400"
                     : "bg-white/10 border border-white/20 light-theme:bg-transparent light-theme:border-gray-300"
                 }`}
               />
@@ -251,6 +254,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
             const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+            const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
 
             return (
               <div
@@ -265,6 +269,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                     ? "bg-gray-500/50 light-theme:bg-gray-400/70"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : isTrackWanted
+                    ? "bg-yellow-400/70 light-theme:bg-yellow-400"
                     : "bg-white/8 border border-white/15 light-theme:bg-transparent light-theme:border-gray-300"
                 }`}
               />

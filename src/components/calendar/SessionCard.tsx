@@ -10,6 +10,7 @@ interface SessionCardProps {
   showLocalTime: boolean;
   referenceDate: Date;
   isFavorited: boolean;
+  isTrackWanted: boolean;
   onRemove: (id: string) => void;
   onClick: (session: CalendarSession) => void;
 }
@@ -24,6 +25,7 @@ export default function SessionCard({
   showLocalTime,
   referenceDate,
   isFavorited,
+  isTrackWanted,
   onRemove,
   onClick,
 }: SessionCardProps) {
@@ -89,9 +91,16 @@ export default function SessionCard({
 
         {!isShort && (
           <>
-            <span className="text-white/80 text-[9px] leading-tight truncate">
-              {session.trackName}
-            </span>
+            <div className="flex items-center gap-0.5 min-w-0">
+              <span className="text-white/80 text-[9px] leading-tight truncate flex-1 min-w-0">
+                {session.trackName}
+              </span>
+              {isTrackWanted && (
+                <span className="shrink-0 inline-flex items-center rounded-full bg-yellow-400/25 border border-yellow-400/50 px-1 text-[7px] font-semibold text-yellow-300 leading-tight">
+                  wish
+                </span>
+              )}
+            </div>
             <span className="text-white/70 text-[9px] leading-tight">
               {displayTime} · {session.durationMinutes}min
             </span>
