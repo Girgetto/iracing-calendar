@@ -93,3 +93,22 @@ html {
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
+
+/* Current week bar animations */
+@keyframes current-week-eligible {
+  0%, 100% { background-color: rgb(16 185 129); }  /* emerald-500 */
+  50%       { background-color: rgb(110 231 183); } /* emerald-300 */
+}
+
+@keyframes current-week-only {
+  0%, 100% { background-color: rgb(239 68 68);  }  /* red-500 */
+  50%       { background-color: rgb(252 165 165); } /* red-300 */
+}
+
+.animate-current-eligible {
+  animation: current-week-eligible 1.4s ease-in-out infinite;
+}
+
+.animate-current-only {
+  animation: current-week-only 1.4s ease-in-out infinite;
+}
