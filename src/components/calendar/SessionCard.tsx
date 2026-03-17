@@ -11,7 +11,6 @@ interface SessionCardProps {
   referenceDate: Date;
   isFavorited: boolean;
   onRemove: (id: string) => void;
-  onClick: (session: CalendarSession) => void;
 }
 
 const HOUR_PX = 60;
@@ -25,7 +24,6 @@ export default function SessionCard({
   referenceDate,
   isFavorited,
   onRemove,
-  onClick,
 }: SessionCardProps) {
   const displayTime = showLocalTime
     ? utcTimeToLocal(session.startTimeUTC, referenceDate)
@@ -56,6 +54,7 @@ export default function SessionCard({
       <button
         onClick={(e) => {
           e.stopPropagation();
+          e.preventDefault();
           onRemove(session.id);
         }}
         className="absolute top-0.5 right-0.5 z-20 hidden group-hover:flex h-4 w-4 items-center justify-center rounded-full bg-black/40 hover:bg-black/60 text-white transition-colors"

@@ -314,7 +314,6 @@ export default function WeeklyCalendar({
               referenceDate={calDate}
               isFavorited={favoriteSeries.includes(session.seriesId)}
               onRemove={handleRemoveSession}
-              onClick={(s) => handleCardClick(s, dayIndex)}
             />
           );
         })}
