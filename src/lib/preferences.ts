@@ -58,12 +58,15 @@ export function ensureFreeContent(
   const freeCars = getFreeCarsFromList(availableCars);
   const freeTracks = getFreeTracksFromList(availableTracks);
 
+  const mergedOwnedCars = Array.from(new Set([...ownedCars, ...freeCars]));
+  const mergedOwnedTracks = Array.from(new Set([...ownedTracks, ...freeTracks]));
+
   return {
-    ownedCars: Array.from(new Set([...ownedCars, ...freeCars])),
-    ownedTracks: Array.from(new Set([...ownedTracks, ...freeTracks])),
+    ownedCars: mergedOwnedCars,
+    ownedTracks: mergedOwnedTracks,
     favoriteSeries: favoriteSeries || [],
-    wantToBuyCars: wantToBuyCars || [],
-    wantToBuyTracks: wantToBuyTracks || [],
+    wantToBuyCars: (wantToBuyCars || []).filter((c) => !mergedOwnedCars.includes(c)),
+    wantToBuyTracks: (wantToBuyTracks || []).filter((t) => !mergedOwnedTracks.includes(t)),
   };
 }
 

@@ -46,7 +46,9 @@ export default function PreferencesModal({
   if (!isOpen) return null;
 
   const handleSave = () => {
-    onSave({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries, wantToBuyCars: preferences.wantToBuyCars, wantToBuyTracks: preferences.wantToBuyTracks });
+    const cleanedWantToBuyCars = preferences.wantToBuyCars.filter((c) => !ownedCars.includes(c));
+    const cleanedWantToBuyTracks = preferences.wantToBuyTracks.filter((t) => !ownedTracks.includes(t));
+    onSave({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries, wantToBuyCars: cleanedWantToBuyCars, wantToBuyTracks: cleanedWantToBuyTracks });
     onClose();
   };
 
