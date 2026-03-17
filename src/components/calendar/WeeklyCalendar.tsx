@@ -38,11 +38,13 @@ const DAY_NAMES_LONG = [
 interface WeeklyCalendarProps {
   allSeries: Series[];
   favoriteSeries: string[]; // series IDs
+  wantToBuyTracks: string[];
 }
 
 export default function WeeklyCalendar({
   allSeries,
   favoriteSeries,
+  wantToBuyTracks,
 }: WeeklyCalendarProps) {
   const [weekStart, setWeekStart] = useState<Date>(() => {
     const now = new Date();
@@ -313,6 +315,7 @@ export default function WeeklyCalendar({
               showLocalTime={showLocalTime}
               referenceDate={calDate}
               isFavorited={favoriteSeries.includes(session.seriesId)}
+              isTrackWanted={wantToBuyTracks.includes(session.trackName)}
               onRemove={handleRemoveSession}
               onClick={(s) => handleCardClick(s, dayIndex)}
             />

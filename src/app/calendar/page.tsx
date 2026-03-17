@@ -59,6 +59,7 @@ export default function CalendarPage() {
           <WeeklyCalendar
             allSeries={allSeries}
             favoriteSeries={favoriteSeries}
+            wantToBuyTracks={preferences.wantToBuyTracks}
           />
         </div>
       </main>
