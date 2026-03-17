@@ -32,10 +32,8 @@ export default function SessionCard({
   const isShort = heightPx < HOUR_PX * 0.6; // less than 36px — very compact
 
   return (
-    <a
-      href={`/series/${session.seriesSlug}`}
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
+      role="link"
       className="absolute left-0.5 right-0.5 rounded overflow-hidden select-none group z-10 cursor-pointer"
       style={{
         top: topPx,
@@ -46,7 +44,6 @@ export default function SessionCard({
       title={`${session.seriesName} — ${session.trackName} — ${displayTime} (${session.durationMinutes}min)`}
       onClick={(e) => {
         e.stopPropagation();
-        e.preventDefault();
         window.open(`/series/${session.seriesSlug}`, "_blank", "noopener,noreferrer");
       }}
     >
@@ -54,7 +51,6 @@ export default function SessionCard({
       <button
         onClick={(e) => {
           e.stopPropagation();
-          e.preventDefault();
           onRemove(session.id);
         }}
         className="absolute top-0.5 right-0.5 z-20 hidden group-hover:flex h-4 w-4 items-center justify-center rounded-full bg-black/40 hover:bg-black/60 text-white transition-colors"
@@ -101,6 +97,6 @@ export default function SessionCard({
           </>
         )}
       </div>
-    </a>
+    </div>
   );
 }
