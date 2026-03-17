@@ -46,7 +46,11 @@ export default function SessionCard({
         opacity: 0.92,
       }}
       title={`${session.seriesName} — ${session.trackName} — ${displayTime} (${session.durationMinutes}min)`}
-      onClick={(e) => e.stopPropagation()}
+      onClick={(e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        window.open(`/series/${session.seriesSlug}`, "_blank", "noopener,noreferrer");
+      }}
     >
       {/* Remove button */}
       <button
