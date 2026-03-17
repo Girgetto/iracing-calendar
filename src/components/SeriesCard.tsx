@@ -258,7 +258,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 title={`Week ${week.week}: ${week.track}`}
                 className={`h-2 flex-1 rounded-full transition-all ${
                   isCurrent && isEligible
-                    ? "animate-current-eligible ring-[1px] ring-red-500 ring-offset-[1.5px] ring-offset-slate-900 light-theme:ring-offset-white"
+                    ? "animate-current-eligible"
                     : isCurrent
                     ? "animate-current-only"
                     : isPast
