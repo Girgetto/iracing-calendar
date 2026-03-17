@@ -401,7 +401,7 @@ export const MY_GT3_CARS = [
 export const FREE_TRACKS = [
   // Road Courses — base name matches all configurations/variants
   "Circuito de Navarra",
-  "Circuit de Ledenon",
+  "Circuit de Lédenon",
   "VIRginia International Raceway",
   "Motorsport Arena Oschersleben",
   "Rudskogen Motorsenter",
