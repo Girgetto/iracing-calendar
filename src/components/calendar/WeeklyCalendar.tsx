@@ -571,6 +571,7 @@ export default function WeeklyCalendar({
         slotSeries={panelSlotSeries}
         showLocalTime={showLocalTime}
         existingSessions={sessions}
+        favoriteSeries={favoriteSeries}
         onAdd={handleAddSession}
         onClose={closePanel}
       />
