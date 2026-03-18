@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import type { ViewMode, LicenseClass } from "@/lib/types";
 import { getAllSeries, getSeasonData, getCategories, filterSeries } from "@/lib/data";
 import { getCategoryTextColor, getCurrentWeek } from "@/lib/utils";
@@ -25,11 +26,14 @@ import PreferencesModal from "@/components/PreferencesModal";
 import TrackRecommendationsModal from "@/components/TrackRecommendationsModal";
 import WantToBuyModal from "@/components/WantToBuyModal";
 
-export default function HomePage() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [activeCategory, setActiveCategory] = useState("All");
-  const [activeLicense, setActiveLicense] = useState<LicenseClass>("All");
-  const [viewMode, setViewMode] = useState<ViewMode>("grid");
+function HomePageContent() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") ?? "");
+  const [activeCategory, setActiveCategory] = useState(searchParams.get("cat") ?? "All");
+  const [activeLicense, setActiveLicense] = useState<LicenseClass>((searchParams.get("lic") as LicenseClass) ?? "All");
+  const [viewMode, setViewMode] = useState<ViewMode>((searchParams.get("view") as ViewMode) ?? "grid");
   const [preferences, setPreferences] = useState<UserPreferences>({
     ownedCars: [],
     ownedTracks: [],
@@ -40,7 +44,19 @@ export default function HomePage() {
   const [isPreferencesOpen, setIsPreferencesOpen] = useState(false);
   const [isWantToBuyOpen, setIsWantToBuyOpen] = useState(false);
   const [isTrackRecommendationsOpen, setIsTrackRecommendationsOpen] = useState(false);
-  const [canRaceOnly, setCanRaceOnly] = useState(false);
+  const [canRaceOnly, setCanRaceOnly] = useState(searchParams.get("canRace") === "1");
+
+  // Sync filter state to URL so it's preserved on back navigation
+  useEffect(() => {
+    const params = new URLSearchParams();
+    if (searchQuery) params.set("q", searchQuery);
+    if (activeCategory !== "All") params.set("cat", activeCategory);
+    if (activeLicense !== "All") params.set("lic", activeLicense);
+    if (viewMode !== "grid") params.set("view", viewMode);
+    if (canRaceOnly) params.set("canRace", "1");
+    const qs = params.toString();
+    router.replace(qs ? `/?${qs}` : "/", { scroll: false });
+  }, [searchQuery, activeCategory, activeLicense, viewMode, canRaceOnly, router]);
 
   const seasonData = getSeasonData();
   const allSeries = getAllSeries();
@@ -321,5 +337,13 @@ export default function HomePage() {
         availableTracks={availableTracks}
       />
     </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense>
+      <HomePageContent />
+    </Suspense>
   );
 }

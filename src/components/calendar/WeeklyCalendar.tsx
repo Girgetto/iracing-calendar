@@ -317,7 +317,6 @@ export default function WeeklyCalendar({
               isFavorited={favoriteSeries.includes(session.seriesId)}
               isTrackWanted={wantToBuyTracks.includes(session.trackName)}
               onRemove={handleRemoveSession}
-              onClick={(s) => handleCardClick(s, dayIndex)}
             />
           );
         })}

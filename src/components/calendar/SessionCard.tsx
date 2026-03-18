@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { CalendarSession } from "@/lib/calendarStorage";
 import { utcTimeToLocal } from "@/lib/calendarUtils";
 
@@ -12,7 +13,6 @@ interface SessionCardProps {
   isFavorited: boolean;
   isTrackWanted: boolean;
   onRemove: (id: string) => void;
-  onClick: (session: CalendarSession) => void;
 }
 
 const HOUR_PX = 60;
@@ -27,7 +27,6 @@ export default function SessionCard({
   isFavorited,
   isTrackWanted,
   onRemove,
-  onClick,
 }: SessionCardProps) {
   const displayTime = showLocalTime
     ? utcTimeToLocal(session.startTimeUTC, referenceDate)
@@ -36,7 +35,8 @@ export default function SessionCard({
   const isShort = heightPx < HOUR_PX * 0.6; // less than 36px — very compact
 
   return (
-    <div
+    <Link
+      href={`/series/${session.seriesSlug}`}
       className="absolute left-0.5 right-0.5 rounded overflow-hidden select-none group z-10 cursor-pointer"
       style={{
         top: topPx,
@@ -45,15 +45,13 @@ export default function SessionCard({
         opacity: 0.92,
       }}
       title={`${session.seriesName} — ${session.trackName} — ${displayTime} (${session.durationMinutes}min)`}
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick(session);
-      }}
+      onClick={(e) => e.stopPropagation()}
     >
       {/* Remove button */}
       <button
         onClick={(e) => {
           e.stopPropagation();
+          e.preventDefault();
           onRemove(session.id);
         }}
         className="absolute top-0.5 right-0.5 z-20 hidden group-hover:flex h-4 w-4 items-center justify-center rounded-full bg-black/40 hover:bg-black/60 text-white transition-colors"
@@ -107,6 +105,6 @@ export default function SessionCard({
           </>
         )}
       </div>
-    </div>
+    </Link>
   );
 }
