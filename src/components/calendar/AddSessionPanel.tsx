@@ -36,6 +36,7 @@ interface AddSessionPanelProps {
   slotSeries: SlotSeriesResult[];
   showLocalTime: boolean;
   existingSessions: CalendarSession[];
+  favoriteSeries: string[]; // series IDs
   onAdd: (data: Omit<CalendarSession, "id">) => void;
   onClose: () => void;
 }
@@ -48,6 +49,7 @@ export default function AddSessionPanel({
   slotSeries,
   showLocalTime,
   existingSessions,
+  favoriteSeries,
   onAdd,
   onClose,
 }: AddSessionPanelProps) {
@@ -89,9 +91,9 @@ export default function AddSessionPanel({
     return mins;
   }, [slotSeries]);
 
-  // Apply filters
+  // Apply filters and sort favourites to the top
   const filteredSeries = useMemo(() => {
-    return slotSeries.filter((result) => {
+    const filtered = slotSeries.filter((result) => {
       if (
         nameFilter &&
         !result.series.name.toLowerCase().includes(nameFilter.toLowerCase())
@@ -110,7 +112,13 @@ export default function AddSessionPanel({
       }
       return true;
     });
-  }, [slotSeries, nameFilter, categoryFilter, licenseFilter, minuteFilter]);
+    const favoriteSet = new Set(favoriteSeries);
+    return filtered.sort((a, b) => {
+      const aFav = favoriteSet.has(a.series.id) ? 0 : 1;
+      const bFav = favoriteSet.has(b.series.id) ? 0 : 1;
+      return aFav - bFav;
+    });
+  }, [slotSeries, nameFilter, categoryFilter, licenseFilter, minuteFilter, favoriteSeries]);
 
   if (!isOpen || calendarDate === null || hour === null || dayOfWeek === null) {
     return null;
@@ -357,6 +365,7 @@ export default function AddSessionPanel({
               {filteredSeries.map((result, idx) => {
                 const added = isAlreadyAdded(result);
                 const color = getCategoryCardColor(result.series.category);
+                const isFavorite = favoriteSeries.includes(result.series.id);
                 return (
                   <li key={`${result.series.id}-${result.sessionTime}-${idx}`}>
                     <button
@@ -365,6 +374,8 @@ export default function AddSessionPanel({
                       className={`w-full text-left rounded-lg border px-3 py-2.5 transition-colors ${
                         added
                           ? "opacity-50 cursor-not-allowed border-white/5 light-theme:border-gray-100 bg-white/5 light-theme:bg-gray-50"
+                          : isFavorite
+                          ? "border-yellow-500/30 light-theme:border-yellow-400/50 bg-yellow-500/5 light-theme:bg-yellow-50/50 hover:bg-yellow-500/10 light-theme:hover:bg-yellow-50 cursor-pointer"
                           : "border-white/10 light-theme:border-gray-200 bg-slate-800/60 light-theme:bg-gray-50 hover:bg-slate-700 light-theme:hover:bg-gray-100 cursor-pointer"
                       }`}
                     >
@@ -376,6 +387,20 @@ export default function AddSessionPanel({
                         />
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-1.5 flex-wrap">
+                            {isFavorite && (
+                              <svg
+                                className="h-3 w-3 shrink-0 text-yellow-400 fill-yellow-400"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                                strokeWidth={1}
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                                />
+                              </svg>
+                            )}
                             <span className="text-sm font-medium text-white light-theme:text-gray-900 truncate">
                               {result.series.name}
                             </span>
