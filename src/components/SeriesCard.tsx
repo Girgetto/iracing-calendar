@@ -308,6 +308,11 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                   </p>
                 ) : null;
               })()}
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {wantedTracksCount}/{totalWeeks} tracks with wanted tracks
+                </p>
+              )}
             </div>
           ) : availability.percentage === 100 ? (
             <div className="flex items-center gap-1.5 text-xs text-emerald-400">
