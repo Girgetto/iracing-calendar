@@ -322,8 +322,8 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           ) : availability.percentage > 0 ? (
             <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between text-xs">
-                <span className="text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
-                  Eligible for <span className="text-white light-theme:text-gray-900 font-medium">{availability.availableWeeks}</span> of {totalWeeks} weeks
+                <span className="text-white light-theme:text-gray-900 font-medium">
+                  Eligible for {availability.availableWeeks} of {totalWeeks} weeks
                 </span>
                 <span className="text-emerald-400 light-theme:text-emerald-600 font-medium transition-colors duration-300">
                   {Math.round(availability.percentage)}%
