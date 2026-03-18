@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
@@ -77,6 +78,27 @@ export const metadata: Metadata = {
   },
 };
 
+const siteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "iRacing Calendar",
+  description:
+    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it",
+  applicationCategory: "SportsApplication",
+  operatingSystem: "Any",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  author: { "@type": "Person", name: "Girgetto", url: "https://github.com/Girgetto" },
+  codeRepository: "https://github.com/Girgetto/iracing-calendar",
+  keywords:
+    "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
+};
+
+/** Escape `<` so `</script>` can never break out of the JSON-LD block. */
+function safeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -85,10 +107,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Runs before hydration to avoid flash of wrong theme — no inline script needed */}
+        <Script src="/theme-init.js" strategy="beforeInteractive" />
         <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');document.documentElement.classList.add(t==='light'?'light-theme':t==='dark'?'dark-theme':(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark-theme':'light-theme'))}catch(e){}})();`,
-          }}
+          type="application/ld+json"
+          // safeJsonLd escapes `<` → `\u003c` so </script> can never break out
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(siteJsonLd) }}
         />
       </head>
       <body className="antialiased">
