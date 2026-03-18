@@ -15,7 +15,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
   const isCalendar = pathname === "/calendar";
 
   return (
-    <header className="border-b border-white/10 light-theme:border-gray-200 bg-slate-900/80 light-theme:bg-white/80 backdrop-blur-md sticky top-0 z-50 transition-colors duration-300">
+    <header className="border-b border-white/10 light-theme:border-gray-200 bg-slate-900/80 light-theme:bg-white/80 backdrop-blur-sm sticky top-0 z-50 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
