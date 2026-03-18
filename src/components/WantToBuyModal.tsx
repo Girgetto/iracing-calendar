@@ -131,7 +131,7 @@ export default function WantToBuyModal({
   );
 
   const filteredTracks = availableTracks.filter((track) =>
-    track.toLowerCase().includes(searchQuery.toLowerCase())
+    !isFreeTrack(track) && track.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const groupedTracks = groupTracksByBase(filteredTracks);
