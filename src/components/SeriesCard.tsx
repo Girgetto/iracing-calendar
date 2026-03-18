@@ -329,13 +329,25 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
               <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
                 Missing tracks for {totalWeeks - availability.availableWeeks} weeks
               </p>
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {availability.availableWeeks + wantedTracksCount} of {totalWeeks} weeks with wanted tracks
+                </p>
+              )}
             </div>
           ) : (
-            <div className="flex items-center gap-1.5 text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
-              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-              </svg>
-              <span>No owned tracks</span>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-1.5 text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                </svg>
+                <span>No owned tracks</span>
+              </div>
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {wantedTracksCount} of {totalWeeks} weeks with wanted tracks
+                </p>
+              )}
             </div>
           )}
         </div>
