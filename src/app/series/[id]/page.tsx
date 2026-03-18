@@ -61,6 +61,7 @@ export default async function SeriesPage({
   const { id } = await params;
   const series = getSeriesById(id);
   const seasonData = getSeasonData();
+  const allSeries = getAllSeries();
 
   if (!series) {
     notFound();
@@ -72,7 +73,7 @@ export default async function SeriesPage({
 
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
-          <SeriesDetailPage series={series} />
+          <SeriesDetailPage series={series} allSeries={allSeries} />
         </div>
       </main>
 

@@ -51,23 +51,3 @@ export function getLicenseClassFromRange(licenseRange: string): LicenseClass | n
   return rawClass;
 }
 
-export function filterSeries(
-  series: Series[],
-  category: string,
-  searchQuery: string,
-  licenseClass: LicenseClass = "All"
-): Series[] {
-  return series.filter((s) => {
-    const matchesCategory = category === "All" || s.category === category;
-    const q = searchQuery.toLowerCase();
-    const matchesSearch =
-      !searchQuery ||
-      s.name.toLowerCase().includes(q) ||
-      (s.car && s.car.toLowerCase().includes(q)) ||
-      (s.region && s.region.toLowerCase().includes(q)) ||
-      s.schedule.some((w) => w.track.toLowerCase().includes(q));
-    const matchesLicense =
-      licenseClass === "All" || s.minLicense === licenseClass;
-    return matchesCategory && matchesSearch && matchesLicense;
-  });
-}

@@ -4,6 +4,30 @@ import { Providers } from "@/components/Providers";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "iRacing Calendar",
+  description:
+    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
+  url: siteUrl,
+  applicationCategory: "SportsApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  author: {
+    "@type": "Person",
+    name: "Girgetto",
+    url: "https://github.com/Girgetto",
+  },
+  codeRepository: "https://github.com/Girgetto/iracing-calendar",
+  keywords:
+    "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -25,7 +49,7 @@ export const metadata: Metadata = {
     "iRacing tracks",
     "sim racing calendar",
     "sim racing schedule",
-    "iRacing 2025",
+    "iRacing 2026",
     "iRacing season planner",
     "iRacing track planner",
     "open source iRacing",
@@ -89,6 +113,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');document.documentElement.classList.add(t==='light'?'light-theme':t==='dark'?'dark-theme':(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark-theme':'light-theme'))}catch(e){}})();`,
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="antialiased">
