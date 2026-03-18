@@ -98,6 +98,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
             const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+            const isTrackOwnedNoCar = !hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
             return (
               <div
@@ -106,12 +107,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 className={`h-2 w-2 rounded-full transition-colors ${
                   isCurrent && isEligible
                     ? "bg-emerald-500 ring-2 ring-red-500/70 ring-offset-1 ring-offset-slate-900 light-theme:ring-offset-white"
+                    : isCurrent && isTrackOwnedNoCar
+                    ? "bg-emerald-500/40 ring-2 ring-red-500/30"
                     : isCurrent
                     ? "bg-red-500 ring-2 ring-red-500/30"
                     : isPast
                     ? "bg-gray-500/50 light-theme:bg-gray-400"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : isTrackOwnedNoCar
+                    ? "bg-emerald-500/35 light-theme:bg-emerald-300/60"
                     : isTrackWanted
                     ? "bg-yellow-400/70 light-theme:bg-yellow-400"
                     : "bg-white/10 border border-white/20 light-theme:bg-transparent light-theme:border-gray-300"
@@ -254,6 +259,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const hasRequiredCar = ownsSeriesCar(series, preferences.ownedCars);
             const hasRequiredTrack = ownsTrack(week.track, preferences.ownedTracks);
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
+            const isTrackOwnedNoCar = !hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
 
             return (
@@ -263,12 +269,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 className={`h-2 flex-1 rounded-full transition-all ${
                   isCurrent && isEligible
                     ? "animate-current-eligible"
+                    : isCurrent && isTrackOwnedNoCar
+                    ? "animate-current-only opacity-50"
                     : isCurrent
                     ? "animate-current-only"
                     : isPast
                     ? "bg-gray-500/50 light-theme:bg-gray-400/70"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
+                    : isTrackOwnedNoCar
+                    ? "bg-emerald-500/35 light-theme:bg-emerald-300/60"
                     : isTrackWanted
                     ? "bg-yellow-400/70 light-theme:bg-yellow-400"
                     : "bg-white/8 border border-white/15 light-theme:bg-transparent light-theme:border-gray-300"
@@ -283,11 +293,21 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
       {hasPreferences && (
         <div className="mt-3 pt-3 border-t border-white/5 light-theme:border-gray-200 transition-colors duration-300">
           {!availability.hasRequiredCar ? (
-            <div className="flex items-center gap-1.5 text-xs text-amber-500/80">
-              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
-              <span>Car required</span>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-1.5 text-xs text-amber-500/80">
+                <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <span>Car required</span>
+              </div>
+              {(() => {
+                const ownedTracksCount = series.schedule.filter((w) => ownsTrack(w.track, preferences.ownedTracks)).length;
+                return ownedTracksCount > 0 ? (
+                  <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                    {ownedTracksCount}/{totalWeeks} tracks owned
+                  </p>
+                ) : null;
+              })()}
             </div>
           ) : availability.percentage === 100 ? (
             <div className="flex items-center gap-1.5 text-xs text-emerald-400">
