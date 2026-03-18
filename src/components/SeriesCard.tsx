@@ -25,6 +25,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   const licenseClass = series.minLicense ?? null;
 
   // Want to buy calculations
+  const ownedTracksCount = series.schedule.filter((w) => ownsTrack(w.track, preferences.ownedTracks)).length;
   const wantedTracksCount = series.schedule.filter(
     (week) => preferences.wantToBuyTracks.includes(week.track) && !ownsTrack(week.track, preferences.ownedTracks)
   ).length;
@@ -300,14 +301,16 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 </svg>
                 <span>Car required</span>
               </div>
-              {(() => {
-                const ownedTracksCount = series.schedule.filter((w) => ownsTrack(w.track, preferences.ownedTracks)).length;
-                return ownedTracksCount > 0 ? (
-                  <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
-                    {ownedTracksCount}/{totalWeeks} tracks owned
-                  </p>
-                ) : null;
-              })()}
+              {ownedTracksCount > 0 && (
+                <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                  {ownedTracksCount} of {totalWeeks} tracks owned
+                </p>
+              )}
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {ownedTracksCount + wantedTracksCount} of {totalWeeks} tracks with wishlist
+                </p>
+              )}
             </div>
           ) : availability.percentage === 100 ? (
             <div className="flex items-center gap-1.5 text-xs text-emerald-400">
@@ -319,7 +322,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           ) : availability.percentage > 0 ? (
             <div className="flex flex-col gap-1">
               <div className="flex items-center justify-between text-xs">
-                <span className="text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
+                <span className="text-white light-theme:text-gray-900 font-medium">
                   Eligible for {availability.availableWeeks} of {totalWeeks} weeks
                 </span>
                 <span className="text-emerald-400 light-theme:text-emerald-600 font-medium transition-colors duration-300">
@@ -327,15 +330,27 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 </span>
               </div>
               <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
-                Missing tracks for {totalWeeks - availability.availableWeeks} weeks
+                {totalWeeks - availability.availableWeeks} week{totalWeeks - availability.availableWeeks !== 1 ? "s" : ""} without a track
               </p>
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {availability.availableWeeks + wantedTracksCount} of {totalWeeks} weeks with wishlist
+                </p>
+              )}
             </div>
           ) : (
-            <div className="flex items-center gap-1.5 text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
-              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-              </svg>
-              <span>No owned tracks</span>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-1.5 text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+                </svg>
+                <span>No owned tracks</span>
+              </div>
+              {wantedTracksCount > 0 && (
+                <p className="text-[11px] text-amber-400/80 light-theme:text-amber-600 transition-colors duration-300">
+                  {wantedTracksCount} of {totalWeeks} weeks with wishlist
+                </p>
+              )}
             </div>
           )}
         </div>
