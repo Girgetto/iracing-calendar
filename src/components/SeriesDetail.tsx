@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import type { Series } from "@/lib/types";
 import type { UserPreferences } from "@/lib/preferences";
 import {
@@ -17,6 +18,7 @@ interface SeriesDetailProps {
 }
 
 export default function SeriesDetail({ series, preferences }: SeriesDetailProps) {
+  const router = useRouter();
   const currentWeek = getCurrentWeek(series.schedule);
   const availability = getSeriesAvailability(series, preferences);
   const hasPreferences = preferences.ownedCars.length > 0 || preferences.ownedTracks.length > 0;
@@ -25,8 +27,8 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
     <div>
       {/* Back + Header */}
       <div className="mb-8">
-        <Link
-          href="/"
+        <button
+          onClick={() => router.back()}
           className="inline-flex items-center gap-1.5 text-sm text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-300 mb-4"
         >
           <svg
@@ -43,7 +45,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
             />
           </svg>
           Back to all series
-        </Link>
+        </button>
 
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <h1 className="text-2xl sm:text-3xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">
