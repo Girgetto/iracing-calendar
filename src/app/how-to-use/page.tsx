@@ -106,7 +106,7 @@ export default function HowToUsePage() {
 
       <Header metadata={seasonData.metadata} />
 
-      <main className="flex-1">
+      <main id="main-content" className="flex-1 scroll-mt-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
           {/* Page heading */}
           <h1 className="text-3xl font-bold mb-2 text-white light-theme:text-gray-900">
