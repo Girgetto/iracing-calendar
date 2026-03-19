@@ -25,18 +25,20 @@ export default function WantToBuyModal({
   const [searchQuery, setSearchQuery] = useState("");
   const [wantToBuyCars, setWantToBuyCars] = useState<string[]>(preferences.wantToBuyCars);
   const [wantToBuyTracks, setWantToBuyTracks] = useState<string[]>(preferences.wantToBuyTracks);
+  const [localOwnedCars, setLocalOwnedCars] = useState<string[]>(preferences.ownedCars);
   const [localOwnedTracks, setLocalOwnedTracks] = useState<string[]>(preferences.ownedTracks);
 
   useEffect(() => {
     setWantToBuyCars(preferences.wantToBuyCars);
     setWantToBuyTracks(preferences.wantToBuyTracks);
+    setLocalOwnedCars(preferences.ownedCars);
     setLocalOwnedTracks(preferences.ownedTracks);
   }, [preferences]);
 
   if (!isOpen) return null;
 
   const handleSave = () => {
-    onSave({ ...preferences, wantToBuyCars, wantToBuyTracks, ownedTracks: localOwnedTracks });
+    onSave({ ...preferences, wantToBuyCars, wantToBuyTracks, ownedCars: localOwnedCars, ownedTracks: localOwnedTracks });
     onClose();
   };
 
@@ -90,11 +92,16 @@ export default function WantToBuyModal({
 
   const toggleCar = (car: string) => {
     // Cannot want to buy what you already own or what is free
-    if (isFreeCar(car) || preferences.ownedCars.includes(car)) return;
+    if (isFreeCar(car) || localOwnedCars.includes(car)) return;
 
     setWantToBuyCars((prev) =>
       prev.includes(car) ? prev.filter((c) => c !== car) : [...prev, car]
     );
+  };
+
+  const markCarAsOwned = (car: string) => {
+    setLocalOwnedCars((prev) => (prev.includes(car) ? prev : [...prev, car]));
+    setWantToBuyCars((prev) => prev.filter((c) => c !== car));
   };
 
   const toggleTrack = (baseTrackOrVariant: string) => {
@@ -234,7 +241,7 @@ export default function WantToBuyModal({
 
                 if (activeTab === "cars") {
                   isWanted = wantToBuyCars.includes(item);
-                  isOwned = preferences.ownedCars.includes(item);
+                  isOwned = localOwnedCars.includes(item);
                   isFree = isFreeCar(item);
                 } else {
                   const variants = groupedTracks.get(item) || [item];
@@ -307,9 +314,9 @@ export default function WantToBuyModal({
                         OWNED
                       </span>
                     )}
-                    {!isFree && !isOwned && isWanted && activeTab === "tracks" && (
+                    {!isFree && !isOwned && isWanted && (
                       <button
-                        onClick={(e) => { e.stopPropagation(); markTrackAsOwned(item); }}
+                        onClick={(e) => { e.stopPropagation(); activeTab === "cars" ? markCarAsOwned(item) : markTrackAsOwned(item); }}
                         title="Move to My Content"
                         className="text-[10px] text-emerald-400 light-theme:text-emerald-700 font-medium px-2 py-0.5 bg-emerald-500/20 light-theme:bg-emerald-100 hover:bg-emerald-500/40 light-theme:hover:bg-emerald-200 rounded-full transition-colors duration-300 shrink-0"
                       >
