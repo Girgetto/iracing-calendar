@@ -96,6 +96,11 @@ body {
   transition-timing-function: ease-in-out;
 }
 
+/* Suppress all transitions for the single frame of a theme switch */
+.theme-switching * {
+  transition: none !important;
+}
+
 /* Current week bar animations — only when the user has not requested reduced motion */
 @keyframes current-week-eligible {
   0%, 100% { background-color: rgb(16 185 129); }  /* emerald-500 */

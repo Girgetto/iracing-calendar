@@ -38,7 +38,18 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, [theme, mounted]);
 
   const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+    const newTheme = theme === "light" ? "dark" : "light";
+    const root = document.documentElement;
+
+    // Disable transitions so the switch is instant, not a slow 300ms cascade
+    root.classList.add("theme-switching");
+    root.classList.remove("light-theme", "dark-theme");
+    root.classList.add(`${newTheme}-theme`);
+    localStorage.setItem("theme", newTheme);
+    setTheme(newTheme);
+
+    // Re-enable transitions on the next frame, after the repaint
+    requestAnimationFrame(() => root.classList.remove("theme-switching"));
   };
 
   return (
