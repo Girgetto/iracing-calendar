@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import type { UserPreferences } from "@/lib/preferences";
 import { ensureFreeContent, exportPreferences, parseImportedPreferences } from "@/lib/preferences";
 import { isFreeCar, isFreeTrack } from "@/lib/freeContent";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 interface PreferencesModalProps {
   isOpen: boolean;
@@ -30,6 +31,7 @@ export default function PreferencesModal({
   );
   const [importError, setImportError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const focusTrapRef = useFocusTrap(isOpen, onClose);
 
   useEffect(() => {
     // Ensure included content is always pre-selected when preferences are updated
@@ -192,11 +194,11 @@ export default function PreferencesModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 light-theme:bg-black/30 backdrop-blur-sm">
-      <div className="bg-slate-800 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col transition-colors duration-300">
+      <div ref={focusTrapRef} role="dialog" aria-modal="true" aria-labelledby="preferences-modal-title" className="bg-slate-800 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[80vh] flex flex-col transition-colors duration-300">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <div>
-            <h2 className="text-xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">Content Ownership</h2>
+            <h2 id="preferences-modal-title" className="text-xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">Content Ownership</h2>
             <p className="text-sm text-slate-400 light-theme:text-gray-600 mt-1 transition-colors duration-300">
               Select the cars and tracks you own to highlight available series
             </p>

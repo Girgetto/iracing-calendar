@@ -5,6 +5,30 @@ import { Providers } from "@/components/Providers";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "iRacing Calendar",
+  description:
+    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
+  url: siteUrl,
+  applicationCategory: "SportsApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  author: {
+    "@type": "Person",
+    name: "Girgetto",
+    url: "https://github.com/Girgetto",
+  },
+  codeRepository: "https://github.com/Girgetto/iracing-calendar",
+  keywords:
+    "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -26,7 +50,7 @@ export const metadata: Metadata = {
     "iRacing tracks",
     "sim racing calendar",
     "sim racing schedule",
-    "iRacing 2025",
+    "iRacing 2026",
     "iRacing season planner",
     "iRacing track planner",
     "open source iRacing",
@@ -114,8 +138,15 @@ export default function RootLayout({
           // safeJsonLd escapes `<` → `\u003c` so </script> can never break out
           dangerouslySetInnerHTML={{ __html: safeJsonLd(siteJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="antialiased">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-2 focus:left-2 focus:px-4 focus:py-2 focus:bg-red-600 focus:text-white focus:rounded-lg focus:text-sm focus:font-medium">
+          Skip to main content
+        </a>
         <Providers>{children}</Providers>
       </body>
     </html>

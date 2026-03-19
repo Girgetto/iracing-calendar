@@ -1,7 +1,6 @@
 "use client";
 
 import type { ViewMode, LicenseClass } from "@/lib/types";
-import { getCategories } from "@/lib/data";
 import { getCategoryDotColor } from "@/lib/utils";
 
 const LICENSE_CLASSES: { label: string; value: LicenseClass; color: string }[] = [
@@ -26,6 +25,7 @@ interface SearchBarProps {
   canRaceOnly: boolean;
   onCanRaceOnlyChange: (value: boolean) => void;
   hasPreferences: boolean;
+  categories: string[];
 }
 
 export default function SearchBar({
@@ -41,8 +41,8 @@ export default function SearchBar({
   canRaceOnly,
   onCanRaceOnlyChange,
   hasPreferences,
+  categories,
 }: SearchBarProps) {
-  const categories = getCategories();
 
   return (
     <div className="space-y-4">

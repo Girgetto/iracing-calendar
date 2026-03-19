@@ -55,9 +55,11 @@ body {
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Smooth scrolling — only when the user has not requested reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Subtle scrollbar styling - theme aware */
@@ -87,14 +89,24 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Theme transition */
-* {
+/* Theme transition — scoped to top-level containers only */
+body,
+body > div,
+header,
+main,
+footer,
+nav {
   transition-property: background-color, border-color, color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
 
-/* Current week bar animations */
+/* Suppress all transitions for the single frame of a theme switch */
+.theme-switching * {
+  transition: none !important;
+}
+
+/* Current week bar animations — only when the user has not requested reduced motion */
 @keyframes current-week-eligible {
   0%, 100% { background-color: rgb(16 185 129); }  /* emerald-500 */
   50%       { background-color: rgb(110 231 183); } /* emerald-300 */
@@ -106,9 +118,19 @@ html {
 }
 
 .animate-current-eligible {
-  animation: current-week-eligible 1.4s ease-in-out infinite;
+  background-color: rgb(16 185 129); /* emerald-500 fallback for reduced-motion */
 }
 
 .animate-current-only {
-  animation: current-week-only 1.4s ease-in-out infinite;
+  background-color: rgb(239 68 68); /* red-500 fallback for reduced-motion */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-current-eligible {
+    animation: current-week-eligible 1.4s ease-in-out infinite;
+  }
+
+  .animate-current-only {
+    animation: current-week-only 1.4s ease-in-out infinite;
+  }
 }
