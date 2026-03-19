@@ -8,6 +8,23 @@ import { getCurrentWeek, getCategoryColor, getLicenseBadgeColor } from "@/lib/ut
 
 import { getSeriesAvailability, isFavoriteSeries, toggleFavoriteSeries, ownsSeriesCar, ownsTrack } from "@/lib/preferences";
 
+function getWeekStatusLabel(
+  isCurrent: boolean,
+  isPast: boolean,
+  isEligible: boolean,
+  isTrackOwnedNoCar: boolean,
+  isTrackWanted: boolean,
+): string {
+  if (isCurrent && isEligible) return "(current week — eligible)";
+  if (isCurrent && isTrackOwnedNoCar) return "(current week — track owned, car missing)";
+  if (isCurrent) return "(current week)";
+  if (isPast) return "(past)";
+  if (isEligible) return "(eligible)";
+  if (isTrackOwnedNoCar) return "(track owned, car missing)";
+  if (isTrackWanted) return "(track on wishlist)";
+  return "(upcoming)";
+}
+
 interface SeriesCardProps {
   series: Series;
   viewMode: ViewMode;
@@ -101,25 +118,11 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackOwnedNoCar = !hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
-            const statusLabel = isCurrent && isEligible
-              ? " (current week — eligible)"
-              : isCurrent && isTrackOwnedNoCar
-              ? " (current week — track owned, car missing)"
-              : isCurrent
-              ? " (current week)"
-              : isPast
-              ? " (past)"
-              : isEligible
-              ? " (eligible)"
-              : isTrackOwnedNoCar
-              ? " (track owned, car missing)"
-              : isTrackWanted
-              ? " (track on wishlist)"
-              : " (upcoming)";
+            const statusLabel = getWeekStatusLabel(isCurrent, isPast, isEligible, isTrackOwnedNoCar, isTrackWanted);
             return (
               <div
                 key={week.week}
-                title={`Week ${week.week}: ${week.track}${statusLabel}`}
+                title={`Week ${week.week}: ${week.track} ${statusLabel}`}
                 className={`h-2 w-2 rounded-full transition-colors ${
                   isCurrent && isEligible
                     ? "bg-emerald-500 ring-2 ring-red-500/70 ring-offset-1 ring-offset-slate-900 light-theme:ring-offset-white"
@@ -277,26 +280,12 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             const isEligible = hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackOwnedNoCar = !hasRequiredCar && hasRequiredTrack && hasPreferences;
             const isTrackWanted = hasPreferences && !hasRequiredTrack && preferences.wantToBuyTracks.includes(week.track);
-            const statusLabel = isCurrent && isEligible
-              ? " (current week — eligible)"
-              : isCurrent && isTrackOwnedNoCar
-              ? " (current week — track owned, car missing)"
-              : isCurrent
-              ? " (current week)"
-              : isPast
-              ? " (past)"
-              : isEligible
-              ? " (eligible)"
-              : isTrackOwnedNoCar
-              ? " (track owned, car missing)"
-              : isTrackWanted
-              ? " (track on wishlist)"
-              : " (upcoming)";
+            const statusLabel = getWeekStatusLabel(isCurrent, isPast, isEligible, isTrackOwnedNoCar, isTrackWanted);
 
             return (
               <div
                 key={week.week}
-                title={`Week ${week.week}: ${week.track}${statusLabel}`}
+                title={`Week ${week.week}: ${week.track} ${statusLabel}`}
                 className={`h-2 flex-1 rounded-full transition-all ${
                   isCurrent && isEligible
                     ? "animate-current-eligible"
