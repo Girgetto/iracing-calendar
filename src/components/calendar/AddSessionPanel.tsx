@@ -514,11 +514,11 @@ export default function AddSessionPanel({
         {/* Footer */}
         <div className="px-4 py-3 border-t border-white/10 light-theme:border-gray-200">
           <div className="flex items-center justify-between">
-            <p className="text-[10px] text-slate-500 light-theme:text-gray-400">
+            <p className="text-[10px] text-slate-400 light-theme:text-gray-500">
               Only series with a race starting in this time slot are shown.
             </p>
             {slotSeries.length > 0 && (
-              <span className="text-[10px] text-slate-500 light-theme:text-gray-400 shrink-0 ml-2">
+              <span className="text-[10px] text-slate-400 light-theme:text-gray-500 shrink-0 ml-2">
                 {filteredSeries.length}/{slotSeries.length}
               </span>
             )}

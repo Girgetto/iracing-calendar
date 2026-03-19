@@ -119,7 +119,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
             );
           })}
         </div>
-        <div className="flex justify-between mt-1.5 text-[10px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+        <div className="flex justify-between mt-1.5 text-[10px] text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
           <span>Week 1</span>
           <span>Week {series.schedule.length}</span>
         </div>
@@ -182,7 +182,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                       {formatDateShort(week.startDate)} — {formatDateShort(week.endDate)}
                     </span>
                     {(week.durationMins || week.durationLaps) && (
-                      <span className="text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                      <span className="text-xs text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
                         {week.durationMins
                           ? `${week.durationMins} min`
                           : `${week.durationLaps} laps`}
@@ -221,7 +221,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
                     </span>
                   )}
                   {!isCurrent && !isPast && joinable === false && (
-                    <span className="inline-flex text-[10px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                    <span className="inline-flex text-[10px] text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
                       Track required
                     </span>
                   )}
@@ -246,7 +246,7 @@ export default function SeriesDetail({ series, preferences }: SeriesDetailProps)
 
               {/* Conditions */}
               {week.conditions && (
-                <p className="text-[11px] text-slate-600 light-theme:text-gray-500 mt-2 ml-14 transition-colors duration-300">
+                <p className="text-[11px] text-slate-400 light-theme:text-gray-500 mt-2 ml-14 transition-colors duration-300">
                   {week.conditions}
                 </p>
               )}

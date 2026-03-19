@@ -147,7 +147,7 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-400 light-theme:text-gray-500 uppercase tracking-wide">
                   Track
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">
@@ -173,7 +173,7 @@ export default function SessionDetailPanel({
                   />
                 </svg>
                 <div>
-                  <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
+                  <p className="text-[10px] text-slate-400 light-theme:text-gray-500 uppercase tracking-wide">
                     Car
                   </p>
                   <p className="text-sm text-white light-theme:text-gray-900">
@@ -199,7 +199,7 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-400 light-theme:text-gray-500 uppercase tracking-wide">
                   Start time
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">
@@ -232,7 +232,7 @@ export default function SessionDetailPanel({
                 />
               </svg>
               <div>
-                <p className="text-[10px] text-slate-500 light-theme:text-gray-400 uppercase tracking-wide">
+                <p className="text-[10px] text-slate-400 light-theme:text-gray-500 uppercase tracking-wide">
                   Duration
                 </p>
                 <p className="text-sm text-white light-theme:text-gray-900">

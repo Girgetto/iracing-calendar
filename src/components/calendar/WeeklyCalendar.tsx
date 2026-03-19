@@ -484,7 +484,7 @@ export default function WeeklyCalendar({
                   className={`text-xs mt-0.5 ${
                     today
                       ? "font-bold text-white light-theme:text-gray-900"
-                      : "text-slate-500 light-theme:text-gray-400"
+                      : "text-slate-400 light-theme:text-gray-500"
                   }`}
                 >
                   {date}
@@ -512,7 +512,7 @@ export default function WeeklyCalendar({
                   className="absolute right-0 pr-1.5 flex items-start justify-end"
                   style={{ top: hour * HOUR_PX, height: HOUR_PX }}
                 >
-                  <span className="text-[9px] text-slate-600 light-theme:text-gray-400 font-mono leading-none mt-1">
+                  <span className="text-[9px] text-slate-400 light-theme:text-gray-500 font-mono leading-none mt-1">
                     {formatHourLabel(hour)}
                   </span>
                 </div>
