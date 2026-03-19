@@ -26,17 +26,22 @@ export default function WantToBuyModal({
   const [searchQuery, setSearchQuery] = useState("");
   const [wantToBuyCars, setWantToBuyCars] = useState<string[]>(preferences.wantToBuyCars);
   const [wantToBuyTracks, setWantToBuyTracks] = useState<string[]>(preferences.wantToBuyTracks);
+  const [localOwnedCars, setLocalOwnedCars] = useState<string[]>(preferences.ownedCars);
+  const [localOwnedTracks, setLocalOwnedTracks] = useState<string[]>(preferences.ownedTracks);
   const focusTrapRef = useFocusTrap(isOpen, onClose);
+
 
   useEffect(() => {
     setWantToBuyCars(preferences.wantToBuyCars);
     setWantToBuyTracks(preferences.wantToBuyTracks);
+    setLocalOwnedCars(preferences.ownedCars);
+    setLocalOwnedTracks(preferences.ownedTracks);
   }, [preferences]);
 
   if (!isOpen) return null;
 
   const handleSave = () => {
-    onSave({ ...preferences, wantToBuyCars, wantToBuyTracks });
+    onSave({ ...preferences, wantToBuyCars, wantToBuyTracks, ownedCars: localOwnedCars, ownedTracks: localOwnedTracks });
     onClose();
   };
 
@@ -90,11 +95,16 @@ export default function WantToBuyModal({
 
   const toggleCar = (car: string) => {
     // Cannot want to buy what you already own or what is free
-    if (isFreeCar(car) || preferences.ownedCars.includes(car)) return;
+    if (isFreeCar(car) || localOwnedCars.includes(car)) return;
 
     setWantToBuyCars((prev) =>
       prev.includes(car) ? prev.filter((c) => c !== car) : [...prev, car]
     );
+  };
+
+  const markCarAsOwned = (car: string) => {
+    setLocalOwnedCars((prev) => (prev.includes(car) ? prev : [...prev, car]));
+    setWantToBuyCars((prev) => prev.filter((c) => c !== car));
   };
 
   const toggleTrack = (baseTrackOrVariant: string) => {
@@ -105,11 +115,11 @@ export default function WantToBuyModal({
     if (hasAnyFreeVariant) return;
 
     // Cannot want to buy tracks already owned
-    const allOwned = areAllVariantsInList(variants, preferences.ownedTracks);
+    const allOwned = areAllVariantsInList(variants, localOwnedTracks);
     if (allOwned) return;
 
     const allWanted = areAllVariantsInList(
-      variants.filter((v) => !preferences.ownedTracks.includes(v)),
+      variants.filter((v) => !localOwnedTracks.includes(v)),
       wantToBuyTracks
     );
 
@@ -119,7 +129,7 @@ export default function WantToBuyModal({
       } else {
         const newTracks = [...prev];
         variants.forEach((variant) => {
-          if (!newTracks.includes(variant) && !preferences.ownedTracks.includes(variant)) {
+          if (!newTracks.includes(variant) && !localOwnedTracks.includes(variant)) {
             newTracks.push(variant);
           }
         });
@@ -128,12 +138,24 @@ export default function WantToBuyModal({
     });
   };
 
+  const markTrackAsOwned = (baseTrack: string) => {
+    const variants = groupedTracks.get(baseTrack) || [baseTrack];
+    setLocalOwnedTracks((prev) => {
+      const newOwned = [...prev];
+      variants.forEach((v) => {
+        if (!newOwned.includes(v)) newOwned.push(v);
+      });
+      return newOwned;
+    });
+    setWantToBuyTracks((prev) => prev.filter((t) => !variants.includes(t)));
+  };
+
   const filteredCars = availableCars.filter((car) =>
     car.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const filteredTracks = availableTracks.filter((track) =>
-    track.toLowerCase().includes(searchQuery.toLowerCase())
+    !isFreeTrack(track) && track.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const groupedTracks = groupTracksByBase(filteredTracks);
@@ -222,34 +244,33 @@ export default function WantToBuyModal({
 
                 if (activeTab === "cars") {
                   isWanted = wantToBuyCars.includes(item);
-                  isOwned = preferences.ownedCars.includes(item);
+                  isOwned = localOwnedCars.includes(item);
                   isFree = isFreeCar(item);
                 } else {
                   const variants = groupedTracks.get(item) || [item];
                   variantCount = variants.length;
                   displayName = item;
                   isFree = variants.some((v) => isFreeTrack(v));
-                  isOwned = variants.every((v) => preferences.ownedTracks.includes(v));
-                  const unownedVariants = variants.filter((v) => !preferences.ownedTracks.includes(v));
+                  isOwned = variants.every((v) => localOwnedTracks.includes(v));
+                  const unownedVariants = variants.filter((v) => !localOwnedTracks.includes(v));
                   isWanted = unownedVariants.length > 0 && unownedVariants.every((v) => wantToBuyTracks.includes(v));
                 }
 
                 const isDisabled = isFree || isOwned;
 
                 return (
-                  <button
+                  <div
                     key={item}
-                    onClick={() => activeTab === "cars" ? toggleCar(item) : toggleTrack(item)}
-                    disabled={isDisabled}
                     className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg text-left transition-colors duration-300 ${
                       isFree
-                        ? "bg-emerald-500/10 light-theme:bg-emerald-50 border border-emerald-500/30 light-theme:border-emerald-300 text-white light-theme:text-gray-900 cursor-not-allowed opacity-90"
+                        ? "bg-emerald-500/10 light-theme:bg-emerald-50 border border-emerald-500/30 light-theme:border-emerald-300 text-white light-theme:text-gray-900 opacity-90"
                         : isOwned
-                        ? "bg-slate-900/30 light-theme:bg-gray-100 border border-white/5 light-theme:border-gray-200 text-slate-500 light-theme:text-gray-400 cursor-not-allowed"
+                        ? "bg-slate-900/30 light-theme:bg-gray-100 border border-white/5 light-theme:border-gray-200 text-slate-500 light-theme:text-gray-400"
                         : isWanted
-                        ? "bg-amber-500/10 light-theme:bg-amber-50 border border-amber-500/30 light-theme:border-amber-300 text-white light-theme:text-gray-900"
-                        : "bg-slate-900/50 light-theme:bg-gray-50 border border-white/5 light-theme:border-gray-200 text-slate-300 light-theme:text-gray-700 hover:bg-slate-900 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
+                        ? "bg-amber-500/10 light-theme:bg-amber-50 border border-amber-500/30 light-theme:border-amber-300 text-white light-theme:text-gray-900 cursor-pointer"
+                        : "bg-slate-900/50 light-theme:bg-gray-50 border border-white/5 light-theme:border-gray-200 text-slate-300 light-theme:text-gray-700 hover:bg-slate-900 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300 cursor-pointer"
                     }`}
+                    onClick={() => !isDisabled && (activeTab === "cars" ? toggleCar(item) : toggleTrack(item))}
                   >
                     <div
                       className={`h-5 w-5 rounded border-2 flex items-center justify-center shrink-0 transition-colors duration-300 ${
@@ -296,7 +317,16 @@ export default function WantToBuyModal({
                         OWNED
                       </span>
                     )}
-                  </button>
+                    {!isFree && !isOwned && isWanted && (
+                      <button
+                        onClick={(e) => { e.stopPropagation(); activeTab === "cars" ? markCarAsOwned(item) : markTrackAsOwned(item); }}
+                        title="Move to My Content"
+                        className="text-[10px] text-emerald-400 light-theme:text-emerald-700 font-medium px-2 py-0.5 bg-emerald-500/20 light-theme:bg-emerald-100 hover:bg-emerald-500/40 light-theme:hover:bg-emerald-200 rounded-full transition-colors duration-300 shrink-0"
+                      >
+                        I bought it
+                      </button>
+                    )}
+                  </div>
                 );
               })
             )}
