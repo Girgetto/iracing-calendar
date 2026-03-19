@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import type { Series } from "@/lib/types";
 import { getAllTrackFrequency } from "@/lib/preferences";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 interface TrackRecommendationsModalProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ export default function TrackRecommendationsModal({
   const [showOwned, setShowOwned] = useState(false);
   const [selectedSeries, setSelectedSeries] = useState<Set<string>>(new Set());
   const [showSeriesFilter, setShowSeriesFilter] = useState(false);
+  const focusTrapRef = useFocusTrap(isOpen, onClose);
 
   const allTrackFrequency = useMemo(
     () => getAllTrackFrequency(allSeries, ownedTracks),
@@ -82,11 +84,11 @@ export default function TrackRecommendationsModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 light-theme:bg-black/30 backdrop-blur-sm">
-      <div className="bg-gray-900 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[85vh] flex flex-col transition-colors duration-300">
+      <div ref={focusTrapRef} role="dialog" aria-modal="true" aria-labelledby="track-recommendations-modal-title" className="bg-gray-900 light-theme:bg-white rounded-lg border border-white/10 light-theme:border-gray-300 shadow-2xl w-full max-w-2xl max-h-[85vh] flex flex-col transition-colors duration-300">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <div>
-            <h2 className="text-xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">
+            <h2 id="track-recommendations-modal-title" className="text-xl font-bold text-white light-theme:text-gray-900 transition-colors duration-300">
               Track Recommendations
             </h2>
             <p className="text-sm text-gray-400 light-theme:text-gray-600 mt-1 transition-colors duration-300">
