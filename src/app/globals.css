@@ -87,8 +87,13 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Theme transition */
-* {
+/* Theme transition — scoped to top-level containers only */
+body,
+body > div,
+header,
+main,
+footer,
+nav {
   transition-property: background-color, border-color, color;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;

@@ -204,6 +204,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 : "bg-slate-900/40 light-theme:bg-gray-100 text-slate-600 light-theme:text-gray-500 border border-white/5 light-theme:border-gray-300 hover:text-slate-400 light-theme:hover:text-gray-700 hover:bg-slate-800/50 light-theme:hover:bg-gray-200"
             }`}
             title={isFavorited ? "Remove from favorites" : "Add to favorites"}
+            aria-label={isFavorited ? "Remove from favorites" : "Add to favorites"}
           >
             <svg
               className="h-4 w-4"
