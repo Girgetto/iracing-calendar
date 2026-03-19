@@ -32,7 +32,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
                 </span>
                 {currentWeek && (
                   <span className="inline-flex items-center gap-1 rounded-full bg-red-500/15 light-theme:bg-red-100 px-1.5 py-0.5 text-[9px] font-medium text-red-400 light-theme:text-red-700 border border-red-500/30 light-theme:border-red-300 transition-colors duration-300">
-                    <span className="h-1 w-1 rounded-full bg-red-400 light-theme:bg-red-600 animate-pulse" />
+                    <span className="h-1 w-1 rounded-full bg-red-400 light-theme:bg-red-600 motion-safe:animate-pulse" />
                     W{currentWeek}
                   </span>
                 )}
@@ -44,6 +44,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
             {/* My Calendar nav link */}
             <Link
               href="/calendar"
+              aria-current={isCalendar ? "page" : undefined}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors duration-200 ${
                 isCalendar
                   ? "bg-red-600 text-white hover:bg-red-700"

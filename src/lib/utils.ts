@@ -1,4 +1,4 @@
-import type { WeekSchedule, LicenseClass } from "./types";
+import type { WeekSchedule, LicenseClass, Series } from "./types";
 
 // iRacing license hierarchy: higher number = higher license level
 export const LICENSE_LEVELS: Record<string, number> = {
@@ -102,6 +102,27 @@ export function getCategoryColor(category: string): string {
 
 export function getCategoryDotColor(category: string): string {
   return (CATEGORY_COLORS[category] || DEFAULT_COLOR).dot;
+}
+
+export function filterSeries(
+  series: Series[],
+  category: string,
+  searchQuery: string,
+  licenseClass: LicenseClass = "All"
+): Series[] {
+  return series.filter((s) => {
+    const matchesCategory = category === "All" || s.category === category;
+    const q = searchQuery.toLowerCase();
+    const matchesSearch =
+      !searchQuery ||
+      s.name.toLowerCase().includes(q) ||
+      (s.car && s.car.toLowerCase().includes(q)) ||
+      (s.region && s.region.toLowerCase().includes(q)) ||
+      s.schedule.some((w) => w.track.toLowerCase().includes(q));
+    const matchesLicense =
+      licenseClass === "All" || s.minLicense === licenseClass;
+    return matchesCategory && matchesSearch && matchesLicense;
+  });
 }
 
 export function getCategoryTextColor(category: string): string {
