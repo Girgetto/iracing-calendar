@@ -16,7 +16,7 @@ export default function SeriesList({ series, viewMode, preferences, onPreference
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
         <svg
-          className="h-12 w-12 text-slate-600 mb-4"
+          className="h-12 w-12 text-slate-400 mb-4"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -29,7 +29,7 @@ export default function SeriesList({ series, viewMode, preferences, onPreference
           />
         </svg>
         <p className="text-sm text-slate-400 mb-1">No series found</p>
-        <p className="text-xs text-slate-600">
+        <p className="text-xs text-slate-400">
           Try adjusting your search or filter
         </p>
       </div>

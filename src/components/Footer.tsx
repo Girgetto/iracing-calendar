@@ -2,15 +2,15 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 light-theme:border-gray-200 bg-slate-900/50 light-theme:bg-gray-50 mt-auto transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-        <p className="text-center text-xs text-slate-600 light-theme:text-gray-500 mb-4 transition-colors duration-300">
+        <p className="text-center text-xs text-slate-400 light-theme:text-gray-500 mb-4 transition-colors duration-300">
           Not affiliated with iRacing.com Motorsport Simulations
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <p>
               iRacing Calendar — Open-source season schedule &amp; track planner
             </p>
-            <span className="hidden sm:inline text-slate-700 light-theme:text-gray-300">|</span>
+            <span aria-hidden="true" className="hidden sm:inline text-slate-500 light-theme:text-gray-400">|</span>
             <p>Data sourced from official iRacing season PDF</p>
           </div>
           <div className="flex items-center gap-3">
@@ -20,14 +20,14 @@ export default function Footer() {
             >
               How to Use
             </a>
-            <span className="text-slate-700 light-theme:text-gray-300">·</span>
+            <span aria-hidden="true" className="text-slate-500 light-theme:text-gray-400">·</span>
             <a
               href="/privacy"
               className="text-slate-400 light-theme:text-gray-600 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
             >
               Privacy Policy
             </a>
-            <span className="text-slate-700 light-theme:text-gray-300">·</span>
+            <span aria-hidden="true" className="text-slate-500 light-theme:text-gray-400">·</span>
             <a
               href="https://github.com/Girgetto/iracing-calendar"
               target="_blank"
@@ -46,7 +46,7 @@ export default function Footer() {
               </svg>
               <span>GitHub</span>
             </a>
-            <span className="text-slate-700 light-theme:text-gray-300">·</span>
+            <span aria-hidden="true" className="text-slate-500 light-theme:text-gray-400">·</span>
             <span>Open Source</span>
           </div>
         </div>

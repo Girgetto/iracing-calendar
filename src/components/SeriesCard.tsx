@@ -80,7 +80,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
           </div>
           <div className="flex items-center gap-3 text-xs text-slate-500 light-theme:text-gray-600 transition-colors duration-300">
             {series.car && <span>{series.car}</span>}
-            {series.car && <span className="text-slate-700 light-theme:text-gray-400">|</span>}
+            {series.car && <span aria-hidden="true" className="text-slate-400 light-theme:text-gray-400">|</span>}
             <span>
               {currentWeek
                 ? `Week ${currentWeek} — ${series.schedule[currentWeek - 1]?.track}`
@@ -128,7 +128,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
         </div>
 
         <svg
-          className="h-4 w-4 text-slate-600 light-theme:text-gray-400 group-hover:text-slate-400 light-theme:group-hover:text-gray-600 transition-colors duration-300 shrink-0"
+          className="h-4 w-4 text-slate-400 light-theme:text-gray-500 group-hover:text-slate-300 light-theme:group-hover:text-gray-700 transition-colors duration-300 shrink-0"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -201,7 +201,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             className={`p-1.5 rounded-lg transition-all duration-300 shrink-0 ${
               isFavorited
                 ? "bg-red-500/20 light-theme:bg-red-100 text-red-400 light-theme:text-red-600 border border-red-500/30 light-theme:border-red-300"
-                : "bg-slate-900/40 light-theme:bg-gray-100 text-slate-600 light-theme:text-gray-500 border border-white/5 light-theme:border-gray-300 hover:text-slate-400 light-theme:hover:text-gray-700 hover:bg-slate-800/50 light-theme:hover:bg-gray-200"
+                : "bg-slate-900/40 light-theme:bg-gray-100 text-slate-400 light-theme:text-gray-500 border border-white/5 light-theme:border-gray-300 hover:text-slate-300 light-theme:hover:text-gray-700 hover:bg-slate-800/50 light-theme:hover:bg-gray-200"
             }`}
             title={isFavorited ? "Remove from favorites" : "Add to favorites"}
           >
@@ -230,7 +230,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
       {/* Car & Region */}
       <div className="flex items-center gap-2 text-xs text-slate-500 light-theme:text-gray-600 mb-3 transition-colors duration-300">
         {series.car && <span>{series.car}</span>}
-        {series.car && series.region && <span className="text-slate-700 light-theme:text-gray-400">·</span>}
+        {series.car && series.region && <span aria-hidden="true" className="text-slate-400 light-theme:text-gray-400">·</span>}
         {series.region && <span>{series.region}</span>}
       </div>
 
@@ -302,7 +302,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                 <span>Car required</span>
               </div>
               {ownedTracksCount > 0 && (
-                <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+                <p className="text-[11px] text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
                   {ownedTracksCount} of {totalWeeks} tracks owned
                 </p>
               )}
@@ -329,7 +329,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                   {Math.round(availability.percentage)}%
                 </span>
               </div>
-              <p className="text-[11px] text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+              <p className="text-[11px] text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
                 {totalWeeks - availability.availableWeeks} week{totalWeeks - availability.availableWeeks !== 1 ? "s" : ""} without a track
               </p>
               {wantedTracksCount > 0 && (
@@ -340,7 +340,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
             </div>
           ) : (
             <div className="flex flex-col gap-1">
-              <div className="flex items-center gap-1.5 text-xs text-slate-600 light-theme:text-gray-500 transition-colors duration-300">
+              <div className="flex items-center gap-1.5 text-xs text-slate-400 light-theme:text-gray-500 transition-colors duration-300">
                 <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
                 </svg>

@@ -68,7 +68,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
 
             <div className="hidden sm:flex items-center gap-4 text-xs text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
               <span>{metadata.weeks} weeks</span>
-              <span className="text-slate-600 light-theme:text-gray-400">|</span>
+              <span aria-hidden="true" className="text-slate-400 light-theme:text-gray-400">|</span>
               <span>
                 Updated {new Date(metadata.lastUpdated).toLocaleDateString()}
               </span>
