@@ -21,7 +21,7 @@ export default function PrivacyPage() {
     <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
       <Header metadata={seasonData.metadata} />
 
-      <main id="main-content" className="flex-1">
+      <main id="main-content" className="flex-1 scroll-mt-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-3xl font-bold mb-2 text-white light-theme:text-gray-900">
             Privacy Policy
