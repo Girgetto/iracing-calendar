@@ -101,16 +101,6 @@ export default async function SeriesPage({
     description: `${series.schedule.length}-week iRacing ${series.category} series${series.car ? ` featuring ${series.car}` : ""}. Full season schedule with tracks, session times, and race details.`,
     url: `${siteUrl}/series/${id}`,
     sport: "Sim Racing",
-    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
-    location: {
-      "@type": "VirtualLocation",
-      url: "https://www.iracing.com",
-    },
-    organizer: {
-      "@type": "Organization",
-      name: "iRacing",
-      url: "https://www.iracing.com",
-    },
     startDate: series.schedule[0]?.startDate,
     endDate: series.schedule[series.schedule.length - 1]?.endDate,
     subEvent: series.schedule.map((week) => ({
