@@ -8,10 +8,13 @@ const { PDFParse } = require("pdf-parse");
 const args = process.argv.slice(2);
 let pdfPath = null;
 let outputPath = path.join(__dirname, "data", "iracing-season-data.json");
+let isNewSeason = false;
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === "--output" || args[i] === "-o") {
     outputPath = args[++i];
+  } else if (args[i] === "--new-season") {
+    isNewSeason = true;
   } else if (args[i] === "--help" || args[i] === "-h") {
     console.log(`
 Usage: node extract-season-data.js <pdf-file> [options]
@@ -20,12 +23,16 @@ Arguments:
   <pdf-file>              Path to the iRacing season PDF file
 
 Options:
+  --new-season            Mark this as the new current season (updates iracing-season-data.json)
   --output, -o <path>     Output JSON file path (default: ./data/iracing-season-data.json)
   --help, -h              Show this help message
 
+By default the PDF is archived as a past season only. Use --new-season to also
+set it as the active/current season.
+
 Examples:
-  node extract-season-data.js season.pdf
-  node extract-season-data.js season.pdf --output data/season.json
+  node extract-season-data.js season-2026-s3.pdf --new-season   # new current season
+  node extract-season-data.js season-2025-s1.pdf                # archive a past season
 `);
     process.exit(0);
   } else if (!pdfPath) {
@@ -729,27 +736,81 @@ async function extractSeasonData(filePath) {
   }
   console.log("   Valid.");
 
-  // Ensure output directory exists
-  const resolvedOutput = path.resolve(outputPath);
-  const outputDir = path.dirname(resolvedOutput);
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
+  // --- Archive to data/seasons/ ---
+  const seasonsDir = path.join(__dirname, "data", "seasons");
+  if (!fs.existsSync(seasonsDir)) {
+    fs.mkdirSync(seasonsDir, { recursive: true });
   }
 
-  // Backup existing file
-  if (fs.existsSync(resolvedOutput)) {
-    const backupPath = resolvedOutput.replace(
-      ".json",
-      `.backup-${Date.now()}.json`
-    );
-    fs.copyFileSync(resolvedOutput, backupPath);
-    console.log(`\nBacked up to: ${path.basename(backupPath)}`);
-  }
-
-  // Write
+  const seasonId = `${seasonYear}-s${seasonNumber}`;
+  const seasonFilePath = path.join(seasonsDir, `${seasonId}.json`);
   const jsonString = JSON.stringify(output, null, 2);
-  fs.writeFileSync(resolvedOutput, jsonString, "utf-8");
-  console.log(`\nOutput written to: ${resolvedOutput}`);
+
+  fs.writeFileSync(seasonFilePath, jsonString, "utf-8");
+  console.log(`\nArchived to: ${seasonFilePath}`);
+
+  // --- Update seasons manifest (data/seasons/index.json) ---
+  const manifestPath = path.join(seasonsDir, "index.json");
+  let manifest = { seasons: [] };
+  if (fs.existsSync(manifestPath)) {
+    try {
+      manifest = JSON.parse(fs.readFileSync(manifestPath, "utf-8"));
+    } catch {
+      console.warn("   Warning: could not parse existing manifest, creating new one.");
+      manifest = { seasons: [] };
+    }
+  }
+
+  // Remove existing entry for this season if present
+  manifest.seasons = manifest.seasons.filter((s) => s.id !== seasonId);
+
+  if (isNewSeason) {
+    // Demote all other seasons to non-current
+    manifest.seasons.forEach((s) => { s.current = false; });
+  }
+
+  // Add this season
+  manifest.seasons.push({
+    id: seasonId,
+    label: `${seasonYear} Season ${seasonNumber}`,
+    year: seasonYear,
+    number: seasonNumber,
+    current: isNewSeason,
+  });
+
+  // Sort newest first
+  manifest.seasons.sort((a, b) => {
+    if (a.year !== b.year) return b.year - a.year;
+    return b.number - a.number;
+  });
+
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n", "utf-8");
+  console.log(`   Manifest updated: ${manifest.seasons.length} season(s)`);
+
+  // --- Write to main data file only for new seasons ---
+  if (isNewSeason) {
+    const resolvedOutput = path.resolve(outputPath);
+    const outputDir = path.dirname(resolvedOutput);
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    // Backup existing file
+    if (fs.existsSync(resolvedOutput)) {
+      const backupPath = resolvedOutput.replace(
+        ".json",
+        `.backup-${Date.now()}.json`
+      );
+      fs.copyFileSync(resolvedOutput, backupPath);
+      console.log(`\nBacked up to: ${path.basename(backupPath)}`);
+    }
+
+    fs.writeFileSync(resolvedOutput, jsonString, "utf-8");
+    console.log(`\nCurrent season written to: ${resolvedOutput}`);
+  } else {
+    console.log(`\nArchived as past season only (use --new-season to set as current).`);
+  }
+
   console.log(
     `   JSON size: ${(Buffer.byteLength(jsonString) / 1024).toFixed(1)} KB`
   );

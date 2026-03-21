@@ -30,9 +30,10 @@ interface SeriesCardProps {
   viewMode: ViewMode;
   preferences: UserPreferences;
   onPreferencesChange?: (prefs: UserPreferences) => void;
+  seasonId?: string;
 }
 
-export default function SeriesCard({ series, viewMode, preferences, onPreferencesChange }: SeriesCardProps) {
+export default function SeriesCard({ series, viewMode, preferences, onPreferencesChange, seasonId }: SeriesCardProps) {
   const [isHovering, setIsHovering] = useState(false);
   const isFavorited = isFavoriteSeries(series.id, preferences);
   const currentWeek = getCurrentWeek(series.schedule);
@@ -62,7 +63,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
   if (viewMode === "list") {
     return (
       <Link
-        href={`/series/${series.id}`}
+        href={`/series/${series.id}${seasonId ? `?season=${seasonId}` : ""}`}
         className="group flex items-center gap-4 rounded-lg border border-white/5 light-theme:border-gray-200 bg-slate-800/30 light-theme:bg-gray-50 p-4 transition-all duration-300 hover:bg-slate-800/60 light-theme:hover:bg-gray-100 hover:border-white/10 light-theme:hover:border-gray-300"
       >
         <div className="flex-1 min-w-0">
@@ -164,7 +165,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
 
   return (
     <Link
-      href={`/series/${series.id}`}
+      href={`/series/${series.id}${seasonId ? `?season=${seasonId}` : ""}`}
       className={`group flex flex-col rounded-xl border p-5 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 light-theme:hover:shadow-gray-300/50 ${
         hasPreferences && availability.hasRequiredCar && availability.percentage === 100
           ? "border-emerald-500/30 light-theme:border-emerald-400 bg-emerald-500/5 light-theme:bg-emerald-50 hover:bg-emerald-500/10 light-theme:hover:bg-emerald-100 hover:border-emerald-500/40 light-theme:hover:border-emerald-500 ring-1 ring-emerald-500/20 light-theme:ring-emerald-400"

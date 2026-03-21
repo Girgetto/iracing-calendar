@@ -38,6 +38,18 @@ export interface SeasonData {
   series: Series[];
 }
 
+export interface SeasonSummary {
+  id: string;
+  label: string;
+  year: number;
+  number: number;
+  current: boolean;
+}
+
+export interface SeasonsManifest {
+  seasons: SeasonSummary[];
+}
+
 export type CategoryFilter = string;
 
 export type ViewMode = "grid" | "list";

@@ -8,9 +8,10 @@ import ThemeToggle from "./ThemeToggle";
 interface HeaderProps {
   metadata: SeasonMetadata;
   currentWeek?: number | null;
+  seasonId?: string;
 }
 
-export default function Header({ metadata, currentWeek }: HeaderProps) {
+export default function Header({ metadata, currentWeek, seasonId }: HeaderProps) {
   const pathname = usePathname();
   const isCalendar = pathname === "/calendar";
 
@@ -18,7 +19,7 @@ export default function Header({ metadata, currentWeek }: HeaderProps) {
     <header className="border-b border-white/10 light-theme:border-gray-200 bg-slate-900/80 light-theme:bg-white/80 backdrop-blur-sm sticky top-0 z-50 transition-colors duration-300">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href={seasonId ? `/?season=${seasonId}` : "/"} className="flex items-center gap-3 group">
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-red-600 font-bold text-white text-sm transition-transform group-hover:scale-105">
               iR
             </div>

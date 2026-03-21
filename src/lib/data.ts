@@ -29,6 +29,11 @@ export function getCategories(): string[] {
   return ["All", ...Array.from(cats).sort()];
 }
 
+export function getCategoriesFromSeries(series: Series[]): string[] {
+  const cats = new Set(series.map((s) => s.category));
+  return ["All", ...Array.from(cats).sort()];
+}
+
 // In iRacing, reaching 4.0 SR is the promotion threshold for the next class.
 // So "Class D 4.0" means the pilot needs D with 4.0 SR (about to be C), making the
 // effective series class one level higher. e.g. "Class D 4.0" → Class C, "Class B 4.0" → Class A.
@@ -50,4 +55,3 @@ export function getLicenseClassFromRange(licenseRange: string): LicenseClass | n
   if (sr >= 4.0) return CLASS_PROMOTION[classLetter ?? "Rookie"] ?? rawClass;
   return rawClass;
 }
-

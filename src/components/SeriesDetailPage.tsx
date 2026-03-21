@@ -14,6 +14,7 @@ import SeriesDetail from "./SeriesDetail";
 interface SeriesDetailPageProps {
   series: Series;
   allSeries: Series[];
+  seasonId?: string;
 }
 
 export default function SeriesDetailPage({ series, allSeries }: SeriesDetailPageProps) {

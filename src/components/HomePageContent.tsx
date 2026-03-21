@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import type { ViewMode, LicenseClass, Series } from "@/lib/types";
+import type { ViewMode, LicenseClass, Series, SeasonSummary } from "@/lib/types";
 import type { SeasonData } from "@/lib/types";
 import { filterSeries, getCategoryTextColor } from "@/lib/utils";
 import { getCurrentWeek } from "@/lib/utils";
@@ -26,14 +26,18 @@ import SeriesList from "@/components/SeriesList";
 import PreferencesModal from "@/components/PreferencesModal";
 import TrackRecommendationsModal from "@/components/TrackRecommendationsModal";
 import WantToBuyModal from "@/components/WantToBuyModal";
+import SeasonSelector from "@/components/SeasonSelector";
 
 interface HomePageContentProps {
   seasonData: SeasonData;
   allSeries: Series[];
   categories: string[];
+  availableSeasons: SeasonSummary[];
+  selectedSeasonId: string;
+  isCurrentSeason: boolean;
 }
 
-export default function HomePageContent({ seasonData, allSeries, categories }: HomePageContentProps) {
+export default function HomePageContent({ seasonData, allSeries, categories, availableSeasons, selectedSeasonId, isCurrentSeason }: HomePageContentProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -65,7 +69,7 @@ export default function HomePageContent({ seasonData, allSeries, categories }: H
     router.replace(qs ? `/?${qs}` : "/", { scroll: false });
   }, [searchQuery, activeCategory, activeLicense, viewMode, canRaceOnly, router]);
 
-  const globalCurrentWeek = allSeries.length > 0 ? getCurrentWeek(allSeries[0].schedule) : null;
+  const globalCurrentWeek = isCurrentSeason && allSeries.length > 0 ? getCurrentWeek(allSeries[0].schedule) : null;
 
   const availableCars = useMemo(() => {
     const seasonCars = getUniqueCars(allSeries);
@@ -167,10 +171,20 @@ export default function HomePageContent({ seasonData, allSeries, categories }: H
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
-      <Header metadata={seasonData.metadata} currentWeek={globalCurrentWeek} />
+      <Header metadata={seasonData.metadata} currentWeek={globalCurrentWeek} seasonId={isCurrentSeason ? undefined : selectedSeasonId} />
 
       <main id="main-content" className="flex-1 scroll-mt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+          {/* Past season banner */}
+          {!isCurrentSeason && (
+            <div className="mb-4 rounded-lg bg-amber-500/10 light-theme:bg-amber-50 border border-amber-500/30 light-theme:border-amber-300 px-4 py-3 flex items-center gap-2 text-sm text-amber-400 light-theme:text-amber-700 transition-colors duration-300">
+              <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              You are viewing a past season.
+            </div>
+          )}
+
           {/* Season Banner */}
           <div className="mb-8">
             <div className="flex items-start justify-between gap-4">
@@ -185,6 +199,7 @@ export default function HomePageContent({ seasonData, allSeries, categories }: H
                       Week {globalCurrentWeek}
                     </span>
                   )}
+                  <SeasonSelector seasons={availableSeasons} currentSeasonId={selectedSeasonId} />
                 </div>
                 <p className="text-sm text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
                   Browse {allSeries.length} series across{" "}
@@ -284,7 +299,7 @@ export default function HomePageContent({ seasonData, allSeries, categories }: H
           </div>
 
           {/* Series Grid/List */}
-          <SeriesList series={sortedSeries} viewMode={viewMode} preferences={preferences} onPreferencesChange={handlePreferencesChange} />
+          <SeriesList series={sortedSeries} viewMode={viewMode} preferences={preferences} onPreferencesChange={handlePreferencesChange} seasonId={isCurrentSeason ? undefined : selectedSeasonId} />
         </div>
       </main>
 

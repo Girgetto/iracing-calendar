@@ -1,0 +1,11 @@
+{
+  "seasons": [
+    {
+      "id": "2026-s2",
+      "label": "2026 Season 2",
+      "year": 2026,
+      "number": 2,
+      "current": true
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getSeriesById, getAllSeries, getSeasonData } from "@/lib/data";
+import { getAvailableSeasons, getSeasonDataById, getAllSeriesForSeason, getSeriesByIdForSeason } from "@/lib/seasons";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeriesDetailPage from "@/components/SeriesDetailPage";
@@ -55,13 +56,40 @@ export async function generateMetadata({
 
 export default async function SeriesPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ id: string }>;
+  searchParams: Promise<{ season?: string }>;
 }) {
   const { id } = await params;
-  const series = getSeriesById(id);
-  const seasonData = getSeasonData();
-  const allSeries = getAllSeries();
+  const { season: seasonParam } = await searchParams;
+
+  // Determine which season to load
+  const availableSeasons = getAvailableSeasons();
+  const currentSeason = availableSeasons.find((s) => s.current);
+  const currentSeasonId = currentSeason?.id ?? availableSeasons[0]?.id;
+
+  let selectedSeasonId = currentSeasonId;
+  let isCurrentSeason = true;
+
+  if (seasonParam && availableSeasons.some((s) => s.id === seasonParam)) {
+    selectedSeasonId = seasonParam;
+    isCurrentSeason = availableSeasons.find((s) => s.id === seasonParam)?.current ?? false;
+  }
+
+  let seasonData;
+  let series;
+  let allSeries;
+
+  if (isCurrentSeason) {
+    seasonData = getSeasonData();
+    series = getSeriesById(id);
+    allSeries = getAllSeries();
+  } else {
+    seasonData = getSeasonDataById(selectedSeasonId) ?? getSeasonData();
+    series = getSeriesByIdForSeason(id, selectedSeasonId);
+    allSeries = getAllSeriesForSeason(selectedSeasonId);
+  }
 
   if (!series) {
     notFound();
@@ -69,11 +97,19 @@ export default async function SeriesPage({
 
   return (
     <div className="flex min-h-screen flex-col bg-slate-900 light-theme:bg-white text-white light-theme:text-gray-900 transition-colors duration-300">
-      <Header metadata={seasonData.metadata} />
+      <Header metadata={seasonData.metadata} seasonId={isCurrentSeason ? undefined : selectedSeasonId} />
 
       <main id="main-content" className="flex-1 scroll-mt-16">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-8">
-          <SeriesDetailPage series={series} allSeries={allSeries} />
+          {!isCurrentSeason && (
+            <div className="mb-4 rounded-lg bg-amber-500/10 light-theme:bg-amber-50 border border-amber-500/30 light-theme:border-amber-300 px-4 py-3 flex items-center gap-2 text-sm text-amber-400 light-theme:text-amber-700 transition-colors duration-300">
+              <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              You are viewing a past season.
+            </div>
+          )}
+          <SeriesDetailPage series={series} allSeries={allSeries} seasonId={isCurrentSeason ? undefined : selectedSeasonId} />
         </div>
       </main>
 
