@@ -28,9 +28,28 @@ Currently the app only displays one season at a time (`data/iracing-season-data.
 
 ### 2. Update extract script
 **File**: `extract-season-data.js`
-- After extracting, also save a copy to `data/seasons/<year>-s<number>.json`
-- Update `data/seasons/index.json` manifest automatically
-- Add `--archive` flag to import a past season PDF without overwriting the current season data
+
+Two modes controlled by a `--new-season` flag:
+
+- **Default (no flag)**: Import a **past/archived** season PDF
+  - Saves to `data/seasons/<year>-s<number>.json` only
+  - Adds an entry to `data/seasons/index.json` with `"current": false`
+  - Does **not** overwrite `data/iracing-season-data.json`
+
+- **`--new-season` flag**: Import the **new current** season PDF
+  - Overwrites `data/iracing-season-data.json` (the active season)
+  - Also saves a copy to `data/seasons/<year>-s<number>.json`
+  - Marks this season as `"current": true` in the manifest and sets the previously current season to `false`
+  - Updates `data/seasons/index.json`
+
+Usage examples:
+```bash
+# Import a new current season
+node extract-season-data.js season-2026-s3.pdf --new-season
+
+# Archive a past season
+node extract-season-data.js season-2025-s1.pdf
+```
 
 ### 3. Data layer changes
 **File**: `src/lib/data.ts`
