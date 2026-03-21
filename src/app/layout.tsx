@@ -2,41 +2,20 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
+import { getSeasonData } from "@/lib/data";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  name: "iRacing Calendar",
-  description:
-    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
-  url: siteUrl,
-  applicationCategory: "SportsApplication",
-  operatingSystem: "Any",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
-  author: {
-    "@type": "Person",
-    name: "Girgetto",
-    url: "https://github.com/Girgetto",
-  },
-  codeRepository: "https://github.com/Girgetto/iracing-calendar",
-  keywords:
-    "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
-};
+const seasonData = getSeasonData();
+const { season, seasonYear, seasonNumber } = seasonData.metadata;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "iRacing Calendar — Season Schedule & Track Planner",
+    default: `iRacing ${season} Calendar — Series Schedule, Sessions & Track Planner`,
     template: "%s — iRacing Calendar",
   },
   description:
-    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season. Add your content to see how many tracks are eligible in one season tournament.",
+    `Browse the full iRacing ${season} schedule with ${seasonData.series.length}+ series across Oval, Road, Dirt & Formula categories. View week-by-week sessions, tracks, race times, and plan your season. Free and open-source.`,
   icons: {
     icon: "/favicon.png",
   },
@@ -45,19 +24,27 @@ export const metadata: Metadata = {
     "iRacing calendar",
     "iRacing schedule",
     "iRacing season",
+    "iRacing session times",
+    "iRacing race schedule",
+    `iRacing ${seasonYear}`,
+    `iRacing ${season}`,
+    `iRacing season ${seasonNumber} ${seasonYear}`,
+    "iRacing series schedule",
+    "iRacing weekly schedule",
+    "iRacing track rotation",
     "iRacing scheduler",
     "iRacing series",
     "iRacing tracks",
     "sim racing calendar",
     "sim racing schedule",
-    "iRacing 2026",
     "iRacing season planner",
     "iRacing track planner",
-    "open source iRacing",
-    "iRacing road racing",
-    "iRacing oval",
-    "iRacing dirt",
-    "iRacing formula",
+    "iRacing road racing schedule",
+    "iRacing oval schedule",
+    "iRacing dirt schedule",
+    "iRacing formula schedule",
+    "iRacing race frequency",
+    "iRacing license class",
   ],
   authors: [{ name: "Girgetto", url: "https://github.com/Girgetto" }],
   creator: "Girgetto",
@@ -66,23 +53,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "iRacing Calendar",
-    title: "iRacing Calendar — Season Schedule & Track Planner",
+    title: `iRacing ${season} Calendar — Series Schedule & Track Planner`,
     description:
-      "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
+      `Browse the full iRacing ${season} schedule. ${seasonData.series.length}+ series, week-by-week track rotations, session times, and more.`,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "iRacing Calendar — Season Schedule & Track Planner",
+        alt: `iRacing ${season} Calendar — Series Schedule & Track Planner`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "iRacing Calendar — Season Schedule & Track Planner",
+    title: `iRacing ${season} Calendar — Schedule & Track Planner`,
     description:
-      "Open-source iRacing season calendar and scheduler. Browse all series and plan your season.",
+      `Browse the full iRacing ${season} schedule. ${seasonData.series.length}+ series with week-by-week sessions and tracks.`,
     images: ["/og-image.png"],
     creator: "@Girgetto",
   },
@@ -107,15 +94,15 @@ const siteJsonLd = {
   "@type": "WebApplication",
   name: "iRacing Calendar",
   description:
-    "Open-source iRacing season calendar and scheduler. Browse all series, filter by category, and check which tracks you own to plan your season.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it",
+    `Open-source iRacing ${season} calendar and scheduler. Browse all series, filter by category, view session schedules, and check which tracks you own to plan your season.`,
+  url: siteUrl,
   applicationCategory: "SportsApplication",
   operatingSystem: "Any",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
   author: { "@type": "Person", name: "Girgetto", url: "https://github.com/Girgetto" },
   codeRepository: "https://github.com/Girgetto/iracing-calendar",
   keywords:
-    "iRacing, iRacing calendar, iRacing schedule, iRacing season, sim racing, iRacing scheduler",
+    `iRacing, iRacing calendar, iRacing schedule, iRacing ${season}, iRacing session times, sim racing, iRacing scheduler, iRacing series schedule`,
 };
 
 /** Escape `<` so `</script>` can never break out of the JSON-LD block. */
@@ -137,10 +124,6 @@ export default function RootLayout({
           type="application/ld+json"
           // safeJsonLd escapes `<` → `\u003c` so </script> can never break out
           dangerouslySetInnerHTML={{ __html: safeJsonLd(siteJsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="antialiased">
