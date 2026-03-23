@@ -29,6 +29,8 @@ export default function PreferencesModal({
   const [ownedTracks, setOwnedTracks] = useState<string[]>(
     preferences.ownedTracks
   );
+  const [wantToBuyCars, setWantToBuyCars] = useState<string[]>(preferences.wantToBuyCars);
+  const [wantToBuyTracks, setWantToBuyTracks] = useState<string[]>(preferences.wantToBuyTracks);
   const [importError, setImportError] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const focusTrapRef = useFocusTrap(isOpen, onClose);
@@ -39,17 +41,22 @@ export default function PreferencesModal({
       preferences.ownedCars,
       preferences.ownedTracks,
       availableCars,
-      availableTracks
+      availableTracks,
+      preferences.favoriteSeries,
+      preferences.wantToBuyCars,
+      preferences.wantToBuyTracks
     );
     setOwnedCars(withFreeContent.ownedCars);
     setOwnedTracks(withFreeContent.ownedTracks);
+    setWantToBuyCars(withFreeContent.wantToBuyCars);
+    setWantToBuyTracks(withFreeContent.wantToBuyTracks);
   }, [preferences, availableCars, availableTracks]);
 
   if (!isOpen) return null;
 
   const handleSave = () => {
-    const cleanedWantToBuyCars = preferences.wantToBuyCars.filter((c) => !ownedCars.includes(c));
-    const cleanedWantToBuyTracks = preferences.wantToBuyTracks.filter((t) => !ownedTracks.includes(t));
+    const cleanedWantToBuyCars = wantToBuyCars.filter((c) => !ownedCars.includes(c));
+    const cleanedWantToBuyTracks = wantToBuyTracks.filter((t) => !ownedTracks.includes(t));
     onSave({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries, wantToBuyCars: cleanedWantToBuyCars, wantToBuyTracks: cleanedWantToBuyTracks });
     onClose();
   };
@@ -60,7 +67,7 @@ export default function PreferencesModal({
   };
 
   const handleExport = () => {
-    exportPreferences({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries, wantToBuyCars: preferences.wantToBuyCars, wantToBuyTracks: preferences.wantToBuyTracks });
+    exportPreferences({ ownedCars, ownedTracks, favoriteSeries: preferences.favoriteSeries, wantToBuyCars: wantToBuyCars, wantToBuyTracks: wantToBuyTracks });
   };
 
   const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -82,6 +89,8 @@ export default function PreferencesModal({
         );
         setOwnedCars(withFree.ownedCars);
         setOwnedTracks(withFree.ownedTracks);
+        setWantToBuyCars(withFree.wantToBuyCars);
+        setWantToBuyTracks(withFree.wantToBuyTracks);
       } catch {
         setImportError("Invalid file. Please upload a valid preferences JSON.");
       }
