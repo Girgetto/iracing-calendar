@@ -59,7 +59,7 @@ export default function WeeklyCalendar({
 
   const [sessions, setSessions] = useState<CalendarSession[]>([]);
   const [nowUTC, setNowUTC] = useState<Date>(new Date());
-  const [showLocalTime, setShowLocalTime] = useState(false);
+  const [showLocalTime, setShowLocalTime] = useState(true);
   const [mobileDay, setMobileDay] = useState<number>(() => {
     // Default to today's day of week (Mon=0)
     const utcDay = new Date().getUTCDay();
@@ -370,13 +370,16 @@ export default function WeeklyCalendar({
 
         {/* Right controls */}
         <div className="flex items-center gap-3">
-          {/* UTC Clock */}
+          {/* Clock */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800/60 light-theme:bg-gray-100 border border-white/10 light-theme:border-gray-200 text-sm">
             <svg className="h-3.5 w-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <span className="font-mono text-xs text-white light-theme:text-gray-900">
-              {formatUTCTime(nowUTC)} UTC
+              {showLocalTime
+                ? nowUTC.toLocaleTimeString(undefined, { hour: "2-digit", minute: "2-digit", hour12: false })
+                : formatUTCTime(nowUTC)}{" "}
+              {showLocalTime ? localTzLabel : "UTC"}
             </span>
           </div>
 
