@@ -134,3 +134,24 @@ nav {
     animation: current-week-only 1.4s ease-in-out infinite;
   }
 }
+
+/* Diagonal stripes for "passed" week chips — signals completed/archived */
+.bg-passed-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgb(100 116 139) 0px,
+    rgb(100 116 139) 2px,
+    rgb(51 65 85) 2px,
+    rgb(51 65 85) 5px
+  );
+}
+
+.light-theme .bg-passed-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgb(148 163 184) 0px,
+    rgb(148 163 184) 2px,
+    rgb(100 116 139) 2px,
+    rgb(100 116 139) 5px
+  );
+}
