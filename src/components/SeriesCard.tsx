@@ -131,7 +131,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                     : isCurrent
                     ? "bg-red-500 ring-2 ring-red-500/30"
                     : isPast
-                    ? "bg-gray-500/50 light-theme:bg-gray-400"
+                    ? "bg-passed-stripes"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
                     : isTrackOwnedNoCar
@@ -295,7 +295,7 @@ export default function SeriesCard({ series, viewMode, preferences, onPreference
                     : isCurrent
                     ? "animate-current-only"
                     : isPast
-                    ? "bg-gray-500/50 light-theme:bg-gray-400/70"
+                    ? "bg-passed-stripes"
                     : isEligible
                     ? "bg-emerald-500/80 light-theme:bg-emerald-400"
                     : isTrackOwnedNoCar
