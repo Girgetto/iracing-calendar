@@ -1,0 +1,98 @@
+name: Update iRacing season data
+
+# Keeps data/iracing-season-data.json in sync with the official iRacing Data API
+# (members-ng.iracing.com/data). The sync script fetches the current season's
+# series and schedules, transforms them to the app's JSON shape, and only writes
+# the file when something actually changed.
+#
+# Required repository secrets:
+#   IRACING_EMAIL     iRacing account email (account must allow legacy auth / no 2FA)
+#   IRACING_PASSWORD  iRacing account password
+#
+# The password is never stored or transmitted in clear text — the sync script
+# masks it as base64(sha256(password + email)) before sending it to iRacing.
+
+on:
+  schedule:
+    # Tuesdays at 06:00 UTC — iRacing builds/season changes land early in the week.
+    - cron: "0 6 * * 2"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Check for changes without committing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-season-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync season data from iRacing API
+        id: sync
+        env:
+          IRACING_EMAIL: ${{ secrets.IRACING_EMAIL }}
+          IRACING_PASSWORD: ${{ secrets.IRACING_PASSWORD }}
+        run: |
+          if [ -z "$IRACING_EMAIL" ] || [ -z "$IRACING_PASSWORD" ]; then
+            echo "::error::IRACING_EMAIL and IRACING_PASSWORD secrets are not set."
+            exit 1
+          fi
+
+          DRY_FLAG=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_FLAG="--dry-run"
+          fi
+
+          node sync-season-data.js $DRY_FLAG | tee sync.log
+
+          if grep -q "::changed::" sync.log; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push updated data
+        if: steps.sync.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- data/iracing-season-data.json; then
+            echo "No file changes to commit."
+            exit 0
+          fi
+
+          SEASON=$(node -e "console.log(require('./data/iracing-season-data.json').metadata.season)")
+          git add data/iracing-season-data.json
+          git commit -m "chore(data): sync iRacing season data ($SEASON)"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### iRacing season data sync" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ "${{ steps.sync.outputs.changed }}" = "true" ]; then
+            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+              echo "Changes detected (dry-run — nothing committed)." >> "$GITHUB_STEP_SUMMARY"
+            else
+              echo "Season data updated and committed." >> "$GITHUB_STEP_SUMMARY"
+            fi
+          else
+            echo "Already up to date — no changes." >> "$GITHUB_STEP_SUMMARY"
+          fi
