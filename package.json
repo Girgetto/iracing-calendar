@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "extract-data": "node extract-season-data.js"
+    "extract-data": "node extract-season-data.js",
+    "sync-data": "node sync-season-data.js"
   },
   "dependencies": {
     "next": "16.1.6",

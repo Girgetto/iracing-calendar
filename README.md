@@ -25,7 +25,54 @@ node extract-season-data.js path/to/iracing-season.pdf --output data/custom-outp
 
 The script parses the PDF, extracts series and track data, and writes `iracing-season-data.json` to the project root. The app reads this file at build time.
 
-## Updating for a New Season
+## Syncing from the official iRacing Data API (source of truth)
+
+The schedule data can be kept current automatically from the official
+[iRacing Data API](https://members-ng.iracing.com) — the canonical source of
+truth for series and schedules — instead of parsing a PDF by hand.
+
+```bash
+# Fetch the current season and update data/iracing-season-data.json if changed
+IRACING_EMAIL=you@example.com IRACING_PASSWORD=secret npm run sync-data
+
+# Just check whether anything changed (no write)
+npm run sync-data -- --dry-run
+
+# Transform a previously-saved API response (no credentials needed)
+npm run sync-data -- --from-json path/to/series-seasons.json
+```
+
+How it works:
+
+- Authenticates against `POST /auth`. The password is never sent in clear
+  text — it is masked as `base64(sha256(password + email))`, exactly as the
+  iRacing auth service expects.
+- Fetches `GET /data/series/seasons?include_series=true` (and `/data/carclass/get`
+  for car names), following the signed S3 `link` each endpoint returns.
+- Transforms the response into the same JSON shape produced by the PDF
+  extractor and writes the file **only when the content actually changes**.
+
+The account used must have legacy authentication enabled (no 2FA), which is the
+standard requirement for headless iRacing API access.
+
+### Automated weekly sync (GitHub Action)
+
+`.github/workflows/update-season-data.yml` runs the sync every Tuesday (and on
+demand via *Run workflow*). When the data changes it commits the updated
+`data/iracing-season-data.json` automatically.
+
+Set these repository secrets (Settings → Secrets and variables → Actions):
+
+| Secret | Description |
+|--------|-------------|
+| `IRACING_EMAIL` | iRacing account email (legacy-auth enabled) |
+| `IRACING_PASSWORD` | iRacing account password |
+
+Use the workflow's **dry run** input to check for changes without committing.
+
+## Updating for a New Season (from a PDF)
+
+If you prefer the manual PDF route:
 
 1. Download the new season PDF from iRacing
 2. Run the extraction script: `npm run extract-data -- path/to/new-season.pdf`
@@ -73,6 +120,7 @@ iracing-calendar/
 | `npm start` | Start production server |
 | `npm run lint` | Run ESLint |
 | `npm run extract-data -- <pdf>` | Extract data from a season PDF |
+| `npm run sync-data` | Sync data from the official iRacing Data API |
 
 ## Dependencies
 
