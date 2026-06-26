@@ -27,52 +27,67 @@ The script parses the PDF, extracts series and track data, and writes `iracing-s
 
 ## Syncing from the official iRacing Data API (source of truth)
 
-The schedule data can be kept current automatically from the official
-[iRacing Data API](https://members-ng.iracing.com) — the canonical source of
-truth for series and schedules — instead of parsing a PDF by hand.
+The canonical source of truth for series and schedules is the official
+[iRacing Data API](https://members-ng.iracing.com). `sync-season-data.js` can
+pull the current season directly from it instead of parsing a PDF by hand.
+
+> **Heads up — OAuth required.** iRacing **retired legacy username/password
+> authentication** with the 2026 Season 1 release (2025-12-09); the old
+> `members-ng.iracing.com/auth` endpoint now returns HTTP 405. API access now
+> requires an **OAuth2 client** (`client_id` + `client_secret`) registered at
+> [oauth.iracing.com/accountmanagement](https://oauth.iracing.com/accountmanagement).
+> iRacing has **temporarily paused issuing new client IDs** while they review
+> third-party usage, so until you have one, use the
+> [PDF route](#updating-for-a-new-season-from-a-pdf) below.
 
 ```bash
 # Fetch the current season and update data/iracing-season-data.json if changed
-IRACING_EMAIL=you@example.com IRACING_PASSWORD=secret npm run sync-data
+IRACING_CLIENT_ID=... IRACING_CLIENT_SECRET=... \
+IRACING_EMAIL=you@example.com IRACING_PASSWORD=secret \
+  npm run sync-data
 
 # Just check whether anything changed (no write)
 npm run sync-data -- --dry-run
 
-# Transform a previously-saved API response (no credentials needed)
+# Transform a previously-saved API response (no credentials needed — handy for testing)
 npm run sync-data -- --from-json path/to/series-seasons.json
 ```
 
 How it works:
 
-- Authenticates against `POST /auth`. The password is never sent in clear
-  text — it is masked as `base64(sha256(password + email))`, exactly as the
-  iRacing auth service expects.
-- Fetches `GET /data/series/seasons?include_series=true` (and `/data/carclass/get`
-  for car names), following the signed S3 `link` each endpoint returns.
+- Authenticates via the OAuth2 `password_limited` grant against
+  `POST https://oauth.iracing.com/oauth2/token`. Secrets are never sent in
+  clear text — each is masked as `base64(sha256(secret + id))` (the
+  `client_secret` with the `client_id`, the password with the email).
+- Calls `GET /data/series/seasons?include_series=true` (and `/data/carclass/get`
+  for car names) with the resulting `Bearer` token, following the signed S3
+  `link` each endpoint returns.
 - Transforms the response into the same JSON shape produced by the PDF
   extractor and writes the file **only when the content actually changes**.
-
-The account used must have legacy authentication enabled (no 2FA), which is the
-standard requirement for headless iRacing API access.
 
 ### Automated weekly sync (GitHub Action)
 
 `.github/workflows/update-season-data.yml` runs the sync every Tuesday (and on
 demand via *Run workflow*). When the data changes it commits the updated
-`data/iracing-season-data.json` automatically.
+`data/iracing-season-data.json` automatically. **If the OAuth secrets are not
+set, the workflow exits cleanly without failing** — so it's safe to merge now
+and activate later once you have a client.
 
 Set these repository secrets (Settings → Secrets and variables → Actions):
 
 | Secret | Description |
 |--------|-------------|
-| `IRACING_EMAIL` | iRacing account email (legacy-auth enabled) |
+| `IRACING_CLIENT_ID` | OAuth client id |
+| `IRACING_CLIENT_SECRET` | OAuth client secret |
+| `IRACING_EMAIL` | iRacing account email |
 | `IRACING_PASSWORD` | iRacing account password |
 
 Use the workflow's **dry run** input to check for changes without committing.
 
 ## Updating for a New Season (from a PDF)
 
-If you prefer the manual PDF route:
+The PDF route needs no credentials and is the working option while OAuth client
+registration is paused:
 
 1. Download the new season PDF from iRacing
 2. Run the extraction script: `npm run extract-data -- path/to/new-season.pdf`

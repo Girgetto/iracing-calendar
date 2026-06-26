@@ -8,21 +8,30 @@
  * to match the same shape produced by extract-season-data.js.
  *
  * Source of truth:
- *   - Auth:     POST https://members-ng.iracing.com/auth
+ *   - Token:    POST https://oauth.iracing.com/oauth2/token  (OAuth2)
  *   - Seasons:  GET  https://members-ng.iracing.com/data/series/seasons?include_series=true
  *   - Car class names: GET https://members-ng.iracing.com/data/carclass/get
  *
  * iRacing's /data endpoints respond with a short-lived signed S3 "link"; the
  * actual payload must be fetched from that URL (no auth header on the S3 GET).
  *
- * Authentication uses the legacy email/password endpoint. The password is
- * never sent in clear text: it is masked as base64(sha256(password + email)).
- * The account used must have legacy authentication enabled (no 2FA), which is
- * the standard requirement for headless iRacing API access.
+ * Authentication uses the OAuth2 "password_limited" grant. iRacing retired the
+ * legacy email/password endpoint (members-ng.iracing.com/auth) with the 2026
+ * Season 1 release (2025-12-09); it now returns HTTP 405. OAuth2 requires a
+ * registered client (client_id + client_secret) issued via
+ * https://oauth.iracing.com/accountmanagement.
+ *
+ * Neither secret is sent in clear text — each is masked as
+ * base64(sha256(secret + normalized_id)) where normalized_id = id.trim().toLowerCase():
+ *   - client_secret is masked with the client_id
+ *   - password is masked with the email (username)
  *
  * Environment variables:
- *   IRACING_EMAIL      iRacing account email (required for live fetch)
- *   IRACING_PASSWORD   iRacing account password (required for live fetch)
+ *   IRACING_CLIENT_ID      OAuth client id (required for live fetch)
+ *   IRACING_CLIENT_SECRET  OAuth client secret (required for live fetch)
+ *   IRACING_EMAIL          iRacing account email (required for live fetch)
+ *   IRACING_PASSWORD       iRacing account password (required for live fetch)
+ *   IRACING_SCOPE          OAuth scope (optional, default "iracing.auth")
  *
  * Usage:
  *   node sync-season-data.js                 # fetch live, write if changed
@@ -67,82 +76,74 @@ Options:
                         fetching live (useful for testing without credentials)
   --help, -h            Show this help
 
-Environment:
-  IRACING_EMAIL, IRACING_PASSWORD   Required for live fetch (legacy auth account)
+Environment (required for live fetch):
+  IRACING_CLIENT_ID, IRACING_CLIENT_SECRET   OAuth2 client credentials
+  IRACING_EMAIL, IRACING_PASSWORD            iRacing account login
+  IRACING_SCOPE                              OAuth scope (default: iracing.auth)
 `);
     process.exit(0);
   }
 }
 
 const API_BASE = "https://members-ng.iracing.com";
+const OAUTH_TOKEN_URL = "https://oauth.iracing.com/oauth2/token";
 
 // --- iRacing Data API client --------------------------------------------
 
 /**
- * Mask the password exactly as the iRacing auth service expects:
- * base64( sha256( password + email.trim().toLowerCase() ) ).
+ * Mask a secret exactly as the iRacing OAuth service expects:
+ * base64( sha256( secret + id.trim().toLowerCase() ) ).
+ *   - password:      secret = password,      id = email (username)
+ *   - client_secret: secret = client_secret, id = client_id
  */
-function maskPassword(password, email) {
+function maskSecret(secret, id) {
   const hash = crypto
     .createHash("sha256")
-    .update(password + email.trim().toLowerCase())
+    .update(secret + id.trim().toLowerCase())
     .digest();
   return hash.toString("base64");
 }
 
 class IRacingClient {
-  constructor(email, password) {
+  constructor({ clientId, clientSecret, email, password, scope }) {
+    this.clientId = clientId;
+    this.clientSecret = clientSecret;
     this.email = email;
     this.password = password;
-    this.cookies = [];
+    this.scope = scope || "iracing.auth";
+    this.accessToken = null;
   }
 
-  _cookieHeader() {
-    // Send back the name=value portion of each stored cookie.
-    return this.cookies.map((c) => c.split(";")[0]).join("; ");
-  }
-
-  _storeCookies(res) {
-    const setCookie =
-      typeof res.headers.getSetCookie === "function"
-        ? res.headers.getSetCookie()
-        : res.headers.raw
-          ? res.headers.raw()["set-cookie"] || []
-          : [];
-    if (setCookie && setCookie.length) {
-      this.cookies = setCookie;
-    }
-  }
-
+  /**
+   * Obtain an access token via the OAuth2 "password_limited" grant.
+   */
   async login() {
-    const res = await fetch(`${API_BASE}/auth`, {
+    const body = new URLSearchParams({
+      grant_type: "password_limited",
+      client_id: this.clientId,
+      client_secret: maskSecret(this.clientSecret, this.clientId),
+      username: this.email,
+      password: maskSecret(this.password, this.email),
+      scope: this.scope,
+    });
+
+    const res = await fetch(OAUTH_TOKEN_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        email: this.email,
-        password: maskPassword(this.password, this.email),
-      }),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: body.toString(),
     });
 
     if (res.status === 429) {
-      throw new Error("Rate limited by iRacing auth (HTTP 429). Try again later.");
-    }
-    if (!res.ok) {
-      throw new Error(`Auth failed: HTTP ${res.status} ${res.statusText}`);
+      throw new Error("Rate limited by iRacing OAuth (HTTP 429). Try again later.");
     }
 
-    const body = await res.json().catch(() => ({}));
-    // iRacing returns authcode:0 (and verificationRequired) on failure.
-    if (body && (body.authcode === 0 || body.authcode === "0")) {
-      const reason = body.verificationRequired
-        ? "account requires verification / 2FA must be disabled for API access"
-        : body.message || "invalid credentials";
-      throw new Error(`Auth rejected: ${reason}`);
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.access_token) {
+      const detail =
+        data.error_description || data.error || `${res.status} ${res.statusText}`;
+      throw new Error(`OAuth token request failed: ${detail}`);
     }
-    this._storeCookies(res);
-    if (this.cookies.length === 0) {
-      throw new Error("Auth succeeded but no session cookie was returned.");
-    }
+    this.accessToken = data.access_token;
   }
 
   /**
@@ -155,11 +156,11 @@ class IRacingClient {
     }
 
     const res = await fetch(url, {
-      headers: { Cookie: this._cookieHeader() },
+      headers: { Authorization: `Bearer ${this.accessToken}` },
     });
 
     if (res.status === 401) {
-      throw new Error(`Unauthorized fetching ${endpoint} (session expired).`);
+      throw new Error(`Unauthorized fetching ${endpoint} (token expired or invalid).`);
     }
     if (!res.ok) {
       throw new Error(`Fetch ${endpoint} failed: HTTP ${res.status} ${res.statusText}`);
@@ -457,17 +458,26 @@ async function fetchSeasonData() {
     // Accept either the raw array or a { seasons: [...] } wrapper.
     seasons = Array.isArray(raw) ? raw : raw.seasons || raw.series_seasons || [];
   } else {
+    const clientId = process.env.IRACING_CLIENT_ID;
+    const clientSecret = process.env.IRACING_CLIENT_SECRET;
     const email = process.env.IRACING_EMAIL;
     const password = process.env.IRACING_PASSWORD;
-    if (!email || !password) {
+    const scope = process.env.IRACING_SCOPE;
+    if (!clientId || !clientSecret || !email || !password) {
       throw new Error(
-        "IRACING_EMAIL and IRACING_PASSWORD must be set for live fetch " +
-          "(or pass --from-json <file>)."
+        "IRACING_CLIENT_ID, IRACING_CLIENT_SECRET, IRACING_EMAIL and " +
+          "IRACING_PASSWORD must be set for live fetch (or pass --from-json <file>)."
       );
     }
 
-    const client = new IRacingClient(email, password);
-    console.log("Authenticating with iRacing...");
+    const client = new IRacingClient({
+      clientId,
+      clientSecret,
+      email,
+      password,
+      scope,
+    });
+    console.log("Authenticating with iRacing (OAuth2)...");
     await client.login();
     console.log("   Logged in.");
 

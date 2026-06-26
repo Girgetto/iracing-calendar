@@ -5,12 +5,20 @@ name: Update iRacing season data
 # series and schedules, transforms them to the app's JSON shape, and only writes
 # the file when something actually changed.
 #
-# Required repository secrets:
-#   IRACING_EMAIL     iRacing account email (account must allow legacy auth / no 2FA)
-#   IRACING_PASSWORD  iRacing account password
+# Authentication is OAuth2. iRacing retired legacy username/password auth with
+# the 2026 Season 1 release (2025-12-09), so an OAuth client is now required.
+# NOTE: iRacing has temporarily paused issuing new OAuth client IDs. Until you
+# have one configured, this workflow detects the missing secrets and exits
+# cleanly (it does NOT fail) — set the secrets below to activate the sync.
 #
-# The password is never stored or transmitted in clear text — the sync script
-# masks it as base64(sha256(password + email)) before sending it to iRacing.
+# Required repository secrets:
+#   IRACING_CLIENT_ID      OAuth client id     (oauth.iracing.com/accountmanagement)
+#   IRACING_CLIENT_SECRET  OAuth client secret
+#   IRACING_EMAIL          iRacing account email
+#   IRACING_PASSWORD       iRacing account password
+#
+# Secrets are never transmitted in clear text — the sync script masks each as
+# base64(sha256(secret + id)) before sending it to iRacing.
 
 on:
   schedule:
@@ -45,12 +53,19 @@ jobs:
       - name: Sync season data from iRacing API
         id: sync
         env:
+          IRACING_CLIENT_ID: ${{ secrets.IRACING_CLIENT_ID }}
+          IRACING_CLIENT_SECRET: ${{ secrets.IRACING_CLIENT_SECRET }}
           IRACING_EMAIL: ${{ secrets.IRACING_EMAIL }}
           IRACING_PASSWORD: ${{ secrets.IRACING_PASSWORD }}
         run: |
-          if [ -z "$IRACING_EMAIL" ] || [ -z "$IRACING_PASSWORD" ]; then
-            echo "::error::IRACING_EMAIL and IRACING_PASSWORD secrets are not set."
-            exit 1
+          if [ -z "$IRACING_CLIENT_ID" ] || [ -z "$IRACING_CLIENT_SECRET" ] || \
+             [ -z "$IRACING_EMAIL" ] || [ -z "$IRACING_PASSWORD" ]; then
+            echo "::notice::iRacing OAuth secrets are not configured — skipping sync." \
+                 "Set IRACING_CLIENT_ID / IRACING_CLIENT_SECRET / IRACING_EMAIL /" \
+                 "IRACING_PASSWORD to enable it."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "skipped=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
 
           DRY_FLAG=""
@@ -87,7 +102,9 @@ jobs:
         run: |
           echo "### iRacing season data sync" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [ "${{ steps.sync.outputs.changed }}" = "true" ]; then
+          if [ "${{ steps.sync.outputs.skipped }}" = "true" ]; then
+            echo "Skipped — iRacing OAuth secrets not configured." >> "$GITHUB_STEP_SUMMARY"
+          elif [ "${{ steps.sync.outputs.changed }}" = "true" ]; then
             if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
               echo "Changes detected (dry-run — nothing committed)." >> "$GITHUB_STEP_SUMMARY"
             else
