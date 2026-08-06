@@ -1,0 +1,94 @@
+name: Watch iRacing OAuth registration
+
+# The season-data sync (update-season-data.yml) needs an iRacing OAuth client,
+# and iRacing has paused issuing new client IDs with no ETA and no waitlist.
+# Until that lifts the sync skips every run and the calendar data goes stale.
+#
+# This job watches the two iRacing doc pages carrying the pause notice and
+# opens an issue the week it disappears, so the sync can be activated promptly
+# instead of us remembering to check.
+
+on:
+  schedule:
+    # Mondays at 07:00 UTC — a day ahead of the sync, so if registration has
+    # reopened there is a chance to add secrets before the next sync run.
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: watch-iracing-oauth
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check registration status
+        id: check
+        run: |
+          set +e
+          node check-oauth-registration.js | tee check.log
+          STATUS=${PIPESTATUS[0]}
+          set -e
+
+          case "$STATUS" in
+            0) echo "verdict=paused"  >> "$GITHUB_OUTPUT" ;;
+            3) echo "verdict=open"    >> "$GITHUB_OUTPUT" ;;
+            *) echo "verdict=unknown" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Open issue if registration reopened
+        if: steps.check.outputs.verdict == 'open'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Only one open issue at a time — don't reopen this every week.
+          EXISTING=$(gh issue list --label iracing-oauth --state open \
+                       --json number --jq 'length')
+          if [ "$EXISTING" != "0" ]; then
+            echo "An open iracing-oauth issue already exists — nothing to do."
+            exit 0
+          fi
+
+          gh label create iracing-oauth \
+            --description "iRacing OAuth / Data API access" \
+            --color 1d76db 2>/dev/null || true
+
+          gh issue create \
+            --label iracing-oauth \
+            --title "iRacing OAuth client registration may have reopened" \
+            --body-file .github/oauth-reopened-issue.md
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### iRacing OAuth registration watch"
+            echo ""
+            case "${{ steps.check.outputs.verdict }}" in
+              paused)
+                echo "Still paused — new OAuth client IDs are not being issued." ;;
+              open)
+                echo "Pause notice GONE — registration may have reopened. Issue filed." ;;
+              *)
+                echo "Could not determine status (page moved or unreachable). Needs a look." ;;
+            esac
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Flag indeterminate result
+        if: steps.check.outputs.verdict == 'unknown'
+        run: |
+          echo "::warning::Could not determine iRacing OAuth registration status." \
+               "The doc pages may have moved — check check-oauth-registration.js."

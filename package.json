@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "extract-data": "node extract-season-data.js",
-    "sync-data": "node sync-season-data.js"
+    "sync-pdf": "node sync-season-pdf.js",
+    "sync-data": "node --env-file=.env sync-season-data.js",
+    "check-oauth": "node check-oauth-registration.js"
   },
   "dependencies": {
     "next": "16.1.6",

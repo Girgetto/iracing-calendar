@@ -1,29 +1,27 @@
 name: Update iRacing season data
 
-# Keeps data/iracing-season-data.json in sync with the official iRacing Data API
-# (members-ng.iracing.com/data). The sync script fetches the current season's
-# series and schedules, transforms them to the app's JSON shape, and only writes
-# the file when something actually changed.
+# Keeps data/iracing-season-data.json in sync with the official iRacing season
+# schedule, and rolls the calendar over on its own when a new season starts.
 #
-# Authentication is OAuth2. iRacing retired legacy username/password auth with
-# the 2026 Season 1 release (2025-12-09), so an OAuth client is now required.
-# NOTE: iRacing has temporarily paused issuing new OAuth client IDs. Until you
-# have one configured, this workflow detects the missing secrets and exits
-# cleanly (it does NOT fail) — set the secrets below to activate the sync.
+# Source: the official schedule PDF, which iRacing publishes at a stable,
+# PUBLIC, unauthenticated URL:
 #
-# Required repository secrets:
-#   IRACING_CLIENT_ID      OAuth client id     (oauth.iracing.com/accountmanagement)
-#   IRACING_CLIENT_SECRET  OAuth client secret
-#   IRACING_EMAIL          iRacing account email
-#   IRACING_PASSWORD       iRacing account password
+#   https://members-assets.iracing.com/public/schedulepdf/SeasonSchedule.pdf
 #
-# Secrets are never transmitted in clear text — the sync script masks each as
-# base64(sha256(secret + id)) before sending it to iRacing.
+# The filename carries no season, so the same URL serves whatever season is
+# current — no credentials, and nothing to change at rollover.
+#
+# NOTE: this deliberately does NOT use the iRacing Data API. That API requires
+# an OAuth client and iRacing has paused issuing new client IDs, which left
+# this workflow silently skipping every run (and the calendar ~2 months stale).
+# sync-season-data.js is kept for the day registration reopens — see
+# watch-iracing-oauth.yml, which watches for exactly that.
 
 on:
   schedule:
-    # Tuesdays at 06:00 UTC — iRacing builds/season changes land early in the week.
-    - cron: "0 6 * * 2"
+    # Daily at 06:00 UTC. Cheap, and it catches both a season rollover and the
+    # mid-season schedule corrections iRacing occasionally republishes.
+    - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -48,32 +46,23 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
-      - name: Sync season data from iRacing API
+      - name: Install dependencies
+        # pdf-parse is needed by extract-season-data.js.
+        run: npm ci
+
+      - name: Sync season data from the public schedule PDF
         id: sync
-        env:
-          IRACING_CLIENT_ID: ${{ secrets.IRACING_CLIENT_ID }}
-          IRACING_CLIENT_SECRET: ${{ secrets.IRACING_CLIENT_SECRET }}
-          IRACING_EMAIL: ${{ secrets.IRACING_EMAIL }}
-          IRACING_PASSWORD: ${{ secrets.IRACING_PASSWORD }}
         run: |
-          if [ -z "$IRACING_CLIENT_ID" ] || [ -z "$IRACING_CLIENT_SECRET" ] || \
-             [ -z "$IRACING_EMAIL" ] || [ -z "$IRACING_PASSWORD" ]; then
-            echo "::notice::iRacing OAuth secrets are not configured — skipping sync." \
-                 "Set IRACING_CLIENT_ID / IRACING_CLIENT_SECRET / IRACING_EMAIL /" \
-                 "IRACING_PASSWORD to enable it."
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "skipped=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
           DRY_FLAG=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             DRY_FLAG="--dry-run"
           fi
 
-          node sync-season-data.js $DRY_FLAG | tee sync.log
+          # Any failure here (download, parse, or validation) fails the job on
+          # purpose — a broken parse must never quietly commit a bad calendar.
+          node sync-season-pdf.js $DRY_FLAG | tee sync.log
 
           if grep -q "::changed::" sync.log; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -100,16 +89,16 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "### iRacing season data sync" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [ "${{ steps.sync.outputs.skipped }}" = "true" ]; then
-            echo "Skipped — iRacing OAuth secrets not configured." >> "$GITHUB_STEP_SUMMARY"
-          elif [ "${{ steps.sync.outputs.changed }}" = "true" ]; then
-            if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
-              echo "Changes detected (dry-run — nothing committed)." >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "### iRacing season data sync"
+            echo ""
+            if [ "${{ steps.sync.outputs.changed }}" = "true" ]; then
+              if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+                echo "Changes detected (dry-run — nothing committed)."
+              else
+                echo "Season data updated and committed."
+              fi
             else
-              echo "Season data updated and committed." >> "$GITHUB_STEP_SUMMARY"
+              echo "Already up to date — no changes."
             fi
-          else
-            echo "Already up to date — no changes." >> "$GITHUB_STEP_SUMMARY"
-          fi
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -25,7 +25,41 @@ node extract-season-data.js path/to/iracing-season.pdf --output data/custom-outp
 
 The script parses the PDF, extracts series and track data, and writes `iracing-season-data.json` to the project root. The app reads this file at build time.
 
-## Syncing from the official iRacing Data API (source of truth)
+## Keeping the calendar up to date (automatic)
+
+`data/iracing-season-data.json` is refreshed automatically from the **official
+iRacing season schedule PDF**, which iRacing publishes at a stable, public,
+unauthenticated URL:
+
+```
+https://members-assets.iracing.com/public/schedulepdf/SeasonSchedule.pdf
+```
+
+The filename contains no season, so the same URL always serves the current one
+— the calendar **rolls over on its own when a new season starts**. No iRacing
+credentials are involved.
+
+```bash
+# Download, parse, validate, and update the data file if anything changed
+npm run sync-pdf
+
+# See what would change without writing
+npm run sync-pdf -- --dry-run
+
+# Parse a PDF you already have
+npm run sync-pdf -- --pdf path/to/SeasonSchedule.pdf
+```
+
+`.github/workflows/update-season-data.yml` runs this daily and commits the data
+file when it changes.
+
+Because PDF parsing is more brittle than a JSON API, `sync-season-pdf.js`
+refuses to write when the result looks wrong — too few series, series with no
+schedule, unparseable dates, a sudden collapse in series count, or a season
+that moves backwards. **A layout change fails the workflow loudly instead of
+committing a broken calendar.**
+
+## Syncing from the official iRacing Data API (currently unavailable)
 
 The canonical source of truth for series and schedules is the official
 [iRacing Data API](https://members-ng.iracing.com). `sync-season-data.js` can
@@ -37,8 +71,10 @@ pull the current season directly from it instead of parsing a PDF by hand.
 > requires an **OAuth2 client** (`client_id` + `client_secret`) registered at
 > [oauth.iracing.com/accountmanagement](https://oauth.iracing.com/accountmanagement).
 > iRacing has **temporarily paused issuing new client IDs** while they review
-> third-party usage, so until you have one, use the
-> [PDF route](#updating-for-a-new-season-from-a-pdf) below.
+> third-party usage. **This path is therefore dormant** — the project syncs from
+> the [public schedule PDF](#keeping-the-calendar-up-to-date-automatic) instead,
+> which needs no credentials. `sync-season-data.js` is kept ready for the day
+> registration reopens.
 
 ```bash
 # Fetch the current season and update data/iracing-season-data.json if changed
@@ -65,15 +101,12 @@ How it works:
 - Transforms the response into the same JSON shape produced by the PDF
   extractor and writes the file **only when the content actually changes**.
 
-### Automated weekly sync (GitHub Action)
+### Activating it once OAuth reopens
 
-`.github/workflows/update-season-data.yml` runs the sync every Tuesday (and on
-demand via *Run workflow*). When the data changes it commits the updated
-`data/iracing-season-data.json` automatically. **If the OAuth secrets are not
-set, the workflow exits cleanly without failing** — so it's safe to merge now
-and activate later once you have a client.
-
-Set these repository secrets (Settings → Secrets and variables → Actions):
+`.github/workflows/update-season-data.yml` no longer uses this path — it syncs
+from the public PDF instead. To switch back once you have a client, set these
+repository secrets (Settings → Secrets and variables → Actions) and point the
+workflow's sync step at `sync-season-data.js`:
 
 | Secret | Description |
 |--------|-------------|
@@ -82,17 +115,34 @@ Set these repository secrets (Settings → Secrets and variables → Actions):
 | `IRACING_EMAIL` | iRacing account email |
 | `IRACING_PASSWORD` | iRacing account password |
 
-Use the workflow's **dry run** input to check for changes without committing.
+### Watching for OAuth registration to reopen
 
-## Updating for a New Season (from a PDF)
+Because iRacing announces the reopening only on their forums and in release
+notes, `.github/workflows/watch-iracing-oauth.yml` polls the two doc pages that
+carry the pause notice every Monday and **opens an issue when the notice
+disappears**. Run it by hand any time:
 
-The PDF route needs no credentials and is the working option while OAuth client
-registration is paused:
+```bash
+npm run check-oauth
+```
 
-1. Download the new season PDF from iRacing
-2. Run the extraction script: `npm run extract-data -- path/to/new-season.pdf`
-3. Review the generated `iracing-season-data.json`
-4. Rebuild or restart the dev server
+Exit codes: `0` still paused, `3` notice gone (may be open), `1` indeterminate
+(page moved or unreachable). The check is text-based, so confirm on
+[oauth.iracing.com/accountmanagement](https://oauth.iracing.com/accountmanagement)
+before acting — iRacing may simply have reworded the page.
+
+## Updating from a PDF by hand
+
+Normally you don't need this — `npm run sync-pdf` fetches the current PDF for
+you. Use this only to parse a PDF the public URL doesn't serve (an older
+season, or a copy from the forums):
+
+1. Run the extraction script: `npm run extract-data -- path/to/season.pdf`
+2. Review the generated `data/iracing-season-data.json`
+3. Rebuild or restart the dev server
+
+Note this writes the data file directly, with none of the validation guards
+`sync-season-pdf.js` applies.
 
 ## Project Structure
 
