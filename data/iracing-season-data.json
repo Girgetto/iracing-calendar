@@ -3,7 +3,7 @@
     "season": "2026 Season 3",
     "seasonNumber": 3,
     "seasonYear": 2026,
-    "lastUpdated": "2026-08-13T07:25:53.205Z",
+    "lastUpdated": "2026-08-27T17:21:58.438Z",
     "weeks": 39
   },
   "series": [
@@ -3304,13 +3304,13 @@
         },
         {
           "week": 19,
-          "track": "Oswego Speedway - Oval",
-          "trackId": "oswego-speedway-oval",
+          "track": "New Smyrna Speedway",
+          "trackId": "new-smyrna-speedway",
           "startDate": "2026-09-02T00:00:00.000Z",
           "endDate": "2026-09-08T00:00:00.000Z",
-          "raceDateTime": "2026-09-05T18:30:00Z",
-          "conditions": "74°F/24°C, Rain chance None, Rolling start, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. TMOD: 2 tire sets",
-          "durationLaps": 150
+          "raceDateTime": "2026-09-05T19:40:00Z",
+          "conditions": "80°F/27°C, Rain chance None, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. TMOD: 1 tire sets",
+          "durationLaps": 125
         },
         {
           "week": 20,
