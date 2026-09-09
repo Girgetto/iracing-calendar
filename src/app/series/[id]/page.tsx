@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getSeriesById, getAllSeries, getSeasonData } from "@/lib/data";
+import { getUniqueCars, getUniqueTracks } from "@/lib/seriesFacets";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SeriesDetailPage from "@/components/SeriesDetailPage";
@@ -85,7 +86,14 @@ export default async function SeriesPage({
   const { id } = await params;
   const series = getSeriesById(id);
   const seasonData = getSeasonData();
+
+  // Derive the car/track name lists here rather than handing the whole season
+  // to the client component. Passing allSeries across the client boundary
+  // serialized the entire 1 MB dataset into all 148 prerendered series pages
+  // (~3 MB of HTML + RSC + segments each, ~475 MB per deployment).
   const allSeries = getAllSeries();
+  const availableCars = getUniqueCars(allSeries);
+  const availableTracks = getUniqueTracks(allSeries);
 
   if (!series) {
     notFound();
@@ -161,7 +169,11 @@ export default async function SeriesPage({
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: safeJsonLd(breadcrumbJsonLd) }}
           />
-          <SeriesDetailPage series={series} allSeries={allSeries} />
+          <SeriesDetailPage
+            series={series}
+            availableCars={availableCars}
+            availableTracks={availableTracks}
+          />
         </div>
       </main>
 

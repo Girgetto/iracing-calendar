@@ -80,32 +80,6 @@ export function savePreferences(prefs: UserPreferences): void {
   }
 }
 
-export function getUniqueCars(series: Array<{ car?: string }>): string[] {
-  const cars = new Set<string>();
-  for (const s of series) {
-    if (s.car && s.car !== "See race week for cars in use that week.") {
-      // Split multi-car entries by comma
-      s.car.split(",").forEach((car) => {
-        const trimmed = car.trim();
-        if (trimmed) cars.add(trimmed);
-      });
-    }
-  }
-  return Array.from(cars).sort();
-}
-
-export function getUniqueTracks(
-  series: Array<{ schedule: Array<{ track: string }> }>
-): string[] {
-  const tracks = new Set<string>();
-  for (const s of series) {
-    s.schedule.forEach((w) => {
-      if (w.track) tracks.add(w.track);
-    });
-  }
-  return Array.from(tracks).sort();
-}
-
 /**
  * Check if the user owns the car required for a series.
  * Returns true if:

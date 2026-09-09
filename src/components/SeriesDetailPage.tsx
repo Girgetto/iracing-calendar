@@ -1,22 +1,28 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import type { Series } from "@/lib/types";
 import {
   loadPreferences,
   ensureFreeContent,
-  getUniqueCars,
-  getUniqueTracks,
   type UserPreferences,
 } from "@/lib/preferences";
 import SeriesDetail from "./SeriesDetail";
 
 interface SeriesDetailPageProps {
   series: Series;
-  allSeries: Series[];
+  // Only the derived car/track name lists, never the full season data: this
+  // component is the client boundary for 148 prerendered pages, so anything
+  // passed here is serialized into every one of them.
+  availableCars: string[];
+  availableTracks: string[];
 }
 
-export default function SeriesDetailPage({ series, allSeries }: SeriesDetailPageProps) {
+export default function SeriesDetailPage({
+  series,
+  availableCars,
+  availableTracks,
+}: SeriesDetailPageProps) {
   const [preferences, setPreferences] = useState<UserPreferences>({
     ownedCars: [],
     ownedTracks: [],
@@ -24,8 +30,6 @@ export default function SeriesDetailPage({ series, allSeries }: SeriesDetailPage
     wantToBuyCars: [],
     wantToBuyTracks: [],
   });
-  const availableCars = useMemo(() => getUniqueCars(allSeries), [allSeries]);
-  const availableTracks = useMemo(() => getUniqueTracks(allSeries), [allSeries]);
 
   useEffect(() => {
     const loaded = loadPreferences();

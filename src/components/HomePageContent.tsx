@@ -9,8 +9,6 @@ import { getCurrentWeek } from "@/lib/utils";
 import {
   loadPreferences,
   savePreferences,
-  getUniqueCars,
-  getUniqueTracks,
   getSeriesAvailability,
   ensureFreeContent,
   isFavoriteSeries,
@@ -18,6 +16,7 @@ import {
   ownsTrack,
   type UserPreferences,
 } from "@/lib/preferences";
+import { getUniqueCars, getUniqueTracks } from "@/lib/seriesFacets";
 import { ALL_IRACING_CARS, ALL_IRACING_TRACKS } from "@/lib/freeContent";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
