@@ -55,6 +55,12 @@ jobs:
       - name: Sync season data from the public schedule PDF
         id: sync
         run: |
+          # pipefail matters: without it the exit status of the pipeline below
+          # is tee's, so a failed sync would be reported as a green run. That
+          # is exactly how the 2026 Season 4 parse regression went unnoticed
+          # for days while the committed calendar stayed on Season 3.
+          set -o pipefail
+
           DRY_FLAG=""
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             DRY_FLAG="--dry-run"

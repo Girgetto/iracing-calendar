@@ -133,6 +133,29 @@ function seasonRank(metadata) {
 }
 
 /**
+ * Share of parsed series that are "13th Week" entries.
+ *
+ * Between seasons iRacing keeps serving the same public URL but swaps the
+ * contents for the 13th Week (off-season) schedule: it still carries the
+ * OUTGOING season's name, lists a fraction of the series, and contains none of
+ * the next season's races. A full season schedule has no 13th Week series at
+ * all, so the share is a clean separator.
+ */
+function thirteenthWeekShare(series) {
+  if (series.length === 0) return 0;
+  const count = series.filter((s) => /13th\s+week/i.test(s.name)).length;
+  return count / series.length;
+}
+
+/**
+ * Treat the download as the off-season schedule rather than a season.
+ *
+ * Deliberately well below the ~0.68 share the real 13th Week PDF produces, and
+ * far above the 0 a full season produces, so neither case is a near miss.
+ */
+const THIRTEENTH_WEEK_SHARE_THRESHOLD = 0.25;
+
+/**
  * Refuse to publish a result that looks like a broken parse or a regression.
  * @param {object} data     Freshly parsed season data.
  * @param {object|null} existing  Currently committed data, if any.
@@ -229,6 +252,24 @@ async function main() {
     const data = extract(pdfPath, scratchJson);
     const resolvedOutput = path.resolve(outputPath);
     const existing = readExisting(resolvedOutput);
+
+    // Check this BEFORE validate(): the off-season schedule trips the same
+    // "too few series" guards a broken parse does, and the two must not be
+    // reported the same way. Between seasons there is simply nothing new to
+    // publish, so keep the committed calendar and exit cleanly.
+    const offSeasonShare = thirteenthWeekShare(data.series);
+    if (offSeasonShare >= THIRTEENTH_WEEK_SHARE_THRESHOLD) {
+      console.log(
+        `\nPublished PDF is the 13th Week (off-season) schedule for ` +
+          `${data.metadata.season} — ${Math.round(offSeasonShare * 100)}% of ` +
+          `its ${data.series.length} series are 13th Week entries.`
+      );
+      console.log(
+        "Keeping the committed calendar until iRacing publishes the next " +
+          "full season."
+      );
+      return;
+    }
 
     validate(data, existing);
     console.log(
