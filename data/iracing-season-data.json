@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-15T11:11:15.843Z",
+    "lastUpdated": "2026-09-16T10:55:26.655Z",
     "weeks": 39
   },
   "series": [
@@ -6016,7 +6016,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:20:00Z",
-          "conditions": "70°F/21°C, Rain chance 4% (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "78°F/26°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         },
         {
@@ -6147,7 +6147,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Lenient",
+          "conditions": "67°F/20°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Lenient",
           "durationMins": 15
         },
         {
@@ -6409,7 +6409,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:30:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         },
         {
@@ -6933,7 +6933,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:10:00Z",
-          "conditions": "69°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -7165,7 +7165,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:15:00Z",
-          "conditions": "69°F/21°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Permissive",
+          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 25
         },
         {
@@ -7677,7 +7677,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:10:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
+          "conditions": "71°F/22°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -7939,7 +7939,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 15
         },
         {
@@ -8163,7 +8163,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T20:15:00Z",
-          "conditions": "80°F/26°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. MX16: fuel: 65%",
+          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. MX16: fuel: 65%",
           "durationMins": 30
         },
         {
@@ -8294,7 +8294,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "67°F/20°C, Rain chance 2% (7% before session), Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
+          "conditions": "67°F/19°C, Rain chance 34% (41% before session), Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -8482,7 +8482,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:40:00Z",
-          "conditions": "71°F/22°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -8732,7 +8732,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "67°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "conditions": "67°F/20°C, Rain chance Slight (3% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 20
         },
         {
@@ -8993,7 +8993,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "66°F/19°C, Rain chance 96% (98% before session), Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. A90: fuel: 85%",
+          "conditions": "76°F/24°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. A90: fuel: 85%",
           "durationMins": 40
         },
         {
@@ -9124,7 +9124,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:45:00Z",
-          "conditions": "83°F/29°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
+          "conditions": "83°F/28°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 19
         },
         {
@@ -9255,7 +9255,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:45:00Z",
-          "conditions": "75°F/24°C, Rain chance 56% (100% before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
+          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 19
         },
         {
@@ -9386,7 +9386,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "67°F/20°C, Rain chance None (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -9949,7 +9949,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local advisory cautions, Qual scrutiny - Moderate",
+          "conditions": "68°F/20°C, Rain chance None (1% before session), Forecast regenerated for each race, Grid by class, Rolling start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationMins": 30
         },
         {
@@ -10459,87 +10459,6 @@
       ]
     },
     {
-      "id": "13th-week-itested-event",
-      "name": "13th Week - iTested Event",
-      "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8 (Evo), Ferrari 499P, Aston Martin Valkyrie AMR-LMH, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
-      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races every hour on the hour",
-      "drops": 0,
-      "schedule": [
-        {
-          "week": 1,
-          "track": "Fuji International Speedway - Grand Prix",
-          "trackId": "fuji-international-speedway-grand-prix",
-          "startDate": "2026-09-08T00:00:00.000Z",
-          "endDate": "2026-09-14T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T12:00:00Z",
-          "conditions": "67°F/19°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 2,
-          "track": "Road Atlanta - Full Course",
-          "trackId": "road-atlanta-full-course",
-          "startDate": "2026-09-09T00:00:00.000Z",
-          "endDate": "2026-09-15T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T12:00:00Z",
-          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 3,
-          "track": "Indianapolis Motor Speedway - Road Course",
-          "trackId": "indianapolis-motor-speedway-road-course",
-          "startDate": "2026-09-10T00:00:00.000Z",
-          "endDate": "2026-09-16T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T12:00:00Z",
-          "conditions": "71°F/22°C, Rain chance Slight (Slight before session), Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 4,
-          "track": "Fuji International Speedway - Grand Prix",
-          "trackId": "fuji-international-speedway-grand-prix",
-          "startDate": "2026-09-11T00:00:00.000Z",
-          "endDate": "2026-09-17T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T13:45:00Z",
-          "conditions": "71°F/21°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 5,
-          "track": "Road Atlanta - Full Course",
-          "trackId": "road-atlanta-full-course",
-          "startDate": "2026-09-12T00:00:00.000Z",
-          "endDate": "2026-09-18T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T15:40:00Z",
-          "conditions": "83°F/29°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 6,
-          "track": "Indianapolis Motor Speedway - Road Course",
-          "trackId": "indianapolis-motor-speedway-road-course",
-          "startDate": "2026-09-13T00:00:00.000Z",
-          "endDate": "2026-09-19T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T15:35:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        },
-        {
-          "week": 7,
-          "track": "Fuji International Speedway - Grand Prix",
-          "trackId": "fuji-international-speedway-grand-prix",
-          "startDate": "2026-09-14T00:00:00.000Z",
-          "endDate": "2026-09-20T00:00:00.000Z",
-          "raceDateTime": "2026-05-17T12:00:00Z",
-          "conditions": "75°F/24°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Start zone, Local advisory cautions, Qual scrutiny - Strict. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 50% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 45
-        }
-      ]
-    },
-    {
       "id": "global-endurance-tour",
       "name": "Global Endurance Tour",
       "category": "Sports Car",
@@ -10620,7 +10539,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:30:00Z",
-          "conditions": "68°F/20°C, Rain chance Slight (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 40
         },
         {
@@ -10751,7 +10670,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:30:00Z",
-          "conditions": "67°F/20°C, Rain chance 8% (2% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         },
         {
@@ -10867,6 +10786,401 @@
       ]
     },
     {
+      "id": "gt3-regional-tour-by-sensithaptics-americas",
+      "name": "GT3 Regional Tour by SensitHaptics - Americas",
+      "category": "Sports Car",
+      "region": "Americas",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-09-15T00:00:00.000Z",
+          "endDate": "2026-09-21T00:00:00.000Z",
+          "raceDateTime": "2026-09-19T08:30:00Z",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 2,
+          "track": "Watkins Glen International - Boot",
+          "trackId": "watkins-glen-international-boot",
+          "startDate": "2026-09-22T00:00:00.000Z",
+          "endDate": "2026-09-28T00:00:00.000Z",
+          "raceDateTime": "2026-09-26T12:00:00Z",
+          "conditions": "84°F/29°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 3,
+          "track": "Mid-Ohio Sports Car Course - Full Course",
+          "trackId": "mid-ohio-sports-car-course-full-course",
+          "startDate": "2026-09-29T00:00:00.000Z",
+          "endDate": "2026-10-05T00:00:00.000Z",
+          "raceDateTime": "2026-10-03T13:40:00Z",
+          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 4,
+          "track": "Canadian Tire Motorsports Park",
+          "trackId": "canadian-tire-motorsports-park",
+          "startDate": "2026-10-06T00:00:00.000Z",
+          "endDate": "2026-10-12T00:00:00.000Z",
+          "raceDateTime": "2026-10-10T13:25:00Z",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 5,
+          "track": "Daytona International Speedway - Road Course",
+          "trackId": "daytona-international-speedway-road-course",
+          "startDate": "2026-10-13T00:00:00.000Z",
+          "endDate": "2026-10-19T00:00:00.000Z",
+          "raceDateTime": "2026-10-17T12:00:00Z",
+          "conditions": "78°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 6,
+          "track": "Sonoma Raceway - Cup Long",
+          "trackId": "sonoma-raceway-cup-long",
+          "startDate": "2026-10-20T00:00:00.000Z",
+          "endDate": "2026-10-26T00:00:00.000Z",
+          "raceDateTime": "2026-10-24T09:25:00Z",
+          "conditions": "66°F/19°C, Rain chance 4% (4% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 7,
+          "track": "Virginia International Raceway - Full Course",
+          "trackId": "virginia-international-raceway-full-course",
+          "startDate": "2026-10-27T00:00:00.000Z",
+          "endDate": "2026-11-02T00:00:00.000Z",
+          "raceDateTime": "2026-10-31T12:00:00Z",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 8,
+          "track": "Sebring International Raceway - International",
+          "trackId": "sebring-international-raceway-international",
+          "startDate": "2026-11-03T00:00:00.000Z",
+          "endDate": "2026-11-09T00:00:00.000Z",
+          "raceDateTime": "2026-11-07T12:25:00Z",
+          "conditions": "74°F/23°C, Rain chance None (52% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 9,
+          "track": "Circuit of the Americas - Grand Prix",
+          "trackId": "circuit-of-the-americas-grand-prix",
+          "startDate": "2026-11-10T00:00:00.000Z",
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2027-04-01T12:00:00Z",
+          "conditions": "77°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 10,
+          "track": "Autódromo Hermanos Rodríguez - Grand Prix",
+          "trackId": "aut-dromo-hermanos-rodr-guez-grand-prix",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-11-21T08:25:00Z",
+          "conditions": "66°F/19°C, Rain chance 11% (16% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 11,
+          "track": "WeatherTech Raceway at Laguna Seca - 2026",
+          "trackId": "weathertech-raceway-at-laguna-seca-2026",
+          "startDate": "2026-11-24T00:00:00.000Z",
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2027-04-01T12:00:00Z",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 12,
+          "track": "Autódromo José Carlos Pace - Grand Prix",
+          "trackId": "aut-dromo-jos-carlos-pace-grand-prix",
+          "startDate": "2026-12-01T00:00:00.000Z",
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2026-12-05T14:15:00Z",
+          "conditions": "75°F/24°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        }
+      ]
+    },
+    {
+      "id": "gt3-regional-tour-by-sensithaptics-europe",
+      "name": "GT3 Regional Tour by SensitHaptics - Europe",
+      "category": "Sports Car",
+      "region": "Europe",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Autodromo Nazionale Monza - Grand Prix",
+          "trackId": "autodromo-nazionale-monza-grand-prix",
+          "startDate": "2026-09-15T00:00:00.000Z",
+          "endDate": "2026-09-21T00:00:00.000Z",
+          "raceDateTime": "2026-06-20T07:45:00Z",
+          "conditions": "69°F/20°C, Rain chance 44% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 2,
+          "track": "Nürburgring Grand-Prix-Strecke - Grand Prix",
+          "trackId": "n-rburgring-grand-prix-strecke-grand-prix",
+          "startDate": "2026-09-22T00:00:00.000Z",
+          "endDate": "2026-09-28T00:00:00.000Z",
+          "raceDateTime": "2026-06-27T12:00:00Z",
+          "conditions": "67°F/19°C, Rain chance 67% (42% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 3,
+          "track": "Circuito de Jerez - Ángel Nieto - Grand Prix",
+          "trackId": "circuito-de-jerez-ngel-nieto-grand-prix",
+          "startDate": "2026-09-29T00:00:00.000Z",
+          "endDate": "2026-10-05T00:00:00.000Z",
+          "raceDateTime": "2026-07-04T16:40:00Z",
+          "conditions": "84°F/29°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 4,
+          "track": "Hockenheimring Baden-Württemberg - Grand Prix",
+          "trackId": "hockenheimring-baden-w-rttemberg-grand-prix",
+          "startDate": "2026-10-06T00:00:00.000Z",
+          "endDate": "2026-10-12T00:00:00.000Z",
+          "raceDateTime": "2026-07-11T14:55:00Z",
+          "conditions": "70°F/21°C, Rain chance 2% (2% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 5,
+          "track": "Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix",
+          "trackId": "autodromo-internazionale-enzo-e-dino-ferrari-grand-prix",
+          "startDate": "2026-10-13T00:00:00.000Z",
+          "endDate": "2026-10-19T00:00:00.000Z",
+          "raceDateTime": "2026-07-18T12:00:00Z",
+          "conditions": "86°F/30°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 6,
+          "track": "Autodromo Internazionale del Mugello - Grand Prix",
+          "trackId": "autodromo-internazionale-del-mugello-grand-prix",
+          "startDate": "2026-10-20T00:00:00.000Z",
+          "endDate": "2026-10-26T00:00:00.000Z",
+          "raceDateTime": "2026-07-25T07:55:00Z",
+          "conditions": "72°F/22°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 7,
+          "track": "Red Bull Ring - Grand Prix",
+          "trackId": "red-bull-ring-grand-prix",
+          "startDate": "2026-10-27T00:00:00.000Z",
+          "endDate": "2026-11-02T00:00:00.000Z",
+          "raceDateTime": "2026-08-01T12:00:00Z",
+          "conditions": "70°F/21°C, Rain chance None (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 8,
+          "track": "Silverstone Circuit - Grand Prix",
+          "trackId": "silverstone-circuit-grand-prix",
+          "startDate": "2026-11-03T00:00:00.000Z",
+          "endDate": "2026-11-09T00:00:00.000Z",
+          "raceDateTime": "2026-08-08T13:25:00Z",
+          "conditions": "69°F/21°C, Rain chance 1% (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 9,
+          "track": "Circuit de Barcelona Catalunya - Grand Prix",
+          "trackId": "circuit-de-barcelona-catalunya-grand-prix",
+          "startDate": "2026-11-10T00:00:00.000Z",
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2026-08-15T12:00:00Z",
+          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 10,
+          "track": "Circuit de Nevers Magny-Cours - Grand Prix",
+          "trackId": "circuit-de-nevers-magny-cours-grand-prix",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-08-22T08:55:00Z",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 11,
+          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
+          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
+          "startDate": "2026-11-24T00:00:00.000Z",
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2026-08-29T12:00:00Z",
+          "conditions": "77°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 12,
+          "track": "Algarve International Circuit - Grand Prix",
+          "trackId": "algarve-international-circuit-grand-prix",
+          "startDate": "2026-12-01T00:00:00.000Z",
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2026-09-05T14:15:00Z",
+          "conditions": "78°F/25°C, Rain chance Slight (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        }
+      ]
+    },
+    {
+      "id": "gt3-regional-tour-by-sensithaptics-asia-pacific",
+      "name": "GT3 Regional Tour by SensitHaptics-Asia Pacific",
+      "category": "Sports Car",
+      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :45 past",
+      "drops": 4,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Phillip Island Circuit",
+          "trackId": "phillip-island-circuit",
+          "startDate": "2026-09-15T00:00:00.000Z",
+          "endDate": "2026-09-21T00:00:00.000Z",
+          "raceDateTime": "2026-09-19T08:00:00Z",
+          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 2,
+          "track": "Mount Panorama Circuit",
+          "trackId": "mount-panorama-circuit",
+          "startDate": "2026-09-22T00:00:00.000Z",
+          "endDate": "2026-09-28T00:00:00.000Z",
+          "raceDateTime": "2026-09-26T12:00:00Z",
+          "conditions": "69°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 3,
+          "track": "Okayama International Circuit - Full Course",
+          "trackId": "okayama-international-circuit-full-course",
+          "startDate": "2026-09-29T00:00:00.000Z",
+          "endDate": "2026-10-05T00:00:00.000Z",
+          "raceDateTime": "2026-10-03T12:15:00Z",
+          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 4,
+          "track": "Shell V-Power Motorsport Park at The Bend - GT Circuit",
+          "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
+          "startDate": "2026-10-06T00:00:00.000Z",
+          "endDate": "2026-10-12T00:00:00.000Z",
+          "raceDateTime": "2026-10-10T13:00:00Z",
+          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 5,
+          "track": "Fuji International Speedway - Grand Prix",
+          "trackId": "fuji-international-speedway-grand-prix",
+          "startDate": "2026-10-13T00:00:00.000Z",
+          "endDate": "2026-10-19T00:00:00.000Z",
+          "raceDateTime": "2026-10-17T12:00:00Z",
+          "conditions": "67°F/19°C, Rain chance 50% (98% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 6,
+          "track": "Sandown International Motor Raceway",
+          "trackId": "sandown-international-motor-raceway",
+          "startDate": "2026-10-20T00:00:00.000Z",
+          "endDate": "2026-10-26T00:00:00.000Z",
+          "raceDateTime": "2026-10-24T08:10:00Z",
+          "conditions": "67°F/19°C, Rain chance 3% (20% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 7,
+          "track": "Adelaide Street Circuit",
+          "trackId": "adelaide-street-circuit",
+          "startDate": "2026-10-27T00:00:00.000Z",
+          "endDate": "2026-11-02T00:00:00.000Z",
+          "raceDateTime": "2026-10-31T11:00:00Z",
+          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 8,
+          "track": "Suzuka International Racing Course - Grand Prix",
+          "trackId": "suzuka-international-racing-course-grand-prix",
+          "startDate": "2026-11-03T00:00:00.000Z",
+          "endDate": "2026-11-09T00:00:00.000Z",
+          "raceDateTime": "2026-11-07T11:45:00Z",
+          "conditions": "67°F/19°C, Rain chance 65% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 9,
+          "track": "Mobility Resort Motegi - Grand Prix",
+          "trackId": "mobility-resort-motegi-grand-prix",
+          "startDate": "2026-11-10T00:00:00.000Z",
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2026-11-14T12:00:00Z",
+          "conditions": "68°F/20°C, Rain chance Slight (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 10,
+          "track": "Winton Motor Raceway - National Circuit",
+          "trackId": "winton-motor-raceway-national-circuit",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-11-21T07:45:00Z",
+          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 11,
+          "track": "Shell V-Power Motorsport Park at The Bend - GT Circuit",
+          "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
+          "startDate": "2026-11-24T00:00:00.000Z",
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2026-11-28T11:00:00Z",
+          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        },
+        {
+          "week": 12,
+          "track": "Fuji International Speedway - No Chicane",
+          "trackId": "fuji-international-speedway-no-chicane",
+          "startDate": "2026-12-01T00:00:00.000Z",
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2026-12-05T12:00:00Z",
+          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 20
+        }
+      ]
+    },
+    {
       "id": "gte-sprint-series",
       "name": "GTE Sprint Series",
       "category": "Sports Car",
@@ -10882,7 +11196,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:25:00Z",
-          "conditions": "71°F/22°C, Rain chance None, Forecast regenerated for each race, Detached qual, Rolling start, Local enforced cautions, Qual scrutiny - Strict. FGT7: fuel: 50% 488E: fuel: 50% BMWM8: fuel: 50% C8R: fuel: 50% RSR: fuel: 50%",
+          "conditions": "67°F/19°C, Rain chance None, Forecast regenerated for each race, Detached qual, Rolling start, Local enforced cautions, Qual scrutiny - Strict. FGT7: fuel: 50% 488E: fuel: 50% BMWM8: fuel: 50% C8R: fuel: 50% RSR: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -11154,401 +11468,6 @@
       ]
     },
     {
-      "id": "iracing-gt3-regional-tour-by-sensit-americas",
-      "name": "iRacing GT3 Regional Tour by Sensit! - Americas",
-      "category": "Sports Car",
-      "region": "Americas",
-      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
-      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races every hour at :45 past",
-      "drops": 4,
-      "schedule": [
-        {
-          "week": 1,
-          "track": "Road America - Full Course",
-          "trackId": "road-america-full-course",
-          "startDate": "2026-09-15T00:00:00.000Z",
-          "endDate": "2026-09-21T00:00:00.000Z",
-          "raceDateTime": "2026-09-19T08:30:00Z",
-          "conditions": "66°F/19°C, Rain chance None (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 2,
-          "track": "Watkins Glen International - Boot",
-          "trackId": "watkins-glen-international-boot",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-09-26T12:00:00Z",
-          "conditions": "84°F/29°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 3,
-          "track": "Mid-Ohio Sports Car Course - Full Course",
-          "trackId": "mid-ohio-sports-car-course-full-course",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-10-03T13:40:00Z",
-          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 4,
-          "track": "Canadian Tire Motorsports Park",
-          "trackId": "canadian-tire-motorsports-park",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T13:25:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 5,
-          "track": "Daytona International Speedway - Road Course",
-          "trackId": "daytona-international-speedway-road-course",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "78°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 6,
-          "track": "Sonoma Raceway - Cup Long",
-          "trackId": "sonoma-raceway-cup-long",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T09:25:00Z",
-          "conditions": "66°F/19°C, Rain chance 4% (4% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 7,
-          "track": "Virginia International Raceway - Full Course",
-          "trackId": "virginia-international-raceway-full-course",
-          "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z",
-          "raceDateTime": "2026-10-31T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 8,
-          "track": "Sebring International Raceway - International",
-          "trackId": "sebring-international-raceway-international",
-          "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z",
-          "raceDateTime": "2026-11-07T12:25:00Z",
-          "conditions": "74°F/23°C, Rain chance None (52% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 9,
-          "track": "Circuit of the Americas - Grand Prix",
-          "trackId": "circuit-of-the-americas-grand-prix",
-          "startDate": "2026-11-10T00:00:00.000Z",
-          "endDate": "2026-11-16T00:00:00.000Z",
-          "raceDateTime": "2027-04-01T12:00:00Z",
-          "conditions": "77°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 10,
-          "track": "Autódromo Hermanos Rodríguez - Grand Prix",
-          "trackId": "aut-dromo-hermanos-rodr-guez-grand-prix",
-          "startDate": "2026-11-17T00:00:00.000Z",
-          "endDate": "2026-11-23T00:00:00.000Z",
-          "raceDateTime": "2026-11-21T08:25:00Z",
-          "conditions": "66°F/19°C, Rain chance 11% (16% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 11,
-          "track": "WeatherTech Raceway at Laguna Seca - 2026",
-          "trackId": "weathertech-raceway-at-laguna-seca-2026",
-          "startDate": "2026-11-24T00:00:00.000Z",
-          "endDate": "2026-11-30T00:00:00.000Z",
-          "raceDateTime": "2027-04-01T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 12,
-          "track": "Autódromo José Carlos Pace - Grand Prix",
-          "trackId": "aut-dromo-jos-carlos-pace-grand-prix",
-          "startDate": "2026-12-01T00:00:00.000Z",
-          "endDate": "2026-12-07T00:00:00.000Z",
-          "raceDateTime": "2026-12-05T14:15:00Z",
-          "conditions": "75°F/24°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        }
-      ]
-    },
-    {
-      "id": "iracing-gt3-regional-tour-by-sensit-europe",
-      "name": "iRacing GT3 Regional Tour by Sensit! - Europe",
-      "category": "Sports Car",
-      "region": "Europe",
-      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
-      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races every hour at :45 past",
-      "drops": 4,
-      "schedule": [
-        {
-          "week": 1,
-          "track": "Autodromo Nazionale Monza - Grand Prix",
-          "trackId": "autodromo-nazionale-monza-grand-prix",
-          "startDate": "2026-09-15T00:00:00.000Z",
-          "endDate": "2026-09-21T00:00:00.000Z",
-          "raceDateTime": "2026-06-20T07:45:00Z",
-          "conditions": "70°F/21°C, Rain chance 2% (2% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 2,
-          "track": "Nürburgring Grand-Prix-Strecke - Grand Prix",
-          "trackId": "n-rburgring-grand-prix-strecke-grand-prix",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-06-27T12:00:00Z",
-          "conditions": "67°F/19°C, Rain chance 67% (42% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 3,
-          "track": "Circuito de Jerez - Ángel Nieto - Grand Prix",
-          "trackId": "circuito-de-jerez-ngel-nieto-grand-prix",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-07-04T16:40:00Z",
-          "conditions": "84°F/29°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 4,
-          "track": "Hockenheimring Baden-Württemberg - Grand Prix",
-          "trackId": "hockenheimring-baden-w-rttemberg-grand-prix",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-07-11T14:55:00Z",
-          "conditions": "70°F/21°C, Rain chance 2% (2% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 5,
-          "track": "Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix",
-          "trackId": "autodromo-internazionale-enzo-e-dino-ferrari-grand-prix",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-07-18T12:00:00Z",
-          "conditions": "86°F/30°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 6,
-          "track": "Autodromo Internazionale del Mugello - Grand Prix",
-          "trackId": "autodromo-internazionale-del-mugello-grand-prix",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-07-25T07:55:00Z",
-          "conditions": "72°F/22°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 7,
-          "track": "Red Bull Ring - Grand Prix",
-          "trackId": "red-bull-ring-grand-prix",
-          "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z",
-          "raceDateTime": "2026-08-01T12:00:00Z",
-          "conditions": "70°F/21°C, Rain chance None (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 8,
-          "track": "Silverstone Circuit - Grand Prix",
-          "trackId": "silverstone-circuit-grand-prix",
-          "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z",
-          "raceDateTime": "2026-08-08T13:25:00Z",
-          "conditions": "69°F/21°C, Rain chance 1% (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 9,
-          "track": "Circuit de Barcelona Catalunya - Grand Prix",
-          "trackId": "circuit-de-barcelona-catalunya-grand-prix",
-          "startDate": "2026-11-10T00:00:00.000Z",
-          "endDate": "2026-11-16T00:00:00.000Z",
-          "raceDateTime": "2026-08-15T12:00:00Z",
-          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 10,
-          "track": "Circuit de Nevers Magny-Cours - Grand Prix",
-          "trackId": "circuit-de-nevers-magny-cours-grand-prix",
-          "startDate": "2026-11-17T00:00:00.000Z",
-          "endDate": "2026-11-23T00:00:00.000Z",
-          "raceDateTime": "2026-08-22T08:55:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 11,
-          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
-          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
-          "startDate": "2026-11-24T00:00:00.000Z",
-          "endDate": "2026-11-30T00:00:00.000Z",
-          "raceDateTime": "2026-08-29T12:00:00Z",
-          "conditions": "77°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 12,
-          "track": "Algarve International Circuit - Grand Prix",
-          "trackId": "algarve-international-circuit-grand-prix",
-          "startDate": "2026-12-01T00:00:00.000Z",
-          "endDate": "2026-12-07T00:00:00.000Z",
-          "raceDateTime": "2026-09-05T14:15:00Z",
-          "conditions": "78°F/25°C, Rain chance Slight (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        }
-      ]
-    },
-    {
-      "id": "iracing-gt3-regional-tour-by-sensit-asiapacific",
-      "name": "iRacing GT3 Regional Tour by Sensit! -AsiaPacific",
-      "category": "Sports Car",
-      "car": "Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Audi R8 LMS EVO II GT3, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
-      "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races every hour at :45 past",
-      "drops": 4,
-      "schedule": [
-        {
-          "week": 1,
-          "track": "Phillip Island Circuit",
-          "trackId": "phillip-island-circuit",
-          "startDate": "2026-09-15T00:00:00.000Z",
-          "endDate": "2026-09-21T00:00:00.000Z",
-          "raceDateTime": "2026-09-19T08:00:00Z",
-          "conditions": "67°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 2,
-          "track": "Mount Panorama Circuit",
-          "trackId": "mount-panorama-circuit",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-09-26T12:00:00Z",
-          "conditions": "69°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 3,
-          "track": "Okayama International Circuit - Full Course",
-          "trackId": "okayama-international-circuit-full-course",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-10-03T12:15:00Z",
-          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 4,
-          "track": "Shell V-Power Motorsport Park at The Bend - GT Circuit",
-          "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T13:00:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 5,
-          "track": "Fuji International Speedway - Grand Prix",
-          "trackId": "fuji-international-speedway-grand-prix",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "67°F/19°C, Rain chance 50% (98% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 6,
-          "track": "Sandown International Motor Raceway",
-          "trackId": "sandown-international-motor-raceway",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T08:10:00Z",
-          "conditions": "67°F/19°C, Rain chance 3% (20% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 7,
-          "track": "Adelaide Street Circuit",
-          "trackId": "adelaide-street-circuit",
-          "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z",
-          "raceDateTime": "2026-10-31T11:00:00Z",
-          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 8,
-          "track": "Suzuka International Racing Course - Grand Prix",
-          "trackId": "suzuka-international-racing-course-grand-prix",
-          "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z",
-          "raceDateTime": "2026-11-07T11:45:00Z",
-          "conditions": "67°F/19°C, Rain chance 65% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 9,
-          "track": "Mobility Resort Motegi - Grand Prix",
-          "trackId": "mobility-resort-motegi-grand-prix",
-          "startDate": "2026-11-10T00:00:00.000Z",
-          "endDate": "2026-11-16T00:00:00.000Z",
-          "raceDateTime": "2026-11-14T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance Slight (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 10,
-          "track": "Winton Motor Raceway - National Circuit",
-          "trackId": "winton-motor-raceway-national-circuit",
-          "startDate": "2026-11-17T00:00:00.000Z",
-          "endDate": "2026-11-23T00:00:00.000Z",
-          "raceDateTime": "2026-11-21T07:45:00Z",
-          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 11,
-          "track": "Shell V-Power Motorsport Park at The Bend - GT Circuit",
-          "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
-          "startDate": "2026-11-24T00:00:00.000Z",
-          "endDate": "2026-11-30T00:00:00.000Z",
-          "raceDateTime": "2026-11-28T11:00:00Z",
-          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        },
-        {
-          "week": 12,
-          "track": "Fuji International Speedway - No Chicane",
-          "trackId": "fuji-international-speedway-no-chicane",
-          "startDate": "2026-12-01T00:00:00.000Z",
-          "endDate": "2026-12-07T00:00:00.000Z",
-          "raceDateTime": "2026-12-05T12:00:00Z",
-          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 20
-        }
-      ]
-    },
-    {
       "id": "lmp2-challenge-2026-season-4-fixed",
       "name": "LMP2 Challenge - 2026 Season 4 - Fixed",
       "category": "Sports Car",
@@ -11564,7 +11483,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -11695,7 +11614,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "74°F/24°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -11826,7 +11745,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "71°F/22°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "71°F/21°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -11957,7 +11876,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "68°F/20°C, Rain chance 25% (18% before session), Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12735,7 +12654,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:25:00Z",
-          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
+          "conditions": "74°F/23°C, Rain chance 73% (18% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         },
         {
@@ -13903,7 +13822,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:45:00Z",
-          "conditions": "66°F/19°C, Rain chance 68% (100% before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "65°F/19°C, Rain chance 100% (100% before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -14034,7 +13953,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:45:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 30
         },
         {
@@ -14678,7 +14597,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "83°F/29°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
+          "conditions": "76°F/25°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationLaps": 46
         },
         {
@@ -14980,7 +14899,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T14:50:00Z",
-          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Strict",
+          "conditions": "69°F/21°C, Rain chance 8% (4% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 16
         },
         {
@@ -15111,7 +15030,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T14:50:00Z",
-          "conditions": "69°F/21°C, Rain chance 2% (Slight before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
+          "conditions": "70°F/21°C, Rain chance Slight (None before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 28
         },
         {
@@ -19471,14 +19390,14 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:30:00Z",
-          "conditions": "75°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L DIRT ROAD"
+          "conditions": "75°F/24°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
       ]
     },
     {
       "id": "world-of-outlaws-sprint-car-series-2026-season-4-fixed",
       "name": "World of Outlaws Sprint Car Series - 2026 Season 4 - Fixed",
-      "category": "Dirt Road",
+      "category": "Dirt Oval",
       "car": "Dirt Sprint Car - 410",
       "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
       "raceFrequency": "Races hourly at :45",
@@ -19603,6 +19522,67 @@
           "raceDateTime": "2027-04-01T12:00:00Z",
           "conditions": "79°F/26°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. 30 laps",
           "durationMins": 25
+        }
+      ]
+    },
+    {
+      "id": "world-of-outlaws-pro-qualifying-series-2026-season-sprints",
+      "name": "World of Outlaws Pro Qualifying Series - 2026 Season - Sprints",
+      "category": "Dirt Road",
+      "car": "Dirt Sprint Car - 410",
+      "licenseRange": "Class A 1.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on Monday at 8pm ET",
+      "drops": 1,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Port Royal Speedway",
+          "trackId": "port-royal-speedway",
+          "startDate": "2026-09-22T00:00:00.000Z",
+          "endDate": "2026-09-28T00:00:00.000Z",
+          "raceDateTime": "2026-09-26T13:00:00Z",
+          "conditions": "86°F/30°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
+          "durationLaps": 30
+        },
+        {
+          "week": 2,
+          "track": "Cedar Lake Speedway",
+          "trackId": "cedar-lake-speedway",
+          "startDate": "2026-09-29T00:00:00.000Z",
+          "endDate": "2026-10-05T00:00:00.000Z",
+          "raceDateTime": "2026-10-03T13:40:00Z",
+          "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
+          "durationLaps": 30
+        },
+        {
+          "week": 3,
+          "track": "Lincoln Speedway",
+          "trackId": "lincoln-speedway",
+          "startDate": "2026-10-06T00:00:00.000Z",
+          "endDate": "2026-10-12T00:00:00.000Z",
+          "raceDateTime": "2026-10-10T17:00:00Z",
+          "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
+          "durationLaps": 30
+        },
+        {
+          "week": 4,
+          "track": "Weedsport Speedway",
+          "trackId": "weedsport-speedway",
+          "startDate": "2026-10-13T00:00:00.000Z",
+          "endDate": "2026-10-19T00:00:00.000Z",
+          "raceDateTime": "2026-10-17T13:35:00Z",
+          "conditions": "66°F/19°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
+          "durationLaps": 30
+        },
+        {
+          "week": 5,
+          "track": "The Dirt Track at Charlotte",
+          "trackId": "the-dirt-track-at-charlotte",
+          "startDate": "2026-10-20T00:00:00.000Z",
+          "endDate": "2026-10-26T00:00:00.000Z",
+          "raceDateTime": "2026-11-14T17:15:00Z",
+          "conditions": "69°F/20°C, Rain chance None, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
+          "durationLaps": 30
         }
       ]
     },
