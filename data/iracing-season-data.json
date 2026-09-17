@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-16T10:55:26.655Z",
+    "lastUpdated": "2026-09-17T11:03:27.460Z",
     "weeks": 39
   },
   "series": [
@@ -6409,7 +6409,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:30:00Z",
-          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "conditions": "72°F/22°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         },
         {
@@ -6933,7 +6933,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:10:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "67°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -7165,7 +7165,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:15:00Z",
-          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Permissive",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 25
         },
         {
@@ -7677,7 +7677,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:10:00Z",
-          "conditions": "71°F/22°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
+          "conditions": "72°F/22°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -8163,7 +8163,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T20:15:00Z",
-          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. MX16: fuel: 65%",
+          "conditions": "77°F/25°C, Rain chance 4% (100% before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. MX16: fuel: 65%",
           "durationMins": 30
         },
         {
@@ -8294,7 +8294,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "67°F/19°C, Rain chance 34% (41% before session), Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
+          "conditions": "72°F/22°C, Rain chance None, Forecast regenerated for each race, Standing start, Cautions disabled, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -8482,7 +8482,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:40:00Z",
-          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "66°F/19°C, Rain chance 62% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -8613,7 +8613,7 @@
           "startDate": "2026-09-19T00:00:00.000Z",
           "endDate": "2026-09-25T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:30:00Z",
-          "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Moderate. mins"
+          "conditions": "68°F/20°C, Rain chance None, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Moderate. MGT3E: fuel: 97%, pwr: -0.50% 720GT3: fuel: 99% F296: 3.0kg, pwr: -0.25% AMGT3: fuel: 98%, pwr: 0.25% AEVO2: fuel: 98% NSXE22: fuel: 99% M4GT3: fuel: 99%, 10.0kg, pwr: - 1.00% LGT3: fuel: 98% CZ06: fuel: 99%, 3.0kg, pwr: -0.25% 992R: fuel: 97%, -5.0kg FMGT3: -5.0kg mins"
         },
         {
           "week": 2,
@@ -8657,7 +8657,7 @@
           "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
           "startDate": "2026-10-24T00:00:00.000Z",
           "endDate": "2026-10-30T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T12:00:00Z",
+          "raceDateTime": "2026-10-24T11:30:00Z",
           "conditions": "70°F/21°C, Rain chance None, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Moderate. mins"
         },
         {
@@ -8732,7 +8732,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "67°F/20°C, Rain chance Slight (3% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "conditions": "67°F/19°C, Rain chance 9% (12% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Lenient. FMGT4: 3.0kg, pwr: -0.50% MGT4: 10.0kg, pwr: -1.00% BMWGT4: 5.0kg, pwr: -0.25% AMV4: -7.0kg, pwr: 0.75% P718: 5.0kg",
           "durationMins": 20
         },
         {
@@ -8928,7 +8928,7 @@
           "startDate": "2026-09-19T00:00:00.000Z",
           "endDate": "2026-09-25T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "72°F/22°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. FMGT4: fuel: 80% MGT4: fuel: 80% BMWGT4: fuel: 80% AMV4: fuel: 80% P718: fuel: 80% M570S: fuel: 80% mins"
+          "conditions": "72°F/22°C, Rain chance None, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. FMGT4: fuel: 80%, 3.0kg, pwr: -0.50% MGT4: fuel: 80%, 10.0kg, pwr: -1.00% BMWGT4: fuel: 80%, 5.0kg, pwr: - 0.25% AMV4: fuel: 80%, -7.0kg, pwr: 0.75% P718: fuel: 80%, 5.0kg M570S: fuel: 80% mins"
         },
         {
           "week": 2,
@@ -8993,7 +8993,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "76°F/24°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. A90: fuel: 85%",
+          "conditions": "75°F/24°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. A90: fuel: 85%",
           "durationMins": 40
         },
         {
@@ -9255,7 +9255,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:45:00Z",
-          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
+          "conditions": "84°F/29°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 19
         },
         {
@@ -9386,7 +9386,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "67°F/20°C, Rain chance None (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "68°F/20°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -9949,7 +9949,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "68°F/20°C, Rain chance None (1% before session), Forecast regenerated for each race, Grid by class, Rolling start, Local advisory cautions, Qual scrutiny - Moderate",
+          "conditions": "67°F/20°C, Rain chance 2% (4% before session), Forecast regenerated for each race, Grid by class, Rolling start, Local advisory cautions, Qual scrutiny - Moderate. FMGT4: 3.0kg, pwr: -0.50% MGT4: 10.0kg, pwr: -1.00% BMWGT4: 5.0kg, pwr: -0.25% AMV4: -7.0kg, pwr: 0.75% P718: 5.0kg",
           "durationMins": 30
         },
         {
@@ -10211,7 +10211,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:50:00Z",
-          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
+          "conditions": "83°F/28°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
           "durationLaps": 31
         },
         {
@@ -10343,7 +10343,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:50:00Z",
-          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
+          "conditions": "82°F/28°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate. SFMG3: fuel: 45% SCCG3: fuel: 45%",
           "durationLaps": 31
         },
         {
@@ -10539,7 +10539,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:30:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50%, pwr: -0.50% 720GT3: fuel: 50% F296: fuel: 50%, 3.0kg, pwr: -0.25% AMGT3: fuel: 50%, pwr: 0.25% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -5.0kg FMGT3: fuel: 50%, -5.0kg",
           "durationMins": 40
         },
         {
@@ -10588,7 +10588,7 @@
           "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T11:30:00Z",
+          "raceDateTime": "2026-10-24T11:00:00Z",
           "conditions": "78°F/25°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 40
         },
@@ -10670,7 +10670,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:30:00Z",
-          "conditions": "70°F/21°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "67°F/20°C, Rain chance Slight (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50%, pwr: -0.50% 720GT3: fuel: 50% F296: fuel: 50%, 3.0kg, pwr: -0.25% AMGT3: fuel: 50%, pwr: 0.25% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -5.0kg FMGT3: fuel: 50%, -5.0kg",
           "durationMins": 20
         },
         {
@@ -10719,7 +10719,7 @@
           "trackId": "shell-v-power-motorsport-park-at-the-bend-gt-circuit",
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T11:30:00Z",
+          "raceDateTime": "2026-10-24T11:00:00Z",
           "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         },
@@ -10934,7 +10934,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-06-20T07:45:00Z",
-          "conditions": "69°F/20°C, Rain chance 44% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         },
         {
@@ -11065,7 +11065,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:00:00Z",
-          "conditions": "66°F/19°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "66°F/19°C, Rain chance 30% (100% before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Strict. MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% AEVO2: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 20
         },
         {
@@ -11483,7 +11483,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "80°F/27°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "69°F/21°C, Rain chance Slight (None before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -11614,7 +11614,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "69°F/21°C, Rain chance None (Slight before session), Forecast regenerated for each race, Rolling start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -11876,7 +11876,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "73°F/23°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "74°F/23°C, Rain chance None, Forecast regenerated for each race, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12654,7 +12654,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:25:00Z",
-          "conditions": "74°F/23°C, Rain chance 73% (18% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
+          "conditions": "74°F/23°C, Rain chance None (100% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Lenient",
           "durationMins": 15
         },
         {
@@ -13822,7 +13822,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T08:45:00Z",
-          "conditions": "65°F/19°C, Rain chance 100% (100% before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
+          "conditions": "67°F/20°C, Rain chance 1% (Slight before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Moderate",
           "durationMins": 20
         },
         {
@@ -14597,7 +14597,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "76°F/25°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
+          "conditions": "75°F/24°C, Rain chance None, Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Moderate",
           "durationLaps": 46
         },
         {
@@ -14899,7 +14899,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T14:50:00Z",
-          "conditions": "69°F/21°C, Rain chance 8% (4% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Strict",
+          "conditions": "67°F/19°C, Rain chance 98% (100% before session), Forecast regenerated for each race, Standing start, Local advisory cautions, Qual scrutiny - Strict",
           "durationLaps": 16
         },
         {
@@ -15030,7 +15030,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T14:50:00Z",
-          "conditions": "70°F/21°C, Rain chance Slight (None before session), Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
+          "conditions": "79°F/26°C, Rain chance None, Forecast regenerated for each race, Standing start, Local enforced cautions, Qual scrutiny - Strict",
           "durationLaps": 28
         },
         {
