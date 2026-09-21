@@ -217,10 +217,74 @@ function validate(data, existing) {
   }
 }
 
-/** Stable stringify ignoring metadata.lastUpdated, which always changes. */
+/**
+ * The weather segments iRacing regenerates on every PDF build.
+ *
+ * `conditions` opens with a temperature and a rain-chance clause that come
+ * from a live forecast, not from the schedule:
+ *
+ *   "84°F/29°C, Rain chance 4% (Slight before session), Rolling start, ..."
+ *   "84°F/29°C, All dry events, Rolling start, ..."
+ *
+ * Both re-roll daily even when nothing about the season has changed, so
+ * comparing them made every single nightly run look like a real update — one
+ * commit, and therefore one production deployment, per day forever.
+ */
+const VOLATILE_CONDITION_PATTERNS = [
+  // Leading temperature, e.g. "84°F/29°C, ".
+  /^\s*-?\d+°F\/-?\d+°C\s*,?\s*/,
+  // The forecast clause, in every phrasing iRacing has used. It switched
+  // vocabulary mid-season (2026-09-19: "Rain chance None" -> "All dry events",
+  // "Forecast regenerated for each race" -> "Rain possible"), which rewrote
+  // all 151 series in one run, so match the whole family rather than one form.
+  /\s*(?:Rain chance [^,.]*|All dry events|Rain possible|Forecast regenerated for each race)\s*,?/g,
+];
+
+/**
+ * Normalise the other daily wobble: PDF line-wrapping artifacts.
+ *
+ * Because the weather text above changes length, the schedule table re-flows
+ * between PDF builds, and a token that lands on a line break comes back out
+ * of pdf-parse with a stray space after its hyphen:
+ *
+ *   "Double-file Back"  <->  "Double- file Back"
+ *   "1-G/W/C"           <->  "1- G/W/C"
+ *   "pwr: -0.25%"       <->  "pwr: - 0.25%"
+ *
+ * Identical settings, different string. Collapsing the space after every
+ * hyphen (and any run of whitespace) makes the two spellings compare equal.
+ * Applied to both sides, so it only ever removes false positives.
+ */
+function normaliseWrapping(text) {
+  return text.replace(/-\s+/g, "-").replace(/\s+/g, " ");
+}
+
+/** Drop the forecast noise from a conditions string, keeping real settings. */
+function stripVolatileWeather(conditions) {
+  if (typeof conditions !== "string") return conditions;
+  let out = conditions;
+  for (const pattern of VOLATILE_CONDITION_PATTERNS) {
+    out = out.replace(pattern, "");
+  }
+  return normaliseWrapping(out).trim();
+}
+
+/**
+ * Stable stringify ignoring the fields that change on their own:
+ * metadata.lastUpdated, and the live weather forecast inside each week's
+ * `conditions`. Only used to decide whether to write — the file itself still
+ * stores the full conditions string, forecast included.
+ */
 function comparable(data) {
   const clone = JSON.parse(JSON.stringify(data));
   if (clone.metadata) delete clone.metadata.lastUpdated;
+  for (const series of clone.series ?? []) {
+    for (const week of series.schedule ?? []) {
+      if (week.conditions !== undefined) {
+        week.conditions = stripVolatileWeather(week.conditions);
+      }
+    }
+  }
   return JSON.stringify(clone);
 }
 
