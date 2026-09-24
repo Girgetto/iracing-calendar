@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-19T10:23:42.099Z",
+    "lastUpdated": "2026-09-24T11:11:30.047Z",
     "weeks": 39
   },
   "series": [
@@ -11624,7 +11624,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:10:00Z",
-          "conditions": "Rain possible, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: 3.0kg CGTP: -5.0kg, pwr: -0.50% AGTP: 2.0kg",
+          "conditions": "Rain possible, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: 3.0kg F499P: -2.0kg CGTP: -5.0kg, pwr: -0.50% AGTP: 2.0kg",
           "durationMins": 20
         },
         {
@@ -11755,7 +11755,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50%, 3.0kg BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50%, -5.0kg, pwr: -0.50% AGTP: fuel: 50%, 2.0kg P217: fuel: 68% MGT3E: fuel: 50%, 5.0kg, pwr: -0.50% 720GT3: fuel: 50%, -5.0kg F296: fuel: 50%, 8.0kg, pwr: -0.25% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50% M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: 0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -10.0kg FMGT3: fuel: 50%, -5.0kg",
+          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50%, 3.0kg BMWGTP: fuel: 50% F499P: fuel: 50%, -2.0kg AMGTPV: fuel: 50% CGTP: fuel: 50%, -5.0kg, pwr: -0.50% AGTP: fuel: 50%, 2.0kg P217: fuel: 68% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
           "durationMins": 35
         },
         {
@@ -11886,7 +11886,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65%, 3.0kg BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65%, -5.0kg, pwr: -0.50% AGTP: fuel: 65%, 2.0kg P217: fuel: 80% MGT3E: fuel: 50%, 5.0kg, pwr: -0.50% 720GT3: fuel: 50%, -5.0kg F296: fuel: 50%, 8.0kg, pwr: -0.25% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50% M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -10.0kg FMGT3: fuel: 50%, -5.0kg",
+          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65%, 3.0kg BMWGTP: fuel: 65% F499P: fuel: 65%, -2.0kg AMGTPV: fuel: 65% CGTP: fuel: 65%, -5.0kg, pwr: -0.50% AGTP: fuel: 65%, 2.0kg P217: fuel: 80% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
           "durationMins": 45
         },
         {
