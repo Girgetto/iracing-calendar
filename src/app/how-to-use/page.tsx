@@ -274,7 +274,7 @@ export default function HowToUsePage() {
                 <span className="font-medium text-white light-theme:text-gray-900">
                   Import from iRacing
                 </span>{" "}
-                to read them from your iRacing install folder or a pasted list,
+                to match them from a pasted list,
                 then review the matches. Once saved, the calendar will:
               </p>
               <ul className="mt-2 list-disc list-inside space-y-1">
