@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-24T11:11:30.047Z",
+    "lastUpdated": "2026-09-25T11:15:45.724Z",
     "weeks": 39
   },
   "series": [
@@ -8073,77 +8073,110 @@
           "track": "Okayama International Circuit - Full Course",
           "trackId": "okayama-international-circuit-full-course",
           "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z"
+          "endDate": "2026-09-28T00:00:00.000Z",
+          "raceDateTime": "2026-09-26T12:00:00Z",
+          "conditions": "73°F/23°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 3,
           "track": "Oulton Park Circuit - International",
           "trackId": "oulton-park-circuit-international",
           "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z"
+          "endDate": "2026-10-05T00:00:00.000Z",
+          "raceDateTime": "2026-10-03T16:25:00Z",
+          "conditions": "68°F/20°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 4,
           "track": "Shell V-Power Motorsport Park at The Bend - West Plus Circuit",
           "trackId": "shell-v-power-motorsport-park-at-the-bend-west-plus-circuit",
           "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z"
+          "endDate": "2026-10-12T00:00:00.000Z",
+          "raceDateTime": "2026-10-10T09:30:00Z",
+          "conditions": "66°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 5,
           "track": "Rudskogen Motorsenter",
           "trackId": "rudskogen-motorsenter",
           "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z"
+          "endDate": "2026-10-19T00:00:00.000Z",
+          "raceDateTime": "2027-05-01T13:50:00Z",
+          "conditions": "65°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 6,
           "track": "WeatherTech Raceway at Laguna Seca - 2026",
           "trackId": "weathertech-raceway-at-laguna-seca-2026",
           "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z"
+          "endDate": "2026-10-26T00:00:00.000Z",
+          "raceDateTime": "2026-10-24T16:45:00Z",
+          "conditions": "67°F/20°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 7,
           "track": "Motorsport Arena Oschersleben - Grand Prix",
           "trackId": "motorsport-arena-oschersleben-grand-prix",
           "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z"
+          "endDate": "2026-11-02T00:00:00.000Z",
+          "raceDateTime": "2026-10-31T12:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 8,
           "track": "MotorLand Aragón - National",
           "trackId": "motorland-arag-n-national",
           "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z"
+          "endDate": "2026-11-09T00:00:00.000Z",
+          "raceDateTime": "2026-11-07T13:20:00Z",
+          "conditions": "71°F/22°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 9,
           "track": "Circuit Zandvoort - Grand Prix",
           "trackId": "circuit-zandvoort-grand-prix",
           "startDate": "2026-11-10T00:00:00.000Z",
-          "endDate": "2026-11-16T00:00:00.000Z"
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2027-03-01T15:30:00Z",
+          "conditions": "66°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 10,
           "track": "Virginia International Raceway - Grand Course",
           "trackId": "virginia-international-raceway-grand-course",
           "startDate": "2026-11-17T00:00:00.000Z",
-          "endDate": "2026-11-23T00:00:00.000Z"
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-11-21T12:00:00Z",
+          "conditions": "67°F/20°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 11,
           "track": "Circuito de Jerez - Ángel Nieto - Grand Prix",
           "trackId": "circuito-de-jerez-ngel-nieto-grand-prix",
           "startDate": "2026-11-24T00:00:00.000Z",
-          "endDate": "2026-11-30T00:00:00.000Z"
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2026-11-28T13:15:00Z",
+          "conditions": "70°F/21°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         },
         {
           "week": 12,
           "track": "Algarve International Circuit - Grand Prix",
           "trackId": "algarve-international-circuit-grand-prix",
           "startDate": "2026-12-01T00:00:00.000Z",
-          "endDate": "2026-12-07T00:00:00.000Z"
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2027-04-01T15:25:00Z",
+          "conditions": "67°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
+          "durationMins": 25
         }
       ]
     },
