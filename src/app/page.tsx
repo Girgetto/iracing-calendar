@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { getAllSeries, getSeasonData, getCategories } from "@/lib/data";
-import HomePageContent from "@/components/HomePageContent";
+import HomePageContent, { HomePageContentWithParams } from "@/components/HomePageContent";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://iracing-calendar.girgetto.it";
 
@@ -37,8 +37,16 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(seriesListJsonLd) }}
       />
-      <Suspense>
-        <HomePageContent
+      <Suspense
+        fallback={
+          <HomePageContent
+            seasonData={seasonData}
+            allSeries={allSeries}
+            categories={categories}
+          />
+        }
+      >
+        <HomePageContentWithParams
           seasonData={seasonData}
           allSeries={allSeries}
           categories={categories}
