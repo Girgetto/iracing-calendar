@@ -8,7 +8,16 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 light-theme:text-gray-600 transition-colors duration-300">
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
             <p>
-              iRacing Calendar — Open-source season schedule &amp; track planner
+              iRacing Calendar by{" "}
+              <a
+                href="https://github.com/Girgetto"
+                target="_blank"
+                rel="noopener noreferrer author"
+                className="font-medium text-slate-300 light-theme:text-gray-700 hover:text-white light-theme:hover:text-gray-900 transition-colors duration-200"
+              >
+                Girgetto
+              </a>{" "}
+              — Open-source season schedule &amp; track planner
             </p>
             <span aria-hidden="true" className="hidden sm:inline text-slate-500 light-theme:text-gray-400">|</span>
             <p>Data sourced from official iRacing season PDF</p>

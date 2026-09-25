@@ -30,10 +30,29 @@ interface HomePageContentProps {
   seasonData: SeasonData;
   allSeries: Series[];
   categories: string[];
+  /** Initial filter values; omitted when prerendering without a request URL. */
+  searchParams?: Pick<URLSearchParams, "get">;
 }
 
-export default function HomePageContent({ seasonData, allSeries, categories }: HomePageContentProps) {
+const NO_SEARCH_PARAMS: Pick<URLSearchParams, "get"> = { get: () => null };
+
+/**
+ * Reads the filters from the URL. `useSearchParams` makes the nearest Suspense
+ * boundary render on the client only, so the page renders `HomePageContent`
+ * without params as that boundary's fallback to keep the full series list in
+ * the prerendered HTML for crawlers.
+ */
+export function HomePageContentWithParams(props: Omit<HomePageContentProps, "searchParams">) {
   const searchParams = useSearchParams();
+  return <HomePageContent {...props} searchParams={searchParams} />;
+}
+
+export default function HomePageContent({
+  seasonData,
+  allSeries,
+  categories,
+  searchParams = NO_SEARCH_PARAMS,
+}: HomePageContentProps) {
   const router = useRouter();
 
   const [searchQuery, setSearchQuery] = useState(searchParams.get("q") ?? "");
