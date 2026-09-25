@@ -270,7 +270,12 @@ export default function HowToUsePage() {
                   My Content
                 </span>{" "}
                 button to open a panel where you can select the cars and tracks
-                you own. Once saved, the calendar will:
+                you own. To skip ticking them one by one, use{" "}
+                <span className="font-medium text-white light-theme:text-gray-900">
+                  Import from iRacing
+                </span>{" "}
+                to read them from your iRacing install folder or a pasted list,
+                then review the matches. Once saved, the calendar will:
               </p>
               <ul className="mt-2 list-disc list-inside space-y-1">
                 <li>

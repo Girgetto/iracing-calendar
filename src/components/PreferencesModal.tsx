@@ -5,6 +5,7 @@ import type { UserPreferences } from "@/lib/preferences";
 import { ensureFreeContent, exportPreferences, parseImportedPreferences } from "@/lib/preferences";
 import { isFreeCar, isFreeTrack } from "@/lib/freeContent";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
+import ImportOwnedContent from "./ImportOwnedContent";
 
 interface PreferencesModalProps {
   isOpen: boolean;
@@ -32,6 +33,8 @@ export default function PreferencesModal({
   const [wantToBuyCars, setWantToBuyCars] = useState<string[]>(preferences.wantToBuyCars);
   const [wantToBuyTracks, setWantToBuyTracks] = useState<string[]>(preferences.wantToBuyTracks);
   const [importError, setImportError] = useState<string | null>(null);
+  const [showIracingImport, setShowIracingImport] = useState(false);
+  const [importNotice, setImportNotice] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const focusTrapRef = useFocusTrap(isOpen, onClose);
 
@@ -147,6 +150,15 @@ export default function PreferencesModal({
     return variants.every((variant) => owned.includes(variant));
   };
 
+  const handleIracingImport = (cars: string[], tracks: string[]) => {
+    setOwnedCars((prev) => Array.from(new Set([...prev, ...cars])));
+    setOwnedTracks((prev) => Array.from(new Set([...prev, ...tracks])));
+    setImportNotice(
+      `Added ${cars.length} car${cars.length === 1 ? "" : "s"} and ${tracks.length} track layout${tracks.length === 1 ? "" : "s"}. Check the list, then Save Changes.`
+    );
+    setShowIracingImport(false);
+  };
+
   const toggleCar = (car: string) => {
     // Prevent unchecking content included with membership
     if (isFreeCar(car)) return;
@@ -232,6 +244,17 @@ export default function PreferencesModal({
           </button>
         </div>
 
+        {showIracingImport ? (
+          <ImportOwnedContent
+            availableCars={availableCars}
+            trackGroups={groupTracksByBase(availableTracks)}
+            ownedCars={ownedCars}
+            ownedTracks={ownedTracks}
+            onApply={handleIracingImport}
+            onCancel={() => setShowIracingImport(false)}
+          />
+        ) : (
+        <>
         {/* Tabs */}
         <div className="flex border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <button
@@ -257,14 +280,23 @@ export default function PreferencesModal({
         </div>
 
         {/* Search */}
-        <div className="p-4 border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
+        <div className="flex gap-2 p-4 border-b border-white/10 light-theme:border-gray-200 transition-colors duration-300">
           <input
             type="text"
             placeholder={`Search ${activeTab}...`}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2 bg-slate-900 light-theme:bg-gray-50 border border-white/10 light-theme:border-gray-300 rounded-lg text-white light-theme:text-gray-900 placeholder-slate-500 light-theme:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 transition-colors duration-300"
+            className="flex-1 min-w-0 px-4 py-2 bg-slate-900 light-theme:bg-gray-50 border border-white/10 light-theme:border-gray-300 rounded-lg text-white light-theme:text-gray-900 placeholder-slate-500 light-theme:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500/50 transition-colors duration-300"
           />
+          <button
+            onClick={() => {
+              setImportNotice(null);
+              setShowIracingImport(true);
+            }}
+            className="shrink-0 px-3 py-2 text-sm font-medium rounded-lg border border-red-500/40 light-theme:border-red-300 text-red-300 light-theme:text-red-700 hover:bg-red-500/10 light-theme:hover:bg-red-50 transition-colors duration-300"
+          >
+            Import from iRacing
+          </button>
         </div>
 
         {/* List */}
@@ -358,6 +390,9 @@ export default function PreferencesModal({
           {importError && (
             <p className="text-xs text-red-400 light-theme:text-red-600">{importError}</p>
           )}
+          {importNotice && (
+            <p role="status" className="text-xs text-emerald-400 light-theme:text-emerald-700">{importNotice}</p>
+          )}
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2">
               <button
@@ -402,6 +437,8 @@ export default function PreferencesModal({
             </div>
           </div>
         </div>
+        </>
+        )}
       </div>
     </div>
   );
