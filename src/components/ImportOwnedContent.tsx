@@ -1,14 +1,7 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
-import {
-  foldersFromFileList,
-  matchNames,
-  pickInstalledFolders,
-  splitPastedText,
-  supportsDirectoryPicker,
-  type ContentMatch,
-} from "@/lib/contentImport";
+import { useMemo, useState } from "react";
+import { matchNames, splitPastedText, type ContentMatch } from "@/lib/contentImport";
 
 interface ImportOwnedContentProps {
   availableCars: string[];
@@ -29,7 +22,6 @@ interface ReviewGroup extends ContentMatch {
 }
 
 interface Review {
-  origin: "folder" | "paste";
   groups: ReviewGroup[];
   unmatched: string[];
   alreadyOwned: number;
@@ -50,10 +42,8 @@ export default function ImportOwnedContent({
 }: ImportOwnedContentProps) {
   const [pasted, setPasted] = useState("");
   const [error, setError] = useState<string | null>(null);
-  const [busy, setBusy] = useState(false);
   const [review, setReview] = useState<Review | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const folderInputRef = useRef<HTMLInputElement>(null);
 
   const trackBases = useMemo(() => Array.from(trackGroups.keys()), [trackGroups]);
   const carSet = useMemo(() => new Set(availableCars), [availableCars]);
@@ -69,7 +59,7 @@ export default function ImportOwnedContent({
    * Build the review list: drop matches the user already owns, and pre-tick
    * only unambiguous ones so a fuzzy tie never gets added silently.
    */
-  const startReview = (origin: Review["origin"], groups: ReviewGroup[], unmatched: string[]) => {
+  const startReview = (groups: ReviewGroup[], unmatched: string[]) => {
     let alreadyOwned = 0;
     const seen = new Set<string>();
     const pending: ReviewGroup[] = [];
@@ -91,47 +81,7 @@ export default function ImportOwnedContent({
     const preselected = new Set(pending.filter((g) => g.unambiguous).map((g) => keyOf(g.kind, g.matches[0])));
 
     setSelected(preselected);
-    setReview({ origin, groups: pending, unmatched, alreadyOwned });
-  };
-
-  const reviewFolders = (folders: { cars: string[]; tracks: string[] }) => {
-    if (folders.cars.length === 0 && folders.tracks.length === 0) {
-      setError("No car or track folders found there. Pick your iRacing install folder, usually C:\\Program Files (x86)\\iRacing.");
-      return;
-    }
-    const cars = matchNames(folders.cars, availableCars);
-    const tracks = matchNames(folders.tracks, trackBases);
-    startReview(
-      "folder",
-      [
-        ...cars.matched.map((m) => ({ ...m, kind: "car" as const })),
-        ...tracks.matched.map((m) => ({ ...m, kind: "track" as const })),
-      ],
-      [...cars.unmatched, ...tracks.unmatched]
-    );
-  };
-
-  const handlePickFolder = async () => {
-    setError(null);
-    if (!supportsDirectoryPicker()) {
-      folderInputRef.current?.click();
-      return;
-    }
-    setBusy(true);
-    try {
-      const folders = await pickInstalledFolders();
-      if (folders) reviewFolders(folders);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Could not read that folder.");
-    } finally {
-      setBusy(false);
-    }
-  };
-
-  const handleFolderInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setError(null);
-    if (e.target.files && e.target.files.length > 0) reviewFolders(foldersFromFileList(e.target.files));
-    e.target.value = "";
+    setReview({ groups: pending, unmatched, alreadyOwned });
   };
 
   const handleMatchPaste = () => {
@@ -151,7 +101,7 @@ export default function ImportOwnedContent({
         ...(tracks.length ? [{ source: m.source, matches: tracks, kind: "track" as const }] : []),
       ];
     });
-    startReview("paste", groups, result.unmatched);
+    startReview(groups, result.unmatched);
   };
 
   const toggle = (key: string) =>
@@ -205,7 +155,7 @@ export default function ImportOwnedContent({
                         className="rounded-lg border border-white/5 light-theme:border-gray-200 bg-slate-900/50 light-theme:bg-gray-50 px-3 py-2"
                       >
                         <p className="text-[11px] text-slate-500 light-theme:text-gray-500 mb-1 break-all">
-                          {review.origin === "folder" ? "Folder" : "Line"}: <code>{group.source}</code>
+                          Line: <code>{group.source}</code>
                         </p>
                         {group.matches.map((name) => {
                           const key = keyOf(group.kind, name);
@@ -254,26 +204,7 @@ export default function ImportOwnedContent({
     <div className="flex-1 flex flex-col min-h-0">
       <div className="flex-1 overflow-y-auto p-4 space-y-6">
         <section className="space-y-2">
-          <h3 className="text-sm font-semibold text-white light-theme:text-gray-900">From your iRacing folder</h3>
-          <p className="text-sm text-slate-400 light-theme:text-gray-600">
-            iRacing only downloads content you own, so we can read it from your install folder, usually{" "}
-            <code className="text-xs">C:\Program Files (x86)\iRacing</code>. Only folder names are read, and nothing
-            leaves your browser.
-          </p>
-          <button onClick={handlePickFolder} disabled={busy} className={primaryButton}>
-            {busy ? "Reading…" : "Choose iRacing folder"}
-          </button>
-          <input
-            ref={folderInputRef}
-            type="file"
-            className="hidden"
-            onChange={handleFolderInput}
-            {...{ webkitdirectory: "", directory: "" }}
-          />
-        </section>
-
-        <section className="space-y-2">
-          <h3 className="text-sm font-semibold text-white light-theme:text-gray-900">Or paste a list</h3>
+          <h3 className="text-sm font-semibold text-white light-theme:text-gray-900">Paste a list</h3>
           <p className="text-sm text-slate-400 light-theme:text-gray-600">
             Copy your owned content from the iRacing site or app and paste it here, one item per line.
           </p>
