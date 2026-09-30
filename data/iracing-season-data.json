@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-25T11:15:45.724Z",
+    "lastUpdated": "2026-09-30T11:59:30.739Z",
     "weeks": 39
   },
   "series": [
@@ -8094,7 +8094,7 @@
           "trackId": "shell-v-power-motorsport-park-at-the-bend-west-plus-circuit",
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T09:30:00Z",
+          "raceDateTime": "2026-10-10T09:00:00Z",
           "conditions": "66°F/19°C, All dry events, Detached qual, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 25
         },
