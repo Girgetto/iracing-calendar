@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-09-30T11:59:30.739Z",
+    "lastUpdated": "2026-10-03T11:10:53.690Z",
     "weeks": 39
   },
   "series": [
@@ -7064,7 +7064,7 @@
           "startDate": "2026-03-21T00:00:00.000Z",
           "endDate": "2026-03-27T00:00:00.000Z",
           "raceDateTime": "2026-04-01T12:00:00Z",
-          "conditions": "67°F/20°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "67°F/20°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 2,
@@ -7073,7 +7073,7 @@
           "startDate": "2026-04-04T00:00:00.000Z",
           "endDate": "2026-04-10T00:00:00.000Z",
           "raceDateTime": "2026-04-04T09:00:00Z",
-          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 3,
@@ -7082,7 +7082,7 @@
           "startDate": "2026-04-25T00:00:00.000Z",
           "endDate": "2026-05-01T00:00:00.000Z",
           "raceDateTime": "2026-04-25T12:00:00Z",
-          "conditions": "66°F/19°C, Rain chance 29%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "66°F/19°C, Rain chance 29%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 4,
@@ -7091,7 +7091,7 @@
           "startDate": "2026-05-23T00:00:00.000Z",
           "endDate": "2026-05-29T00:00:00.000Z",
           "raceDateTime": "2026-05-23T09:00:00Z",
-          "conditions": "75°F/24°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "75°F/24°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 5,
@@ -7100,7 +7100,7 @@
           "startDate": "2026-06-06T00:00:00.000Z",
           "endDate": "2026-06-12T00:00:00.000Z",
           "raceDateTime": "2026-06-06T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 6,
@@ -7109,7 +7109,7 @@
           "startDate": "2026-07-04T00:00:00.000Z",
           "endDate": "2026-07-10T00:00:00.000Z",
           "raceDateTime": "2026-07-04T09:00:00Z",
-          "conditions": "69°F/20°C, Rain chance 34%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "69°F/20°C, Rain chance 34%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 7,
@@ -7118,7 +7118,7 @@
           "startDate": "2026-08-08T00:00:00.000Z",
           "endDate": "2026-08-14T00:00:00.000Z",
           "raceDateTime": "2026-08-08T12:00:00Z",
-          "conditions": "69°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "69°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 8,
@@ -7127,7 +7127,7 @@
           "startDate": "2026-08-29T00:00:00.000Z",
           "endDate": "2026-09-04T00:00:00.000Z",
           "raceDateTime": "2026-08-29T09:00:00Z",
-          "conditions": "67°F/20°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "67°F/20°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 9,
@@ -7136,7 +7136,7 @@
           "startDate": "2026-10-10T00:00:00.000Z",
           "endDate": "2026-10-16T00:00:00.000Z",
           "raceDateTime": "2026-10-10T12:00:00Z",
-          "conditions": "67°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "67°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         },
         {
           "week": 10,
@@ -7145,7 +7145,7 @@
           "startDate": "2026-11-07T00:00:00.000Z",
           "endDate": "2026-11-13T00:00:00.000Z",
           "raceDateTime": "2026-11-07T12:00:00Z",
-          "conditions": "65°F/18°C, Rain chance 29%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 99%, -5.0kg F296: fuel: 98%, -5.0kg AMGT3: 10.0kg M4GT3: fuel: 98%, 3.0kg LGT3: fuel: 97%, -8.0kg, pwr: 0.50% 992R: fuel: 98%, -5.0kg FMGT3: fuel: 99%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
+          "conditions": "65°F/18°C, Rain chance 29%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. MGT3E: fuel: 98%, -5.0kg F296: fuel: 99%, -5.0kg AMGT3: fuel: 99%, 5.0kg M4GT3: fuel: 98%, 5.0kg, pwr: -0.50% LGT3: fuel: 97%, -10.0kg, pwr: 0.25% 992R: fuel: 98%, -8.0kg FMGT3: fuel: 97%, 20.0kg, pwr: - 0.50% BMWGT4: 5.0kg, pwr: -1.50% AMV4: -5.0kg P718: 8.0kg, pwr: -1.00% HECN7: fuel: 85%, -5.0kg, pwr: - 1.00% ARS3G2: fuel: 85%, pwr: -1.00% HCTR: fuel: 85%, pwr: -1.00% mins"
         }
       ]
     },
