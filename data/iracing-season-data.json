@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-10-03T11:10:53.690Z",
+    "lastUpdated": "2026-10-08T12:53:43.274Z",
     "weeks": 39
   },
   "series": [
@@ -2457,7 +2457,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T13:45:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
+          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
           "durationLaps": 80
         },
         {
@@ -7314,7 +7314,7 @@
           "startDate": "2026-10-02T00:00:00.000Z",
           "endDate": "2026-10-08T00:00:00.000Z",
           "raceDateTime": "2026-10-03T13:25:00Z",
-          "conditions": "67°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "72°F/22°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 4,
@@ -7323,7 +7323,7 @@
           "startDate": "2026-10-09T00:00:00.000Z",
           "endDate": "2026-10-15T00:00:00.000Z",
           "raceDateTime": "2026-10-10T10:00:00Z",
-          "conditions": "70°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 5,
@@ -7332,7 +7332,7 @@
           "startDate": "2026-10-16T00:00:00.000Z",
           "endDate": "2026-10-22T00:00:00.000Z",
           "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "69°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 6,
@@ -7341,7 +7341,7 @@
           "startDate": "2026-10-23T00:00:00.000Z",
           "endDate": "2026-10-29T00:00:00.000Z",
           "raceDateTime": "2026-10-24T14:05:00Z",
-          "conditions": "65°F/19°C, Rain chance 34%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "65°F/19°C, Rain chance 32% (9% before session), Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 7,
@@ -7359,7 +7359,7 @@
           "startDate": "2026-11-06T00:00:00.000Z",
           "endDate": "2026-11-12T00:00:00.000Z",
           "raceDateTime": "2026-11-07T12:00:00Z",
-          "conditions": "69°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "80°F/27°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 9,
@@ -7368,7 +7368,7 @@
           "startDate": "2026-11-13T00:00:00.000Z",
           "endDate": "2026-11-19T00:00:00.000Z",
           "raceDateTime": "2027-04-01T09:45:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 10,
@@ -7377,7 +7377,7 @@
           "startDate": "2026-11-20T00:00:00.000Z",
           "endDate": "2026-11-26T00:00:00.000Z",
           "raceDateTime": "2026-11-21T14:15:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 11,
@@ -7386,7 +7386,7 @@
           "startDate": "2026-11-27T00:00:00.000Z",
           "endDate": "2026-12-03T00:00:00.000Z",
           "raceDateTime": "2027-04-01T17:05:00Z",
-          "conditions": "65°F/19°C, Rain chance 28%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
+          "conditions": "65°F/19°C, Rain chance 34% (43% before session), Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Permissive. BMWM2R: fuel: 75% GR86: fuel: 60% RENC: fuel: 70% MX16: fuel: 75% mins"
         },
         {
           "week": 12,
