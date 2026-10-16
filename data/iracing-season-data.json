@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-10-15T10:55:49.732Z",
+    "lastUpdated": "2026-10-16T10:47:47.033Z",
     "weeks": 39
   },
   "series": [
@@ -5997,6 +5997,57 @@
           "raceDateTime": "2027-04-01T12:00:00Z",
           "conditions": "69°F/20°C, All dry events, Standing start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 12
+        }
+      ]
+    },
+    {
+      "id": "itested-series",
+      "name": "iTested Series",
+      "category": "Sports Car",
+      "car": "Porsche 963 GTP, BMW M Hybrid V8 (Evo), Ferrari 499P, Aston Martin Valkyrie AMR-LMH, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
+      "licenseRange": "Rookie 1.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races every hour at :30 past",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Circuit Gilles Villeneuve",
+          "trackId": "circuit-gilles-villeneuve",
+          "startDate": "2026-10-16T00:00:00.000Z",
+          "endDate": "2026-10-22T00:00:00.000Z",
+          "raceDateTime": "2026-10-16T12:00:00Z",
+          "conditions": "73°F/23°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 30
+        },
+        {
+          "week": 2,
+          "track": "Circuit Gilles Villeneuve",
+          "trackId": "circuit-gilles-villeneuve",
+          "startDate": "2026-10-17T00:00:00.000Z",
+          "endDate": "2026-10-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-17T12:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 30
+        },
+        {
+          "week": 3,
+          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
+          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
+          "startDate": "2026-10-18T00:00:00.000Z",
+          "endDate": "2026-10-24T00:00:00.000Z",
+          "raceDateTime": "2026-10-18T12:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 30
+        },
+        {
+          "week": 4,
+          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
+          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
+          "startDate": "2026-10-19T00:00:00.000Z",
+          "endDate": "2026-10-25T00:00:00.000Z",
+          "raceDateTime": "2026-10-19T12:00:00Z",
+          "conditions": "68°F/20°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "durationMins": 30
         }
       ]
     },
