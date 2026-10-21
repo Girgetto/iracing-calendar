@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-10-20T10:58:47.163Z",
+    "lastUpdated": "2026-10-21T11:15:32.040Z",
     "weeks": 39
   },
   "series": [
@@ -5997,57 +5997,6 @@
           "raceDateTime": "2027-04-01T12:00:00Z",
           "conditions": "69°F/20°C, All dry events, Standing start, Local enforced cautions, Qual scrutiny - Permissive",
           "durationMins": 12
-        }
-      ]
-    },
-    {
-      "id": "itested-series",
-      "name": "iTested Series",
-      "category": "Sports Car",
-      "car": "Porsche 963 GTP, BMW M Hybrid V8 (Evo), Ferrari 499P, Aston Martin Valkyrie AMR-LMH, Cadillac V-Series.R GTP, Acura ARX-06 GTP, Dallara P217, Mercedes-AMG GT3 2020, McLaren 720S GT3 EVO, Ferrari 296 GT3, Aston Martin Vantage GT3 EVO, Acura NSX GT3 EVO 22, BMW M4 GT3 EVO, Lamborghini Huracán GT3 EVO, Chevrolet Corvette Z06 GT3.R, Porsche 911 GT3 R (992), Ford Mustang GT3",
-      "licenseRange": "Rookie 1.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races every hour at :30 past",
-      "drops": 0,
-      "schedule": [
-        {
-          "week": 1,
-          "track": "Circuit Gilles Villeneuve",
-          "trackId": "circuit-gilles-villeneuve",
-          "startDate": "2026-10-16T00:00:00.000Z",
-          "endDate": "2026-10-22T00:00:00.000Z",
-          "raceDateTime": "2026-10-16T12:00:00Z",
-          "conditions": "73°F/23°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 30
-        },
-        {
-          "week": 2,
-          "track": "Circuit Gilles Villeneuve",
-          "trackId": "circuit-gilles-villeneuve",
-          "startDate": "2026-10-17T00:00:00.000Z",
-          "endDate": "2026-10-23T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 30
-        },
-        {
-          "week": 3,
-          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
-          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
-          "startDate": "2026-10-18T00:00:00.000Z",
-          "endDate": "2026-10-24T00:00:00.000Z",
-          "raceDateTime": "2026-10-18T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 30
-        },
-        {
-          "week": 4,
-          "track": "Circuit des 24 Heures du Mans - 24 Heures du Mans",
-          "trackId": "circuit-des-24-heures-du-mans-24-heures-du-mans",
-          "startDate": "2026-10-19T00:00:00.000Z",
-          "endDate": "2026-10-25T00:00:00.000Z",
-          "raceDateTime": "2026-10-19T12:00:00Z",
-          "conditions": "68°F/20°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
-          "durationMins": 30
         }
       ]
     },
@@ -19610,63 +19559,63 @@
       ]
     },
     {
-      "id": "world-of-outlaws-pro-qualifying-series-2026-season-sprints",
-      "name": "World of Outlaws Pro Qualifying Series - 2026 Season - Sprints",
+      "id": "world-of-outlaws-pro-qualifying-series-2026-season-lates",
+      "name": "World of Outlaws Pro Qualifying Series - 2026 Season - Lates",
       "category": "Dirt Road",
-      "car": "Dirt Sprint Car - 410",
+      "car": "Dirt Late Model - Super",
       "licenseRange": "Class A 1.0 --> Pro/WC 4.0",
-      "raceFrequency": "Races on Monday at 8pm ET",
+      "raceFrequency": "Races on Thursday at 8pm ET",
       "drops": 1,
       "schedule": [
         {
           "week": 1,
-          "track": "Port Royal Speedway",
-          "trackId": "port-royal-speedway",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-09-26T13:00:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
-          "durationLaps": 30
+          "track": "Oswego Speedway - Dirt",
+          "trackId": "oswego-speedway-dirt",
+          "startDate": "2026-10-23T00:00:00.000Z",
+          "endDate": "2026-10-29T00:00:00.000Z",
+          "raceDateTime": "2026-10-24T13:05:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
+          "durationLaps": 40
         },
         {
           "week": 2,
-          "track": "Cedar Lake Speedway",
-          "trackId": "cedar-lake-speedway",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-10-03T13:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
-          "durationLaps": 30
+          "track": "Knoxville Raceway",
+          "trackId": "knoxville-raceway",
+          "startDate": "2026-10-28T00:00:00.000Z",
+          "endDate": "2026-11-03T00:00:00.000Z",
+          "raceDateTime": "2026-10-31T13:30:00Z",
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
+          "durationLaps": 40
         },
         {
           "week": 3,
-          "track": "Lincoln Speedway",
-          "trackId": "lincoln-speedway",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T17:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
-          "durationLaps": 30
+          "track": "Huset's Speedway",
+          "trackId": "huset-s-speedway",
+          "startDate": "2026-11-04T00:00:00.000Z",
+          "endDate": "2026-11-10T00:00:00.000Z",
+          "raceDateTime": "2027-04-01T19:50:00Z",
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
+          "durationLaps": 40
         },
         {
           "week": 4,
           "track": "Weedsport Speedway",
           "trackId": "weedsport-speedway",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T13:35:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
-          "durationLaps": 30
+          "startDate": "2026-11-11T00:00:00.000Z",
+          "endDate": "2026-11-17T00:00:00.000Z",
+          "raceDateTime": "2027-04-01T13:15:00Z",
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
+          "durationLaps": 40
         },
         {
           "week": 5,
-          "track": "The Dirt Track at Charlotte",
-          "trackId": "the-dirt-track-at-charlotte",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-11-14T17:15:00Z",
-          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain",
-          "durationLaps": 30
+          "track": "Williams Grove Speedway",
+          "trackId": "williams-grove-speedway",
+          "startDate": "2026-11-18T00:00:00.000Z",
+          "endDate": "2026-11-24T00:00:00.000Z",
+          "raceDateTime": "2026-11-21T16:45:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
+          "durationLaps": 40
         }
       ]
     },
