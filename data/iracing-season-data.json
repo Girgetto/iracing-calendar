@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-10-21T11:15:32.040Z",
+    "lastUpdated": "2026-10-23T11:05:45.900Z",
     "weeks": 39
   },
   "series": [
@@ -19581,8 +19581,8 @@
           "week": 2,
           "track": "Knoxville Raceway",
           "trackId": "knoxville-raceway",
-          "startDate": "2026-10-28T00:00:00.000Z",
-          "endDate": "2026-11-03T00:00:00.000Z",
+          "startDate": "2026-10-30T00:00:00.000Z",
+          "endDate": "2026-11-05T00:00:00.000Z",
           "raceDateTime": "2026-10-31T13:30:00Z",
           "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 40
@@ -19591,8 +19591,8 @@
           "week": 3,
           "track": "Huset's Speedway",
           "trackId": "huset-s-speedway",
-          "startDate": "2026-11-04T00:00:00.000Z",
-          "endDate": "2026-11-10T00:00:00.000Z",
+          "startDate": "2026-11-06T00:00:00.000Z",
+          "endDate": "2026-11-12T00:00:00.000Z",
           "raceDateTime": "2027-04-01T19:50:00Z",
           "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 40
@@ -19601,8 +19601,8 @@
           "week": 4,
           "track": "Weedsport Speedway",
           "trackId": "weedsport-speedway",
-          "startDate": "2026-11-11T00:00:00.000Z",
-          "endDate": "2026-11-17T00:00:00.000Z",
+          "startDate": "2026-11-13T00:00:00.000Z",
+          "endDate": "2026-11-19T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:15:00Z",
           "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 40
@@ -19611,8 +19611,8 @@
           "week": 5,
           "track": "Williams Grove Speedway",
           "trackId": "williams-grove-speedway",
-          "startDate": "2026-11-18T00:00:00.000Z",
-          "endDate": "2026-11-24T00:00:00.000Z",
+          "startDate": "2026-11-20T00:00:00.000Z",
+          "endDate": "2026-11-26T00:00:00.000Z",
           "raceDateTime": "2026-11-21T16:45:00Z",
           "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back",
           "durationLaps": 40
