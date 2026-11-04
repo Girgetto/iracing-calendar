@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-03T13:41:55.838Z",
+    "lastUpdated": "2026-11-04T13:50:37.419Z",
     "weeks": 39
   },
   "series": [
@@ -16765,7 +16765,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T19:15:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 2,
@@ -16774,7 +16774,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T13:50:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 3,
@@ -16783,7 +16783,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T12:00:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 4,
@@ -16792,7 +16792,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T17:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 5,
@@ -16801,7 +16801,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T19:50:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 6,
@@ -16810,7 +16810,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:30:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 7,
@@ -16819,7 +16819,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T18:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 8,
@@ -16837,7 +16837,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T19:45:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 10,
@@ -16846,7 +16846,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:45:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 11,
@@ -16855,7 +16855,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:55:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         },
         {
           "week": 12,
@@ -16864,7 +16864,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-05-01T20:55:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets"
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. BBM: 1 tire sets H:8L C:10L F:50L"
         }
       ]
     },
@@ -17013,7 +17013,7 @@
           "startDate": "2026-02-04T00:00:00.000Z",
           "endDate": "2026-02-10T00:00:00.000Z",
           "raceDateTime": "2026-02-07T16:50:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 2,
@@ -17022,7 +17022,7 @@
           "startDate": "2026-02-11T00:00:00.000Z",
           "endDate": "2026-02-17T00:00:00.000Z",
           "raceDateTime": "2026-04-01T12:00:00Z",
-          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 3,
@@ -17031,7 +17031,7 @@
           "startDate": "2026-02-18T00:00:00.000Z",
           "endDate": "2026-02-24T00:00:00.000Z",
           "raceDateTime": "2026-03-01T16:40:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 4,
@@ -17040,7 +17040,7 @@
           "startDate": "2026-02-25T00:00:00.000Z",
           "endDate": "2026-03-03T00:00:00.000Z",
           "raceDateTime": "2026-04-01T14:15:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 5,
@@ -17049,7 +17049,7 @@
           "startDate": "2026-03-04T00:00:00.000Z",
           "endDate": "2026-03-10T00:00:00.000Z",
           "raceDateTime": "2026-03-07T18:25:00Z",
-          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 6,
@@ -17067,7 +17067,7 @@
           "startDate": "2026-03-25T00:00:00.000Z",
           "endDate": "2026-03-31T00:00:00.000Z",
           "raceDateTime": "2026-03-28T18:30:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 8,
@@ -17076,7 +17076,7 @@
           "startDate": "2026-04-01T00:00:00.000Z",
           "endDate": "2026-04-07T00:00:00.000Z",
           "raceDateTime": "2026-05-01T19:50:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 9,
@@ -17085,7 +17085,7 @@
           "startDate": "2026-04-08T00:00:00.000Z",
           "endDate": "2026-04-14T00:00:00.000Z",
           "raceDateTime": "2026-04-11T18:50:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 10,
@@ -17094,7 +17094,7 @@
           "startDate": "2026-04-15T00:00:00.000Z",
           "endDate": "2026-04-21T00:00:00.000Z",
           "raceDateTime": "2026-04-18T18:55:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 11,
@@ -17103,7 +17103,7 @@
           "startDate": "2026-04-22T00:00:00.000Z",
           "endDate": "2026-04-28T00:00:00.000Z",
           "raceDateTime": "2026-04-25T18:35:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 12,
@@ -17112,7 +17112,7 @@
           "startDate": "2026-04-29T00:00:00.000Z",
           "endDate": "2026-05-05T00:00:00.000Z",
           "raceDateTime": "2026-05-02T13:25:00Z",
-          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 13,
@@ -17121,7 +17121,7 @@
           "startDate": "2026-05-06T00:00:00.000Z",
           "endDate": "2026-05-12T00:00:00.000Z",
           "raceDateTime": "2026-05-09T20:00:00Z",
-          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 14,
@@ -17130,7 +17130,7 @@
           "startDate": "2026-05-13T00:00:00.000Z",
           "endDate": "2026-05-19T00:00:00.000Z",
           "raceDateTime": "2026-05-09T15:15:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 15,
@@ -17139,7 +17139,7 @@
           "startDate": "2026-05-20T00:00:00.000Z",
           "endDate": "2026-05-26T00:00:00.000Z",
           "raceDateTime": "2026-05-23T15:10:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 16,
@@ -17148,7 +17148,7 @@
           "startDate": "2026-05-27T00:00:00.000Z",
           "endDate": "2026-06-02T00:00:00.000Z",
           "raceDateTime": "2026-05-30T21:45:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 17,
@@ -17157,7 +17157,7 @@
           "startDate": "2026-06-03T00:00:00.000Z",
           "endDate": "2026-06-09T00:00:00.000Z",
           "raceDateTime": "2026-06-06T19:10:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 18,
@@ -17166,7 +17166,7 @@
           "startDate": "2026-06-17T00:00:00.000Z",
           "endDate": "2026-06-23T00:00:00.000Z",
           "raceDateTime": "2026-06-20T15:20:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 19,
@@ -17175,7 +17175,7 @@
           "startDate": "2026-06-24T00:00:00.000Z",
           "endDate": "2026-06-30T00:00:00.000Z",
           "raceDateTime": "2026-06-27T20:55:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 20,
@@ -17184,7 +17184,7 @@
           "startDate": "2026-07-01T00:00:00.000Z",
           "endDate": "2026-07-07T00:00:00.000Z",
           "raceDateTime": "2026-07-04T20:50:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 21,
@@ -17193,7 +17193,7 @@
           "startDate": "2026-07-08T00:00:00.000Z",
           "endDate": "2026-07-14T00:00:00.000Z",
           "raceDateTime": "2026-07-11T15:05:00Z",
-          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 22,
@@ -17202,7 +17202,7 @@
           "startDate": "2026-07-15T00:00:00.000Z",
           "endDate": "2026-07-21T00:00:00.000Z",
           "raceDateTime": "2026-07-18T21:05:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 23,
@@ -17211,7 +17211,7 @@
           "startDate": "2026-07-22T00:00:00.000Z",
           "endDate": "2026-07-28T00:00:00.000Z",
           "raceDateTime": "2026-07-25T15:05:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 24,
@@ -17220,7 +17220,7 @@
           "startDate": "2026-07-29T00:00:00.000Z",
           "endDate": "2026-08-04T00:00:00.000Z",
           "raceDateTime": "2026-08-01T19:05:00Z",
-          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 25,
@@ -17229,7 +17229,7 @@
           "startDate": "2026-08-05T00:00:00.000Z",
           "endDate": "2026-08-11T00:00:00.000Z",
           "raceDateTime": "2026-08-08T15:05:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 26,
@@ -17238,7 +17238,7 @@
           "startDate": "2026-08-12T00:00:00.000Z",
           "endDate": "2026-08-18T00:00:00.000Z",
           "raceDateTime": "2026-08-15T12:00:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 27,
@@ -17247,7 +17247,7 @@
           "startDate": "2026-08-19T00:00:00.000Z",
           "endDate": "2026-08-25T00:00:00.000Z",
           "raceDateTime": "2026-08-22T20:30:00Z",
-          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 28,
@@ -17256,7 +17256,7 @@
           "startDate": "2026-08-26T00:00:00.000Z",
           "endDate": "2026-09-01T00:00:00.000Z",
           "raceDateTime": "2026-08-29T19:45:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 29,
@@ -17265,7 +17265,7 @@
           "startDate": "2026-09-02T00:00:00.000Z",
           "endDate": "2026-09-08T00:00:00.000Z",
           "raceDateTime": "2026-09-05T19:55:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 30,
@@ -17274,7 +17274,7 @@
           "startDate": "2026-09-16T00:00:00.000Z",
           "endDate": "2026-09-22T00:00:00.000Z",
           "raceDateTime": "2026-09-19T14:15:00Z",
-          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 31,
@@ -17283,7 +17283,7 @@
           "startDate": "2026-09-23T00:00:00.000Z",
           "endDate": "2026-09-29T00:00:00.000Z",
           "raceDateTime": "2026-09-26T19:30:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 32,
@@ -17292,7 +17292,7 @@
           "startDate": "2026-09-30T00:00:00.000Z",
           "endDate": "2026-10-06T00:00:00.000Z",
           "raceDateTime": "2026-10-03T18:45:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 33,
@@ -17301,7 +17301,7 @@
           "startDate": "2026-10-07T00:00:00.000Z",
           "endDate": "2026-10-13T00:00:00.000Z",
           "raceDateTime": "2026-10-10T17:20:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 34,
@@ -17319,7 +17319,7 @@
           "startDate": "2026-10-21T00:00:00.000Z",
           "endDate": "2026-10-27T00:00:00.000Z",
           "raceDateTime": "2026-10-24T12:00:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 36,
@@ -17328,7 +17328,7 @@
           "startDate": "2026-10-28T00:00:00.000Z",
           "endDate": "2026-11-03T00:00:00.000Z",
           "raceDateTime": "2027-03-01T12:20:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:10L C:10L F:35L"
         },
         {
           "week": 37,
@@ -17357,7 +17357,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:20:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 2,
@@ -17366,7 +17366,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T18:05:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 3,
@@ -17375,7 +17375,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T19:05:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 4,
@@ -17384,7 +17384,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T12:00:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 5,
@@ -17393,7 +17393,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T19:45:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 6,
@@ -17402,7 +17402,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:30:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 7,
@@ -17411,7 +17411,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2027-05-01T19:10:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 8,
@@ -17420,7 +17420,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2026-11-07T17:20:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 9,
@@ -17429,7 +17429,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 10,
@@ -17438,7 +17438,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:45:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         },
         {
           "week": 11,
@@ -17456,7 +17456,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2026-12-05T18:10:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:25L"
         }
       ]
     },
@@ -17605,7 +17605,7 @@
           "startDate": "2026-01-20T00:00:00.000Z",
           "endDate": "2026-01-26T00:00:00.000Z",
           "raceDateTime": "2026-01-24T17:00:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 2,
@@ -17614,7 +17614,7 @@
           "startDate": "2026-01-27T00:00:00.000Z",
           "endDate": "2026-02-02T00:00:00.000Z",
           "raceDateTime": "2026-05-01T18:40:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 3,
@@ -17632,7 +17632,7 @@
           "startDate": "2026-02-10T00:00:00.000Z",
           "endDate": "2026-02-16T00:00:00.000Z",
           "raceDateTime": "2026-02-14T17:30:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 5,
@@ -17641,7 +17641,7 @@
           "startDate": "2026-02-17T00:00:00.000Z",
           "endDate": "2026-02-23T00:00:00.000Z",
           "raceDateTime": "2026-03-01T12:00:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 6,
@@ -17650,7 +17650,7 @@
           "startDate": "2026-02-24T00:00:00.000Z",
           "endDate": "2026-03-02T00:00:00.000Z",
           "raceDateTime": "2026-04-01T19:30:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 7,
@@ -17659,7 +17659,7 @@
           "startDate": "2026-03-03T00:00:00.000Z",
           "endDate": "2026-03-09T00:00:00.000Z",
           "raceDateTime": "2026-04-01T18:05:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 8,
@@ -17668,7 +17668,7 @@
           "startDate": "2026-03-17T00:00:00.000Z",
           "endDate": "2026-03-23T00:00:00.000Z",
           "raceDateTime": "2026-04-01T12:00:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 9,
@@ -17677,7 +17677,7 @@
           "startDate": "2026-03-24T00:00:00.000Z",
           "endDate": "2026-03-30T00:00:00.000Z",
           "raceDateTime": "2026-03-28T18:05:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 10,
@@ -17695,7 +17695,7 @@
           "startDate": "2026-04-07T00:00:00.000Z",
           "endDate": "2026-04-13T00:00:00.000Z",
           "raceDateTime": "2026-04-04T18:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 12,
@@ -17704,7 +17704,7 @@
           "startDate": "2026-04-14T00:00:00.000Z",
           "endDate": "2026-04-20T00:00:00.000Z",
           "raceDateTime": "2026-04-11T19:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 13,
@@ -17713,7 +17713,7 @@
           "startDate": "2026-04-21T00:00:00.000Z",
           "endDate": "2026-04-27T00:00:00.000Z",
           "raceDateTime": "2026-04-18T18:15:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 14,
@@ -17722,7 +17722,7 @@
           "startDate": "2026-04-28T00:00:00.000Z",
           "endDate": "2026-05-04T00:00:00.000Z",
           "raceDateTime": "2026-04-25T14:50:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 15,
@@ -17731,7 +17731,7 @@
           "startDate": "2026-05-05T00:00:00.000Z",
           "endDate": "2026-05-11T00:00:00.000Z",
           "raceDateTime": "2026-05-02T19:00:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 16,
@@ -17740,7 +17740,7 @@
           "startDate": "2026-05-12T00:00:00.000Z",
           "endDate": "2026-05-18T00:00:00.000Z",
           "raceDateTime": "2026-05-09T20:20:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 17,
@@ -17749,7 +17749,7 @@
           "startDate": "2026-05-19T00:00:00.000Z",
           "endDate": "2026-05-25T00:00:00.000Z",
           "raceDateTime": "2026-05-16T18:50:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 18,
@@ -17758,7 +17758,7 @@
           "startDate": "2026-05-26T00:00:00.000Z",
           "endDate": "2026-06-01T00:00:00.000Z",
           "raceDateTime": "2026-05-23T15:10:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 19,
@@ -17767,7 +17767,7 @@
           "startDate": "2026-06-02T00:00:00.000Z",
           "endDate": "2026-06-08T00:00:00.000Z",
           "raceDateTime": "2026-05-30T19:30:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 20,
@@ -17785,7 +17785,7 @@
           "startDate": "2026-06-23T00:00:00.000Z",
           "endDate": "2026-06-29T00:00:00.000Z",
           "raceDateTime": "2026-06-13T20:50:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 22,
@@ -17794,7 +17794,7 @@
           "startDate": "2026-06-30T00:00:00.000Z",
           "endDate": "2026-07-06T00:00:00.000Z",
           "raceDateTime": "2026-06-20T15:10:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 23,
@@ -17803,7 +17803,7 @@
           "startDate": "2026-07-07T00:00:00.000Z",
           "endDate": "2026-07-13T00:00:00.000Z",
           "raceDateTime": "2026-06-27T20:40:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 24,
@@ -17812,7 +17812,7 @@
           "startDate": "2026-07-14T00:00:00.000Z",
           "endDate": "2026-07-20T00:00:00.000Z",
           "raceDateTime": "2026-07-04T20:50:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 25,
@@ -17821,7 +17821,7 @@
           "startDate": "2026-07-21T00:00:00.000Z",
           "endDate": "2026-07-27T00:00:00.000Z",
           "raceDateTime": "2026-07-11T18:55:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 26,
@@ -17830,7 +17830,7 @@
           "startDate": "2026-07-28T00:00:00.000Z",
           "endDate": "2026-08-03T00:00:00.000Z",
           "raceDateTime": "2026-07-18T20:50:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 27,
@@ -17839,7 +17839,7 @@
           "startDate": "2026-08-04T00:00:00.000Z",
           "endDate": "2026-08-10T00:00:00.000Z",
           "raceDateTime": "2026-07-25T08:30:00Z",
-          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 28,
@@ -17848,7 +17848,7 @@
           "startDate": "2026-08-11T00:00:00.000Z",
           "endDate": "2026-08-17T00:00:00.000Z",
           "raceDateTime": "2026-08-01T15:40:00Z",
-          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 29,
@@ -17857,7 +17857,7 @@
           "startDate": "2026-08-18T00:00:00.000Z",
           "endDate": "2026-08-24T00:00:00.000Z",
           "raceDateTime": "2026-08-08T14:50:00Z",
-          "conditions": "88°F/31°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "88°F/31°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 30,
@@ -17866,7 +17866,7 @@
           "startDate": "2026-08-25T00:00:00.000Z",
           "endDate": "2026-08-31T00:00:00.000Z",
           "raceDateTime": "2026-08-15T14:35:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 31,
@@ -17875,7 +17875,7 @@
           "startDate": "2026-09-01T00:00:00.000Z",
           "endDate": "2026-09-07T00:00:00.000Z",
           "raceDateTime": "2026-09-05T20:05:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 32,
@@ -17884,7 +17884,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-08-29T19:50:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 33,
@@ -17893,7 +17893,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-05T12:00:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 34,
@@ -17902,7 +17902,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-09-12T12:25:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 35,
@@ -17911,7 +17911,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-09-19T18:15:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 36,
@@ -17920,7 +17920,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-09-26T19:25:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 37,
@@ -17929,7 +17929,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-03T13:45:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 38,
@@ -17938,7 +17938,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2027-05-01T14:20:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:8L F:60L"
         },
         {
           "week": 39,
@@ -17967,7 +17967,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T18:15:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 2,
@@ -17976,7 +17976,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T14:05:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 3,
@@ -17985,7 +17985,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T19:10:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 4,
@@ -17994,7 +17994,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T19:40:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 5,
@@ -18003,7 +18003,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 6,
@@ -18012,7 +18012,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T18:45:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 7,
@@ -18030,7 +18030,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-04-01T14:05:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 9,
@@ -18039,7 +18039,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:20:00Z",
-          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 10,
@@ -18048,7 +18048,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T19:30:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 11,
@@ -18057,7 +18057,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2026-11-28T16:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 12,
@@ -18066,7 +18066,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2026-12-05T18:25:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
       ]
     },
@@ -18217,7 +18217,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 2,
@@ -18226,7 +18226,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T13:50:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 3,
@@ -18235,7 +18235,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T17:35:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 4,
@@ -18244,7 +18244,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T19:10:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 5,
@@ -18253,7 +18253,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 6,
@@ -18262,7 +18262,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:30:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 7,
@@ -18271,7 +18271,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:05:00Z",
-          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 8,
@@ -18280,7 +18280,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-04-01T20:00:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 9,
@@ -18289,7 +18289,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-03-01T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 10,
@@ -18307,7 +18307,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2026-11-28T16:10:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         },
         {
           "week": 12,
@@ -18316,7 +18316,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-05-01T19:50:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets"
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. SSD: 1 tire sets H:8L C:10L F:25L"
         }
       ]
     },
@@ -18336,7 +18336,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T20:15:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 2,
@@ -18345,7 +18345,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:45:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 3,
@@ -18354,7 +18354,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 4,
@@ -18363,7 +18363,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T17:35:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 5,
@@ -18372,7 +18372,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T13:15:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 6,
@@ -18381,7 +18381,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T19:15:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 7,
@@ -18399,7 +18399,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-05-01T12:00:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 9,
@@ -18408,7 +18408,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-03-01T18:30:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 10,
@@ -18417,7 +18417,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-03-01T12:25:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 11,
@@ -18426,7 +18426,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:55:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 12,
@@ -18435,7 +18435,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:30:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
       ]
     },
@@ -18735,7 +18735,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T12:00:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 4,
@@ -18744,7 +18744,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T19:10:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 5,
@@ -18753,7 +18753,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T17:20:00Z",
-          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "85°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 6,
@@ -18762,7 +18762,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T17:10:00Z",
-          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 7,
@@ -18771,7 +18771,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T18:35:00Z",
-          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 8,
@@ -18780,7 +18780,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-04-01T21:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 9,
@@ -18789,7 +18789,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T19:40:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 10,
@@ -18798,7 +18798,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:55:00Z",
-          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "74°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 11,
@@ -18807,7 +18807,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2026-11-28T18:10:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         },
         {
           "week": 12,
@@ -18816,7 +18816,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2026-12-05T12:00:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:6L F:30L"
         }
       ]
     },
@@ -18836,7 +18836,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 2,
@@ -18845,7 +18845,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T13:55:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 3,
@@ -18854,7 +18854,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2027-05-01T18:20:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 4,
@@ -18863,7 +18863,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T18:30:00Z",
-          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 5,
@@ -18881,7 +18881,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:30:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 7,
@@ -18890,7 +18890,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T16:40:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 8,
@@ -18899,7 +18899,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-04-01T20:00:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 9,
@@ -18908,7 +18908,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2026-11-14T12:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 10,
@@ -18917,7 +18917,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-05-01T14:50:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 11,
@@ -18926,7 +18926,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 12,
@@ -18964,7 +18964,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:45:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 3,
@@ -18973,7 +18973,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T19:15:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 4,
@@ -18982,7 +18982,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T12:00:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 5,
@@ -18991,7 +18991,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T19:40:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 6,
@@ -19000,7 +19000,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2027-05-01T15:00:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 7,
@@ -19009,7 +19009,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T16:35:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 8,
@@ -19018,7 +19018,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2027-04-01T12:00:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 9,
@@ -19027,7 +19027,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T20:00:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 10,
@@ -19036,7 +19036,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T14:55:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "70°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 11,
@@ -19045,7 +19045,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-03-01T15:30:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         },
         {
           "week": 12,
@@ -19054,7 +19054,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-03-01T13:05:00Z",
-          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/18°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:30L"
         }
       ]
     },
@@ -19074,7 +19074,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:20:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 2,
@@ -19083,7 +19083,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T18:50:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 3,
@@ -19092,7 +19092,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T13:45:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 4,
@@ -19101,7 +19101,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T20:05:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "71°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 5,
@@ -19110,7 +19110,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T13:45:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 6,
@@ -19119,7 +19119,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2027-05-01T13:35:00Z",
-          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 7,
@@ -19128,7 +19128,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T13:40:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 8,
@@ -19146,7 +19146,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:05:00Z",
-          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 10,
@@ -19155,7 +19155,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T13:45:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 11,
@@ -19164,7 +19164,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-04-01T20:40:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         },
         {
           "week": 12,
@@ -19173,7 +19173,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-04-01T14:10:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back."
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Double-file Back. H:8L C:10L F:50L"
         }
       ]
     },
@@ -19324,7 +19324,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T13:35:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 2,
@@ -19333,7 +19333,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T18:05:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 3,
@@ -19342,7 +19342,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T13:35:00Z",
-          "conditions": "78°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "78°F/25°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 4,
@@ -19360,7 +19360,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T12:00:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 6,
@@ -19369,7 +19369,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T19:45:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "67°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 7,
@@ -19378,7 +19378,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T13:40:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 8,
@@ -19396,7 +19396,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2026-11-14T16:50:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "69°F/21°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 10,
@@ -19405,7 +19405,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-03-01T12:00:00Z",
-          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "69°F/20°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 11,
@@ -19414,7 +19414,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-05-01T14:45:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         },
         {
           "week": 12,
@@ -19423,7 +19423,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-04-01T18:30:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain."
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Cautions laps do not count, Single-file Maintain. H:8L C:10L F:30L"
         }
       ]
     },
@@ -20683,7 +20683,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T12:00:00Z",
-          "conditions": "80°F/27°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "80°F/27°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 2,
@@ -20692,7 +20692,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T14:15:00Z",
-          "conditions": "70°F/21°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "70°F/21°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 3,
@@ -20701,7 +20701,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T12:00:00Z",
-          "conditions": "75°F/24°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "75°F/24°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 4,
@@ -20719,7 +20719,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T13:35:00Z",
-          "conditions": "78°F/25°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "78°F/25°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 6,
@@ -20728,7 +20728,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:30:00Z",
-          "conditions": "66°F/19°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "66°F/19°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 7,
@@ -20755,7 +20755,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2026-11-14T12:00:00Z",
-          "conditions": "67°F/19°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "67°F/19°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 10,
@@ -20764,7 +20764,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T12:00:00Z",
-          "conditions": "65°F/19°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "65°F/19°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 11,
@@ -20773,7 +20773,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-06-01T07:15:00Z",
-          "conditions": "65°F/18°C, All dry events, Standing start, Local enforced cautions."
+          "conditions": "65°F/18°C, All dry events, Standing start, Local enforced cautions. H:5L C:6L F:10L"
         },
         {
           "week": 12,
