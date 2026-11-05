@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-04T13:50:37.419Z",
+    "lastUpdated": "2026-11-05T14:03:50.293Z",
     "weeks": 39
   },
   "series": [
@@ -4448,6 +4448,304 @@
           "raceDateTime": "2026-12-06T13:00:00Z",
           "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. SLM: 3 tire sets",
           "durationLaps": 300
+        }
+      ]
+    },
+    {
+      "id": "winter-iracing-nascar-87-series-2026-season",
+      "name": "Winter iRacing NASCAR 87 Series - 2026 Season",
+      "category": "Oval",
+      "car": "NASCAR Legends Chevrolet Monte Carlo - 1987, NASCAR Legends Ford Thunderbird - 1987, NASCAR Legends Pontiac Grand Prix - 1987, NASCAR Legends Buick LeSabre - 1987",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "schedule": [
+        {
+          "week": 1,
+          "track": "[Legacy] Michigan International Speedway - 2009",
+          "trackId": "legacy-michigan-international-speedway-2009",
+          "startDate": "2026-11-12T00:00:00.000Z",
+          "endDate": "2026-11-18T00:00:00.000Z",
+          "raceDateTime": "2026-04-05T14:45:00Z",
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 5 tire sets F87: 5 tire sets P87: 5 tire sets B87: 5 tire sets",
+          "durationLaps": 100
+        },
+        {
+          "week": 2,
+          "track": "Richmond Raceway",
+          "trackId": "richmond-raceway",
+          "startDate": "2026-11-19T00:00:00.000Z",
+          "endDate": "2026-11-25T00:00:00.000Z",
+          "raceDateTime": "2026-04-12T14:10:00Z",
+          "conditions": "68°F/20°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 200
+        },
+        {
+          "week": 3,
+          "track": "Talladega Superspeedway",
+          "trackId": "talladega-superspeedway",
+          "startDate": "2026-11-26T00:00:00.000Z",
+          "endDate": "2026-12-02T00:00:00.000Z",
+          "raceDateTime": "2026-04-18T14:20:00Z",
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 4 tire sets F87: 4 tire sets P87: 4 tire sets B87: 4 tire sets",
+          "durationLaps": 94
+        },
+        {
+          "week": 4,
+          "track": "Darlington Raceway",
+          "trackId": "darlington-raceway",
+          "startDate": "2026-12-03T00:00:00.000Z",
+          "endDate": "2026-12-09T00:00:00.000Z",
+          "raceDateTime": "2026-04-25T12:00:00Z",
+          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 147
+        },
+        {
+          "week": 5,
+          "track": "Dover Motor Speedway",
+          "trackId": "dover-motor-speedway",
+          "startDate": "2026-12-10T00:00:00.000Z",
+          "endDate": "2026-12-16T00:00:00.000Z",
+          "raceDateTime": "2026-05-02T14:35:00Z",
+          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
+          "durationLaps": 200
+        },
+        {
+          "week": 6,
+          "track": "[Legacy] Pocono Raceway - 2009 - Oval",
+          "trackId": "legacy-pocono-raceway-2009-oval",
+          "startDate": "2026-12-17T00:00:00.000Z",
+          "endDate": "2026-12-23T00:00:00.000Z",
+          "raceDateTime": "2026-05-09T14:40:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 4 tire sets F87: 4 tire sets P87: 4 tire sets B87: 4 tire sets",
+          "durationLaps": 80
+        },
+        {
+          "week": 7,
+          "track": "Rockingham Speedway - Oval - 2012",
+          "trackId": "rockingham-speedway-oval-2012",
+          "startDate": "2026-12-24T00:00:00.000Z",
+          "endDate": "2026-12-30T00:00:00.000Z",
+          "raceDateTime": "2026-05-16T15:20:00Z",
+          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 167
+        },
+        {
+          "week": 8,
+          "track": "Charlotte Motor Speedway - Oval",
+          "trackId": "charlotte-motor-speedway-oval",
+          "startDate": "2026-12-31T00:00:00.000Z",
+          "endDate": "2027-01-06T00:00:00.000Z",
+          "raceDateTime": "2026-05-23T19:00:00Z",
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 200
+        },
+        {
+          "week": 9,
+          "track": "Martinsville Speedway",
+          "trackId": "martinsville-speedway",
+          "startDate": "2027-01-07T00:00:00.000Z",
+          "endDate": "2027-01-13T00:00:00.000Z",
+          "raceDateTime": "2026-05-30T12:00:00Z",
+          "conditions": "83°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
+          "durationLaps": 250
+        },
+        {
+          "week": 10,
+          "track": "EchoPark Speedway (Atlanta) - Oval - 2008",
+          "trackId": "echopark-speedway-atlanta-oval-2008",
+          "startDate": "2027-01-14T00:00:00.000Z",
+          "endDate": "2027-01-20T00:00:00.000Z",
+          "raceDateTime": "2026-06-07T12:00:00Z",
+          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
+          "durationLaps": 167
+        },
+        {
+          "week": 11,
+          "track": "Bristol Motor Speedway - Dual Pit Roads",
+          "trackId": "bristol-motor-speedway-dual-pit-roads",
+          "startDate": "2027-01-21T00:00:00.000Z",
+          "endDate": "2027-01-27T00:00:00.000Z",
+          "raceDateTime": "2026-09-05T19:00:00Z",
+          "conditions": "76°F/24°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
+          "durationLaps": 250
+        },
+        {
+          "week": 12,
+          "track": "Homestead Miami Speedway - Oval",
+          "trackId": "homestead-miami-speedway-oval",
+          "startDate": "2027-01-28T00:00:00.000Z",
+          "endDate": "2027-02-03T00:00:00.000Z",
+          "raceDateTime": "2026-09-13T14:55:00Z",
+          "conditions": "78°F/26°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 134
+        },
+        {
+          "week": 13,
+          "track": "North Wilkesboro Speedway - Oval - 1987",
+          "trackId": "north-wilkesboro-speedway-oval-1987",
+          "startDate": "2027-02-04T00:00:00.000Z",
+          "endDate": "2027-02-10T00:00:00.000Z",
+          "raceDateTime": "2026-09-20T12:00:00Z",
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 5 tire sets F87: 5 tire sets P87: 5 tire sets B87: 5 tire sets",
+          "durationLaps": 200
+        },
+        {
+          "week": 14,
+          "track": "Daytona International Speedway - Oval - 2008",
+          "trackId": "daytona-international-speedway-oval-2008",
+          "startDate": "2027-02-08T00:00:00.000Z",
+          "endDate": "2027-02-14T00:00:00.000Z",
+          "raceDateTime": "2026-02-15T12:00:00Z",
+          "conditions": "72°F/22°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 200
+        }
+      ]
+    },
+    {
+      "id": "winter-iracing-nascar-gen-4-cup-series-2026-season",
+      "name": "Winter iRacing NASCAR Gen 4 Cup Series - 2026 Season",
+      "category": "Oval",
+      "car": "Gen 4 Chevrolet Monte Carlo - 2003, Gen 4 Ford Taurus - 2003",
+      "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
+      "schedule": [
+        {
+          "week": 1,
+          "track": "[Legacy] Michigan International Speedway - 2009",
+          "trackId": "legacy-michigan-international-speedway-2009",
+          "startDate": "2026-11-11T00:00:00.000Z",
+          "endDate": "2026-11-17T00:00:00.000Z",
+          "raceDateTime": "2026-04-05T14:45:00Z",
+          "conditions": "65°F/19°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 5 tire sets G4FT: 5 tire sets",
+          "durationLaps": 100
+        },
+        {
+          "week": 2,
+          "track": "[Legacy] Phoenix Raceway - 2008 - Oval",
+          "trackId": "legacy-phoenix-raceway-2008-oval",
+          "startDate": "2026-11-18T00:00:00.000Z",
+          "endDate": "2026-11-24T00:00:00.000Z",
+          "raceDateTime": "2026-04-12T13:55:00Z",
+          "conditions": "83°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 5 tire sets G4FT: 5 tire sets",
+          "durationLaps": 156
+        },
+        {
+          "week": 3,
+          "track": "Talladega Superspeedway",
+          "trackId": "talladega-superspeedway",
+          "startDate": "2026-11-25T00:00:00.000Z",
+          "endDate": "2026-12-01T00:00:00.000Z",
+          "raceDateTime": "2026-04-18T14:20:00Z",
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 4 tire sets G4FT: 4 tire sets",
+          "durationLaps": 94
+        },
+        {
+          "week": 4,
+          "track": "Darlington Raceway",
+          "trackId": "darlington-raceway",
+          "startDate": "2026-12-02T00:00:00.000Z",
+          "endDate": "2026-12-08T00:00:00.000Z",
+          "raceDateTime": "2026-04-25T12:00:00Z",
+          "conditions": "83°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 147
+        },
+        {
+          "week": 5,
+          "track": "Las Vegas Motor Speedway - Oval",
+          "trackId": "las-vegas-motor-speedway-oval",
+          "startDate": "2026-12-09T00:00:00.000Z",
+          "endDate": "2026-12-15T00:00:00.000Z",
+          "raceDateTime": "2026-05-02T14:25:00Z",
+          "conditions": "83°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 134
+        },
+        {
+          "week": 6,
+          "track": "Chicagoland Speedway",
+          "trackId": "chicagoland-speedway",
+          "startDate": "2026-12-16T00:00:00.000Z",
+          "endDate": "2026-12-22T00:00:00.000Z",
+          "raceDateTime": "2026-05-09T14:25:00Z",
+          "conditions": "73°F/23°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 134
+        },
+        {
+          "week": 7,
+          "track": "[Legacy] Texas Motor Speedway - 2009 - Oval",
+          "trackId": "legacy-texas-motor-speedway-2009-oval",
+          "startDate": "2026-12-23T00:00:00.000Z",
+          "endDate": "2026-12-29T00:00:00.000Z",
+          "raceDateTime": "2025-05-24T15:40:00Z",
+          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 134
+        },
+        {
+          "week": 8,
+          "track": "Charlotte Motor Speedway - Oval",
+          "trackId": "charlotte-motor-speedway-oval",
+          "startDate": "2026-12-30T00:00:00.000Z",
+          "endDate": "2027-01-05T00:00:00.000Z",
+          "raceDateTime": "2026-05-23T19:00:00Z",
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 200
+        },
+        {
+          "week": 9,
+          "track": "Martinsville Speedway",
+          "trackId": "martinsville-speedway",
+          "startDate": "2027-01-06T00:00:00.000Z",
+          "endDate": "2027-01-12T00:00:00.000Z",
+          "raceDateTime": "2026-05-30T12:00:00Z",
+          "conditions": "81°F/27°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 7 tire sets G4FT: 7 tire sets",
+          "durationLaps": 250
+        },
+        {
+          "week": 10,
+          "track": "EchoPark Speedway (Atlanta) - Oval - 2008",
+          "trackId": "echopark-speedway-atlanta-oval-2008",
+          "startDate": "2027-01-13T00:00:00.000Z",
+          "endDate": "2027-01-19T00:00:00.000Z",
+          "raceDateTime": "2026-06-07T12:00:00Z",
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 7 tire sets G4FT: 7 tire sets",
+          "durationLaps": 167
+        },
+        {
+          "week": 11,
+          "track": "Bristol Motor Speedway - Dual Pit Roads",
+          "trackId": "bristol-motor-speedway-dual-pit-roads",
+          "startDate": "2027-01-20T00:00:00.000Z",
+          "endDate": "2027-01-26T00:00:00.000Z",
+          "raceDateTime": "2026-09-05T19:00:00Z",
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 7 tire sets G4FT: 7 tire sets",
+          "durationLaps": 250
+        },
+        {
+          "week": 12,
+          "track": "Homestead Miami Speedway - Oval",
+          "trackId": "homestead-miami-speedway-oval",
+          "startDate": "2027-01-27T00:00:00.000Z",
+          "endDate": "2027-02-02T00:00:00.000Z",
+          "raceDateTime": "2026-09-13T14:55:00Z",
+          "conditions": "84°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 134
+        },
+        {
+          "week": 13,
+          "track": "Auto Club Speedway - Oval",
+          "trackId": "auto-club-speedway-oval",
+          "startDate": "2027-02-03T00:00:00.000Z",
+          "endDate": "2027-02-09T00:00:00.000Z",
+          "raceDateTime": "2026-09-20T13:15:00Z",
+          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 5 tire sets G4FT: 5 tire sets",
+          "durationLaps": 100
+        },
+        {
+          "week": 14,
+          "track": "Daytona International Speedway - Oval - 2008",
+          "trackId": "daytona-international-speedway-oval-2008",
+          "startDate": "2027-02-10T00:00:00.000Z",
+          "endDate": "2027-02-16T00:00:00.000Z",
+          "raceDateTime": "2026-02-16T12:00:00Z",
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 8 tire sets G4FT: 8 tire sets",
+          "durationLaps": 200
         }
       ]
     },
