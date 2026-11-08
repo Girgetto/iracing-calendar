@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-05T14:03:50.293Z",
+    "lastUpdated": "2026-11-08T12:49:52.014Z",
     "weeks": 39
   },
   "series": [
@@ -4495,8 +4495,8 @@
           "startDate": "2026-12-03T00:00:00.000Z",
           "endDate": "2026-12-09T00:00:00.000Z",
           "raceDateTime": "2026-04-25T12:00:00Z",
-          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
-          "durationLaps": 147
+          "conditions": "77°F/25°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 183
         },
         {
           "week": 5,
@@ -4505,8 +4505,8 @@
           "startDate": "2026-12-10T00:00:00.000Z",
           "endDate": "2026-12-16T00:00:00.000Z",
           "raceDateTime": "2026-05-02T14:35:00Z",
-          "conditions": "71°F/21°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
-          "durationLaps": 200
+          "conditions": "67°F/19°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 7 tire sets F87: 7 tire sets P87: 7 tire sets B87: 7 tire sets",
+          "durationLaps": 250
         },
         {
           "week": 6,
@@ -4515,8 +4515,8 @@
           "startDate": "2026-12-17T00:00:00.000Z",
           "endDate": "2026-12-23T00:00:00.000Z",
           "raceDateTime": "2026-05-09T14:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 4 tire sets F87: 4 tire sets P87: 4 tire sets B87: 4 tire sets",
-          "durationLaps": 80
+          "conditions": "75°F/24°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 4 tire sets F87: 4 tire sets P87: 4 tire sets B87: 4 tire sets",
+          "durationLaps": 100
         },
         {
           "week": 7,
@@ -4525,8 +4525,8 @@
           "startDate": "2026-12-24T00:00:00.000Z",
           "endDate": "2026-12-30T00:00:00.000Z",
           "raceDateTime": "2026-05-16T15:20:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
-          "durationLaps": 167
+          "conditions": "76°F/25°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. C87: 6 tire sets F87: 6 tire sets P87: 6 tire sets B87: 6 tire sets",
+          "durationLaps": 246
         },
         {
           "week": 8,
@@ -4644,8 +4644,8 @@
           "startDate": "2026-12-02T00:00:00.000Z",
           "endDate": "2026-12-08T00:00:00.000Z",
           "raceDateTime": "2026-04-25T12:00:00Z",
-          "conditions": "83°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
-          "durationLaps": 147
+          "conditions": "82°F/28°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 183
         },
         {
           "week": 5,
@@ -4674,8 +4674,8 @@
           "startDate": "2026-12-23T00:00:00.000Z",
           "endDate": "2026-12-29T00:00:00.000Z",
           "raceDateTime": "2025-05-24T15:40:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
-          "durationLaps": 134
+          "conditions": "80°F/27°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 6 tire sets G4FT: 6 tire sets",
+          "durationLaps": 167
         },
         {
           "week": 8,
@@ -4734,8 +4734,8 @@
           "startDate": "2027-02-03T00:00:00.000Z",
           "endDate": "2027-02-09T00:00:00.000Z",
           "raceDateTime": "2026-09-20T13:15:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 5 tire sets G4FT: 5 tire sets",
-          "durationLaps": 100
+          "conditions": "85°F/29°C, All dry events, Rolling start, Full course cautions, Lucky dog, 3- G/W/C, Double-file Inside, Qual scrutiny - Moderate. G4CMC: 5 tire sets G4FT: 5 tire sets",
+          "durationLaps": 125
         },
         {
           "week": 14,
