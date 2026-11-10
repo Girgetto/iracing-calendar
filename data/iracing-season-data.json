@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-08T12:49:52.014Z",
+    "lastUpdated": "2026-11-10T14:24:49.425Z",
     "weeks": 39
   },
   "series": [
@@ -2102,402 +2102,52 @@
       ]
     },
     {
-      "id": "nascar-iracing-class-c-series-series-2026-season",
-      "name": "NASCAR iRacing Class C Series Series - 2026 Season",
+      "id": "nascar-iracing-class-c-series-series",
+      "name": "NASCAR iRacing Class C Series Series",
       "category": "Oval",
       "car": "NASCAR Truck Ford F150, NASCAR Truck Toyota Tundra TRD Pro, NASCAR Truck Chevrolet Silverado, NASCAR Truck RAM",
       "licenseRange": "Class D 4.0 --> Pro/WC 4.0",
       "raceFrequency": "Races 45 past every 2 hours",
-      "drops": 7,
+      "drops": 0,
       "schedule": [
         {
           "week": 1,
-          "track": "Daytona International Speedway - Oval",
-          "trackId": "daytona-international-speedway-oval",
-          "startDate": "2026-02-10T00:00:00.000Z",
-          "endDate": "2026-02-16T00:00:00.000Z",
-          "raceDateTime": "2026-02-14T18:10:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 50
-        },
-        {
-          "week": 2,
-          "track": "EchoPark Speedway (Atlanta) - Oval",
-          "trackId": "echopark-speedway-atlanta-oval",
-          "startDate": "2026-02-17T00:00:00.000Z",
-          "endDate": "2026-02-23T00:00:00.000Z",
-          "raceDateTime": "2026-02-21T13:00:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 3,
-          "track": "Long Beach Street Circuit",
-          "trackId": "long-beach-street-circuit",
-          "startDate": "2026-02-24T00:00:00.000Z",
-          "endDate": "2026-03-02T00:00:00.000Z",
-          "raceDateTime": "2026-02-28T12:25:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 40
-        },
-        {
-          "week": 4,
-          "track": "Auto Club Speedway - Oval",
-          "trackId": "auto-club-speedway-oval",
-          "startDate": "2026-03-03T00:00:00.000Z",
-          "endDate": "2026-03-09T00:00:00.000Z",
-          "raceDateTime": "2026-03-07T12:30:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 5,
-          "track": "Las Vegas Motor Speedway - Oval",
-          "trackId": "las-vegas-motor-speedway-oval",
-          "startDate": "2026-03-10T00:00:00.000Z",
-          "endDate": "2026-03-16T00:00:00.000Z",
-          "raceDateTime": "2026-03-14T13:05:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 6,
-          "track": "Darlington Raceway",
-          "trackId": "darlington-raceway",
-          "startDate": "2026-03-17T00:00:00.000Z",
-          "endDate": "2026-03-23T00:00:00.000Z",
-          "raceDateTime": "2026-03-21T19:30:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 85
-        },
-        {
-          "week": 7,
-          "track": "Talladega Superspeedway",
-          "trackId": "talladega-superspeedway",
-          "startDate": "2026-03-24T00:00:00.000Z",
-          "endDate": "2026-03-30T00:00:00.000Z",
-          "raceDateTime": "2026-03-28T16:45:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 50
-        },
-        {
-          "week": 8,
-          "track": "Rockingham Speedway - Oval",
-          "trackId": "rockingham-speedway-oval",
-          "startDate": "2026-03-31T00:00:00.000Z",
-          "endDate": "2026-04-06T00:00:00.000Z",
-          "raceDateTime": "2026-04-04T14:15:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 85
-        },
-        {
-          "week": 9,
-          "track": "Bristol Motor Speedway - Single Pit Roads",
-          "trackId": "bristol-motor-speedway-single-pit-roads",
-          "startDate": "2026-04-07T00:00:00.000Z",
-          "endDate": "2026-04-13T00:00:00.000Z",
-          "raceDateTime": "2026-04-11T18:40:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 150
-        },
-        {
-          "week": 10,
-          "track": "Circuit of the Americas - NASCAR West",
-          "trackId": "circuit-of-the-americas-nascar-west",
-          "startDate": "2026-04-14T00:00:00.000Z",
-          "endDate": "2026-04-20T00:00:00.000Z",
-          "raceDateTime": "2026-04-18T15:20:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 25
-        },
-        {
-          "week": 11,
-          "track": "Pocono Raceway",
-          "trackId": "pocono-raceway",
-          "startDate": "2026-04-21T00:00:00.000Z",
-          "endDate": "2026-04-27T00:00:00.000Z",
-          "raceDateTime": "2026-04-25T14:10:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 50
-        },
-        {
-          "week": 12,
-          "track": "Texas Motor Speedway - Oval",
-          "trackId": "texas-motor-speedway-oval",
-          "startDate": "2026-04-28T00:00:00.000Z",
-          "endDate": "2026-05-04T00:00:00.000Z",
-          "raceDateTime": "2026-05-02T20:10:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 13,
-          "track": "Watkins Glen International - Cup",
-          "trackId": "watkins-glen-international-cup",
-          "startDate": "2026-05-05T00:00:00.000Z",
-          "endDate": "2026-05-11T00:00:00.000Z",
-          "raceDateTime": "2026-05-09T14:35:00Z",
-          "conditions": "74°F/23°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 31
-        },
-        {
-          "week": 14,
           "track": "Dover Motor Speedway",
           "trackId": "dover-motor-speedway",
-          "startDate": "2026-05-12T00:00:00.000Z",
-          "endDate": "2026-05-18T00:00:00.000Z",
-          "raceDateTime": "2026-05-16T14:55:00Z",
-          "conditions": "70°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
+          "startDate": "2026-11-10T00:00:00.000Z",
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:50:00Z",
+          "conditions": "70°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
           "durationLaps": 100
         },
         {
-          "week": 15,
-          "track": "Charlotte Motor Speedway - Oval",
-          "trackId": "charlotte-motor-speedway-oval",
-          "startDate": "2026-05-19T00:00:00.000Z",
-          "endDate": "2026-05-25T00:00:00.000Z",
-          "raceDateTime": "2026-05-23T20:25:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 16,
-          "track": "Nashville Superspeedway",
-          "trackId": "nashville-superspeedway",
-          "startDate": "2026-05-26T00:00:00.000Z",
-          "endDate": "2026-06-01T00:00:00.000Z",
-          "raceDateTime": "2026-05-30T19:55:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 17,
-          "track": "Michigan International Speedway",
-          "trackId": "michigan-international-speedway",
-          "startDate": "2026-06-02T00:00:00.000Z",
-          "endDate": "2026-06-08T00:00:00.000Z",
-          "raceDateTime": "2026-06-06T15:35:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
+          "week": 2,
+          "track": "Auto Club Speedway - Oval",
+          "trackId": "auto-club-speedway-oval",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:50:00Z",
+          "conditions": "87°F/31°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
           "durationLaps": 60
         },
         {
-          "week": 18,
+          "week": 3,
           "track": "Iowa Speedway - Oval",
           "trackId": "iowa-speedway-oval",
-          "startDate": "2026-06-09T00:00:00.000Z",
-          "endDate": "2026-06-15T00:00:00.000Z",
-          "raceDateTime": "2026-06-13T22:05:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 120
-        },
-        {
-          "week": 19,
-          "track": "Qualcomm Circuit (Naval Base Coronado)",
-          "trackId": "qualcomm-circuit-naval-base-coronado",
-          "startDate": "2026-06-16T00:00:00.000Z",
-          "endDate": "2026-06-22T00:00:00.000Z",
-          "raceDateTime": "2026-06-20T15:10:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 20
-        },
-        {
-          "week": 20,
-          "track": "Daytona International Speedway - Oval",
-          "trackId": "daytona-international-speedway-oval",
-          "startDate": "2026-06-23T00:00:00.000Z",
-          "endDate": "2026-06-29T00:00:00.000Z",
-          "raceDateTime": "2026-06-27T19:05:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 50
-        },
-        {
-          "week": 21,
-          "track": "Homestead Miami Speedway - Oval",
-          "trackId": "homestead-miami-speedway-oval",
-          "startDate": "2026-06-30T00:00:00.000Z",
-          "endDate": "2026-07-06T00:00:00.000Z",
-          "raceDateTime": "2026-07-04T15:45:00Z",
-          "conditions": "80°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 22,
-          "track": "Lime Rock Park - Classic",
-          "trackId": "lime-rock-park-classic",
-          "startDate": "2026-07-07T00:00:00.000Z",
-          "endDate": "2026-07-13T00:00:00.000Z",
-          "raceDateTime": "2026-07-11T15:00:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 31
-        },
-        {
-          "week": 23,
-          "track": "North Wilkesboro Speedway - Oval",
-          "trackId": "north-wilkesboro-speedway-oval",
-          "startDate": "2026-07-14T00:00:00.000Z",
-          "endDate": "2026-07-20T00:00:00.000Z",
-          "raceDateTime": "2026-07-18T12:00:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 150
-        },
-        {
-          "week": 24,
-          "track": "Lucas Oil Indianapolis Raceway Park - Oval",
-          "trackId": "lucas-oil-indianapolis-raceway-park-oval",
-          "startDate": "2026-07-21T00:00:00.000Z",
-          "endDate": "2026-07-27T00:00:00.000Z",
-          "raceDateTime": "2026-07-25T22:15:00Z",
-          "conditions": "76°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 120
-        },
-        {
-          "week": 25,
-          "track": "Kentucky Speedway - Oval",
-          "trackId": "kentucky-speedway-oval",
-          "startDate": "2026-07-28T00:00:00.000Z",
-          "endDate": "2026-08-03T00:00:00.000Z",
-          "raceDateTime": "2026-08-01T15:40:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 26,
-          "track": "[Retired] The Milwaukee Mile - [Retired] Old",
-          "trackId": "retired-the-milwaukee-mile-retired-old",
-          "startDate": "2026-08-04T00:00:00.000Z",
-          "endDate": "2026-08-10T00:00:00.000Z",
-          "raceDateTime": "2026-08-08T14:20:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 75
-        },
-        {
-          "week": 27,
-          "track": "Richmond Raceway",
-          "trackId": "richmond-raceway",
-          "startDate": "2026-08-11T00:00:00.000Z",
-          "endDate": "2026-08-17T00:00:00.000Z",
-          "raceDateTime": "2026-08-15T20:05:00Z",
-          "conditions": "83°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
+          "startDate": "2026-11-24T00:00:00.000Z",
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:55:00Z",
+          "conditions": "69°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
           "durationLaps": 110
         },
         {
-          "week": 28,
-          "track": "New Hampshire Motor Speedway - Oval",
-          "trackId": "new-hampshire-motor-speedway-oval",
-          "startDate": "2026-08-18T00:00:00.000Z",
-          "endDate": "2026-08-24T00:00:00.000Z",
-          "raceDateTime": "2026-08-22T13:10:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 75
-        },
-        {
-          "week": 29,
-          "track": "Darlington Raceway",
-          "trackId": "darlington-raceway",
-          "startDate": "2026-08-25T00:00:00.000Z",
-          "endDate": "2026-08-31T00:00:00.000Z",
-          "raceDateTime": "2026-08-29T14:45:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 85
-        },
-        {
-          "week": 30,
-          "track": "EchoPark Speedway (Atlanta) - Oval - 2008",
-          "trackId": "echopark-speedway-atlanta-oval-2008",
-          "startDate": "2026-09-01T00:00:00.000Z",
-          "endDate": "2026-09-07T00:00:00.000Z",
-          "raceDateTime": "2026-09-05T14:55:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 31,
-          "track": "Chicagoland Speedway",
-          "trackId": "chicagoland-speedway",
-          "startDate": "2026-09-08T00:00:00.000Z",
-          "endDate": "2026-09-14T00:00:00.000Z",
-          "raceDateTime": "2026-09-12T12:00:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 32,
-          "track": "Bristol Motor Speedway - Single Pit Roads",
-          "trackId": "bristol-motor-speedway-single-pit-roads",
-          "startDate": "2026-09-15T00:00:00.000Z",
-          "endDate": "2026-09-21T00:00:00.000Z",
-          "raceDateTime": "2026-09-19T20:25:00Z",
-          "conditions": "71°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 6 tire sets TTP: 6 tire sets CS2019: 6 tire sets RAM26: 6 tire sets",
-          "durationLaps": 150
-        },
-        {
-          "week": 33,
-          "track": "Kansas Speedway - Oval",
-          "trackId": "kansas-speedway-oval",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-09-26T13:40:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 34,
-          "track": "World Wide Technology Raceway (Gateway) - Oval",
-          "trackId": "world-wide-technology-raceway-gateway-oval",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-10-03T17:15:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 35,
-          "track": "Charlotte Motor Speedway - Oval",
-          "trackId": "charlotte-motor-speedway-oval",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T13:45:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 36,
-          "track": "Phoenix Raceway - Oval w/open dogleg",
-          "trackId": "phoenix-raceway-oval-w-open-dogleg",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T16:35:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 37,
-          "track": "Talladega Superspeedway",
-          "trackId": "talladega-superspeedway",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T13:00:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 3 tire sets TTP: 3 tire sets CS2019: 3 tire sets RAM26: 3 tire sets",
-          "durationLaps": 50
-        },
-        {
-          "week": 38,
-          "track": "Martinsville Speedway",
-          "trackId": "martinsville-speedway",
-          "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z",
-          "raceDateTime": "2026-10-31T16:55:00Z",
-          "conditions": "67°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 5 tire sets TTP: 5 tire sets CS2019: 5 tire sets RAM26: 5 tire sets",
-          "durationLaps": 120
-        },
-        {
-          "week": 39,
-          "track": "Homestead Miami Speedway - Oval",
-          "trackId": "homestead-miami-speedway-oval",
-          "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z",
-          "raceDateTime": "2026-10-31T18:40:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
+          "week": 4,
+          "track": "Las Vegas Motor Speedway - Oval",
+          "trackId": "las-vegas-motor-speedway-oval",
+          "startDate": "2026-12-01T00:00:00.000Z",
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:40:00Z",
+          "conditions": "89°F/32°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. F150: 4 tire sets TTP: 4 tire sets CS2019: 4 tire sets RAM26: 4 tire sets",
           "durationLaps": 80
         }
       ]
@@ -4709,8 +4359,8 @@
         },
         {
           "week": 11,
-          "track": "Bristol Motor Speedway - Dual Pit Roads",
-          "trackId": "bristol-motor-speedway-dual-pit-roads",
+          "track": "Bristol Motor Speedway - Single Pit Roads",
+          "trackId": "bristol-motor-speedway-single-pit-roads",
           "startDate": "2027-01-20T00:00:00.000Z",
           "endDate": "2027-01-26T00:00:00.000Z",
           "raceDateTime": "2026-09-05T19:00:00Z",
@@ -5012,403 +4662,53 @@
       ]
     },
     {
-      "id": "nascar-iracing-class-b-series-series-2026-season",
-      "name": "NASCAR iRacing Class B Series Series - 2026 Season",
+      "id": "nascar-iracing-class-b-series-series",
+      "name": "NASCAR iRacing Class B Series Series",
       "category": "Oval",
       "car": "NASCAR O'Reilly Chevrolet Camaro, NASCAR O'Reilly Ford Mustang, NASCAR O'Reilly Toyota Supra",
       "licenseRange": "Class C 4.0 --> Pro/WC 4.0",
       "raceFrequency": "Races every 2 hours on the hour",
-      "drops": 7,
+      "drops": 0,
       "schedule": [
         {
           "week": 1,
-          "track": "Daytona International Speedway - Oval",
-          "trackId": "daytona-international-speedway-oval",
-          "startDate": "2026-02-10T00:00:00.000Z",
-          "endDate": "2026-02-16T00:00:00.000Z",
-          "raceDateTime": "2026-02-14T16:55:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 60
+          "track": "Dover Motor Speedway",
+          "trackId": "dover-motor-speedway",
+          "startDate": "2026-11-10T00:00:00.000Z",
+          "endDate": "2026-11-16T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:50:00Z",
+          "conditions": "70°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
+          "durationLaps": 110
         },
         {
           "week": 2,
-          "track": "EchoPark Speedway (Atlanta) - Oval",
-          "trackId": "echopark-speedway-atlanta-oval",
-          "startDate": "2026-02-17T00:00:00.000Z",
-          "endDate": "2026-02-23T00:00:00.000Z",
-          "raceDateTime": "2026-02-21T17:05:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
+          "track": "EchoPark Speedway (Atlanta) - Oval - 2008",
+          "trackId": "echopark-speedway-atlanta-oval-2008",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T15:40:00Z",
+          "conditions": "71°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
           "durationLaps": 90
         },
         {
           "week": 3,
-          "track": "Circuit of the Americas - NASCAR West",
-          "trackId": "circuit-of-the-americas-nascar-west",
-          "startDate": "2026-02-24T00:00:00.000Z",
-          "endDate": "2026-03-02T00:00:00.000Z",
-          "raceDateTime": "2026-02-28T13:10:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 29
-        },
-        {
-          "week": 4,
-          "track": "Phoenix Raceway - Oval w/open dogleg",
-          "trackId": "phoenix-raceway-oval-w-open-dogleg",
-          "startDate": "2026-03-03T00:00:00.000Z",
-          "endDate": "2026-03-09T00:00:00.000Z",
-          "raceDateTime": "2026-03-07T13:05:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 100
-        },
-        {
-          "week": 5,
-          "track": "Las Vegas Motor Speedway - Oval",
-          "trackId": "las-vegas-motor-speedway-oval",
-          "startDate": "2026-03-10T00:00:00.000Z",
-          "endDate": "2026-03-16T00:00:00.000Z",
-          "raceDateTime": "2026-03-14T13:05:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 6,
-          "track": "Darlington Raceway",
-          "trackId": "darlington-raceway",
-          "startDate": "2026-03-17T00:00:00.000Z",
-          "endDate": "2026-03-23T00:00:00.000Z",
-          "raceDateTime": "2026-03-21T18:15:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 100
-        },
-        {
-          "week": 7,
-          "track": "Martinsville Speedway",
-          "trackId": "martinsville-speedway",
-          "startDate": "2026-03-24T00:00:00.000Z",
-          "endDate": "2026-03-30T00:00:00.000Z",
-          "raceDateTime": "2026-03-28T13:45:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 140
-        },
-        {
-          "week": 8,
-          "track": "Rockingham Speedway - Oval",
-          "trackId": "rockingham-speedway-oval",
-          "startDate": "2026-03-31T00:00:00.000Z",
-          "endDate": "2026-04-06T00:00:00.000Z",
-          "raceDateTime": "2026-04-04T14:15:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 100
-        },
-        {
-          "week": 9,
-          "track": "Bristol Motor Speedway - Single Pit Roads",
-          "trackId": "bristol-motor-speedway-single-pit-roads",
-          "startDate": "2026-04-07T00:00:00.000Z",
-          "endDate": "2026-04-13T00:00:00.000Z",
-          "raceDateTime": "2026-04-11T14:35:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 6 tire sets NFM: 6 tire sets NTS: 6 tire sets",
-          "durationLaps": 160
-        },
-        {
-          "week": 10,
-          "track": "Kansas Speedway - Oval",
-          "trackId": "kansas-speedway-oval",
-          "startDate": "2026-04-14T00:00:00.000Z",
-          "endDate": "2026-04-20T00:00:00.000Z",
-          "raceDateTime": "2026-04-18T14:25:00Z",
-          "conditions": "75°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 11,
-          "track": "Talladega Superspeedway",
-          "trackId": "talladega-superspeedway",
-          "startDate": "2026-04-21T00:00:00.000Z",
-          "endDate": "2026-04-27T00:00:00.000Z",
-          "raceDateTime": "2026-04-25T14:30:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 12,
-          "track": "Texas Motor Speedway - Oval",
-          "trackId": "texas-motor-speedway-oval",
-          "startDate": "2026-04-28T00:00:00.000Z",
-          "endDate": "2026-05-04T00:00:00.000Z",
-          "raceDateTime": "2026-05-02T15:25:00Z",
-          "conditions": "77°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 13,
-          "track": "Watkins Glen International - Cup",
-          "trackId": "watkins-glen-international-cup",
-          "startDate": "2026-05-05T00:00:00.000Z",
-          "endDate": "2026-05-11T00:00:00.000Z",
-          "raceDateTime": "2026-05-09T14:35:00Z",
-          "conditions": "73°F/23°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 31
-        },
-        {
-          "week": 14,
-          "track": "Dover Motor Speedway",
-          "trackId": "dover-motor-speedway",
-          "startDate": "2026-05-12T00:00:00.000Z",
-          "endDate": "2026-05-18T00:00:00.000Z",
-          "raceDateTime": "2026-05-16T14:55:00Z",
-          "conditions": "66°F/19°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 110
-        },
-        {
-          "week": 15,
-          "track": "Charlotte Motor Speedway - Oval",
-          "trackId": "charlotte-motor-speedway-oval",
-          "startDate": "2026-05-19T00:00:00.000Z",
-          "endDate": "2026-05-25T00:00:00.000Z",
-          "raceDateTime": "2026-05-23T15:30:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 16,
-          "track": "Nashville Superspeedway",
-          "trackId": "nashville-superspeedway",
-          "startDate": "2026-05-26T00:00:00.000Z",
-          "endDate": "2026-06-01T00:00:00.000Z",
-          "raceDateTime": "2026-05-30T18:30:00Z",
-          "conditions": "76°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 17,
-          "track": "Nashville Fairgrounds Speedway - Oval",
-          "trackId": "nashville-fairgrounds-speedway-oval",
-          "startDate": "2026-06-02T00:00:00.000Z",
-          "endDate": "2026-06-08T00:00:00.000Z",
-          "raceDateTime": "2026-06-06T15:00:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 130
-        },
-        {
-          "week": 18,
-          "track": "Pocono Raceway",
-          "trackId": "pocono-raceway",
-          "startDate": "2026-06-09T00:00:00.000Z",
-          "endDate": "2026-06-15T00:00:00.000Z",
-          "raceDateTime": "2026-06-13T15:10:00Z",
-          "conditions": "82°F/28°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 19,
-          "track": "Qualcomm Circuit (Naval Base Coronado)",
-          "trackId": "qualcomm-circuit-naval-base-coronado",
-          "startDate": "2026-06-16T00:00:00.000Z",
-          "endDate": "2026-06-22T00:00:00.000Z",
-          "raceDateTime": "2026-06-20T15:10:00Z",
-          "conditions": "74°F/23°C, All dry events, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 25
-        },
-        {
-          "week": 20,
-          "track": "Sonoma Raceway - Cup Short",
-          "trackId": "sonoma-raceway-cup-short",
-          "startDate": "2026-06-23T00:00:00.000Z",
-          "endDate": "2026-06-29T00:00:00.000Z",
-          "raceDateTime": "2026-06-27T15:25:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 30
-        },
-        {
-          "week": 21,
-          "track": "Chicagoland Speedway",
-          "trackId": "chicagoland-speedway",
-          "startDate": "2026-06-30T00:00:00.000Z",
-          "endDate": "2026-07-06T00:00:00.000Z",
-          "raceDateTime": "2026-07-04T15:00:00Z",
-          "conditions": "79°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 22,
-          "track": "EchoPark Speedway (Atlanta) - Oval",
-          "trackId": "echopark-speedway-atlanta-oval",
-          "startDate": "2026-07-07T00:00:00.000Z",
-          "endDate": "2026-07-13T00:00:00.000Z",
-          "raceDateTime": "2026-07-11T20:50:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 23,
-          "track": "Michigan International Speedway",
-          "trackId": "michigan-international-speedway",
-          "startDate": "2026-07-14T00:00:00.000Z",
-          "endDate": "2026-07-20T00:00:00.000Z",
-          "raceDateTime": "2026-07-18T15:35:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
+          "track": "Auto Club Speedway - Oval",
+          "trackId": "auto-club-speedway-oval",
+          "startDate": "2026-11-24T00:00:00.000Z",
+          "endDate": "2026-11-30T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:50:00Z",
+          "conditions": "75°F/24°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
           "durationLaps": 65
         },
         {
-          "week": 24,
-          "track": "Indianapolis Motor Speedway - NASCAR Oval",
-          "trackId": "indianapolis-motor-speedway-nascar-oval",
-          "startDate": "2026-07-21T00:00:00.000Z",
-          "endDate": "2026-07-27T00:00:00.000Z",
-          "raceDateTime": "2026-07-25T15:45:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 25,
-          "track": "New Hampshire Motor Speedway - Oval",
-          "trackId": "new-hampshire-motor-speedway-oval",
-          "startDate": "2026-07-28T00:00:00.000Z",
-          "endDate": "2026-08-03T00:00:00.000Z",
-          "raceDateTime": "2026-08-01T14:25:00Z",
-          "conditions": "71°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 80
-        },
-        {
-          "week": 26,
-          "track": "Iowa Speedway - Oval",
-          "trackId": "iowa-speedway-oval",
-          "startDate": "2026-08-04T00:00:00.000Z",
-          "endDate": "2026-08-10T00:00:00.000Z",
-          "raceDateTime": "2026-08-08T14:45:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 130
-        },
-        {
-          "week": 27,
-          "track": "Portland International Raceway - Full Circuit",
-          "trackId": "portland-international-raceway-full-circuit",
-          "startDate": "2026-08-11T00:00:00.000Z",
-          "endDate": "2026-08-17T00:00:00.000Z",
-          "raceDateTime": "2026-08-15T13:40:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 34
-        },
-        {
-          "week": 28,
-          "track": "Richmond Raceway",
-          "trackId": "richmond-raceway",
-          "startDate": "2026-08-18T00:00:00.000Z",
-          "endDate": "2026-08-24T00:00:00.000Z",
-          "raceDateTime": "2026-08-22T14:35:00Z",
-          "conditions": "85°F/30°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 120
-        },
-        {
-          "week": 29,
-          "track": "Daytona International Speedway - Oval",
-          "trackId": "daytona-international-speedway-oval",
-          "startDate": "2026-08-25T00:00:00.000Z",
-          "endDate": "2026-08-31T00:00:00.000Z",
-          "raceDateTime": "2026-08-29T19:50:00Z",
-          "conditions": "81°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 30,
-          "track": "Darlington Raceway",
-          "trackId": "darlington-raceway",
-          "startDate": "2026-09-01T00:00:00.000Z",
-          "endDate": "2026-09-07T00:00:00.000Z",
-          "raceDateTime": "2026-09-05T19:40:00Z",
-          "conditions": "80°F/27°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 100
-        },
-        {
-          "week": 31,
+          "week": 4,
           "track": "World Wide Technology Raceway (Gateway) - Oval",
           "trackId": "world-wide-technology-raceway-gateway-oval",
-          "startDate": "2026-09-08T00:00:00.000Z",
-          "endDate": "2026-09-14T00:00:00.000Z",
-          "raceDateTime": "2026-09-12T19:15:00Z",
-          "conditions": "72°F/22°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
+          "startDate": "2026-12-01T00:00:00.000Z",
+          "endDate": "2026-12-07T00:00:00.000Z",
+          "raceDateTime": "2026-05-15T14:50:00Z",
+          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Moderate. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
           "durationLaps": 80
-        },
-        {
-          "week": 32,
-          "track": "Bristol Motor Speedway - Single Pit Roads",
-          "trackId": "bristol-motor-speedway-single-pit-roads",
-          "startDate": "2026-09-15T00:00:00.000Z",
-          "endDate": "2026-09-21T00:00:00.000Z",
-          "raceDateTime": "2026-09-19T19:30:00Z",
-          "conditions": "69°F/21°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 6 tire sets NFM: 6 tire sets NTS: 6 tire sets",
-          "durationLaps": 160
-        },
-        {
-          "week": 33,
-          "track": "Lucas Oil Indianapolis Raceway Park - Oval",
-          "trackId": "lucas-oil-indianapolis-raceway-park-oval",
-          "startDate": "2026-09-22T00:00:00.000Z",
-          "endDate": "2026-09-28T00:00:00.000Z",
-          "raceDateTime": "2026-09-26T14:15:00Z",
-          "conditions": "86°F/30°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 110
-        },
-        {
-          "week": 34,
-          "track": "Las Vegas Motor Speedway - Oval",
-          "trackId": "las-vegas-motor-speedway-oval",
-          "startDate": "2026-09-29T00:00:00.000Z",
-          "endDate": "2026-10-05T00:00:00.000Z",
-          "raceDateTime": "2026-10-03T17:00:00Z",
-          "conditions": "84°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 35,
-          "track": "Charlotte Motor Speedway - Oval",
-          "trackId": "charlotte-motor-speedway-oval",
-          "startDate": "2026-10-06T00:00:00.000Z",
-          "endDate": "2026-10-12T00:00:00.000Z",
-          "raceDateTime": "2026-10-10T13:45:00Z",
-          "conditions": "78°F/26°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
-        },
-        {
-          "week": 36,
-          "track": "Phoenix Raceway - Oval w/open dogleg",
-          "trackId": "phoenix-raceway-oval-w-open-dogleg",
-          "startDate": "2026-10-13T00:00:00.000Z",
-          "endDate": "2026-10-19T00:00:00.000Z",
-          "raceDateTime": "2026-10-17T16:35:00Z",
-          "conditions": "88°F/31°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 100
-        },
-        {
-          "week": 37,
-          "track": "Talladega Superspeedway",
-          "trackId": "talladega-superspeedway",
-          "startDate": "2026-10-20T00:00:00.000Z",
-          "endDate": "2026-10-26T00:00:00.000Z",
-          "raceDateTime": "2026-10-24T13:00:00Z",
-          "conditions": "85°F/29°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 3 tire sets NFM: 3 tire sets NTS: 3 tire sets",
-          "durationLaps": 60
-        },
-        {
-          "week": 38,
-          "track": "Martinsville Speedway",
-          "trackId": "martinsville-speedway",
-          "startDate": "2026-10-27T00:00:00.000Z",
-          "endDate": "2026-11-02T00:00:00.000Z",
-          "raceDateTime": "2026-10-31T13:25:00Z",
-          "conditions": "68°F/20°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 5 tire sets NFM: 5 tire sets NTS: 5 tire sets",
-          "durationLaps": 140
-        },
-        {
-          "week": 39,
-          "track": "Homestead Miami Speedway - Oval",
-          "trackId": "homestead-miami-speedway-oval",
-          "startDate": "2026-11-03T00:00:00.000Z",
-          "endDate": "2026-11-09T00:00:00.000Z",
-          "raceDateTime": "2026-11-03T16:25:00Z",
-          "conditions": "78°F/25°C, All dry events, Rolling start, Start zone, Full course cautions, Lucky dog, 3-G/W/C, Double-file Back, Qual scrutiny - Strict. NCC: 4 tire sets NFM: 4 tire sets NTS: 4 tire sets",
-          "durationLaps": 90
         }
       ]
     },
@@ -10805,7 +10105,7 @@
           "startDate": "2026-09-26T00:00:00.000Z",
           "endDate": "2026-10-02T00:00:00.000Z",
           "raceDateTime": "2026-09-26T09:15:00Z",
-          "conditions": "72°F/22°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "72°F/22°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 2,
@@ -10814,7 +10114,7 @@
           "startDate": "2026-10-10T00:00:00.000Z",
           "endDate": "2026-10-16T00:00:00.000Z",
           "raceDateTime": "2026-10-10T09:10:00Z",
-          "conditions": "70°F/21°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "70°F/21°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 3,
@@ -10823,7 +10123,7 @@
           "startDate": "2026-10-24T00:00:00.000Z",
           "endDate": "2026-10-30T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:15:00Z",
-          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "65°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 4,
@@ -10832,7 +10132,7 @@
           "startDate": "2026-11-07T00:00:00.000Z",
           "endDate": "2026-11-13T00:00:00.000Z",
           "raceDateTime": "2026-11-07T12:00:00Z",
-          "conditions": "71°F/22°C, Rain chance 28%, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "71°F/22°C, Rain chance 28%, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 5,
@@ -10841,7 +10141,7 @@
           "startDate": "2026-11-21T00:00:00.000Z",
           "endDate": "2026-11-27T00:00:00.000Z",
           "raceDateTime": "2026-11-21T11:00:00Z",
-          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "66°F/19°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 6,
@@ -10850,7 +10150,7 @@
           "startDate": "2026-12-05T00:00:00.000Z",
           "endDate": "2026-12-11T00:00:00.000Z",
           "raceDateTime": "2027-03-01T09:10:00Z",
-          "conditions": "66°F/19°C, Rain chance 32% (8% before session), Grid by class, Rolling start, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "66°F/19°C, Rain chance 32% (8% before session), Grid by class, Rolling start, Start zone, Local enforced cautions, Min 2 drivers, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
       ]
     },
@@ -11658,7 +10958,7 @@
           "startDate": "2026-09-19T00:00:00.000Z",
           "endDate": "2026-09-25T00:00:00.000Z",
           "raceDateTime": "2026-09-19T17:20:00Z",
-          "conditions": "82°F/28°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. PGTP: 3.0kg BMWGTP: fuel: 99% AMGTPV: fuel: 98% CGTP: -5.0kg, pwr: -0.50% AGTP: fuel: 99%, 2.0kg MGT3E: fuel: 98%, -5.0kg, pwr: - 0.50% 720GT3: -5.0kg F296: fuel: 98%, 8.0kg, pwr: -0.25% AMGT3: fuel: 97%, 10.0kg NSXE22: fuel: 98% M4GT3: fuel: 98%, 10.0kg, pwr: - 1.00% LGT3: fuel: 97%, pwr: -0.50% CZ06: fuel: 98%, 3.0kg, pwr: -0.25% 992R: fuel: 98%, -10.0kg FMGT3: -5.0kg mins"
+          "conditions": "82°F/28°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. PGTP: 3.0kg BMWGTP: fuel: 99% AMGTPV: fuel: 98% CGTP: -5.0kg, pwr: -0.50% AGTP: fuel: 99%, 2.0kg MGT3E: fuel: 98%, -5.0kg, pwr: - 0.50% 720GT3: -5.0kg F296: fuel: 98%, 8.0kg, pwr: -0.25% AMGT3: fuel: 97%, 10.0kg NSXE22: fuel: 98% M4GT3: fuel: 98%, 10.0kg, pwr: - 1.00% LGT3: fuel: 97%, pwr: -0.50% CZ06: fuel: 98%, 3.0kg, pwr: -0.25% 992R: fuel: 98%, -10.0kg FMGT3: -5.0kg mins"
         },
         {
           "week": 2,
@@ -11667,7 +10967,7 @@
           "startDate": "2026-10-03T00:00:00.000Z",
           "endDate": "2026-10-09T00:00:00.000Z",
           "raceDateTime": "2026-10-03T07:25:00Z",
-          "conditions": "68°F/20°C, Rain chance 29%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "68°F/20°C, Rain chance 29%, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 3,
@@ -11676,7 +10976,7 @@
           "startDate": "2026-10-17T00:00:00.000Z",
           "endDate": "2026-10-23T00:00:00.000Z",
           "raceDateTime": "2026-10-17T08:45:00Z",
-          "conditions": "68°F/20°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "68°F/20°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 4,
@@ -11685,7 +10985,7 @@
           "startDate": "2026-10-31T00:00:00.000Z",
           "endDate": "2026-11-06T00:00:00.000Z",
           "raceDateTime": "2026-10-31T14:50:00Z",
-          "conditions": "72°F/22°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "72°F/22°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 5,
@@ -11694,7 +10994,7 @@
           "startDate": "2026-11-14T00:00:00.000Z",
           "endDate": "2026-11-20T00:00:00.000Z",
           "raceDateTime": "2026-11-14T14:20:00Z",
-          "conditions": "66°F/19°C, Rain chance 32%, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "66°F/19°C, Rain chance 32%, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         },
         {
           "week": 6,
@@ -11703,7 +11003,7 @@
           "startDate": "2026-11-28T00:00:00.000Z",
           "endDate": "2026-12-04T00:00:00.000Z",
           "raceDateTime": "2026-11-28T08:45:00Z",
-          "conditions": "78°F/25°C, All dry events, Grid by class, Rolling start, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
+          "conditions": "78°F/25°C, All dry events, Grid by class, Rolling start, Start zone, Local enforced cautions, Min 1 driver, Max 16 drivers, Drive Fair Share - Declare drivers, Qual scrutiny - Strict. mins"
         }
       ]
     },
@@ -12076,7 +11376,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12086,7 +11386,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50%, 3.0kg BMWGTP: fuel: 50% F499P: fuel: 50%, -2.0kg AMGTPV: fuel: 50% CGTP: fuel: 50%, -5.0kg, pwr: -0.50% AGTP: fuel: 50%, 2.0kg P217: fuel: 68% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50%, 3.0kg BMWGTP: fuel: 50% F499P: fuel: 50%, -2.0kg AMGTPV: fuel: 50% CGTP: fuel: 50%, -5.0kg, pwr: -0.50% AGTP: fuel: 50%, 2.0kg P217: fuel: 68% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
           "durationMins": 35
         },
         {
@@ -12096,7 +11396,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T07:25:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12106,7 +11406,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T09:25:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12116,7 +11416,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T08:45:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12126,7 +11426,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12136,7 +11436,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T14:50:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12146,7 +11446,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2026-11-07T12:00:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12156,7 +11456,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2026-11-14T14:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12166,7 +11466,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2026-11-21T11:35:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12176,7 +11476,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-03-01T16:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         },
         {
@@ -12186,7 +11486,7 @@
           "startDate": "2026-12-01T00:00:00.000Z",
           "endDate": "2026-12-07T00:00:00.000Z",
           "raceDateTime": "2027-03-01T09:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 50% BMWGTP: fuel: 50% F499P: fuel: 50% AMGTPV: fuel: 50% CGTP: fuel: 50% AGTP: fuel: 50% P217: fuel: 68% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 35
         }
       ]
@@ -12207,7 +11507,7 @@
           "startDate": "2026-09-15T00:00:00.000Z",
           "endDate": "2026-09-21T00:00:00.000Z",
           "raceDateTime": "2026-09-19T09:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12217,7 +11517,7 @@
           "startDate": "2026-09-22T00:00:00.000Z",
           "endDate": "2026-09-28T00:00:00.000Z",
           "raceDateTime": "2026-09-26T17:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65%, 3.0kg BMWGTP: fuel: 65% F499P: fuel: 65%, -2.0kg AMGTPV: fuel: 65% CGTP: fuel: 65%, -5.0kg, pwr: -0.50% AGTP: fuel: 65%, 2.0kg P217: fuel: 80% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65%, 3.0kg BMWGTP: fuel: 65% F499P: fuel: 65%, -2.0kg AMGTPV: fuel: 65% CGTP: fuel: 65%, -5.0kg, pwr: -0.50% AGTP: fuel: 65%, 2.0kg P217: fuel: 80% MGT3E: fuel: 50%, pwr: -0.25% 720GT3: fuel: 50% F296: fuel: 50%, 8.0kg, pwr: -0.50% AMGT3: fuel: 50%, 10.0kg NSXE22: fuel: 50%, 3.0kg M4GT3: fuel: 50%, 10.0kg, pwr: - 1.00% LGT3: fuel: 50%, pwr: -0.50% CZ06: fuel: 50%, 3.0kg, pwr: -0.25% 992R: fuel: 50%, -15.0kg, pwr: -0.25% FMGT3: fuel: 50%, -5.0kg, pwr: 0.25%",
           "durationMins": 45
         },
         {
@@ -12227,7 +11527,7 @@
           "startDate": "2026-09-29T00:00:00.000Z",
           "endDate": "2026-10-05T00:00:00.000Z",
           "raceDateTime": "2026-10-03T07:25:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12237,7 +11537,7 @@
           "startDate": "2026-10-06T00:00:00.000Z",
           "endDate": "2026-10-12T00:00:00.000Z",
           "raceDateTime": "2026-10-10T09:25:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12247,7 +11547,7 @@
           "startDate": "2026-10-13T00:00:00.000Z",
           "endDate": "2026-10-19T00:00:00.000Z",
           "raceDateTime": "2026-10-17T08:45:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12257,7 +11557,7 @@
           "startDate": "2026-10-20T00:00:00.000Z",
           "endDate": "2026-10-26T00:00:00.000Z",
           "raceDateTime": "2026-10-24T13:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12267,7 +11567,7 @@
           "startDate": "2026-10-27T00:00:00.000Z",
           "endDate": "2026-11-02T00:00:00.000Z",
           "raceDateTime": "2026-10-31T14:50:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12277,7 +11577,7 @@
           "startDate": "2026-11-03T00:00:00.000Z",
           "endDate": "2026-11-09T00:00:00.000Z",
           "raceDateTime": "2026-11-07T12:00:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12287,7 +11587,7 @@
           "startDate": "2026-11-10T00:00:00.000Z",
           "endDate": "2026-11-16T00:00:00.000Z",
           "raceDateTime": "2026-11-14T14:20:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12297,7 +11597,7 @@
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2026-11-21T11:35:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50%",
           "durationMins": 45
         },
         {
@@ -12307,7 +11607,7 @@
           "startDate": "2026-11-24T00:00:00.000Z",
           "endDate": "2026-11-30T00:00:00.000Z",
           "raceDateTime": "2027-03-01T16:10:00Z",
-          "conditions": "Rain possible, Grid by class, Rolling start, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50% 45 mins FORMULA CAR"
+          "conditions": "Rain possible, Grid by class, Rolling start, Start zone, Local enforced cautions, Qual scrutiny - Moderate. PGTP: fuel: 65% BMWGTP: fuel: 65% F499P: fuel: 65% AMGTPV: fuel: 65% CGTP: fuel: 65% AGTP: fuel: 65% P217: fuel: 80% MGT3E: fuel: 50% 720GT3: fuel: 50% F296: fuel: 50% AMGT3: fuel: 50% NSXE22: fuel: 50% M4GT3: fuel: 50% LGT3: fuel: 50% CZ06: fuel: 50% 992R: fuel: 50% FMGT3: fuel: 50% 45 mins FORMULA CAR"
         }
       ]
     },
