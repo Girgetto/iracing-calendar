@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-10T14:24:49.425Z",
+    "lastUpdated": "2026-11-12T14:43:16.691Z",
     "weeks": 39
   },
   "series": [
@@ -14746,8 +14746,8 @@
         },
         {
           "week": 10,
-          "track": "Watkins Glen International - Boot",
-          "trackId": "watkins-glen-international-boot",
+          "track": "Watkins Glen International - Classic Boot",
+          "trackId": "watkins-glen-international-classic-boot",
           "startDate": "2026-11-17T00:00:00.000Z",
           "endDate": "2026-11-23T00:00:00.000Z",
           "raceDateTime": "2027-04-01T12:00:00Z",
