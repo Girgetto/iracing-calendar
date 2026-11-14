@@ -3,7 +3,7 @@
     "season": "2026 Season 4",
     "seasonNumber": 4,
     "seasonYear": 2026,
-    "lastUpdated": "2026-11-12T14:43:16.691Z",
+    "lastUpdated": "2026-11-14T13:01:27.644Z",
     "weeks": 39
   },
   "series": [
@@ -7129,6 +7129,90 @@
       ]
     },
     {
+      "id": "scca-runoffs-global-mx-5-spec-miata",
+      "name": "SCCA Runoffs - Global MX-5 Spec Miata",
+      "category": "Sports Car",
+      "car": "Global Mazda MX-5 Cup",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 17 GMT and 11/22 at 4 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
+        }
+      ]
+    },
+    {
+      "id": "scca-runoffs-gt4",
+      "name": "SCCA Runoffs - GT4",
+      "category": "Sports Car",
+      "car": "Ford Mustang GT4, Mercedes-AMG GT4, BMW M4 G82 GT4 Evo, Aston Martin Vantage GT4, Porsche 718 Cayman GT4 Clubsport MR, McLaren 570S GT4",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 19 GMT and 11/22 at 6 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "70°F/21°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
+        }
+      ]
+    },
+    {
+      "id": "scca-runoffs-renault-clio",
+      "name": "SCCA Runoffs - Renault Clio",
+      "category": "Sports Car",
+      "car": "Renault Clio",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 20 GMT and 11/22 at 7 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "68°F/20°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
+        }
+      ]
+    },
+    {
+      "id": "scca-runoffs-spec-racer-ford",
+      "name": "SCCA Runoffs - Spec Racer Ford",
+      "category": "Sports Car",
+      "car": "SCCA Spec Racer Ford",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 16 GMT and 11/22 at 3 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "72°F/22°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
+        }
+      ]
+    },
+    {
       "id": "spec-racer-ford-challenge",
       "name": "Spec Racer Ford Challenge",
       "category": "Sports Car",
@@ -12528,6 +12612,48 @@
           "raceDateTime": "2027-03-01T12:00:00Z",
           "conditions": "76°F/24°C, All dry events, Standing start, Local enforced cautions, Qual scrutiny - Lenient",
           "durationMins": 20
+        }
+      ]
+    },
+    {
+      "id": "scca-runoffs-formula-vee",
+      "name": "SCCA Runoffs - Formula Vee",
+      "category": "Formula Car",
+      "car": "Formula Vee - Classic, Formula Vee - Sabre, Formula Vee - Conqueror",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 15 GMT & 11/22 at 2 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
+        }
+      ]
+    },
+    {
+      "id": "scca-runoffs-usf2000",
+      "name": "SCCA Runoffs - USF2000",
+      "category": "Formula Car",
+      "car": "USF 2000",
+      "licenseRange": "Rookie 4.0 --> Pro/WC 4.0",
+      "raceFrequency": "Races on 11/21 at 18 GMT and 11/22 at 5 GMT",
+      "drops": 0,
+      "schedule": [
+        {
+          "week": 1,
+          "track": "Road America - Full Course",
+          "trackId": "road-america-full-course",
+          "startDate": "2026-11-17T00:00:00.000Z",
+          "endDate": "2026-11-23T00:00:00.000Z",
+          "raceDateTime": "2026-10-04T10:00:00Z",
+          "conditions": "66°F/19°C, All dry events, Rolling start, Local enforced cautions, Qual scrutiny - Strict",
+          "durationMins": 35
         }
       ]
     },
